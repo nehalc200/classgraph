@@ -1,0 +1,4 @@
+github.com/aki237/nscjar v0.0.0-20210417074043-bbb606196143 h1:PqRkQZW8lAlK2DnH9iSBfISmDxSChaoNJHwP0p7SD2Y=
+github.com/aki237/nscjar v0.0.0-20210417074043-bbb606196143/go.mod h1:l0r3UsMujHR1bAYL7R0+6NXkHo/vIe+ja3xLZbUZNb8=
+github.com/gorilla/schema v1.4.1 h1:jUg5hUjCSDZpNGLuXQOgIWGdlgrIdYvgQ0wZtdK1M3E=
+github.com/gorilla/schema v1.4.1/go.mod h1:Dg5SSm5PV60mhF2NFaTV1xuYYj8tV8NOPRo4FggUMnM=
