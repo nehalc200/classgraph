@@ -1,28 +1,25 @@
 # `soc-scraper`
-Here lies the backend to scrape class requirements from the UCSD TritonLink Portal. A couple of notes:
+Here lies the backend to scrape class requirements from the UCSD TritonLink Portal. 
+It would definitely be more performant to write this in Rust, but Go provides sensible async out of the box (rust does too, but it can be obtuse at times) and fast compile times for quick testing. Avoiding Selenium, or any other sort of browser automation tool is a priority because the UI overhead can aggregate quickly. 
+
+## A couple of notes
 - [Schedule of Classes](https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesFaculty.htm) can be accessed without logging in 
     - we can select multiple subjects and view a listing of all offered classes for a term at once (around 700 pages)
     - selecting "View Printer Friendly Page" condenses all of the info into one gigantic page (around 22MB) at the cost of taking ~7 minutes for a response from the web server
-    - we could automate this with selenium, I assume, because it reduces the network overhead when searching for classes
 
 - there is also an API endpoint for this, which could be used
     - `https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesPreReq.htm?termCode=<TERM_CODE>&courseId=<COURSE_ID>` goes to a webpage with an easy-to-parse table with the requirements listed
     - we definitely need a session ID
+- It is possible to get a list of ALL Departments at UCSD using `https://act.ucsd.edu/scheduleOfClasses/department-list.json?selectedTerm=WI26`
+    - This requires NO authentication (not even cookies or a T5 session ID)
+
+Bot protection is lackluster, and simply spoofing a User-Agent will trick the server into responding with cookies.
 ```
 curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0" \
      -L "https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesFacultyResult.htm" \
      -c cookies.txt \
      -o ucsd_schedule.html
 ```
-this gives us a really easy way to get a cookie without the use of selenium, albeit in Netscape cookie jar format
-
-## Getting a list of all class codes
-```
-curl https://act.ucsd.edu/scheduleOfClasses/department-list.json?selectedTerm=WI26
-```
-This requires NO authentication.
-
-## Request Cookie JSON (This is in the header data)
 ```json
 {
 "itscookie ":	"!some cookie",
@@ -30,21 +27,21 @@ This requires NO authentication.
 "jlinksessionidx	":"z60f54f144cc343c504f5645be5dd2472",
 "JSESSIONID	":"65162E14DF39F2D301D74EE57BBD66FE",
 "TS01111c3f" :	"T5 bot protection id",
-"TS019aef32" :	"T5 bot protection id"
+"TS019aef32" :	"T5 bot protection id 2 (seems to be optional)"
 }
 ```
+By making a relevant request with the fields of interest it is possible to get a paginated view of the courses page. We can switch to the printer view without resending data by simply querying the printer endpoint *after* the paginated endpoint.
 
 ## Request (also in the header)
-As with many legacy systems, UCSD seems to not use JSON, instead using `application/x-www-form-urlencoded`. This is the relevant request that we need to use along with our cookies in a POST request to
-`https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesFacultyResult.htm`
-```
+As with many legacy systems,  Schedule of Classes uses `application/x-www-form-urlencoded` to interact with its API endpoint. This is a mostly complete list of what is sent in a POST request to `https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesFacultyResult.htm`. Some fields may not be required.
+```ini
 selectedTerm=WI26
-tabNum
+tabNum=""
 selectedSubjects=AIP 
 selectedSubjects=AAS 
-...
+# ... enumerates all selected departments
 _selectedSubjects=1
-^ for some reason this exists
+# ^ for some reason this exists
 schedOption1=true
 _schedOption1=on
 schedOption11=true
@@ -116,16 +113,12 @@ schStartTimeDept=12:00
 schStartAmPmDept=0
 schEndTimeDept=12:00
 schEndAmPmDept=0
-courses
-sections
+courses=""
+sections=""
 instructorType=begin
-instructor
+instructor=""
 titleType=contain
-title
+title=""
 _hideFullSec=on
 _showPopup=on
 ```
-![request](./assets/request_headers.png) 
-
-## Print Mode
-we can make a request to `scheduleOfClasses/scheduleOfClassesFacultyResultPrint.htm` but that requires previous search because it does not seem to need any of the data specified
