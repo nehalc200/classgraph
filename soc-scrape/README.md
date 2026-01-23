@@ -30,8 +30,7 @@ curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Fire
 "TS019aef32" :	"T5 bot protection id 2 (seems to be optional)"
 }
 ```
-By making a relevant request with the fields of interest it is possible to get a paginated view of the courses page. We can switch to the printer view without resending data by simply querying the printer endpoint *after* the paginated endpoint.
-
+By making a relevant request with the fields of interest it is possible to get a paginated view of the courses page. We can switch to the printer view without resending data by simply querying the printer endpoint *after* the paginated endpoint. This also makes async virtually impossible to scrape course codes on the same HTTP client, but it is likely still possible to scrape course requirements. It may be bypassable with multiple HTTP Clients.
 ## Request (also in the header)
 As with many legacy systems,  Schedule of Classes uses `application/x-www-form-urlencoded` to interact with its API endpoint. This is a mostly complete list of what is sent in a POST request to `https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesFacultyResult.htm`. Some fields may not be required.
 ```ini

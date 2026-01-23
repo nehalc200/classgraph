@@ -5,23 +5,11 @@ type Department struct {
 	Expansion string `json:"value"`
 }
 
-type CourseRequirementOR struct {
-	Codes []string
-}
-
-func (or *CourseRequirementOR) satisfies() {}
-
-type CourseRequirementAND struct {
-	Codes []string
-}
-
-func (and *CourseRequirementAND) satisfies() {}
 
 type Course struct {
-	Department   Department
-	Requirements []CourseRequirement // nil if no requirements
+	Department   string
+	Numerical    string
+	Requirements []string
 }
 
-type CourseRequirement interface {
-	satisfies()
-}
+

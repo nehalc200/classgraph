@@ -82,7 +82,7 @@ func (c *Client) GetPrerequisites(termCode string, courseId string) (io.Reader, 
 	return resp.Body, nil
 }
 
-func (c *Client) GetCourseList(request *SearchRequestForm) (io.Reader, error) {
+func (c *Client) GetCourseList(request *SearchRequestForm) ([]courses.Course, error) {
 	encoder := schema.NewEncoder()
 	form := url.Values{}
 	err := encoder.Encode(*request, form)
@@ -104,5 +104,9 @@ func (c *Client) GetCourseList(request *SearchRequestForm) (io.Reader, error) {
 	//fmt.Println(string(b))
 
 	// TODO: pass this data to a HTML parsing library to get what we exactly want
-	return resp.Body, nil
+	css, err := parseSearchResults(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+	return css, nil
 }
