@@ -1,7 +1,6 @@
 import httpx
 from bs4 import BeautifulSoup
 import pandas as pd
-import pdb
 
 with open('valid_codes.txt') as f:
     subject_codes = [line.strip() for line in f]
@@ -12,31 +11,34 @@ headers = {
 }
 
 def main():
+    all_data = []
     for code in subject_codes:
         response_html = fetch_html(code)
-
         soup = BeautifulSoup(response_html, 'html.parser')
 
         course_names = soup.find_all(class_='course-name')
         course_desc = extract_descriptions(course_names)
 
         codes = [name.get_text(strip=True).split(".")[0] for name in course_names]
-        title = [
+        titles = [
             name.get_text(strip=True).split(".")[1].split(" (")[0].strip()
             if len(name.get_text(strip=True).split(".")) > 1 else ""
             for name in course_names
         ]
         course_prereq = parse_prereqs(course_desc)
 
-        data = {
-            'Code': codes,
-            'Title': title,
-            "Description": course_desc,
-            "Prerequisites": course_prereq
-        }
-        df = pd.DataFrame(data)
-        df.to_csv(f'data/{code}.csv', index=False)
-        print(f"Saved data/{code}.csv")
+        for i in range(len(codes)):
+            print(f"Processing {codes[i]}...")
+            all_data.append({
+                'Subject': code,
+                'Code': codes[i],
+                'Title': titles[i],
+                "Prerequisites": course_prereq[i]
+            })
+
+    df = pd.DataFrame(all_data)
+    df.to_csv('data/all_courses.csv', index=False)
+    print("Saved data/all_courses.csv")
 
 def fetch_html(code):
     url = blank_url.format(code)
