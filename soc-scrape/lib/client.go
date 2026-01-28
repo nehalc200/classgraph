@@ -69,7 +69,7 @@ func (c *Client) GetAllDepartments(selectedTerm string) ([]courses.Department, e
 
 }
 
-func (c *Client) GetPrerequisites(termCode string, courseId string) (io.Reader, error) {
+func (c *Client) GetPrerequisites(termCode string, courseId string) (*courses.PrereqNode, error) {
 	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesPreReq.htm?termCode=%s&courseId=%s", termCode, courseId), nil)
 	if err != nil {
 		return nil, nil
@@ -79,7 +79,11 @@ func (c *Client) GetPrerequisites(termCode string, courseId string) (io.Reader, 
 		return nil, nil
 	}
 	// TODO: pass this data to a HTML parsing library to get what we exactly want
-	return resp.Body, nil
+	res, err := parseClassRequirements(resp.Body)
+	if err != nil {
+		return nil, nil
+	}
+	return res, nil
 }
 
 func (c *Client) GetCourseList(request *SearchRequestForm) ([]courses.Course, error) {

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"soc-scrape/lib"
+	"strings"
 )
 
 func main() {
@@ -19,12 +20,34 @@ func main() {
 	//}
 	log.Println("Making Search Request")
 	sr := lib.NewSearchRequest("WI26", lib.TabDept)
-	sr.AddDepartment("AIP ")
+	sr.AddDepartment("DSC ")
 	res, err := cl.GetCourseList(sr)
 	if err != nil {
 		log.Fatal(err)
 	}
-	for _,v:=range res{
-		fmt.Printf("%s%s\n",v.Department,v.Numerical)
+	for _, v := range res {
+		fixed_code := strings.ReplaceAll(v.Code, " ", "")
+		res, _ := cl.GetPrerequisites("WI26", fixed_code)
+		v.PrereqAST=res
+		fmt.Println(v.Code, " requirements:")
+		if len(res.Items) < 1 || res.Type != "AND" {
+			fmt.Println("No requirements!")
+		}
+		for n, j := range res.Items {
+			if j.Type != "COURSE" {
+				for l := 0; l < len(j.Items); l++ {
+					if l != 0 {
+						fmt.Print(j.Type, " ")
+					}
+					fmt.Print(j.Items[l].CourseID, " ")
+				}
+			} else {
+				fmt.Print(j.CourseID)
+			}
+			fmt.Println()
+			if n != len(res.Items) {
+				fmt.Println(res.Type)
+			}
+		}
 	}
 }
