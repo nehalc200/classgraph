@@ -84,7 +84,7 @@ func parseClassRequirements(htmlcontent io.Reader) (*courses.PrereqNode, error) 
 				if courseCode != "" {
 					rowItems = append(rowItems, &courses.PrereqNode{
 						Type:     "COURSE",
-						CourseID: strings.ReplaceAll(courseCode, " ", "-"),
+						CourseID: formatCourseCode(courseCode),
 					})
 				}
 			})
@@ -103,4 +103,14 @@ func parseClassRequirements(htmlcontent io.Reader) (*courses.PrereqNode, error) 
 	})
 
 	return root, nil
+}
+
+func formatCourseCode(unified string) string {
+	clean := strings.ReplaceAll(unified, "-", "")
+	re := regexp.MustCompile(`^([A-Z]{2,5})([0-9]{1,3}[A-Z]*)$`)
+	matches := re.FindStringSubmatch(strings.TrimSpace(clean))
+	if len(matches) == 3 {
+		return matches[1] + " " + matches[2]
+	}
+	return unified 
 }

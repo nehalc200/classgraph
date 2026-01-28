@@ -11,7 +11,7 @@ type Course struct {
 	ID          string      `json:"id"`
 	Title       string      `json:"title"`
 	Dept        string      `json:"dept"`
-	PrereqRaw   string      `json:"prereq_raw"`
+//	PrereqRaw   string      `json:"prereq_raw"`
 	ParseStatus string      `json:"parse_status"`
 	PrereqAST   *PrereqNode `json:"prereq_ast"`
 }
