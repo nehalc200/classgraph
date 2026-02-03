@@ -71,7 +71,7 @@ func main() {
 		}
 	}
 	data, _ := json.MarshalIndent(final_classes, "", "    ")
-	f, _ := os.Create("class_list.json")
+	f, _ := os.Create("SOC_list.json")
 	f.Write(data)
 
 }
