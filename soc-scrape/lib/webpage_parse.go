@@ -36,15 +36,15 @@ func parseSearchResults(htmlcontent io.Reader) ([]courses.Course, error) {
 
 		if s.Find("td.crsheader").Length() > 0 && !s.HasClass("sectxt") {
 			rawNum := strings.TrimSpace(s.Find("td.crsheader").Eq(1).Text())
-			//title := strings.TrimSpace(s.Find("td.crsheader").Eq(2).Text())
+			title := strings.TrimSpace(s.Find("td.crsheader").Eq(2).Text())
 
 			if rawNum != "" && currentDept != "" {
 				currentFullCode = fmt.Sprintf("%s %s", currentDept, rawNum)
 
 				if _, exists := courseMap[currentFullCode]; !exists {
 					courseMap[currentFullCode] = courses.Course{
-						Code: currentFullCode,
-						ID:   currentFullCode,
+						Code:  currentFullCode,
+						Title: cleanCourseTitle(title),
 					}
 				}
 			}
@@ -112,5 +112,20 @@ func formatCourseCode(unified string) string {
 	if len(matches) == 3 {
 		return matches[1] + " " + matches[2]
 	}
-	return unified 
+	return unified
+}
+
+func cleanCourseTitle(rawTitle string) string {
+	// 1. Remove the (X Units) block entirely.
+	// This regex handles newlines/tabs inside the parentheses.
+	re := regexp.MustCompile(`\s*\([\s\n\t]*[^)]*Units[\s\n\t]*\)`)
+	titleOnly := re.ReplaceAllString(rawTitle, "")
+
+	// 2. Normalize whitespace.
+	// strings.Fields splits the string by ANY whitespace ( \t \n \r )
+	// and returns a slice of only the non-empty words.
+	words := strings.Fields(titleOnly)
+
+	// 3. Join back with a single standard space.
+	return strings.Join(words, " ")
 }

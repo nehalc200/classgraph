@@ -7,6 +7,7 @@ import (
 	"soc-scrape/lib"
 	"soc-scrape/lib/courses"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -17,10 +18,10 @@ func main() {
 		log.Fatal(err)
 	}
 
-	final_classes := make([]courses.Course, 0)
+	final_classes := make([]courses.CourseWritable, 0)
 	departments, _ := cl.GetAllDepartments("WI26")
 	for i, d := range departments {
-		log.Printf("Making Search Request for Dep %s (%d/%d)", d.Code,i+1,len(departments))
+		log.Printf("Making Search Request for Department %s (%d/%d)", d.Code, i+1, len(departments))
 		sr := lib.NewSearchRequest("WI26", lib.TabDept)
 		sr.AddDepartment(d.Code)
 		res, err := cl.GetCourseList(sr)
@@ -29,10 +30,24 @@ func main() {
 		}
 		for _, v := range res {
 			fixed_code := strings.ReplaceAll(v.Code, " ", "")
-			res, _ := cl.GetPrerequisites("WI26", fixed_code)
-			v.Dept=d.Code
+			res, err := cl.GetPrerequisites("WI26", fixed_code)
+			if err != nil {
+				v.Parseable = false
+			} else {
+
+				v.Parseable = true
+			}
 			v.PrereqAST = res
-			final_classes = append(final_classes, v)
+
+			writable := courses.CourseWritable{
+				Course: &v,
+				Meta: courses.Metadata{
+					Version:     time.Now().Format(time.DateOnly),
+					GeneratedAt: time.Now().UTC().Format(time.RFC3339),
+				},
+			}
+
+			final_classes = append(final_classes, writable)
 			//fmt.Println(v.Code, " requirements:")
 			//if len(res.Items) < 1 || res.Type != "AND" {
 			//	fmt.Println("No requirements!")
@@ -55,8 +70,8 @@ func main() {
 			//}
 		}
 	}
-	data,_:=json.MarshalIndent(final_classes,"","    ")
-	f,_:=os.Create("out.json")
+	data, _ := json.MarshalIndent(final_classes, "", "    ")
+	f, _ := os.Create("class_list.json")
 	f.Write(data)
 
 }
