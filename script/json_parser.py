@@ -21,7 +21,9 @@ def parse_prereqs(raw_str):
         "department stamp",
         "instructor approval",
         "junior standing",
-        "senior standing"
+        "senior standing",
+        "GRADUATE-STANDING",
+        "NAN",
     ]
 
     if raw_str.strip() == "" or raw_str.strip().lower() == "none":
