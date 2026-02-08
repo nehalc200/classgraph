@@ -97,7 +97,7 @@ def parse_prereqs(raw_str):
 
 
 def load_courses_csv(path):
-    return pd.read_csv(path)
+    return pd.read_csv(path, encoding="utf-8")
 
 
 def generate_webreg_json(df, output_path):
@@ -154,10 +154,8 @@ def generate_webreg_json(df, output_path):
             "raw_prereq": raw_prereq,
             "parseable": parsable,
             "notes": notes,
+            "prereq": prereq_obj,
         }
-
-        if prereq_items:
-            course_obj["prereq"] = prereq_obj
 
         output.append({
             "meta": {
@@ -169,8 +167,8 @@ def generate_webreg_json(df, output_path):
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w") as f:
-        json.dump(output, f, indent=2)
+    with output_path.open("w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
     return output
 
 
