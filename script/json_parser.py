@@ -1,10 +1,24 @@
 from datetime import date, datetime, timezone
 import pandas as pd
 import json
+import re
 
 df = pd.read_csv('data/all_courses.csv')
 
 test = df.iloc[916]
+
+COURSE_RE = re.compile(r"^[A-Z]{2,4}\s*-?\s*\d{1,3}[A-Z]?$")
+
+
+def looks_like_course(text):
+    return bool(COURSE_RE.match(text.replace(" ", "")) or COURSE_RE.match(text))
+
+
+def _normalize_spacing(text):
+    text = text.replace(";;", ";")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip(" ;,").strip()
+
 
 def parse_prereqs(raw_str):
     and_list = []
@@ -21,14 +35,12 @@ def parse_prereqs(raw_str):
         "department stamp",
         "instructor approval",
         "junior standing",
-        "senior standing",
-        "GRADUATE-STANDING",
-        "NAN",
+        "senior standing"
     ]
 
     if raw_str.strip() == "" or raw_str.strip().lower() == "none":
         return {
-            "AND": [], "OR": [], "notes": [], False: success
+            "AND": [], "OR": [], "notes": [], "parseable": success
         }
 
     # Use a temporary lowercased string for matching
@@ -37,16 +49,15 @@ def parse_prereqs(raw_str):
 
     # remove special cases and append them into notes
     for case in special_cases:
-        if case in lowered:
-            # find the index in the original string for the matched case
+        while case in lowered:
             start = lowered.find(case)
             end = start + len(case)
             notes.append(original[start:end])
-            # remove from both strings 
-            lowered = lowered.replace(case, "")
+            lowered = lowered[:start] + lowered[end:]
             original = original[:start] + original[end:]
-    lowered = lowered.replace(";;", ";").replace("  ", " ").strip("; ").strip()
-    original = original.replace(";;", ";").replace("  ", " ").strip("; ").strip()
+
+    lowered = _normalize_spacing(lowered)
+    original = _normalize_spacing(original)
 
     # case handling for actual section of ANDs ORs
     if '; ' in lowered:
@@ -65,12 +76,25 @@ def parse_prereqs(raw_str):
             continue
         if ' or ' in item:
             subset = [s.strip() for s in item.split(' or ')]
-            or_list.append([s.upper() for s in subset])
+            valid_subset = []
+            invalid_subset = []
+            for s in subset:
+                if looks_like_course(s.upper()):
+                    valid_subset.append(s.upper())
+                else:
+                    invalid_subset.append(s)
+            if valid_subset:
+                or_list.append(valid_subset)
+            if invalid_subset:
+                notes.extend(invalid_subset)
         else:
-            and_list.append(item.upper())
+            if looks_like_course(item.upper()):
+                and_list.append(item.upper())
+            else:
+                notes.append(item)
 
     return {
-         "AND": and_list, "OR": or_list, "notes": notes, True: success
+         "AND": and_list, "OR": or_list, "notes": notes, "parseable": success
     }
 
 
@@ -81,7 +105,16 @@ def main():
     output = []
 
     for _, row in df.iterrows():
-        AND_List, OR_list, notes, parsable = parse_prereqs(str(row["Prerequisites"])).values()
+        raw_prereq = row["Prerequisites"]
+        if raw_prereq is None or pd.isna(raw_prereq):
+            raw_prereq = ""
+        raw_prereq = str(raw_prereq)
+
+        parsed = parse_prereqs(raw_prereq)
+        AND_List = parsed.get("AND", [])
+        OR_list = parsed.get("OR", [])
+        notes = parsed.get("notes", [])
+        parsable = parsed.get("parseable", False)
 
         prereq_items = []
 
@@ -106,7 +139,7 @@ def main():
                 ]
             })
 
-       
+
 
         prereq_obj = {
             "type": "AND",
@@ -116,12 +149,13 @@ def main():
         course_obj = {
             "code": row["Code"],
             "title": row["Title"],
-            "raw_prereq": str(row["Prerequisites"]) if row["Prerequisites"] else "",
+            "raw_prereq": raw_prereq,
             "parseable": parsable,
-            "prereq": prereq_obj,
             "notes": notes,
         }
 
+        if prereq_items:
+            course_obj["prereq"] = prereq_obj
 
         output.append({
             "meta": {
