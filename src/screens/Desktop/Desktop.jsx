@@ -1,83 +1,59 @@
+import React from "react";
+import { InputGroup } from "../../components/InputGroup";
+import { SelectGroup } from "../../components/SelectGroup";
+import { Button } from "../../components/Button";
+
 export const Desktop = () => {
+  const currentYear = new Date().getFullYear();
+  const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
+
   return (
-    <div
-      className="overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_100%)] w-full min-w-[1280px] min-h-[1080px] relative"
-      data-model-id="1:6"
-    >
-      <div className="top-[978px] left-32 inline-flex flex-wrap items-center gap-[16px_16px] absolute">
-        <div className="inline-flex items-center justify-center gap-2 px-4 py-3 relative flex-[0_0_auto] bg-black rounded-xl">
-          <div className="relative flex items-center justify-center w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-white text-lg text-center tracking-[-0.09px] leading-[26.1px] whitespace-nowrap">
-            Generate graph
-          </div>
-        </div>
-      </div>
-
-      <div className="top-[505px] left-[509px] w-[700px] h-[547px] absolute bg-[#d9d9d9]" />
-
-      {/* Vertical divider (leave as-is or adjust separately) */}
-      <div className="absolute top-[508px] left-[509px] w-[70px] h-[547px] bg-[#d9d9d9]" />
-
-      {/* Major box */}
-      <div className="absolute top-[508px] left-[39px] w-[359px] h-[70px] bg-[#d9d9d9]" />
-
-      {/* Graduating year box */}
-      <div className="absolute top-[598px] left-[39px] w-[359px] h-[70px] bg-[#d9d9d9]" />
-
-      {/* College box */}
-      <div className="absolute top-[696px] left-[39px] w-[359px] h-[70px] bg-[#d9d9d9]" />
-
-      {/* Transfer box */}
-      <div className="absolute top-[778px] left-[39px] w-[359px] h-[70px] bg-[#d9d9d9]" />
-
-      {/* Additional majors/minors box */}
-      <div className="absolute top-[874px] left-[39px] w-[359px] h-[70px] bg-[#d9d9d9]" />
-
-
-
-      <div className="absolute top-[518px] left-[177px] h-11 flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-3xl text-center tracking-[-0.15px] leading-[43.5px] whitespace-nowrap">
-        Major
-      </div>
-      <div className="absolute top-[608px] left-[104px] h-11 flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-3xl text-center tracking-[-0.15px] leading-[43.5px] whitespace-nowrap">
-        Graduating year
-      </div>
-
-      <div className="absolute top-[706px] left-[165px] h-[33px] flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-3xl text-center tracking-[-0.60px] leading-[33.0px] whitespace-nowrap">
-        College
-      </div>
-
-      <div className="absolute top-[788px] left-[114px] h-11 flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-3xl text-center tracking-[-0.15px] leading-[43.5px] whitespace-nowrap">
-        Transfer? (y/n)
-      </div>
-
-      <div className="absolute top-[884px] left-[45px] h-[33px] flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-3xl text-center tracking-[-0.60px] leading-[33.0px] whitespace-nowrap">
-        Additional majors/minors
-      </div>
-
-      <div className="absolute top-0 left-0 w-[1285px] h-[314px] bg-[url(https://c.animaapp.com/rTAWbAbr/img/frame-1.png)] bg-cover bg-[50%_50%]">
-        <div className="absolute top-[72px] left-[353px] h-[94px] flex items-center justify-center [font-family:'Inter',Helvetica] font-black text-black text-[65px] text-center tracking-[-0.33px] leading-[94.3px] whitespace-nowrap">
+    <div className="min-h-screen w-full bg-gradient-to-b from-white to-transparent font-['Inter'] pb-20">
+      {/* Header Section */}
+      <header className="relative w-full h-[314px] bg-[url(https://c.animaapp.com/rTAWbAbr/img/frame-1.png)] bg-cover bg-center flex flex-col items-center justify-center">
+        <h1 className="text-5xl md:text-[65px] font-black text-black tracking-[-0.33px] text-center px-4">
           UCSD ClassGraph
+        </h1>
+        <div className="mt-8">
+          <Button>Let’s go</Button>
         </div>
-      </div>
+      </header>
 
-      <div className="absolute top-[72px] left-[353px] h-[94px] flex items-center justify-center [font-family:'Inter',Helvetica] font-black text-black text-[65px] text-center tracking-[-0.33px] leading-[94.3px] whitespace-nowrap">
-        UCSD ClassGraph
-      </div>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        {/* Description */}
+        <p className="text-center text-xl md:text-[25px] font-medium text-black tracking-[-0.12px] leading-snug md:leading-[36.3px] mb-12 max-w-5xl mx-auto">
+          Many courses at UCSD have a variety of ways to take the necessary
+          prerequisites, making scheduling, course dependencies, and academic
+          planning difficult for students. ClassGraph helps our students
+          understand and plan their complex course requirements for their major
+          and graduation.
+        </p>
 
-       <div className="w-[101px] top-[186px] left-[591px] inline-flex flex-wrap items-center gap-[16px_16px] absolute">
-        <div className="inline-flex items-center justify-center gap-2 px-4 py-3 relative flex-[0_0_auto] bg-black rounded-xl">
-          <div className="relative flex items-center justify-center w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-white text-lg text-center tracking-[-0.09px] leading-[26.1px] whitespace-nowrap">
-            Let’s go
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Left Column: Form */}
+          <div className="lg:col-span-5 flex flex-col gap-8 lg:pl-8">
+            <InputGroup label="Major" id="major" />
+            <SelectGroup label="Graduating year" id="year" options={yearOptions} />
+            <InputGroup label="College" id="college" />
+            <InputGroup label="Transfer? (y/n)" id="transfer" />
+            <InputGroup label="Additional majors/minors" id="additional" />
+
+            <div className="mt-4 flex justify-center">
+              <Button>Generate graph</Button>
+            </div>
+          </div>
+
+          {/* Right Column: Visualization/Placeholder */}
+          <div className="lg:col-span-7">
+            <div className="w-full h-[500px] lg:h-[600px] bg-[#d9d9d9] rounded-xl relative shadow-inner">
+              {/* Optional: Add a visual indicator or placeholder content */}
+              <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">
+                Graph Preview Area
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <p className="absolute top-[336px] left-[21px] w-[1259px] h-[108px] flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-black text-[25px] tracking-[-0.12px] leading-[36.3px]">
-        Many courses at UCSD have a variety of ways to take the necessary
-        prerequisites, making scheduling, course dependencies, and academic
-        planning difficult for students. ClassGraph helps our students
-        understand and plan their complex course requirements for their major
-        and graduation.
-      </p>
+      </main>
     </div>
   );
 };
