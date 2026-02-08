@@ -2,10 +2,17 @@ import React from "react";
 import { InputGroup } from "../../components/InputGroup";
 import { SelectGroup } from "../../components/SelectGroup";
 import { Button } from "../../components/Button";
+import { CheckboxGroup } from "../../components/CheckboxGroup";
+import majorsData from "../../../data/majors.json";
 
 export const Desktop = () => {
   const currentYear = new Date().getFullYear();
   const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
+  const collegeOptions = ["Revelle", "Muir", "Marshall", "Roosevelt", "Warren", "Sixth", "Seventh", "Eighth"];
+
+  const majorOptions = majorsData.map((major) => major.name).sort();
+
+
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-white to-transparent font-['Inter'] pb-20">
@@ -32,10 +39,11 @@ export const Desktop = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Form */}
           <div className="lg:col-span-5 flex flex-col gap-8 lg:pl-8">
-            <InputGroup label="Major" id="major" />
+            <SelectGroup label="Major" id="major" options={majorOptions} />
             <SelectGroup label="Graduating year" id="year" options={yearOptions} />
-            <InputGroup label="College" id="college" />
-            <InputGroup label="Transfer? (y/n)" id="transfer" />
+            <SelectGroup label="College" id="college" options={collegeOptions} />
+            <CheckboxGroup label="Transfer" id="transfer" />
+
             <InputGroup label="Additional majors/minors" id="additional" />
 
             <div className="mt-4 flex justify-center">

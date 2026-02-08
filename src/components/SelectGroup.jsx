@@ -21,12 +21,13 @@ export const SelectGroup = ({ label, id, options = [], className = "" }) => {
                 }}
                 defaultValue=""
             >
-                <option value="" disabled>Select a year</option>
+                <option value="" disabled>Select a {label}</option>
                 {options.map((option) => (
-                    <option key={option} value={option}>
-                        {option}
+                    <option key={option} value={option} title={option}>
+                        {option.length > 50 ? `${option.substring(0, 50)}...` : option}
                     </option>
                 ))}
+
             </select>
         </div>
     );
