@@ -1,11 +1,9 @@
 from datetime import date, datetime, timezone
-import pandas as pd
+from pathlib import Path
 import json
 import re
 
-df = pd.read_csv('data/all_courses.csv')
-
-test = df.iloc[916]
+import pandas as pd
 
 COURSE_RE = re.compile(r"^[A-Z]{2,4}\s*-?\s*\d{1,3}[A-Z]?$")
 
@@ -98,7 +96,11 @@ def parse_prereqs(raw_str):
     }
 
 
-def main():
+def load_courses_csv(path):
+    return pd.read_csv(path)
+
+
+def generate_webreg_json(df, output_path):
     version = date.today().isoformat()
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -165,10 +167,18 @@ def main():
             "course": course_obj
         })
 
-    with open("data/webreg_data.json", "w") as f:
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w") as f:
         json.dump(output, f, indent=2)
+    return output
 
 
+def main():
+    df = load_courses_csv("data/all_courses.csv")
+    output_path = Path("data/webreg_data.json")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    generate_webreg_json(df, output_path)
 
 if __name__ == "__main__":
     main()

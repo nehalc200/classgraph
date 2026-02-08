@@ -1,22 +1,31 @@
+from pathlib import Path
+
 import httpx
 from bs4 import BeautifulSoup
 import pandas as pd
 
-with open('valid_codes.txt') as f:
-    subject_codes = [line.strip() for line in f]
-
-blank_url = 'https://catalog.ucsd.edu/courses/{}.html'
-headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+BLANK_URL = "https://catalog.ucsd.edu/courses/{}.html"
+DEFAULT_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/144.0.0.0 Safari/537.36"
+    )
 }
 
-def main():
+def read_subject_codes(path):
+    path = Path(path)
+    with path.open() as f:
+        return [line.strip() for line in f if line.strip()]
+
+
+def scrape_courses(subject_codes, blank_url=BLANK_URL, headers=DEFAULT_HEADERS):
     all_data = []
     for code in subject_codes:
-        response_html = fetch_html(code)
-        soup = BeautifulSoup(response_html, 'html.parser')
+        response_html = fetch_html(code, blank_url=blank_url, headers=headers)
+        soup = BeautifulSoup(response_html, "html.parser")
 
-        course_names = soup.find_all(class_='course-name')
+        course_names = soup.find_all(class_="course-name")
         course_desc = extract_descriptions(course_names)
 
         codes = [name.get_text(strip=True).split(".")[0] for name in course_names]
@@ -28,19 +37,30 @@ def main():
         course_prereq = parse_prereqs(course_desc)
 
         for i in range(len(codes)):
-            print(f"Processing {codes[i]}...")
+#            print(f"Processing {codes[i]}...")
+            if not titles[i]:
+                continue
             all_data.append({
-                'Subject': code,
-                'Code': codes[i],
-                'Title': titles[i],
-                "Prerequisites": course_prereq[i]
+                "Subject": code,
+                "Code": codes[i],
+                "Title": titles[i],
+                "Prerequisites": course_prereq[i],
             })
+    return all_data
 
-    df = pd.DataFrame(all_data)
-    df.to_csv('data/all_courses.csv', index=False)
-    print("Saved data/all_courses.csv")
 
-def fetch_html(code):
+def build_courses_dataframe(subject_codes, blank_url=BLANK_URL, headers=DEFAULT_HEADERS):
+    all_data = scrape_courses(subject_codes, blank_url=blank_url, headers=headers)
+    return pd.DataFrame(all_data)
+
+
+def save_courses_csv(df, path):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(path, index=False)
+    print(f"Saved {path}")
+
+def fetch_html(code, blank_url=BLANK_URL, headers=DEFAULT_HEADERS):
     url = blank_url.format(code)
     response = httpx.get(url, headers=headers)
     return response.text
@@ -72,4 +92,6 @@ def parse_prereqs(descriptions):
     return course_prereqs
 
 if __name__ == '__main__':
-    main()
+    subject_codes = read_subject_codes("valid_codes.txt")
+    df = build_courses_dataframe(subject_codes)
+    save_courses_csv(df, "data/all_courses.csv")
