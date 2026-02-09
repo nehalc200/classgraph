@@ -19,36 +19,38 @@ export const Desktop = () => {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        {/* Description */}
-        <p className="text-center text-xl md:text-[25px] font-medium text-black tracking-[-0.12px] leading-snug md:leading-[36.3px] mb-12 max-w-5xl mx-auto">
-          Many courses at UCSD have a variety of ways to take the necessary
-          prerequisites, making scheduling, course dependencies, and academic
-          planning difficult for students. ClassGraph helps our students
-          understand and plan their complex course requirements for their major
-          and graduation.
-        </p>
+      <main className="w-full flex justify-center mt-8">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Description */}
+          <p className="text-center text-xl md:text-[25px] font-medium text-black tracking-[-0.12px] leading-snug md:leading-[36.3px] mb-12 max-w-5xl mx-auto">
+            Many courses at UCSD have a variety of ways to take the necessary
+            prerequisites, making scheduling, course dependencies, and academic
+            planning difficult for students. ClassGraph helps our students
+            understand and plan their complex course requirements for their major
+            and graduation.
+          </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Left Column: Form */}
-          <div className="lg:col-span-5 flex flex-col gap-8 lg:pl-8">
-            <InputGroup label="Major" id="major" />
-            <SelectGroup label="Graduating year" id="year" options={yearOptions} />
-            <InputGroup label="College" id="college" />
-            <InputGroup label="Transfer? (y/n)" id="transfer" />
-            <InputGroup label="Additional majors/minors" id="additional" />
+          <div className="flex flex-col lg:flex-row gap-12 items-center lg:items-start justify-center">
+            {/* Left Column: Form */}
+            <div className="w-full lg:w-[400px] flex flex-col gap-8 flex-shrink-0">
+              <InputGroup label="Major" id="major" />
+              <SelectGroup label="Graduating year" id="year" options={yearOptions} />
+              <InputGroup label="College" id="college" />
+              <InputGroup label="Transfer? (y/n)" id="transfer" />
+              <InputGroup label="Additional majors/minors" id="additional" />
 
-            <div className="mt-4 flex justify-center">
-              <Button>Generate graph</Button>
+              <div className="mt-4 flex justify-center">
+                <Button>Generate graph</Button>
+              </div>
             </div>
-          </div>
 
-          {/* Right Column: Visualization/Placeholder */}
-          <div className="lg:col-span-7">
-            <div className="w-full h-[500px] lg:h-[600px] bg-[#d9d9d9] rounded-xl relative shadow-inner">
-              {/* Optional: Add a visual indicator or placeholder content */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">
-                Graph Preview Area
+            {/* Right Column: Visualization/Placeholder */}
+            <div className="w-full lg:w-[500px] flex justify-center lg:justify-start flex-shrink-0">
+              <div className="w-full h-[500px] lg:h-[600px] bg-[#d9d9d9] rounded-xl relative shadow-inner">
+                {/* Optional: Add a visual indicator or placeholder content */}
+                <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">
+                  Graph Preview Area
+                </div>
               </div>
             </div>
           </div>
