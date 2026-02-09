@@ -39,37 +39,7 @@
       "generated_at": "2026-01-28T05:22:20Z"
     },
     "course": {
-      "code": "AAS 10R",
-      "title": "Intro/African-American Studies",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND"
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:22:20Z"
-    },
-    "course": {
       "code": "AAS 11",
-      "title": "Intro Black Diasporic Studies",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND"
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:22:20Z"
-    },
-    "course": {
-      "code": "AAS 11R",
       "title": "Intro Black Diasporic Studies",
       "raw_prereq": "",
       "parseable": true,
@@ -7523,7 +7493,9 @@
       "title": "Language and Learning in the American Academy",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -7582,27 +7554,8 @@
       "parseable": true,
       "notes": [
         "graduate standing",
-        "upper-division or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "AWP 102R",
-      "title": "Writing for the Professions",
-      "raw_prereq": "upper-division or graduate standing",
-      "parseable": true,
-      "notes": [
-        "graduate standing",
-        "upper-division or"
+        "upper-division or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -7644,23 +7597,6 @@
         "graduate standing",
         "upper-division or"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "AWP 10R",
-      "title": "Language and Learning in the American Academy",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -11924,39 +11860,6 @@
   {
     "meta": {
       "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:23:21Z"
-    },
-    "course": {
-      "code": "BIMM 143R",
-      "title": "Bioinformatics Laboratory",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "BILD 1"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "BIEB 123"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "BILD 4"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "BIMM 101"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
       "generated_at": "2026-01-28T05:23:23Z"
     },
     "course": {
@@ -13315,7 +13218,8 @@
       "parseable": true,
       "notes": [
         "upper-division standing",
-        "Sixth College students only"
+        "Sixth College students only",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -13336,26 +13240,6 @@
       "notes": [
         "upper-division standing",
         "department authorization required"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CAT 125R",
-      "title": "Public Rhetoric and Practical Communication Online",
-      "raw_prereq": "Sixth College students only; upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing",
-        "Sixth College students only"
       ],
       "prereq": {
         "type": "AND",
@@ -14219,7 +14103,9 @@
       "title": "Engineering Computation Using MATLAB",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -14247,23 +14133,6 @@
             "course_id": "CENG 101C"
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CENG 15R",
-      "title": "Engineering Computation Using MATLAB Online",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -20808,23 +20677,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "CLAS 121R",
-      "title": "World Wisdom Traditions",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "CLAS 125",
       "title": "Mythologies of the Ancient Mediterranean",
       "raw_prereq": "",
@@ -21327,27 +21179,8 @@
       "parseable": true,
       "notes": [
         "admission to the MAS Clinical Research Program",
-        "consent of department"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CLRE 236R",
-      "title": "Translational Research Fundamentals",
-      "raw_prereq": "admission to the MAS Clinical Research Program or consent of department",
-      "parseable": true,
-      "notes": [
-        "admission to the MAS Clinical Research Program",
-        "consent of department"
+        "consent of department",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -21387,7 +21220,8 @@
       "parseable": true,
       "notes": [
         "admission to the MAS Clinical Research Program",
-        "consent of department"
+        "consent of department",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -21395,40 +21229,6 @@
           {
             "type": "COURSE",
             "course_id": "CLRE 236"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CLRE 238R",
-      "title": "Applied Translational Research",
-      "raw_prereq": "CLRE 236 or CLRE 236R and admission to the MAS in Clinical Research Program or consent of department",
-      "parseable": true,
-      "notes": [
-        "admission to the MAS in Clinical Research Program",
-        "consent of department"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CLRE 236"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CLRE 236R"
-              }
-            ]
           }
         ]
       }
@@ -21553,27 +21353,8 @@
       "parseable": true,
       "notes": [
         "admission to the MAS in Clinical Research Program",
-        "consent of department"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CLRE 250R",
-      "title": "Patient-Oriented Research I",
-      "raw_prereq": "admission to the MAS in Clinical Research Program or consent of department",
-      "parseable": true,
-      "notes": [
-        "admission to the MAS in Clinical Research Program",
-        "consent of department"
+        "consent of department",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -30752,72 +30533,9 @@
       "raw_prereq": "CSE 21 or MATH 154 or MATH 158 or MATH 184 or MATH 188 and CSE 12 and CSE 15L or CSE 29 or ECE 15; restricted to undergraduates",
       "parseable": true,
       "notes": [
-        "restricted to undergraduates"
+        "restricted to undergraduates",
+        "Remote course also offered"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "CSE 12"
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 21"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 154"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 158"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 184"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 188"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 15L"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 29"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECE 15"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 100R",
-      "title": "Advanced Data Structures",
-      "raw_prereq": "CSE 21 or MATH 154 or MATH 158 or MATH 184 or MATH 188 and CSE 12 and CSE 15L or CSE 29 or ECE 15",
-      "parseable": true,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": [
@@ -32814,110 +32532,8 @@
       "raw_prereq": "CSE 12 or DSC 40B and CSE 15L or CSE 29 or DSC 80 and BENG 100 or BENG 134 or COGS 118D or CSE 103 or ECE 109 or ECON 120A or MAE 108 or MATH 180A or MATH 180B or MATH 181A or MATH 183 or MATH 186; restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors",
       "parseable": true,
       "notes": [
-        "restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 12"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "DSC 40B"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 15L"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 29"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "DSC 80"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "BENG 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "BENG 134"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "COGS 118D"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 103"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECE 109"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECON 120A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MAE 108"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180B"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 181A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 183"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 186"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 153R",
-      "title": "Machine Learning for Music",
-      "raw_prereq": "CSE 12 or DSC 40B and CSE 15L or CSE 29 or DSC 80 and BENG 100 or BENG 134 or COGS 118D or CSE 103 or ECE 109 or ECON 120A or MAE 108 or MATH 180A or MATH 180B or MATH 181A or MATH 183 or MATH 186; restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors",
-      "parseable": true,
-      "notes": [
-        "restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors"
+        "restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -33119,110 +32735,8 @@
       "raw_prereq": "CSE 12 or DSC 40B and CSE 15L or CSE 29 or DSC 80 and BENG 100 or BENG 134 or COGS 118D or CSE 103 or ECE 109 or ECON 120A or MAE 108 or MATH 180A or MATH 180B or MATH 181A or MATH 183 or MATH 186; restricted to students within the CS25, CS26, CS27, CS29, EC26, and DS25 majors",
       "parseable": true,
       "notes": [
-        "restricted to students within the CS25, CS26, CS27, CS29, EC26, and DS25 majors"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 12"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "DSC 40B"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 15L"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 29"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "DSC 80"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "BENG 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "BENG 134"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "COGS 118D"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 103"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECE 109"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECON 120A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MAE 108"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180B"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 181A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 183"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 186"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 158R",
-      "title": "Recommender Systems and Web Mining",
-      "raw_prereq": "CSE 12 or DSC 40B and CSE 15L or CSE 29 or DSC 80 and BENG 100 or BENG 134 or COGS 118D or CSE 103 or ECE 109 or ECON 120A or MAE 108 or MATH 180A or MATH 180B or MATH 181A or MATH 183 or MATH 186; restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors",
-      "parseable": true,
-      "notes": [
-        "restricted to students within the CS25, CS26, CS27, CS28, CS29, EC26, and DS25 majors"
+        "restricted to students within the CS25, CS26, CS27, CS29, EC26, and DS25 majors",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -33523,40 +33037,8 @@
       "raw_prereq": "CSE 100 or CSE 100R; restricted to CS25, CS26, CS27, CS29, and EC26 majors",
       "parseable": true,
       "notes": [
-        "restricted to CS25, CS26, CS27, CS29, and EC26 majors"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 100R"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 167R",
-      "title": "Computer Graphics",
-      "raw_prereq": "CSE 100 or CSE 100R; restricted to CS25, CS26, CS27, CS29, and EC26 majors",
-      "parseable": true,
-      "notes": [
-        "restricted to CS25, CS26, CS27, CS29, and EC26 majors"
+        "restricted to CS25, CS26, CS27, CS29, and EC26 majors",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -33589,44 +33071,8 @@
       "raw_prereq": "CSE 167 or CSE 167R or MATH 155A; restricted to CS25, CS26, CS27, CS29, and EC26 majors",
       "parseable": true,
       "notes": [
-        "restricted to CS25, CS26, CS27, CS29, and EC26 majors"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 167"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 167R"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 155A"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 168R",
-      "title": "Computer Graphics II: Rendering",
-      "raw_prereq": "CSE 167 or CSE 167R or MATH 155A; restricted to CS25, CS26, CS27, CS29, and EC26 majors",
-      "parseable": true,
-      "notes": [
-        "restricted to CS25, CS26, CS27, CS29, and EC26 majors"
+        "restricted to CS25, CS26, CS27, CS29, and EC26 majors",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -33828,54 +33274,9 @@
       "title": "Biology Meets Computing",
       "raw_prereq": "BILD 1 or BILD 4 or CSE 11 or CSE 3 or CSE 8A or CSE 8B",
       "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "BILD 1"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "BILD 4"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 11"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 3"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 8A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 8B"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 180R",
-      "title": "Biology Meets Computing",
-      "raw_prereq": "BILD 1 or BILD 4 or CSE 11 or CSE 3 or CSE 8A or CSE 8B",
-      "parseable": true,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": [
@@ -33923,57 +33324,8 @@
       "raw_prereq": "CSE 100 or CSE 100R and CSE 101 and BIMM 100 or CHEM 114C; restricted to BE28, BI34, CH37, and CS27 majors",
       "parseable": true,
       "notes": [
-        "restricted to BE28, BI34, CH37, and CS27 majors"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "CSE 101"
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "CSE 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CSE 100R"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "BIMM 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "CHEM 114C"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 181R",
-      "title": "Molecular Sequence Analysis",
-      "raw_prereq": "CSE 100 or CSE 100R and CSE 101 and BIMM 100 or CHEM 114C; restricted to BE28, BI34, CH37, and CS27 majors",
-      "parseable": true,
-      "notes": [
-        "restricted to BE28, BI34, CH37, and CS27 majors"
+        "restricted to BE28, BI34, CH37, and CS27 majors",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -35838,24 +35190,9 @@
       "title": "Machine Learning for Music",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 253R",
-      "title": "Machine Learning for Music",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -35963,7 +35300,9 @@
       "title": "Recommender Systems and Web Mining",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -35983,23 +35322,6 @@
       "notes": [
         "graduate standing"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 258R",
-      "title": "Recommender Systems and Web Mining",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -36885,7 +36207,9 @@
       "title": "Principles and Practice of Artificial Intelligence",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -36999,23 +36323,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "CSE 5R",
-      "title": "Principles and Practice of Artificial Intelligence",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "CSE 6GS",
       "title": "Mathematical Beauty in Rome Lab",
       "raw_prereq": "MATH 10A or MATH 20A; department approval, and corequisite of CSE 4GS",
@@ -37041,23 +36348,6 @@
             ]
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "CSE 6R",
-      "title": "Introduction to Computer Science and Object-Oriented Programming: Python",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -37739,23 +37029,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 10/R",
-      "title": "Principles of Data Science",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 100",
       "title": "Introduction to Data Management",
       "raw_prereq": "DSC 40B/R and DSC 80/R",
@@ -38422,25 +37695,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 20/R",
-      "title": "Programming and Basic Data Structures for Data Science",
-      "raw_prereq": "DSC 10/R",
-      "parseable": true,
-      "notes": [
-        "DSC 10/R"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 200",
       "title": "Data Science Programming",
       "raw_prereq": "none",
@@ -38580,23 +37834,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 207R",
-      "title": "Python for Data Science",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 208R",
       "title": "Data Management for Analytics",
       "raw_prereq": "DSC 207R",
@@ -38608,28 +37845,6 @@
           {
             "type": "COURSE",
             "course_id": "DSC 207R"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 209R",
-      "title": "Data Visualization",
-      "raw_prereq": "DSC 208R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 208R"
           }
         ]
       }
@@ -38744,24 +37959,9 @@
       "title": "Statistical Thinking and Experimental Design",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 215R",
-      "title": "Foundations of Probability and Statistics in Data Science",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -38782,28 +37982,6 @@
       "prereq": {
         "type": "AND",
         "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 232R",
-      "title": "Big Data Analytics Using Spark",
-      "raw_prereq": "DSC 255R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 255R"
-          }
-        ]
       }
     }
   },
@@ -39076,28 +38254,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 255R",
-      "title": "Machine Learning Fundamentals",
-      "raw_prereq": "DSC 215R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 215R"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 256R",
       "title": "Data Mining on the Web",
       "raw_prereq": "DSC 215R",
@@ -39120,28 +38276,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 257R",
-      "title": "Unsupervised Learning",
-      "raw_prereq": "DSC 255R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 255R"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 258R",
       "title": "Natural Language Processing",
       "raw_prereq": "DSC 255R",
@@ -39150,32 +38284,6 @@
       "prereq": {
         "type": "AND",
         "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 255R"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 259R",
-      "title": "Practice and Applications",
-      "raw_prereq": "DSC 208R and DSC 255R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 208R"
-          },
           {
             "type": "COURSE",
             "course_id": "DSC 255R"
@@ -39233,32 +38341,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "DSC 266R",
-      "title": "Human-Centered Artificial Intelligence",
-      "raw_prereq": "DSC 208R and DSC 255R",
-      "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 208R"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "DSC 255R"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "DSC 267R",
       "title": "Data Fairness and Ethics",
       "raw_prereq": "DSC 208R and DSC 255R",
@@ -39296,30 +38378,6 @@
           {
             "type": "COURSE",
             "course_id": "DSC 240"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 288R",
-      "title": "Graduate Capstone in Data Science",
-      "raw_prereq": "DSC 208R, DSC 255R, and DSC 256R",
-      "parseable": true,
-      "notes": [
-        "DSC 208R, DSC 255R,"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "COURSE",
-            "course_id": "DSC 256R"
           }
         ]
       }
@@ -39467,25 +38525,6 @@
   },
   {
     "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 30/R",
-      "title": "Data Structures and Algorithms for Data Science",
-      "raw_prereq": "DSC 20/R",
-      "parseable": true,
-      "notes": [
-        "DSC 20/R"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
       "version": "2026-01-27",
       "generated_at": "2026-01-28T05:24:49Z"
     },
@@ -39532,38 +38571,6 @@
   },
   {
     "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 40A/R",
-      "title": "Theoretical Foundations of Data Science I",
-      "raw_prereq": "DSC 10/R, (MATH 20C or MATH 31BH) and (MATH 18 or MATH 20F or MATH 31AH)",
-      "parseable": true,
-      "notes": [
-        "DSC 10/R, (MATH 20C",
-        "MATH 31BH)",
-        "(MATH 18",
-        "MATH 31AH)"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "MATH 20F"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
       "version": "2026-01-27",
       "generated_at": "2026-01-28T05:24:49Z"
     },
@@ -39584,23 +38591,6 @@
             "course_id": "DSC 20"
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 40B/R",
-      "title": "Theoretical Foundations of Data Science II",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -39666,26 +38656,6 @@
             "course_id": "DSC 40A"
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "DSC 80/R",
-      "title": "The Practice and Application of Data Science",
-      "raw_prereq": "DSC 30/R and DSC 40A/R",
-      "parseable": true,
-      "notes": [
-        "DSC 30/R",
-        "DSC 40A/R"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -49213,25 +48183,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "EDS 110R",
-      "title": "Early Learning Environments for Diverse Learners",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "EDS 111",
       "title": "Child, Family, and Community Partnerships with Schools",
       "raw_prereq": "upper-division standing",
@@ -49669,25 +48620,6 @@
       "parseable": true,
       "notes": [
         "EDS 122/CHEM 187"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "EDS 124AR",
-      "title": "Teaching Computation in the Digital World",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
       ],
       "prereq": {
         "type": "AND",
@@ -50239,27 +49171,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "EDS 164R",
-      "title": "Early Childhood Policy: Children, Contexts, and Policies in Diverse Societies",
-      "raw_prereq": "upper-division standing or consent of instructor",
-      "parseable": true,
-      "notes": [
-        "consent of instructor",
-        "upper-division standing",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "EDS 165",
       "title": "Psychology of Reading and Education",
       "raw_prereq": "upper-division standing or consent of instructor",
@@ -50423,26 +49334,8 @@
       "raw_prereq": "students must be registered as an MEd/Credential graduate student (ED78)",
       "parseable": true,
       "notes": [
-        "students must be registered as an MEd/Credential graduate student (ED78)"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "EDS 204R",
-      "title": "Technology and Professional Assessment",
-      "raw_prereq": "students must be registered as an MEd/Credential graduate student (ED78)",
-      "parseable": true,
-      "notes": [
-        "students must be registered as an MEd/Credential graduate student (ED78)"
+        "students must be registered as an MEd/Credential graduate student (ED78)",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -50500,26 +49393,8 @@
       "raw_prereq": "students must be registered EDS graduate students",
       "parseable": true,
       "notes": [
-        "students must be registered EDS graduate students"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "EDS 206R",
-      "title": "Teaching Performance Assessment Portfolio",
-      "raw_prereq": "students must be registered EDS graduate students",
-      "parseable": true,
-      "notes": [
-        "students must be registered EDS graduate students"
+        "students must be registered EDS graduate students",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -52191,48 +51066,8 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "EDS 324AR",
-      "title": "Teaching Impacts of Technology",
-      "raw_prereq": "upper-division or graduate-level standing",
-      "parseable": true,
-      "notes": [
-        "upper-division",
-        "graduate-level standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "EDS 324BR",
       "title": "Computational Thinking and Block-Based Programming",
-      "raw_prereq": "upper-division or graduate-level standing",
-      "parseable": true,
-      "notes": [
-        "upper-division",
-        "graduate-level standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "EDS 324CR",
-      "title": "Learn to Teach Java",
       "raw_prereq": "upper-division or graduate-level standing",
       "parseable": true,
       "notes": [
@@ -54521,7 +53356,9 @@
       "title": "Introduction to Ethnic Studies: Land and Labor",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -55170,24 +54007,9 @@
       "title": "Contemporary Asian American History",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 121R",
-      "title": "Remote—Contemporary Asian American History",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -55221,24 +54043,9 @@
       "title": "Asian American Culture and Health",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 122AR",
-      "title": "Remote—Asian American Culture and Health",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -55323,24 +54130,9 @@
       "title": "Asian American History",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 125R",
-      "title": "Remote—Asian American History",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -55927,24 +54719,9 @@
       "title": "Power, Culture, and Buddhism in the US",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 156AR",
-      "title": "Remote—Power, Culture, and Buddhism in the US",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -55961,24 +54738,9 @@
       "title": "Buddhism and Social Movements",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 156BR",
-      "title": "Remote—Buddhism and Social Movements",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -56131,24 +54893,9 @@
       "title": "Playing Indian: Native American and First Nations Cinema",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 163FR",
-      "title": "Playing Indian: Native American and First Nations Cinema",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -56457,24 +55204,9 @@
       "title": "Blues: An Oral Tradition",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 178R",
-      "title": "Blues: An Oral Tradition",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -56772,28 +55504,13 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "ETHN 1R",
-      "title": "Remote—Introduction to Ethnic Studies: Land and Labor",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "ETHN 2",
       "title": "Introduction to Ethnic Studies: Circulations of Difference",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -56810,7 +55527,9 @@
       "title": "Introduction to Asian American Studies",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -56937,23 +55656,6 @@
         "consent of instructor",
         "or"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 20R",
-      "title": "Remote Introduction to Asian American Studies",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -57380,28 +56082,13 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "ETHN 2R",
-      "title": "Remote—Introduction to Ethnic Studies: Circulations of Difference",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "ETHN 3",
       "title": "Introduction to Ethnic Studies: Making Culture",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -57416,23 +56103,6 @@
     "course": {
       "code": "ETHN 30",
       "title": "Introduction to Chicanx and Latinx Studies",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "ETHN 3R",
-      "title": "Remote—Introduction to Ethnic Studies: Making Culture",
       "raw_prereq": "",
       "parseable": false,
       "notes": [],
@@ -60284,23 +58954,6 @@
       "notes": [
         "upper-division standing"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "GLBH 171R",
-      "title": "Global Mental Health",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -63585,7 +62238,8 @@
       "parseable": true,
       "notes": [
         "open to Revelle students only",
-        "completion of HUM 1"
+        "completion of HUM 1",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -63629,43 +62283,14 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "HUM 3R",
-      "title": "Renaissance, Reformation, and Early Modern Europe",
-      "raw_prereq": "completion of HUM 1 or HUM 2; open to Revelle students only",
-      "parseable": true,
-      "notes": [
-        "open to Revelle students only",
-        "completion of HUM 1"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "HUM 2"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "HUM 4",
       "title": "Enlightenment, Romanticism, Revolution",
       "raw_prereq": "satisfaction of the UC Entry Level Writing requirement; open to Revelle students only",
       "parseable": true,
       "notes": [
         "open to Revelle students only",
-        "satisfaction of the UC Entry Level Writing requirement"
+        "satisfaction of the UC Entry Level Writing requirement",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -63699,33 +62324,14 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "HUM 4R",
-      "title": "Enlightenment, Romanticism, Revolution",
-      "raw_prereq": "satisfaction of the UC Entry Level Writing requirement; open to Revelle students only",
-      "parseable": true,
-      "notes": [
-        "open to Revelle students only",
-        "satisfaction of the UC Entry Level Writing requirement"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "HUM 5",
       "title": "Modern Culture",
       "raw_prereq": "satisfaction of the UC Entry Level Writing requirement; open to Revelle students only",
       "parseable": true,
       "notes": [
         "open to Revelle students only",
-        "satisfaction of the UC Entry Level Writing requirement"
+        "satisfaction of the UC Entry Level Writing requirement",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -63761,26 +62367,6 @@
       "notes": [
         "satisfaction of the UC Entry Level Writing requirement",
         "acceptance into Global Seminar Program"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "HUM 5R",
-      "title": "Modern Culture",
-      "raw_prereq": "satisfaction of the UC Entry Level Writing requirement; open to Revelle students only",
-      "parseable": true,
-      "notes": [
-        "open to Revelle students only",
-        "satisfaction of the UC Entry Level Writing requirement"
       ],
       "prereq": {
         "type": "AND",
@@ -63995,41 +62581,12 @@
       "parseable": true,
       "notes": [
         "consent of instructor",
-        "previous course or"
+        "previous course or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
         "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:25:59Z"
-    },
-    "course": {
-      "code": "JAPN 10BR",
-      "title": "First Year Japanese II",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "JAPN 10A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "JAPN 10AR"
-              }
-            ]
-          }
-        ]
       }
     }
   },
@@ -65879,21 +64436,6 @@
     "course": {
       "code": "LIGN 171",
       "title": "Child Language Acquisition",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND"
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:26:13Z"
-    },
-    "course": {
-      "code": "LIGN 188R",
-      "title": "Intro to Research Methods",
       "raw_prereq": "",
       "parseable": true,
       "prereq": {
@@ -78533,26 +77075,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "MATH 99R",
-      "title": "Independent Study",
-      "raw_prereq": "Must be of first-year standing and a Regent’s Scholar",
-      "parseable": true,
-      "notes": [
-        "Must be of first-year standing",
-        "a Regent’s Scholar"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "MATS 200",
       "title": "Graduate Seminar",
       "raw_prereq": "",
@@ -79183,7 +77705,8 @@
       "notes": [
         "satisfaction of MCWP 40 requirement",
         "completion of TAG",
-        "IGETC agreement"
+        "IGETC agreement",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -79203,36 +77726,6 @@
       "parseable": true,
       "prereq": {
         "type": "AND"
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:27:01Z"
-    },
-    "course": {
-      "code": "MCWP 50R",
-      "title": "Critical Writing",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "MCWP 40"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MCWP 40R"
-              }
-            ]
-          }
-        ]
       }
     }
   },
@@ -80182,25 +78675,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "MGT 108R",
-      "title": "Applied Market Research",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "MGT 109",
       "title": "Topics in Marketing",
       "raw_prereq": "MGT 100 or MGT 103, upper-division standing",
@@ -80454,26 +78928,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 127R",
-      "title": "AI and Technology Strategy",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -80492,26 +78948,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 128R",
-      "title": "Business Innovation and Growth",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -80931,108 +79369,6 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "MGT 151R",
-      "title": "Business Analytics",
-      "raw_prereq": "MATH 10A or MATH 18 or MATH 20A or MATH 31AH and BENG 100 or BIEB 100 or COGS 14B or ECE 109 or ECON 120A or MAE 108 or MATH 11 or MATH 180A or MATH 180B or MATH 181A or MATH 183 or MATH 186 or MGT 3 or PSYC 60 or SIO 187",
-      "parseable": true,
-      "notes": [
-        "MATH 31AH"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "MATH 10A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 18"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 20A"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "BENG 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "BIEB 100"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "COGS 14B"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECE 109"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECON 120A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MAE 108"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 11"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180B"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 181A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 183"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 186"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MGT 3"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "PSYC 60"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "SIO 187"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "MGT 153",
       "title": "Information Technology in Business Analytics",
       "raw_prereq": "MATH 10A or MATH 18 or MATH 20A or MATH 31AH and BENG 100 or BIEB 100 or COGS 14B or ECE 109 or ECON 120A or MAE 108 or MATH 11 or MATH 180A or MATH 181A or MATH 183 or MATH 186 or MGT 3 or PSYC 60 or SIO 187, upper-division standing",
@@ -81388,26 +79724,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 162R",
-      "title": "Negotiations",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -81524,25 +79842,9 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 171R",
-      "title": "Operations Management",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -81560,26 +79862,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 172R",
-      "title": "Business Project Management",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -81734,58 +80018,9 @@
       "title": "Business Finance",
       "raw_prereq": "ECE 109 or ECON 100A or ECON 120A or MAE 108 or MATH 180A or MATH 183 or MATH 186",
       "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "ECE 109"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECON 100A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "ECON 120A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MAE 108"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 180A"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 183"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MATH 186"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 180R",
-      "title": "Business Finance",
-      "raw_prereq": "ECE 109 or ECON 100A or ECON 120A or MAE 108 or MATH 180A or MATH 183 or MATH 186",
-      "parseable": true,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": [
@@ -82805,29 +81040,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 403R",
-      "title": "Business Analytics for Managers",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -82849,29 +81063,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 404R",
-      "title": "Accounting",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -82893,29 +81086,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 405R",
-      "title": "Managerial Economics",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -82936,28 +81108,8 @@
       "notes": [
         "instructor approval",
         "MBA student",
-        "department or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 406R",
-      "title": "Leading People",
-      "raw_prereq": "MBA student or department or instructor approval",
-      "parseable": true,
-      "notes": [
-        "instructor approval",
-        "MBA student",
-        "department or"
+        "department or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -82979,29 +81131,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 407R",
-      "title": "Marketing",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83023,29 +81154,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 408R",
-      "title": "Finance",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83067,29 +81177,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 409R",
-      "title": "Leading in Networks and Organizations",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83111,29 +81200,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 410R",
-      "title": "Strategy",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83155,29 +81223,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 412R",
-      "title": "New Venture Design",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83199,29 +81246,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 413R",
-      "title": "Operations Management",
-      "raw_prereq": "Executive MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "Executive MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83244,30 +81270,8 @@
         "instructor approval",
         "MBA student",
         "by",
-        "by"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 414R",
-      "title": "Rady Action Project",
-      "raw_prereq": "MBA student or by instructor approval or by department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
         "by",
-        "by"
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83378,29 +81382,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 420R",
-      "title": "Negotiation",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83601,28 +81584,8 @@
       "notes": [
         "department approval",
         "MBA student",
-        "by"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 431R",
-      "title": "Power and Politics",
-      "raw_prereq": "MBA student or by department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "MBA student",
-        "by"
+        "by",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -83999,27 +81962,8 @@
       "parseable": true,
       "notes": [
         "instructor approval",
-        "MBA student or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 451R",
-      "title": "AI and Disruptive Technology Strategy",
-      "raw_prereq": "MBA student or instructor approval",
-      "parseable": true,
-      "notes": [
-        "instructor approval",
-        "MBA student or"
+        "MBA student or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84063,29 +82007,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 453R",
-      "title": "Supply Chain Management",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84128,30 +82051,8 @@
       "notes": [
         "department approval",
         "restricted to MBA students",
-        "by"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 455R",
-      "title": "Customer Analytics and AI",
-      "raw_prereq": "MBA student or by instructor approval or by department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
         "by",
-        "by"
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84193,28 +82094,8 @@
       "notes": [
         "department approval",
         "restricted to MBA students",
-        "by instructor or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 458R",
-      "title": "Experiments in Firms",
-      "raw_prereq": "restricted to MBA students or by instructor or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "restricted to MBA students",
-        "by instructor or"
+        "by instructor or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84425,42 +82306,8 @@
       "notes": [
         "department approval",
         "instructor approval",
-        "MBA student or or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "MGT 407"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MGT 407R"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 477R",
-      "title": "Consumer Behavior",
-      "raw_prereq": "MGT 407 or MGT 407R; MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student or or"
+        "MBA student or or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84587,28 +82434,8 @@
       "notes": [
         "department approval",
         "MBA student",
-        "by instructor or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 482R",
-      "title": "Brand Management",
-      "raw_prereq": "MBA student or by instructor or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "MBA student",
-        "by instructor or"
+        "by instructor or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84674,26 +82501,6 @@
         "instructor approval",
         "MBA student",
         "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 488R",
-      "title": "Applied Market Research",
-      "raw_prereq": "MBA student or consent of instructor",
-      "parseable": true,
-      "notes": [
-        "consent of instructor",
-        "MBA student or"
       ],
       "prereq": {
         "type": "AND",
@@ -84786,29 +82593,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 492R",
-      "title": "Financial Risk Management",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -84830,29 +82616,8 @@
         "department approval",
         "instructor approval",
         "MBA student",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 493R",
-      "title": "New Venture Finance",
-      "raw_prereq": "MBA student or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "MBA student",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -85041,24 +82806,9 @@
       "title": "Operating a Successful Business",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGT 71R",
-      "title": "Operating a Successful Business",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -85323,28 +83073,8 @@
       "notes": [
         "instructor approval",
         "MGTA 451, MGTA 452, MGTA 453, restricted to MS in business analytics program",
-        "with department and"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGTA 455R",
-      "title": "Customer Analytics",
-      "raw_prereq": "MGTA 451, MGTA 452, MGTA 453, restricted to MS in business analytics program or with department and instructor approval",
-      "parseable": true,
-      "notes": [
-        "instructor approval",
-        "MGTA 451, MGTA 452, MGTA 453, restricted to MS in business analytics program",
-        "with department and"
+        "with department and",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -85516,29 +83246,8 @@
         "department approval",
         "instructor approval",
         "restricted to MS in business analytics students",
-        "or"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MGTA 463R",
-      "title": "Fraud Analytics",
-      "raw_prereq": "restricted to MS in business analytics students or instructor approval or department approval",
-      "parseable": true,
-      "notes": [
-        "department approval",
-        "instructor approval",
-        "restricted to MS in business analytics students",
-        "or"
+        "or",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -86684,24 +84393,9 @@
       "title": "Prehistory and Ancient Foundations",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MMW 11R",
-      "title": "Prehistory and Ancient Foundations",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -86737,24 +84431,9 @@
       "title": "Exploring the Premodern World",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MMW 121R",
-      "title": "Exploring the Premodern World",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -86771,24 +84450,9 @@
       "title": "Exploring the Modern World",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MMW 122R",
-      "title": "Exploring the Modern World",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -86824,38 +84488,9 @@
       "title": "A Globalizing World: Exchanges, Entanglements, and Exploitation, Thirteenth–Eighteenth Century",
       "raw_prereq": "MMW 12 or MMW 12R",
       "parseable": true,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "MMW 12"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "MMW 12R"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MMW 13R",
-      "title": "A Globalizing World: Exchanges, Entanglements, and Exploitation, Thirteenth–Eighteenth Century",
-      "raw_prereq": "MMW 12 or MMW 12R",
-      "parseable": true,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": [
@@ -87963,7 +85598,8 @@
       "parseable": true,
       "notes": [
         "department approval",
-        "audition and"
+        "audition and",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -87984,26 +85620,6 @@
       "notes": [
         "consent of instructor",
         "at least one quarter of MUS 132V and"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "MUS 132R",
-      "title": "Recital Preparation",
-      "raw_prereq": "by audition only; MUS 132",
-      "parseable": true,
-      "notes": [
-        "MUS 132",
-        "by audition only"
       ],
       "prereq": {
         "type": "AND",
@@ -88858,7 +86474,9 @@
       "title": "Exploring the Musical Mind",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -89147,21 +86765,6 @@
       "prereq": {
         "type": "AND",
         "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:27:11Z"
-    },
-    "course": {
-      "code": "MUS 20R",
-      "title": "Exploring the Musical Mind",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND"
       }
     }
   },
@@ -90949,7 +88552,9 @@
       "title": "Engineering Computation Using MATLAB",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -91074,23 +88679,6 @@
             ]
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "NANO 15R",
-      "title": "Engineering Computation Using MATLAB Online",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -91235,7 +88823,9 @@
       "title": "Data Science in Materials Science",
       "raw_prereq": "NANO 114 or CENG 114",
       "parseable": true,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": [
@@ -91253,23 +88843,6 @@
             ]
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "NANO 181R",
-      "title": "Data Science in Materials Science Online",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -92241,25 +89814,9 @@
       "raw_prereq": "graduate standing",
       "parseable": true,
       "notes": [
-        "graduate standing"
+        "graduate standing",
+        "Remote course also offered"
       ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "NANO 281R",
-      "title": "Data Science in Materials Science Online",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
       "prereq": {
         "type": "AND",
         "items": []
@@ -94779,7 +92336,8 @@
       "notes": [
         "upper-division standing",
         "PSYC 60, HDS 60, MATH 11,",
-        "COGS 14B, and"
+        "COGS 14B, and",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -94796,52 +92354,6 @@
                 "course_id": "FMPH 40"
               }
             ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-01-27",
-      "generated_at": "2026-01-28T05:25:50Z"
-    },
-    "course": {
-      "code": "PH 102R",
-      "title": "Biostatistics in Public Health",
-      "raw_prereq": "",
-      "parseable": true,
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "FMPH 40"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "PH 40"
-              }
-            ]
-          },
-          {
-            "type": "COURSE",
-            "course_id": "COGS 14B"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "HDS 60"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "MATH 11"
-          },
-          {
-            "type": "COURSE",
-            "course_id": "PSYC 60"
           }
         ]
       }
@@ -94950,40 +92462,8 @@
       "raw_prereq": "PH 40 or FMPH 40 and sophomore standing",
       "parseable": true,
       "notes": [
-        "sophomore standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 40"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "FMPH 40"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PH 151R",
-      "title": "Planning, Conducting, and Reporting Responsible and Ethical Research",
-      "raw_prereq": "PH 40 or FMPH 40 and sophomore standing",
-      "parseable": true,
-      "notes": [
-        "sophomore standing"
+        "sophomore standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -95288,52 +92768,8 @@
         "FMPH 40, PH 45, PH 101",
         "FMPH 101, PH 102",
         "FMPH 102, PH 110",
-        "FMPH 110,"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 40"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 120"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "FMPH 120"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PH 193R",
-      "title": "Public Health Capstone I",
-      "raw_prereq": "PH 40 or FMPH 40, PH 45, PH 101 or FMPH 101, PH 102 or FMPH 102, PH 110 or FMPH 110, and PH 120 or FMPH 120",
-      "parseable": true,
-      "notes": [
-        "FMPH 40, PH 45, PH 101",
-        "FMPH 101, PH 102",
-        "FMPH 102, PH 110",
-        "FMPH 110,"
+        "FMPH 110,",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -95379,53 +92815,8 @@
         "FMPH 101, PH 102",
         "FMPH 102, PH 110",
         "FMPH 110, PH 120",
-        "FMPH 120,"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 40"
-              }
-            ]
-          },
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 193"
-              },
-              {
-                "type": "COURSE",
-                "course_id": "FMPH 193"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PH 194R",
-      "title": "Public Health Capstone II",
-      "raw_prereq": "PH 40 or FMPH 40, PH 45, PH 101 or FMPH 101, PH 102 or FMPH 102, PH 110 or FMPH 110, PH 120 or FMPH 120, and PH 193 or FMPH 193",
-      "parseable": true,
-      "notes": [
-        "FMPH 40, PH 45, PH 101",
-        "FMPH 101, PH 102",
-        "FMPH 102, PH 110",
-        "FMPH 110, PH 120",
-        "FMPH 120,"
+        "FMPH 120,",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -96213,39 +93604,8 @@
         "must be enrolled in MPH program (PB75",
         "PB91)",
         "program approval",
-        "successfully completed FMPH 401"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": [
-          {
-            "type": "OR",
-            "items": [
-              {
-                "type": "COURSE",
-                "course_id": "PH 401"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PH 417R",
-      "title": "Cardiovascular Disease Epidemiology",
-      "raw_prereq": "must be enrolled in MPH program (PB75 and PB91) or program approval and successfully completed FMPH 401 or PH 401",
-      "parseable": true,
-      "notes": [
-        "must be enrolled in MPH program (PB75",
-        "PB91)",
-        "program approval",
-        "successfully completed FMPH 401"
+        "successfully completed FMPH 401",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -110681,26 +108041,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PSYC 133R",
-      "title": "Circadian Rhythms—Biological Clocks",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -113438,24 +110780,9 @@
       "title": "General Psychology: Cognitive Foundations",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "PSYC 3R",
-      "title": "General Psychology: Cognitive Foundations",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -118346,24 +115673,9 @@
       "title": "Bending the Curve: Climate Change Solutions",
       "raw_prereq": "",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "SIO 109R",
-      "title": "Bending the Curve Online: Climate Change Solutions",
-      "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -120451,24 +117763,9 @@
       "title": "The Atmosphere",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "SIO 20R",
-      "title": "The Atmosphere",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -127403,7 +124700,8 @@
       "raw_prereq": "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements",
       "parseable": true,
       "notes": [
-        "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements"
+        "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -127465,27 +124763,8 @@
       "parseable": true,
       "notes": [
         "restricted to Seventh College transfer students only, must be taken for a letter grade to count toward Seventh College high-impact requirement, cannot be taken concurrently",
-        "after SYN 100"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "SYN 150R",
-      "title": "Defining the Scope of a Changing Planet",
-      "raw_prereq": "restricted to Seventh College transfer students only, must be taken for a letter grade to count toward Seventh College high-impact requirement, cannot be taken concurrently or after SYN 100",
-      "parseable": true,
-      "notes": [
-        "restricted to Seventh College transfer students only, must be taken for a letter grade to count toward Seventh College high-impact requirement, cannot be taken concurrently",
-        "after SYN 100"
+        "after SYN 100",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -127557,50 +124836,13 @@
       "generated_at": "2026-02-08T01:22:03Z"
     },
     "course": {
-      "code": "SYN 1R",
-      "title": "Communicating for a Changing Planet",
-      "raw_prereq": "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements",
-      "parseable": true,
-      "notes": [
-        "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
       "code": "SYN 2",
       "title": "Inquiring about a Changing Planet",
       "raw_prereq": "Seventh College students only, SYN 1/1R, must be taken for a letter grade to count toward Seventh College general-education requirements",
       "parseable": true,
       "notes": [
-        "Seventh College students only, SYN 1/1R, must be taken for a letter grade to count toward Seventh College general-education requirements"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "SYN 2R",
-      "title": "Inquiring about a Changing Planet",
-      "raw_prereq": "Seventh College students only, SYN 1/1R, must be taken for a letter grade to count toward Seventh College general-education requirements",
-      "parseable": true,
-      "notes": [
-        "Seventh College students only, SYN 1/1R, must be taken for a letter grade to count toward Seventh College general-education requirements"
+        "Seventh College students only, SYN 1/1R, must be taken for a letter grade to count toward Seventh College general-education requirements",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -133059,26 +130301,8 @@
       "raw_prereq": "upper-division standing",
       "parseable": true,
       "notes": [
-        "upper-division standing"
-      ],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "VIS 125GR",
-      "title": "History of Socially Engaged Art",
-      "raw_prereq": "upper-division standing",
-      "parseable": true,
-      "notes": [
-        "upper-division standing"
+        "upper-division standing",
+        "Remote course also offered"
       ],
       "prereq": {
         "type": "AND",
@@ -133668,23 +130892,6 @@
             ]
           }
         ]
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "VIS 12R",
-      "title": "Race and Class in American Visual Culture",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
       }
     }
   },
@@ -136089,7 +133296,9 @@
       "title": "Formations of Modern Art",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []
@@ -136105,23 +133314,6 @@
       "code": "VIS 220",
       "title": "Professional Practice Seminar",
       "raw_prereq": "",
-      "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "VIS 22R",
-      "title": "Formations of Modern Art",
-      "raw_prereq": "none",
       "parseable": false,
       "notes": [],
       "prereq": {
@@ -136839,24 +134031,9 @@
       "title": "Photographic History",
       "raw_prereq": "none",
       "parseable": false,
-      "notes": [],
-      "prereq": {
-        "type": "AND",
-        "items": []
-      }
-    }
-  },
-  {
-    "meta": {
-      "version": "2026-02-07",
-      "generated_at": "2026-02-08T01:22:03Z"
-    },
-    "course": {
-      "code": "VIS 83R",
-      "title": "Photographic History",
-      "raw_prereq": "none",
-      "parseable": false,
-      "notes": [],
+      "notes": [
+        "Remote course also offered"
+      ],
       "prereq": {
         "type": "AND",
         "items": []

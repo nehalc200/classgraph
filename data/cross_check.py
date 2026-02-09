@@ -43,7 +43,28 @@ def combine_courses(data1_dict, data2_dict, diff1, diff2, common):
     
     combined.sort(key=lambda x: x["course"]["code"])
     
+    rm = find_remote_courses(combined)
+    for item in combined:
+        code = item["course"]["code"]
+        
+        if code in rm:
+            reg_code = item["course"]["code"][:-1]
+            # Fetch notes from the regular version (without the 'R') if it exists
+            reg_item = next((i for i in combined if i["course"]["code"] == reg_code), None)
+            reg_notes = reg_item["course"].get("notes", []) if reg_item else []
+            reg_notes.append("Remote course also offered")
+            item["course"]["notes"] = reg_notes
+            combined.remove(item)
+
     return combined
+
+def find_remote_courses(combined):
+    remote_courses = []
+    for item in combined:
+        code = item["course"]["code"]
+        if code.endswith("R") and "POLI" not in code: # Exclude POLI courses because they squis all into one course code
+            remote_courses.append(code)
+    return remote_courses
 
 
 if __name__ == '__main__':
