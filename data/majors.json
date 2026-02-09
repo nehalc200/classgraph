@@ -1,0 +1,770 @@
+[
+  {
+    "code": "AT25",
+    "name": "Astronomy & Astrophysics (B.S.)"
+  },
+  {
+    "code": "AT27",
+    "name": "Astrophysical Sciences (B.S.)"
+  },
+  {
+    "code": "AN27",
+    "name": "Anthropology (Concentration in Archaeology)"
+  },
+  {
+    "code": "AN26",
+    "name": "Anthropology (Concentration in Biological Anthropology)"
+  },
+  {
+    "code": "AN28",
+    "name": "Anthropology (Concentration in Sociocultural Anthropology)"
+  },
+  {
+    "code": "AN30",
+    "name": "Anthropology with a Concentration in Climate Change and Human Solutions"
+  },
+  {
+    "code": "AN29",
+    "name": "Biological Anthropology"
+  },
+  {
+    "code": "AN31",
+    "name": "Environmental Anthropology"
+  },
+  {
+    "code": "BE25",
+    "name": "Bioengineering"
+  },
+  {
+    "code": "BE28",
+    "name": "Bioengineering (Bioinformatics)"
+  },
+  {
+    "code": "BE29",
+    "name": "Bioengineering: BioSystems"
+  },
+  {
+    "code": "BE27",
+    "name": "Bioengineering (Biotechnology)"
+  },
+  {
+    "code": "BI34",
+    "name": "Biology with Specialization in Bioinformatics"
+  },
+  {
+    "code": "BI30",
+    "name": "Ecology, Behavior, and Evolution"
+  },
+  {
+    "code": "BI31",
+    "name": "General Biology"
+  },
+  {
+    "code": "BI35",
+    "name": "Human Biology"
+  },
+  {
+    "code": "BI32",
+    "name": "Microbiology"
+  },
+  {
+    "code": "BI37",
+    "name": "Molecular and Cell Biology"
+  },
+  {
+    "code": "BI38",
+    "name": "Neurobiology"
+  },
+  {
+    "code": "BI34",
+    "name": "Biology with Specialization in Bioinformatics"
+  },
+  {
+    "code": "BI30",
+    "name": "Ecology, Behavior, and Evolution"
+  },
+  {
+    "code": "BI31",
+    "name": "General Biology"
+  },
+  {
+    "code": "BI35",
+    "name": "Human Biology"
+  },
+  {
+    "code": "BI32",
+    "name": "Microbiology"
+  },
+  {
+    "code": "AA25",
+    "name": "Black Diaspora and African American Studies"
+  },
+  {
+    "code": "CE25",
+    "name": "Chemical Engineering"
+  },
+  {
+    "code": "CH38",
+    "name": "Biochemistry"
+  },
+  {
+    "code": "CH25",
+    "name": "Chemistry"
+  },
+  {
+    "code": "CH34",
+    "name": "Environmental Chemistry"
+  },
+  {
+    "code": "CH36",
+    "name": "Molecular Synthesis"
+  },
+  {
+    "code": "CH35",
+    "name": "Pharmacological Chemistry"
+  },
+  {
+    "code": "CX25",
+    "name": "Chicanx and Latinx Studies"
+  },
+  {
+    "code": "CN25",
+    "name": "Chinese Studies"
+  },
+  {
+    "code": "CI25",
+    "name": "Cinematic Arts"
+  },
+  {
+    "code": "CL25",
+    "name": "Classical Studies"
+  },
+  {
+    "code": "CG25",
+    "name": "Cognitive Science"
+  },
+  {
+    "code": "CG32",
+    "name": "Cognitive and Behavioral Neuroscience"
+  },
+  {
+    "code": "CG31",
+    "name": "Cognitive Science with a Specialization in Clinical Aspects of Cognition"
+  },
+  {
+    "code": "CG33",
+    "name": "Cognitive Science with a Specialization in Design and Interaction"
+  },
+  {
+    "code": "CG34",
+    "name": "Cognitive Science with a Specialization in Language and Culture"
+  },
+  {
+    "code": "CG35",
+    "name": "Cognitive Science with a Specialization in Machine Learning and Neural Computation"
+  },
+  {
+    "code": "CG29",
+    "name": "Cognitive Science with a Specialization in Neuroscience"
+  },
+  {
+    "code": "UN52",
+    "name": "Marshall College Honors Program"
+  },
+  {
+    "code": "UN52",
+    "name": "Roosevelt Coll Honors Program"
+  },
+  {
+    "code": "CM26",
+    "name": "Communication"
+  },
+  {
+    "code": "CM28",
+    "name": "Media Industries and Communication"
+  },
+  {
+    "code": "CS25",
+    "name": "Computer Engineering (See also Electrical and Computer Engineering EC26)"
+  },
+  {
+    "code": "CS26",
+    "name": "Computer Science (B.S.)"
+  },
+  {
+    "code": "CS27",
+    "name": "Computer Science with a Specialization in Bioinformatics"
+  },
+  {
+    "code": "CS29",
+    "name": "Artificial Intelligence"
+  },
+  {
+    "code": "CR25",
+    "name": "Critical Gender Studies"
+  },
+  {
+    "code": "DS25",
+    "name": "Data Science"
+  },
+  {
+    "code": "EN30",
+    "name": "Business Economics"
+  },
+  {
+    "code": "EN25",
+    "name": "Economics (B.A.)"
+  },
+  {
+    "code": "EN31",
+    "name": "Economics (B.S.)"
+  },
+  {
+    "code": "EN29",
+    "name": "Economics-Public Policy (B.A./MPP only)"
+  },
+  {
+    "code": "EN28",
+    "name": "Joint Major in Mathematics and Economics"
+  },
+  {
+    "code": "ED25",
+    "name": "Education Sciences"
+  },
+  {
+    "code": "EC26",
+    "name": "Computer Engineering (see also Computer Science and Engineering CS25)"
+  },
+  {
+    "code": "EC27",
+    "name": "Electrical Engineering"
+  },
+  {
+    "code": "EC28",
+    "name": "Engineering Physics"
+  },
+  {
+    "code": "EC37",
+    "name": "Electrical Engineering & Society (B.A.)"
+  },
+  {
+    "code": "ES25",
+    "name": "Environmental Systems (Earth Sciences)"
+  },
+  {
+    "code": "ES26",
+    "name": "Environmental Systems (Ecology, Behavior, and Evolution)"
+  },
+  {
+    "code": "ES27",
+    "name": "Environmental Systems (Environmental Chemistry)"
+  },
+  {
+    "code": "ES28",
+    "name": "Environmental Systems (Environmental Policy)"
+  },
+  {
+    "code": "ET25",
+    "name": "Ethnic Studies"
+  },
+  {
+    "code": "GS25",
+    "name": "German Studies - Admissions Paused through Spring 2028"
+  },
+  {
+    "code": "GH25",
+    "name": "Global Health (B.A.)"
+  },
+  {
+    "code": "GH26",
+    "name": "Global Health (B.S.)"
+  },
+  {
+    "code": "GL25",
+    "name": "Global South Studies"
+  },
+  {
+    "code": "PB25",
+    "name": "Public Health"
+  },
+  {
+    "code": "PB26",
+    "name": "Public Health with Concentration in Biostatistics"
+  },
+  {
+    "code": "PB27",
+    "name": "Public Health with Concentration in Climate and Environmental Sciences"
+  },
+  {
+    "code": "PB28",
+    "name": "Public Health with Concentration in Community Health Sciences"
+  },
+  {
+    "code": "PB29",
+    "name": "Public Health with Concentration in Epidemiology"
+  },
+  {
+    "code": "PB30",
+    "name": "Public Health with Concentration in Health Policy and Management Sciences"
+  },
+  {
+    "code": "PB31",
+    "name": "Public Health with Concentration in Medicine Sciences"
+  },
+  {
+    "code": "HI25",
+    "name": "History"
+  },
+  {
+    "code": "HS25",
+    "name": "Human Developmental Sciences (B.A.)"
+  },
+  {
+    "code": "HS26",
+    "name": "Human Developmental Sciences (B.S.)"
+  },
+  {
+    "code": "HS27",
+    "name": "Human Developmental Sciences with a Specialization in Equity and Diversity"
+  },
+  {
+    "code": "HS28",
+    "name": "Human Developmental Sciences with a Specialization in Healthy Aging"
+  },
+  {
+    "code": "IN33",
+    "name": "Eighth College Individual Studies"
+  },
+  {
+    "code": "IN27",
+    "name": "Eleanor Roosevelt College Individual Studies"
+  },
+  {
+    "code": "IN25",
+    "name": "Muir College Special Project Major"
+  },
+  {
+    "code": "IN26",
+    "name": "Revelle College Individual Major"
+  },
+  {
+    "code": "IN29",
+    "name": "Thurgood Marshall College Individual Studies"
+  },
+  {
+    "code": "IN28",
+    "name": "Warren College Individual Studies"
+  },
+  {
+    "code": "IN30",
+    "name": "Sixth College Individual Studies"
+  },
+  {
+    "code": "IN32",
+    "name": "Seventh College Individual Studies"
+  },
+  {
+    "code": "IS25",
+    "name": "International Studies — Anthropology"
+  },
+  {
+    "code": "IS26",
+    "name": "International Studies — Economics"
+  },
+  {
+    "code": "IS27",
+    "name": "International Studies — History"
+  },
+  {
+    "code": "IS28",
+    "name": "International Studies — Linguistics"
+  },
+  {
+    "code": "IS29",
+    "name": "International Studies — Literature"
+  },
+  {
+    "code": "IS30",
+    "name": "International Studies — Political Science"
+  },
+  {
+    "code": "IS31",
+    "name": "International Studies — Sociology"
+  },
+  {
+    "code": "IS32",
+    "name": "International Studies — Economics (Jt BA/MIA)"
+  },
+  {
+    "code": "IS33",
+    "name": "International Studies — Political Science (Jt BA/MIA)"
+  },
+  {
+    "code": "IS34",
+    "name": "International Studies — International Business"
+  },
+  {
+    "code": "IS35",
+    "name": "International Studies — International Business (Jt BA/MIA)"
+  },
+  {
+    "code": "IS36",
+    "name": "International Studies — Philosophy"
+  },
+  {
+    "code": "IT25",
+    "name": "Italian Studies - Admissions Paused through Spring 2028"
+  },
+  {
+    "code": "JA25",
+    "name": "Japanese Studies"
+  },
+  {
+    "code": "JS25",
+    "name": "Jewish Studies"
+  },
+  {
+    "code": "LA25",
+    "name": "Latin American Studies"
+  },
+  {
+    "code": "LA26",
+    "name": "Latin American Studies with a Concentration in Mexico"
+  },
+  {
+    "code": "LA27",
+    "name": "Latin American Studies with a Concentration in Migration and Border Studies"
+  },
+  {
+    "code": "LN33",
+    "name": "Language Studies"
+  },
+  {
+    "code": "LN25",
+    "name": "Linguistics"
+  },
+  {
+    "code": "LN32",
+    "name": "Linguistics (Specialization in Cognition and Language)"
+  },
+  {
+    "code": "LN29",
+    "name": "Linguistics (Specialization in Language and Society)"
+  },
+  {
+    "code": "LN34",
+    "name": "Linguistics (Specialization in Speech and Language Sciences)"
+  },
+  {
+    "code": "LT42",
+    "name": "Literary Arts"
+  },
+  {
+    "code": "LT36",
+    "name": "Literatures in English"
+  },
+  {
+    "code": "LT33",
+    "name": "Spanish Literature"
+  },
+  {
+    "code": "LT41",
+    "name": "World Literature and Culture"
+  },
+  {
+    "code": "MA33",
+    "name": "Joint Major Mathematics & Economics"
+  },
+  {
+    "code": "MA36",
+    "name": "Mathematical Biology"
+  },
+  {
+    "code": "MA29",
+    "name": "Mathematics"
+  },
+  {
+    "code": "MA27",
+    "name": "Mathematics (Applied)"
+  },
+  {
+    "code": "MA31",
+    "name": "Mathematics — Applied Science"
+  },
+  {
+    "code": "MA30",
+    "name": "Mathematics — Computer Science"
+  },
+  {
+    "code": "MA32",
+    "name": "Mathematics — Secondary Education"
+  },
+  {
+    "code": "MA35",
+    "name": "Probability & Statistics"
+  },
+  {
+    "code": "MC25",
+    "name": "Aerospace Engineering"
+  },
+  {
+    "code": "MC37",
+    "name": "Aerospace Engineering with a Specialization in Aerothermodynamics"
+  },
+  {
+    "code": "MC36",
+    "name": "Aerospace Engineering with a Specialization in Astrodynamics and Space Applications"
+  },
+  {
+    "code": "MC35",
+    "name": "Aerospace Engineering with a Specialization in Flight Dynamics and Controls"
+  },
+  {
+    "code": "MC27",
+    "name": "Mechanical Engineering"
+  },
+  {
+    "code": "MC34",
+    "name": "Mechanical Engineering with a Specialization in Controls and Robotics"
+  },
+  {
+    "code": "MC33",
+    "name": "Mechanical Engineering with a Specialization in Fluid Mechanics and Thermal Systems"
+  },
+  {
+    "code": "MC32",
+    "name": "Mechanical Engineering with a Specialization in Materials Science and Engineering"
+  },
+  {
+    "code": "MC31",
+    "name": "Mechanical Engineering with a Specialization in Mechanics of Materials"
+  },
+  {
+    "code": "MC30",
+    "name": "Mechanical Engineering with a Specialization in Renewable Energy and Environmental Flows"
+  },
+  {
+    "code": "MU27",
+    "name": "Interdisciplinary Computing and the Arts"
+  },
+  {
+    "code": "MU25",
+    "name": "Music"
+  },
+  {
+    "code": "MU26",
+    "name": "Music Humanities"
+  },
+  {
+    "code": "NA25",
+    "name": "Nanoengineering"
+  },
+  {
+    "code": "PL25",
+    "name": "Philosophy"
+  },
+  {
+    "code": "PY35",
+    "name": "Physics (B.A.)"
+  },
+  {
+    "code": "PY29",
+    "name": "Physics (B.S.)"
+  },
+  {
+    "code": "PS25",
+    "name": "Political Science"
+  },
+  {
+    "code": "PS26",
+    "name": "Political Science/American Politics"
+  },
+  {
+    "code": "PS27",
+    "name": "Political Science/Comparative Politics"
+  },
+  {
+    "code": "PS28",
+    "name": "Political Science/International Relations"
+  },
+  {
+    "code": "PS29",
+    "name": "Political Science/Political Theory"
+  },
+  {
+    "code": "PS30",
+    "name": "Political Science/Public Law"
+  },
+  {
+    "code": "PS31",
+    "name": "Political Science/Public Policy"
+  },
+  {
+    "code": "PS32",
+    "name": "Political Science/Data Analytics"
+  },
+  {
+    "code": "PS33",
+    "name": "Political Science/International Affairs (B.A./MIA only)"
+  },
+  {
+    "code": "PS34",
+    "name": "Political Science/Race, Ethnicity, and Politics"
+  },
+  {
+    "code": "PC25",
+    "name": "Psychology (B.A.)"
+  },
+  {
+    "code": "PC26",
+    "name": "Psychology (B.S.)"
+  },
+  {
+    "code": "PC28",
+    "name": "Psychology with a Specialization in Clinical Psychology"
+  },
+  {
+    "code": "PC29",
+    "name": "Psychology with a Specialization in Cognitive Psychology"
+  },
+  {
+    "code": "PC30",
+    "name": "Psychology with a Specialization in Developmental Psychology"
+  },
+  {
+    "code": "PC31",
+    "name": "Psychology with a Specialization in Human Health"
+  },
+  {
+    "code": "PC32",
+    "name": "Psychology with a Specialization in Sensation and Perception"
+  },
+  {
+    "code": "PC33",
+    "name": "Psychology with a Specialization in Social Psychology"
+  },
+  {
+    "code": "PC34",
+    "name": "Cognitive and Behavioral Neuroscience"
+  },
+  {
+    "code": "PC35",
+    "name": "Business Psychology"
+  },
+  {
+    "code": "RE26",
+    "name": "Study of Religion"
+  },
+  {
+    "code": "RU26",
+    "name": "Russian, East European and Eurasian Studies"
+  },
+  {
+    "code": "SI31",
+    "name": "Geosciences"
+  },
+  {
+    "code": "SI29",
+    "name": "Marine Biology"
+  },
+  {
+    "code": "SI30",
+    "name": "Oceanic and Atmospheric Sciences"
+  },
+  {
+    "code": "SI32",
+    "name": "Oceanic and Atmospheric Science - Public Policy (B.S./MPP only)"
+  },
+  {
+    "code": "SO25",
+    "name": "Sociology"
+  },
+  {
+    "code": "SO27",
+    "name": "Sociology-American Studies"
+  },
+  {
+    "code": "SO28",
+    "name": "Sociology-Culture and Communication"
+  },
+  {
+    "code": "SO29",
+    "name": "Sociology-Economy and Society"
+  },
+  {
+    "code": "SO30",
+    "name": "Sociology-International Studies"
+  },
+  {
+    "code": "SO31",
+    "name": "Sociology-Law and Society"
+  },
+  {
+    "code": "SO32",
+    "name": "Sociology-Science and Medicine"
+  },
+  {
+    "code": "SO33",
+    "name": "Sociology-Social Inequality"
+  },
+  {
+    "code": "SE27",
+    "name": "Structural Engineering"
+  },
+  {
+    "code": "SE29",
+    "name": "Structural Engineering with a Specialization in Aerospace Structures"
+  },
+  {
+    "code": "SE28",
+    "name": "Structural Engineering with a Specialization in Civil Structures"
+  },
+  {
+    "code": "SE30",
+    "name": "Structural Engineering with a Specialization in Geotechnical Engineering"
+  },
+  {
+    "code": "SE31",
+    "name": "Structural Engineering with a Specialization in Structural Health Monitoring/Non-Destructive Evaluation"
+  },
+  {
+    "code": "TH27",
+    "name": "Dance"
+  },
+  {
+    "code": "TH26",
+    "name": "Theatre"
+  },
+  {
+    "code": "UN27",
+    "name": "Undeclared"
+  },
+  {
+    "code": "US26",
+    "name": "Urban Studies and Planning"
+  },
+  {
+    "code": "US27",
+    "name": "Real Estate and Development"
+  },
+  {
+    "code": "VA29",
+    "name": "Interdisciplinary Computing and the Arts"
+  },
+  {
+    "code": "VA26",
+    "name": "Visual Arts (Art History/ Criticism)"
+  },
+  {
+    "code": "VA27",
+    "name": "Visual Arts (Media)"
+  },
+  {
+    "code": "VA28",
+    "name": "Visual Arts (Studio)"
+  },
+  {
+    "code": "VA30",
+    "name": "Speculative Design"
+  }
+]
