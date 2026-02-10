@@ -4,6 +4,7 @@ import { SelectGroup } from "../../components/SelectGroup";
 import { Button } from "../../components/Button";
 import { CheckboxGroup } from "../../components/CheckboxGroup";
 import majorsData from "../../../data/majors.json";
+import graphBg from "./graphbackground.webp";
 
 export const Desktop = () => {
   const currentYear = new Date().getFullYear();
@@ -22,16 +23,22 @@ export const Desktop = () => {
 
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-white to-transparent font-['Inter'] pb-20">
+    <div className="min-h-screen w-full bg-gradient-to-b from-white to-transparent font-['Inter'] pb-20 bg-[#FAF6F4]" >
       {/* Header Section */}
-      <header className="relative w-full h-[314px] bg-[url(https://c.animaapp.com/rTAWbAbr/img/frame-1.png)] bg-cover bg-center flex flex-col items-center justify-center">
+      <header
+        className="relative w-full h-[314px] bg-cover bg-center flex flex-col items-center justify-center" style={{ backgroundImage: `url(${graphBg})` }} >
         <h1 className="text-5xl md:text-[65px] font-black text-black tracking-[-0.33px] text-center px-4">
           UCSD ClassGraph
         </h1>
         <div className="mt-8">
-          <Button>Let’s go</Button>
+        <Button onClick={() => {}}>
+          Let's go!
+        </Button>
+
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></div>
       </header>
+
 
       <main className="w-full flex justify-center mt-8">
         <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -55,7 +62,10 @@ export const Desktop = () => {
               <InputGroup label="Additional majors/minors" id="additional" />
 
               <div className="mt-4 flex justify-center">
-                <Button>Generate graph</Button>
+              <Button onClick={() => {}}>
+                Generate graph
+              </Button>
+
               </div>
             </div>
 

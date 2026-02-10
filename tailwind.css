@@ -7,6 +7,10 @@
   }
 }
 
+body {
+  background-color: #FAF6F4;
+}
+
 :root {
   --animate-spin: spin 1s linear infinite;
 }
