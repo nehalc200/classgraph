@@ -72,17 +72,16 @@ export function findRootNode(courseCode, astData) {
 export function extractLayers(rootNode, maxDepth = 3) {
     _colorIndex = 0; // reset per extraction
 
-    const nodes = [];       // { id, label, depth, isExpandable }
+    const nodesMap = {};    // id → { id, label, depth, isExpandable }
     const edges = [];
     const orGroups = [];
-    const seenNodes = new Set();
     const seenEdges = new Set();
 
     // We walk the AST tree.  `depth` counts from 0 (the root course).
     // OR nodes do NOT consume a depth level — their children stay at the
     // same depth as the OR node itself.
 
-    function walk(astNode, parentId, depth, insideOrGroupId) {
+    function walk(astNode, parentId, depth) {
         if (!astNode) return;
 
         if (astNode.code === 'OR') {
@@ -92,12 +91,10 @@ export function extractLayers(rootNode, maxDepth = 3) {
             const memberIds = [];
 
             (astNode.children || []).forEach((child) => {
-                walk(child, parentId, depth, groupId);
-                // After walking, the child will have been added as a node (if it wasn't OR).
-                // Collect its id.
+                walk(child, parentId, depth);
                 if (child.code !== 'OR') {
-                    const childId = nodeId(child, parentId, depth);
-                    if (seenNodes.has(childId)) {
+                    const childId = child.code;
+                    if (nodesMap[childId]) {
                         memberIds.push(childId);
                     }
                 }
@@ -109,22 +106,26 @@ export function extractLayers(rootNode, maxDepth = 3) {
             return;
         }
 
-        // Regular course node
-        const nid = nodeId(astNode, parentId, depth);
+        // Regular course node — use course code as the unique ID (graph, not tree)
+        const nid = astNode.code;
 
-        if (!seenNodes.has(nid)) {
+        if (!nodesMap[nid]) {
             const hasChildren = (astNode.children || []).length > 0;
             const isExpandable = hasChildren && depth >= maxDepth - 1;
-            seenNodes.add(nid);
-            nodes.push({
+            nodesMap[nid] = {
                 id: nid,
                 label: astNode.code,
                 depth,
                 isExpandable,
-            });
+            };
+        } else {
+            // Node already seen — use the shallowest depth for layout
+            if (depth < nodesMap[nid].depth) {
+                nodesMap[nid].depth = depth;
+            }
         }
 
-        // Edge from parent → this node (prerequisite arrow: parent depends on child)
+        // Edge from parent → this node
         if (parentId) {
             const eid = `${parentId}→${nid}`;
             if (!seenEdges.has(eid)) {
@@ -136,21 +137,14 @@ export function extractLayers(rootNode, maxDepth = 3) {
         // Recurse into children if within depth
         if (depth < maxDepth - 1) {
             (astNode.children || []).forEach((child) => {
-                walk(child, nid, depth + 1, null);
+                walk(child, nid, depth + 1);
             });
         }
     }
 
-    // Unique-ish id for a node: course code is NOT unique because the same
-    // course can appear in different sub-trees.  We scope by parent to avoid
-    // merging unrelated occurrences, but we also want to de-dup when the same
-    // course appears multiple times under the same parent. Use "label@depth" as a
-    // simpler approach to keep duplicates at different spots, but merge identical.
-    function nodeId(astNode, parentId, depth) {
-        return `${astNode.code}::${parentId || 'root'}::${depth}`;
-    }
+    walk(rootNode, null, 0);
 
-    walk(rootNode, null, 0, null);
+    const nodes = Object.values(nodesMap);
 
     // ── Assign x, y positions (layered layout, top-to-bottom) ───────────────
     // Group nodes by depth, then spread horizontally.
