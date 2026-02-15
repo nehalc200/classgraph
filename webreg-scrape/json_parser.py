@@ -15,6 +15,10 @@ def looks_like_course(text):
 
 def _normalize_spacing(text):
     text = text.replace(";;", ";")
+    # Remove commas that appear before ' and ' or ' or '
+    text = re.sub(r',\s+(and|or)\s+', r' \1 ', text)
+    # Remove trailing commas from course codes
+    text = re.sub(r'([A-Z]{2,6}\s*-?\s*\d{1,3}[A-Z]{0,2}),', r'\1', text)
     text = re.sub(r"\s+", " ", text)
     return text.strip(" ;,").strip()
 
@@ -88,8 +92,15 @@ def parse_prereqs(raw_str):
             start = lowered.find(case)
             end = start + len(case)
             notes.append(original[start:end])
+            # Remove the special case and surrounding ' or ' / ' and '
+            removed_text = original[start:end]
             lowered = lowered[:start] + lowered[end:]
             original = original[:start] + original[end:]
+            
+            # Clean up leftover ' or ' or ' and ' patterns
+            original = re.sub(r'\s+(or|and)\s*$', '', original)
+            original = re.sub(r'^\s*(or|and)\s+', '', original)
+            lowered = original.lower()
 
     lowered = _normalize_spacing(lowered)
     original = _normalize_spacing(original)
@@ -143,7 +154,7 @@ def parse_prereqs(raw_str):
             continue
         
         if ' or ' in item:
-            subset = [s.strip() for s in item.split(' or ')]
+            subset = [s.strip() for s in item.split(' or ') if s.strip()]
             valid_subset = []
             invalid_subset = []
             for idx, s in enumerate(subset):
@@ -157,8 +168,14 @@ def parse_prereqs(raw_str):
                     valid_subset.append(s_up)
                 else:
                     invalid_subset.append(s)
-            if valid_subset:
+            
+            # Only create OR group if we have more than 1 valid course
+            if len(valid_subset) > 1:
                 or_list.append(valid_subset)
+            elif len(valid_subset) == 1:
+                # Single course in OR group should just be an AND requirement
+                and_list.append(valid_subset[0])
+            
             if invalid_subset:
                 notes.extend(invalid_subset)
         else:
