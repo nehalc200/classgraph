@@ -1775,7 +1775,7 @@ ECON,ECON 103,International Monetary Relations,ECON 102 or 110B or 173A
 ECON,ECON 104,Nobody’s Fool: Economics with Morals,ECON 100C
 ECON,ECON 105,Industrial Organization and Firm Strategy,ECON 100C
 ECON,ECON 106,International Economic Agreements,ECON 100B and 102
-ECON,ECON 107,Economic Regulation and Antitrust Policy,ECON 2 or 100B; and MATH 10C or 20C or 31BH
+ECON,ECON 107,Economic Regulation and Antitrust Policy,ECON 2 or 100B and MATH 10C or MATH 20C or MATH 31BH
 ECON,ECON 109,Game Theory,ECON 100C or MATH 31CH or MATH 109 or (CSE 20 and MATH 20 C)
 ECON,ECON 109T,Advanced Topics in Game Theory,department approval required
 ECON,ECON 110A,Long Run Macroeconomics,ECON 1 and ECON 3 and MATH 10C or MATH 20C or MATH 31BH
@@ -1787,9 +1787,9 @@ ECON,ECON 112,Macroeconomic Data Analysis,ECON 110B and ECON 120B or MATH 181B
 ECON,ECON 113,Mathematical Economics,ECON 100C or MATH 140A or MATH 142A and MATH 18 or MATH 31AH
 ECON,ECON 116,Economic Development,ECON 2 or 100B
 ECON,ECON 117,Economic Growth,ECON 100A
-ECON,ECON 118,"Law and Economics: Torts, Property, and Crime",ECON 2 or 100A; and MATH 10A or 20A
+ECON,ECON 118,"Law and Economics: Torts, Property, and Crime",ECON 2 or 100A and MATH 10A or 20A
 ECON,ECON 119,Law and Economics: Contracts and Corporations,ECON 2 or 100A and MATH 10A or 20A
-ECON,ECON 120A,Econometrics A,ECON 1; and MATH 10C or 20C or 31BH
+ECON,ECON 120A,Econometrics A,ECON 1 and MATH 10C or 20C or 31BH
 ECON,ECON 120B,Econometrics B,ECON 120A or ECE 109 or MAE 108 or MATH 180A or MATH 183 or MATH 186
 ECON,ECON 120C,Econometrics C,ECON 120B or MATH 181B
 ECON,ECON 120AH,Honors Econometrics A,department approval required
@@ -1804,7 +1804,7 @@ ECON,ECON 131,Economics of the Environment,ECON 2 or 100A
 ECON,ECON 132,Energy Economics,ECON 1 and (ECON 2 or 3 or 100A or 131 or ESYS 103 or MAE 124) and MATH 10C or 20C or 31BH
 ECON,ECON 132T,Advanced Topics in Energy Economics,ECON 132
 ECON,ECON 134,US Budget Policy,ECON 100A
-ECON,ECON 135,Urban Economics,ECON 2 or 100A; and MATH 10A or 20A
+ECON,ECON 135,Urban Economics,ECON 2 or 100A   and MATH 10A or 20A
 ECON,ECON 136,Human Resources,ECON 100B
 ECON,ECON 137,Corruption,ECON 100C and 120C
 ECON,ECON 138,Economics of Discrimination,ECON 1
@@ -1816,7 +1816,7 @@ ECON,ECON 143,Experimental Economics,ECON 100C
 ECON,ECON 144,Economics of Conservation,ECON 2 or 100A
 ECON,ECON 145,Economics of Ocean Resources,ECON 2 or 100A
 ECON,ECON 146,Economic Stabilization,ECON 110B
-ECON,ECON 147,Economics of Education,ECON 2 or 100A; and ECON 120B or MATH 181B
+ECON,ECON 147,Economics of Education,ECON 2 or 100A   and ECON 120B or MATH 181B
 ECON,ECON 149,Introduction to Economic Design,MATH 109 or MATH 15A or ECON 100A or CSE 21 or CSE 20 or MATH 154 or MATH 188 or MATH 184
 ECON,ECON 150,Public Economics: Taxation,ECON 100C
 ECON,ECON 151,Public Economics: Expenditures I,ECON 100C
@@ -1833,10 +1833,10 @@ ECON,ECON 167,Economics of China,ECON 1 and 3
 ECON,ECON 168,Economics of Modern Israel,ECON 1 and 3
 ECON,ECON 169,Economics of Korea,ECON 3 and 100A
 ECON,ECON 171,Decisions Under Uncertainty,ECON 100A and ECE 109 or MAE 108 or MATH 181A or ECON 120A or MATH 180A or MATH 183 or MATH 186 or MATH 180B
-ECON,ECON 172A,Operations Research A,ECON 100A; and ECON 120A or ECE 109 or MATH 180A or MATH 183 or MATH 186; and MATH 18 or 31AH
+ECON,ECON 172A,Operations Research A,ECON 100A   and ECON 120A or ECE 109 or MATH 180A or MATH 183 or MATH 186   and MATH 18 or 31AH
 ECON,ECON 172B,Operations Research B,ECON 172A or MATH 171A
-ECON,ECON 173A,Financial Markets,ECON 100A and ECON 120B or MATH 181B; and MATH 18 or 31AH
-ECON,ECON 173B,Corporate Finance,ECON 4 or MGT 4; and ECON 173A
+ECON,ECON 173A,Financial Markets,ECON 100A and ECON 120B or MATH 181B   and MATH 18 or 31AH
+ECON,ECON 173B,Corporate Finance,ECON 4 or MGT 4   and ECON 173A
 ECON,ECON 174,Financial Risk Management,ECON 173A
 ECON,ECON 175,International Financial Markets,ECON 1 and ECON 3 and MATH 10C or MATH 20C or MATH 31BH
 ECON,ECON 176,Marketing,ECON 120C

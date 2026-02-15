@@ -5,7 +5,8 @@ import re
 
 import pandas as pd
 
-COURSE_RE = re.compile(r"^[A-Z]{2,4}\s*-?\s*\d{1,3}[A-Z]?$")
+# Updated regex: Accepts 2-6 uppercase letters, optional space/hyphen, 1-3 digits, and up to 2 trailing uppercase letters
+COURSE_RE = re.compile(r"^[A-Z]{2,6}\s*-?\s*\d{1,3}[A-Z]{0,2}$")
 
 
 def looks_like_course(text):
@@ -16,6 +17,43 @@ def _normalize_spacing(text):
     text = text.replace(";;", ";")
     text = re.sub(r"\s+", " ", text)
     return text.strip(" ;,").strip()
+
+
+def _fill_missing_dept(or_text, prev_dept):
+    """
+    If a course in an OR group is just a number or number+letters, prepend the previous department.
+    """
+    # Remove spaces/hyphens for matching
+    compact = or_text.replace(" ", "").replace("-", "")
+    # If it starts with digits, it's missing a department
+    if re.match(r"^\d{1,3}[A-Z]{0,2}$", compact) and prev_dept:
+        return prev_dept + compact
+    return or_text
+
+
+def _expand_course_range(text):
+    """
+    Expand course ranges like 'ECE 271A-B' into ['ECE 271A', 'ECE 271B']
+    or 'MATH 20A-E' into ['MATH 20A', 'MATH 20B', ..., 'MATH 20E']
+    """
+    # Pattern: DEPT NUM LETTER-LETTER (e.g., "ECE 271A-B")
+    range_pattern = r'^([A-Z]{2,6})\s*-?\s*(\d{1,3})([A-Z])-([A-Z])$'
+    match = re.match(range_pattern, text.replace(" ", ""))
+    
+    if match:
+        dept = match.group(1)
+        num = match.group(2)
+        start_letter = match.group(3)
+        end_letter = match.group(4)
+        
+        # Generate range A-B, A-C, etc.
+        courses = []
+        for letter_code in range(ord(start_letter), ord(end_letter) + 1):
+            letter = chr(letter_code)
+            courses.append(f"{dept}{num}{letter}")
+        return courses
+    
+    return [text]
 
 
 def parse_prereqs(raw_str):
@@ -41,7 +79,6 @@ def parse_prereqs(raw_str):
             "AND": [], "OR": [], "notes": [], "parseable": success
         }
 
-    # Use a temporary lowercased string for matching
     lowered = raw_str.lower()
     original = raw_str
 
@@ -57,28 +94,67 @@ def parse_prereqs(raw_str):
     lowered = _normalize_spacing(lowered)
     original = _normalize_spacing(original)
 
-    # case handling for actual section of ANDs ORs
-    if '; ' in lowered:
-        first, *rest = lowered.split('; ')
-        orig_first, *orig_rest = original.split('; ')
-        temp = orig_first.split(' and ')
-        notes.extend(orig_rest)
+    # Remove grade requirements and other trailing text from course codes
+    # Pattern: "COURSE with a grade of X or above/better"
+    grade_pattern = r'\s+with\s+a\s+grade\s+of\s+[^\s;]+(\s+or\s+(above|better))?'
+    original = re.sub(grade_pattern, '', original, flags=re.IGNORECASE)
+    lowered = original.lower()
+
+    # Split by semicolon first to separate major sections
+    sections = [s.strip() for s in original.split(';') if s.strip()]
+    
+    # Process only the first section as prerequisites, rest go to notes
+    if sections:
+        prereq_section = sections[0]
+        if len(sections) > 1:
+            # Check if remaining sections are courses or just notes
+            for section in sections[1:]:
+                section_upper = section.upper()
+                # Check if it's a course range or single course
+                expanded = _expand_course_range(section_upper)
+                if len(expanded) > 1 or looks_like_course(expanded[0]):
+                    prereq_section += " and " + section
+                else:
+                    notes.append(section)
+        
+        temp = prereq_section.split(' and ')
     else:
-        temp = original.split(' and ')
+        temp = []
 
     success = True
 
+    prev_dept = None
     for item in temp:
         item = item.strip()
         if not item:
             continue
+        
+        # Check if this is a course range (e.g., "ECE 271A-B")
+        item_upper = item.upper()
+        expanded_courses = _expand_course_range(item_upper)
+        
+        # If it's a range, add all courses as AND requirements
+        if len(expanded_courses) > 1:
+            and_list.extend(expanded_courses)
+            # Extract department for future use
+            match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", expanded_courses[0].replace(" ", ""))
+            if match:
+                prev_dept = match.group(1)
+            continue
+        
         if ' or ' in item:
             subset = [s.strip() for s in item.split(' or ')]
             valid_subset = []
             invalid_subset = []
-            for s in subset:
-                if looks_like_course(s.upper()):
-                    valid_subset.append(s.upper())
+            for idx, s in enumerate(subset):
+                s_up = s.upper()
+                match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", s_up.replace(" ", ""))
+                if idx == 0 and match:
+                    prev_dept = match.group(1)
+                if idx > 0 and prev_dept:
+                    s_up = _fill_missing_dept(s_up, prev_dept)
+                if looks_like_course(s_up):
+                    valid_subset.append(s_up)
                 else:
                     invalid_subset.append(s)
             if valid_subset:
@@ -86,8 +162,12 @@ def parse_prereqs(raw_str):
             if invalid_subset:
                 notes.extend(invalid_subset)
         else:
-            if looks_like_course(item.upper()):
-                and_list.append(item.upper())
+            s_up = item.upper()
+            match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", s_up.replace(" ", ""))
+            if match:
+                prev_dept = match.group(1)
+            if looks_like_course(s_up):
+                and_list.append(s_up)
             else:
                 notes.append(item)
 
