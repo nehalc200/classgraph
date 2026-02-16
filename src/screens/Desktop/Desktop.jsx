@@ -3,7 +3,7 @@ import { InputGroup } from "../../components/InputGroup";
 import { SelectGroup } from "../../components/SelectGroup";
 import { Button } from "../../components/Button";
 import { CheckboxGroup } from "../../components/CheckboxGroup";
-import { SigmaGraph } from "../../components/SigmaGraph";
+import { D3Graph } from "../../components/D3Graph";
 import { GraphTabs } from "../../components/GraphTabs";
 import { CourseSearch } from "../../components/CourseSearch";
 import { getAllCourses, findRootNode } from "../../utils/astGraphUtils";
@@ -147,7 +147,7 @@ export const Desktop = () => {
                     onClose={handleTabClose}
                   />
                   <div className="flex-1" style={{ minHeight: 480 }}>
-                    <SigmaGraph
+                    <D3Graph
                       rootAstNode={activeAstNode}
                       onNodeExpand={handleNodeExpand}
                     />

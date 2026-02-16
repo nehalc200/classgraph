@@ -174,7 +174,7 @@ export function extractLayers(rootNode, maxDepth = 3) {
         const totalWidth = (layer.length - 1) * NODE_GAP_X;
         layer.forEach((n, i) => {
             n.x = -totalWidth / 2 + i * NODE_GAP_X;
-            n.y = -(Number(d) * LAYER_GAP_Y);
+            n.y = Number(d) * LAYER_GAP_Y;
         });
     });
 
