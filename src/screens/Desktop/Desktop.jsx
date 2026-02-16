@@ -5,6 +5,8 @@ import { Button } from "../../components/Button";
 import { CheckboxGroup } from "../../components/CheckboxGroup";
 import majorsData from "../../../data/majors.json";
 import graphBg from "./graphbackground.webp";
+import PrereqTree from "../../components/PrereqTree";
+
 
 export const Desktop = () => {
   const currentYear = new Date().getFullYear();
@@ -71,7 +73,7 @@ export const Desktop = () => {
 
             {/* Right Column: Visualization/Placeholder */}
             <div className="w-full lg:w-[500px] flex justify-center lg:justify-start flex-shrink-0">
-              <div className="w-full h-[500px] lg:h-[600px] bg-[#d9d9d9] rounded-xl relative shadow-inner">
+              <div className="w-full h-[500px] lg:h-[800px] bg-[#d9d9d9] rounded-xl relative shadow-inner">
                 {/* Optional: Add a visual indicator or placeholder content */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium">
                   Graph Preview Area
