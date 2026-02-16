@@ -13,34 +13,44 @@ export const CourseGraph = ({ data }) => {
 
     const containerWidth = containerRef.current?.clientWidth || 500;
     const containerHeight = containerRef.current?.clientHeight || 600;
-    const margin = { top: 40, right: 40, bottom: 40, left: 40 };
+    const margin = { top: 60, right: 40, bottom: 40, left: 40 };
+
+    // Use a large virtual canvas for better spacing
+    const virtualWidth = 2000;
+    const virtualHeight = 2000;
 
     const svg = d3.select(svgRef.current)
       .attr("width", containerWidth)
       .attr("height", containerHeight)
+      .attr("viewBox", `0 0 ${virtualWidth} ${virtualHeight}`)
       .style("background", "#fafafa");
 
     const g = svg.append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
+      .attr("transform", `translate(${virtualWidth / 2},${100})`);
 
     // Convert the AST data into a hierarchical structure for D3
-    // Only show first 10 courses to keep the graph manageable
+    // Only show first 3 courses to keep the graph clean
     const convertToHierarchy = (courses) => {
       return {
         name: "MATH Courses",
-        children: courses.slice(0, 10).map(course => convertNodeToHierarchy(course))
+        children: courses.slice(0, 3).map(course => convertNodeToHierarchy(course, 0))
       };
     };
 
-    const convertNodeToHierarchy = (node) => {
+    const convertNodeToHierarchy = (node, depth) => {
       const result = {
         name: node.code,
         type: node.type
       };
 
-      if (node.children && node.children.length > 0) {
-        // Limit depth to avoid overcrowding
-        result.children = node.children.slice(0, 5).map(child => convertNodeToHierarchy(child));
+      // Special handling for OR nodes - always include their children to avoid OR leaf nodes
+      const isOrNode = node.code === "OR";
+      const shouldIncludeChildren = (depth < 3) || isOrNode;
+
+      if (node.children && node.children.length > 0 && shouldIncludeChildren) {
+        // For OR nodes, include all children; for other nodes, limit to 3
+        const childLimit = isOrNode ? node.children.length : 3;
+        result.children = node.children.slice(0, childLimit).map(child => convertNodeToHierarchy(child, depth + 1));
       }
 
       return result;
@@ -48,10 +58,10 @@ export const CourseGraph = ({ data }) => {
 
     const hierarchyData = convertToHierarchy(data);
     
-    // Create tree layout with more space
+    // Create vertical tree layout (top to bottom) with much more space
     const treeLayout = d3.tree()
-      .size([containerHeight - margin.top - margin.bottom, containerWidth - margin.left - margin.right - 150])
-      .separation((a, b) => (a.parent === b.parent ? 1 : 1.2));
+      .size([virtualWidth - 400, virtualHeight - 300])
+      .separation((a, b) => (a.parent === b.parent ? 2.5 : 3));
 
     const root = d3.hierarchy(hierarchyData);
     treeLayout(root);
@@ -64,16 +74,16 @@ export const CourseGraph = ({ data }) => {
       .attr('class', 'link');
 
     link.append('path')
-      .attr('d', d3.linkHorizontal()
-        .x(d => d.y)
-        .y(d => d.x))
+      .attr('d', d3.linkVertical()
+        .x(d => d.x)
+        .y(d => d.y))
       .style('fill', 'none')
       .style('stroke', d => {
         if (d.target.data.name === "OR") return '#ff9800';
-        return '#999';
+        return '#555';
       })
-      .style('stroke-width', 1.5)
-      .style('opacity', 0.6);
+      .style('stroke-width', 3)
+      .style('opacity', 0.7);
 
     // Create nodes
     const node = g.selectAll('.node')
@@ -81,14 +91,14 @@ export const CourseGraph = ({ data }) => {
       .enter()
       .append('g')
       .attr('class', 'node')
-      .attr('transform', d => `translate(${d.y},${d.x})`);
+      .attr('transform', d => `translate(${d.x},${d.y})`);
 
     // Add circles for each node
     node.append('circle')
       .attr('r', d => {
-        if (d.data.name === "MATH Courses") return 8;
-        if (d.data.name === "OR") return 5;
-        return 7;
+        if (d.data.name === "MATH Courses") return 55;
+        if (d.data.name === "OR") return 28;
+        return 45;
       })
       .style('fill', d => {
         if (d.data.name === "MATH Courses") return '#673AB7';
@@ -97,43 +107,32 @@ export const CourseGraph = ({ data }) => {
         return '#2196F3';
       })
       .style('stroke', '#fff')
-      .style('stroke-width', 2)
-      .style('cursor', 'pointer')
-      .on('mouseenter', function() {
-        d3.select(this).transition().duration(200).attr('r', d => {
-          if (d.data.name === "MATH Courses") return 10;
-          if (d.data.name === "OR") return 7;
-          return 9;
-        });
-      })
-      .on('mouseleave', function() {
-        d3.select(this).transition().duration(200).attr('r', d => {
-          if (d.data.name === "MATH Courses") return 8;
-          if (d.data.name === "OR") return 5;
-          return 7;
-        });
-      });
+      .style('stroke-width', 2.5)
+      .style('cursor', 'pointer');
 
-    // Add text labels
+    // Add text labels inside circles
     node.append('text')
-      .attr('dy', '.31em')
-      .attr('x', d => d.children ? -12 : 12)
-      .style('text-anchor', d => d.children ? 'end' : 'start')
+      .attr('dy', '.35em')
+      .attr('text-anchor', 'middle')
       .style('font-size', d => {
-        if (d.data.name === "MATH Courses") return '14px';
-        if (d.data.name === "OR") return '10px';
-        return '12px';
+        if (d.data.name === "MATH Courses") return '16px';
+        if (d.data.name === "OR") return '16px';
+        // Smaller font for longer course names
+        const nameLength = d.data.name.length;
+        if (nameLength > 8) return '13px';
+        return '14px';
       })
       .style('font-family', 'Inter, sans-serif')
-      .style('font-weight', d => d.data.type === 'ROOT' ? '600' : '400')
-      .style('fill', '#333')
+      .style('font-weight', d => d.data.type === 'ROOT' ? '600' : '500')
+      .style('fill', '#fff')
+      .style('pointer-events', 'none')
       .text(d => d.data.name);
 
     // Add zoom and pan behavior
     const zoom = d3.zoom()
-      .scaleExtent([0.3, 4])
+      .scaleExtent([0.1, 2])
       .on('zoom', (event) => {
-        g.attr('transform', `translate(${margin.left},${margin.top}) ${event.transform}`);
+        g.attr('transform', `translate(${virtualWidth / 2 + event.transform.x},${100 + event.transform.y}) scale(${event.transform.k})`);
       });
 
     svg.call(zoom);
@@ -141,29 +140,29 @@ export const CourseGraph = ({ data }) => {
     // Add legend
     const legend = svg.append('g')
       .attr('class', 'legend')
-      .attr('transform', `translate(20, 20)`);
+      .attr('transform', `translate(50, 50)`);
 
     const legendData = [
-      { color: '#673AB7', label: 'Root', size: 8 },
-      { color: '#4CAF50', label: 'Course (Root)', size: 7 },
-      { color: '#2196F3', label: 'Prerequisite', size: 7 },
-      { color: '#ff9800', label: 'OR operator', size: 5 }
+      { color: '#673AB7', label: 'Root', size: 15 },
+      { color: '#4CAF50', label: 'Course (Root)', size: 13 },
+      { color: '#2196F3', label: 'Prerequisite', size: 13 },
+      { color: '#ff9800', label: 'OR operator', size: 10 }
     ];
 
     legendData.forEach((item, i) => {
       const legendItem = legend.append('g')
-        .attr('transform', `translate(0, ${i * 20})`);
+        .attr('transform', `translate(0, ${i * 35})`);
 
       legendItem.append('circle')
         .attr('r', item.size)
         .style('fill', item.color)
         .style('stroke', '#fff')
-        .style('stroke-width', 2);
+        .style('stroke-width', 2.5);
 
       legendItem.append('text')
-        .attr('x', 15)
+        .attr('x', 25)
         .attr('dy', '.35em')
-        .style('font-size', '11px')
+        .style('font-size', '14px')
         .style('font-family', 'Inter, sans-serif')
         .style('fill', '#333')
         .text(item.label);

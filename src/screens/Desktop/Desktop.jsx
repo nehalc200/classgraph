@@ -11,7 +11,7 @@ import graphBg from "./graphbackground.webp";
 export const Desktop = () => {
   const currentYear = new Date().getFullYear();
   const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
-  const collegeOptions = ["Revelle", "Muir", "Marshall", "Roosevelt", "Warren", "Sixth", "Seventh", "Eighth"];
+  const collegeOptions = ["Revelle", "Muir", "Marshall", "Warren", "Roosevelt", "Sixth", "Seventh", "Eighth"];
 
   // Create options with label (name) and value (code)
   const majorOptions = majorsData
