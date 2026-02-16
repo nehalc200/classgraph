@@ -154,17 +154,128 @@ export function extractLayers(rootNode, maxDepth = 3) {
         byDepth[n.depth].push(n);
     });
 
+    const depthKeys = Object.keys(byDepth).map(Number).sort((a, b) => a - b);
+
+    // Build adjacency lookup: nodeId → set of connected nodeIds
+    const neighbors = {};
+    edges.forEach((e) => {
+        if (!neighbors[e.source]) neighbors[e.source] = new Set();
+        if (!neighbors[e.target]) neighbors[e.target] = new Set();
+        neighbors[e.source].add(e.target);
+        neighbors[e.target].add(e.source);
+    });
+
+    // Build OR-group membership: nodeId → primary OR-group index
+    const nodeOrGroup = {};
+    orGroups.forEach((g, gi) => {
+        g.memberNodeIds.forEach((nid) => {
+            if (nodeOrGroup[nid] === undefined) nodeOrGroup[nid] = gi;
+        });
+    });
+
     const LAYER_GAP_Y = 180;
     const NODE_GAP_X = 160;
 
-    Object.keys(byDepth).forEach((d) => {
+    // Initial placement: just sequentially assign x per layer
+    depthKeys.forEach((d) => {
         const layer = byDepth[d];
         const totalWidth = (layer.length - 1) * NODE_GAP_X;
         layer.forEach((n, i) => {
             n.x = -totalWidth / 2 + i * NODE_GAP_X;
-            n.y = -(Number(d) * LAYER_GAP_Y);
+            n.y = -(d * LAYER_GAP_Y);
         });
     });
+
+    // ── Barycenter heuristic: sweep up and down to reduce crossings ─────────
+    // For each node, compute the average x of its neighbours in the adjacent
+    // layer, then re-sort the layer by that value. Repeat several passes.
+    const SWEEPS = 4;
+
+    for (let sweep = 0; sweep < SWEEPS; sweep++) {
+        // Downward pass (layer 0 → deepest)
+        for (let li = 1; li < depthKeys.length; li++) {
+            reorderLayer(byDepth[depthKeys[li]], byDepth[depthKeys[li - 1]]);
+        }
+        // Upward pass (deepest → layer 0)
+        for (let li = depthKeys.length - 2; li >= 0; li--) {
+            reorderLayer(byDepth[depthKeys[li]], byDepth[depthKeys[li + 1]]);
+        }
+    }
+
+    // After barycenter sweeps, enforce OR-group adjacency
+    depthKeys.forEach((d) => {
+        enforceOrGroupAdjacency(byDepth[d]);
+    });
+
+    // Final position assignment after ordering
+    depthKeys.forEach((d) => {
+        const layer = byDepth[d];
+        const totalWidth = (layer.length - 1) * NODE_GAP_X;
+        layer.forEach((n, i) => {
+            n.x = -totalWidth / 2 + i * NODE_GAP_X;
+            n.y = -(d * LAYER_GAP_Y);
+        });
+    });
+
+    // ── Helper: reorder `layer` based on barycenter of neighbours in `refLayer`
+    function reorderLayer(layer, refLayer) {
+        // Build a position lookup for the reference layer
+        const refPos = {};
+        refLayer.forEach((n, i) => { refPos[n.id] = i; });
+
+        // Compute barycenter for each node in `layer`
+        const bary = {};
+        layer.forEach((n) => {
+            const nbrs = neighbors[n.id] || new Set();
+            let sum = 0, count = 0;
+            nbrs.forEach((nbrId) => {
+                if (refPos[nbrId] !== undefined) {
+                    sum += refPos[nbrId];
+                    count++;
+                }
+            });
+            bary[n.id] = count > 0 ? sum / count : Infinity;
+        });
+
+        layer.sort((a, b) => bary[a.id] - bary[b.id]);
+    }
+
+    // ── Helper: ensure OR-group members are adjacent within a layer
+    function enforceOrGroupAdjacency(layer) {
+        // Group nodes by their OR-group, preserving relative order
+        const groups = {};     // groupIdx → [nodes]
+        const ungrouped = [];
+        const seen = new Set();
+
+        layer.forEach((n) => {
+            if (nodeOrGroup[n.id] !== undefined) {
+                const gi = nodeOrGroup[n.id];
+                if (!groups[gi]) groups[gi] = [];
+                groups[gi].push(n);
+                seen.add(n.id);
+            }
+        });
+
+        // Rebuild the layer: insert groups at the position of their first member
+        const result = [];
+        const insertedGroups = new Set();
+        layer.forEach((n) => {
+            if (nodeOrGroup[n.id] !== undefined) {
+                const gi = nodeOrGroup[n.id];
+                if (!insertedGroups.has(gi)) {
+                    insertedGroups.add(gi);
+                    result.push(...groups[gi]);
+                }
+            } else {
+                result.push(n);
+            }
+        });
+
+        // Replace layer contents in-place
+        for (let i = 0; i < result.length; i++) {
+            layer[i] = result[i];
+        }
+    }
 
     // Give every node a fixed size
     nodes.forEach((n) => {
