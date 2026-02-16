@@ -1,6 +1,6 @@
 import React from "react";
 
-export const InputGroup = ({ label, id, className = "" }) => {
+export const InputGroup = ({ label, id, className = "", value, onChange }) => {
   return (
     <div className={`flex flex-col items-center gap-2 ${className}`}>
       <label
@@ -13,6 +13,8 @@ export const InputGroup = ({ label, id, className = "" }) => {
         id={id}
         type="text"
         className="w-full h-[70px] bg-[#d9d9d9] rounded-none border-none px-4 text-xl focus:outline-none focus:ring-2 focus:ring-black"
+        value={value}
+        onChange={onChange}
       />
     </div>
   );

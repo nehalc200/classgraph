@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CheckboxGroup = ({ label, id, className = "" }) => {
+export const CheckboxGroup = ({ label, id, className = "", checked, onChange }) => {
     return (
         <div className={`flex flex-row-reverse items-center justify-end gap-4 ${className}`}>
             <label
@@ -13,6 +13,8 @@ export const CheckboxGroup = ({ label, id, className = "" }) => {
                 id={id}
                 type="checkbox"
                 className="w-8 h-8 bg-[#d9d9d9] rounded border-gray-300 text-black focus:ring-black"
+                checked={checked}
+                onChange={onChange}
             />
         </div>
     );

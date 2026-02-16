@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SelectGroup = ({ label, id, options = [], className = "" }) => {
+export const SelectGroup = ({ label, id, options = [], className = "", value, onChange }) => {
     return (
         <div className={`flex flex-col items-center gap-2 ${className}`}>
             <label
@@ -19,7 +19,8 @@ export const SelectGroup = ({ label, id, options = [], className = "" }) => {
                     backgroundSize: `1.5em 1.5em`,
                     paddingRight: `2.5rem`
                 }}
-                defaultValue=""
+                value={value}
+                onChange={onChange}
             >
                 <option value="" disabled>Select a {label}</option>
                 {options.map((option) => {
