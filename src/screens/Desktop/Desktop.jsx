@@ -5,6 +5,7 @@ import { Button } from "../../components/Button";
 import { CheckboxGroup } from "../../components/CheckboxGroup";
 import { SigmaGraph } from "../../components/SigmaGraph";
 import { GraphTabs } from "../../components/GraphTabs";
+import { CourseSearch } from "../../components/CourseSearch";
 import { getAllCourses, findRootNode } from "../../utils/astGraphUtils";
 import majorsData from "../../../data/majors.json";
 import astData from "../../../data/MATH_ast.json";
@@ -27,23 +28,34 @@ export const Desktop = () => {
   const [tabs, setTabs] = useState([]);           // [{ courseCode, astNode }]
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
-  // When the user clicks "Generate graph"
+  // When the user selects a course from search
+  const handleCourseSelect = useCallback((courseCode) => {
+    setSelectedCourse(courseCode);
+  }, []);
+
+  // When the user clicks "Go" — open in a new tab (or switch if already open)
   const handleGenerate = useCallback(() => {
     if (!selectedCourse) return;
     const rootNode = findRootNode(selectedCourse, astData);
     if (!rootNode) return;
-    setTabs([{ courseCode: rootNode.code, astNode: rootNode }]);
-    setActiveTabIndex(0);
-  }, [selectedCourse]);
+
+    // Avoid duplicate tabs
+    const existingIndex = tabs.findIndex((t) => t.courseCode === rootNode.code);
+    if (existingIndex >= 0) {
+      setActiveTabIndex(existingIndex);
+      return;
+    }
+
+    setTabs((prev) => [...prev, { courseCode: rootNode.code, astNode: rootNode }]);
+    setActiveTabIndex(tabs.length);
+  }, [selectedCourse, tabs]);
 
   // When the user clicks an expandable node inside the graph
   const handleNodeExpand = useCallback(
     (courseCode) => {
-      // Find this course as a ROOT in the AST so we can show its subtree
       const rootNode = findRootNode(courseCode, astData);
       if (!rootNode) return;
 
-      // Avoid duplicate tabs
       const existingIndex = tabs.findIndex(
         (t) => t.courseCode === rootNode.code,
       );
@@ -53,7 +65,7 @@ export const Desktop = () => {
       }
 
       setTabs((prev) => [...prev, { courseCode: rootNode.code, astNode: rootNode }]);
-      setActiveTabIndex(tabs.length); // new tab at end
+      setActiveTabIndex(tabs.length);
     },
     [tabs],
   );
@@ -113,20 +125,19 @@ export const Desktop = () => {
               <CheckboxGroup label="Transfer" id="transfer" />
               <InputGroup label="Additional majors/minors" id="additional" />
 
-              <SelectGroup
-                label="Course"
-                id="course"
-                options={courseOptions}
-                onChange={(e) => setSelectedCourse(e.target.value)}
-              />
-
               <div className="mt-4 flex justify-center">
                 <Button onClick={handleGenerate}>Generate graph</Button>
               </div>
             </div>
 
-            {/* ── Right Column: Graph Visualization ──────────────────────── */}
+            {/* ── Right Column: Course Search + Graph Visualization ─────── */}
             <div className="w-full lg:flex-1 flex flex-col flex-shrink-0" style={{ minHeight: 550 }}>
+              {/* Course search bar — above the graph */}
+              <div className="mb-4 flex items-center gap-3">
+                <CourseSearch courses={courseOptions} onSelect={handleCourseSelect} />
+                <Button onClick={handleGenerate}>Go</Button>
+              </div>
+
               {tabs.length > 0 ? (
                 <>
                   <GraphTabs
@@ -144,11 +155,11 @@ export const Desktop = () => {
                 </>
               ) : (
                 <div
-                  className="w-full flex-1 bg-[#d9d9d9] rounded-xl relative shadow-inner flex items-center justify-center"
-                  style={{ minHeight: 480 }}
+                  className="w-full flex-1 bg-[#FAF6F4] rounded-xl relative flex items-center justify-center"
+                  style={{ minHeight: 480, border: '2px solid #1e1e1e' }}
                 >
                   <span className="text-gray-500 font-medium text-lg">
-                    Select a course and click "Generate graph"
+                    Search for a course and click "Go" to see its prerequisites
                   </span>
                 </div>
               )}
