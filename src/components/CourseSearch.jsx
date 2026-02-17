@@ -109,7 +109,7 @@ export const CourseSearch = ({ onSelect }) => {
             <input
                 type="text"
                 value={query}
-                placeholder="Search for a course (e.g. CSE 100)…"
+                placeholder="Search for a course (e.g. MATH 180A)…"
                 onChange={(e) => { setQuery(e.target.value); setIsOpen(true); }}
                 onFocus={() => setIsOpen(true)}
                 onKeyDown={handleKeyDown}
