@@ -1,0 +1,28 @@
+[
+  {
+    "code": "LIAB 1B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LIAB 1BX",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LIAB 1E",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIAB 1D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LIAB 1DX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

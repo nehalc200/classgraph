@@ -1,0 +1,18 @@
+[
+  {
+    "code": "LTTH 210B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTTH 210A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTTH 261",
+    "type": "ROOT",
+    "children": []
+  }
+]

@@ -1,0 +1,4367 @@
+[
+  {
+    "code": "ETHN 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 100A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100H",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 101TV",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 102",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 102A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 103A/HIUS 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 104",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 105",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 106",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 107",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 108",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 109",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 109A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 111",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 112A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 112B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 112C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 113",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 113A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 114A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 114B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 115",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 116",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 117",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 118",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 119",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 120D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 121",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 122",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 122A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 122B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 123",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 123A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 124",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 126",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 127",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 128",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 129",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 130",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 131",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 132",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 133",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 134",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 135A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP50A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP50B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP50C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 135B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP50A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP50B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP50C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 136",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 137",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANSC 180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 100",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 102",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 103",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 104",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 105",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 106",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 107",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 108",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 111",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 112",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 113",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 114",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 115",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 116",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 120",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 121",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 122",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 123",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 124",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANSC 117",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 180",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 186",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 100",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 102",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 103",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 104",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 105",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 106",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 107",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 108",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 111",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 112",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 113",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 114",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 115",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 117",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 118",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 119",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 120",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 121",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 122",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 123",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 126",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 137",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ANSC 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 100",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 100A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 100B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 101",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 102",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 103",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 105",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 106",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 107",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 112",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 114",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 115",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 116",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 121",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 122",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 123",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 147",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 150",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 165",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 100A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 100B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 100A",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "ETHN1",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN2",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 100C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN100A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN100B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 101",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 102",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 103",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 105",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 106",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 107",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 109",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 110",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 112A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 112B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 114A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 114B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 115",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 116",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 117",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 118",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 119",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 121",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 122",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 123",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 125",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 126",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 127",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 128",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 129",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 130",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 131",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 132",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 133",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 134",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 135A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTSP50A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50C",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 135B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTSP50A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50C",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 136",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 139",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 140",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 141",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 142",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 143",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 146A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 147",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 149",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 150",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 151",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 152",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 153",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 154",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 155",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 155GS",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 157",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 158",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 159",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 160",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 161",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 162",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163E",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163F",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163G",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 164",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 165",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 166",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 168",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 169",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 170",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 172",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 173GS",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 174",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 175",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 177",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 178",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 182",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 184",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 185",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 187",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 188",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 189",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 190",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 108A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 108B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 136",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 139",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 158",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 159",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 167",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTCS 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 178",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 179",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 181",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 185",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 186",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 150A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 150B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 126",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 151",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 152",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 153",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "SIO 114",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDAC 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDGE 131",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 110",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 129",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 130",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 132",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 135",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 149",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 147",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 150",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 165",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "CGS 180",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS 187",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CGS2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "ETHN 127",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 137",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ANSC 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 2A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 2B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 100",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 100A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 100B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 101",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 102",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 103",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 105",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 106",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 107",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 112",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 114",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 115",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 116",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 121",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 122",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 123",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CGS 147",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 150",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 165",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CGS2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CGS2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "CGS 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 100A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 100B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 100A",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "ETHN1",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN2",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 100C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN100A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN100B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 101",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 102",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 103",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 105",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 106",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 107",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 109",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 110",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 112A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 112B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 114A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 114B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 115",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 116",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 117",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 118",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 119",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 121",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 122",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 123",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 125",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 126",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 127",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 128",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 129",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 130",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 131",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 132",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 133",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 134",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 135A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTSP50A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50C",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 135B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTSP50A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LTSP50C",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "ETHN 136",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 139",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 140",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 141",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 142",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 143",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 146A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 147",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 149",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 150",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 151",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 152",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 153",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 154",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 155",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 155GS",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 157",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 158",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 159",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 160",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 161",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 162",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163E",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163F",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 163G",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 164",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 165",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 166",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 168",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 169",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 170",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 172",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 173GS",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 174",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 175",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 177",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 178",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 179B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 182",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 184",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 185",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 187",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 188",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 189",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 190",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 108A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 108B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 113",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 124",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 136",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 139",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 158",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 159",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 167",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HIUS 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTCS 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 178",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 179",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 180",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 181",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 183",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 185",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTEN 186",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 150A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 150B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 126",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 127B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 151",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 152",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MUS 153",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "SIO 114",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDAC 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDGE 131",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 110",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 111",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 120",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 104",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 129",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 130",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 132",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 135",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 149",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "ETHN 147",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 150",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 165",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 183",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 187",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTCS 108",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTCS 119",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 147",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 150",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 165",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CGS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CGS2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CGS 180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ETHN1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 102",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 103",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 104",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 105",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 106",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 107",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 108",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 109",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 110",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 111",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 112A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 112B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 113",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 114A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 114B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 115",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 116",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 117",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 118",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 119",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 120",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 121",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 122",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 123",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 124",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 125",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 126",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 127",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 128",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 129",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 130",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 131",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 132",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 133",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 134",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 135A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP50A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP50B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP50C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 135B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP50A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP50B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP50C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 139",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 140",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 141",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 142",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 143",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 146A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 147",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 149",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 150",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 151",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 152",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 153",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 154",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 155",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 155GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 157",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 158",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 159",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 160",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 161",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 162",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 163E",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 163F",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 163G",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 164",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 165",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 166",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 168",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 169",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 170",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 172",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 173GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 174",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 175",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 177",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 178",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 179",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 179A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 179B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 182",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 183",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 184",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 185",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 187",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 188",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 189",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 190",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 108A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 108B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 113",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 124",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 139",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 158",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 159",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 167",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS 183",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTCS 108",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 178",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 179",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 181",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 183",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 185",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTEN 186",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 150A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 150B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 126",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 127",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 127A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 127B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 151",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 152",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MUS 153",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO 114",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDAC 120",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDGE 131",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDHT 110",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDHT 111",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDHT 120",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 104",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 129",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 130",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 132",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 135",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP 149",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 138",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 139",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 140",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 140A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 141",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 142",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 143",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 144M",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 146A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 147",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 149",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 150",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 151",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 152",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 153",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 154",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 155",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 155GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 156A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 156B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 157",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 158",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 159",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 160",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 161",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 162",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 162A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 163E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 163F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 163G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 163I",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 163J",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 164",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 165",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 166",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 167",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 167A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 168",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 169",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 170",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 171",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 172",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 173GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 174",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 175",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 177",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 178",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 179",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 180",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 182",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 183",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 184",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 185",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 185A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 186",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 187",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 188",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 189",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 190",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 196H",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN100H",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 197",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 20",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 200A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 200B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN 200A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ETHN 200C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 202",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 203",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 214A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 214B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 230",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 252",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 257A-B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 260",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 266",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 267",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 270",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 280",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 287",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 289",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 291",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 291A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 291B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 3",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 30",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 500",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 87",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 97",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 98",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ETHN 99",
+    "type": "ROOT",
+    "children": []
+  }
+]

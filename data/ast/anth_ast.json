@@ -1,0 +1,736 @@
+[
+  {
+    "code": "ANTH 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 10",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 102",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 104",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 105",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 106",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 107",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 108",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 109",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 111",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 112",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 113",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 128A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 128B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH128A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP128A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANTH 130",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 131",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 192",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 195P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 196A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 196B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH 196A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANTH 196C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH196A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH196B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANTH 197",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 20",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 200",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 202",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 203",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 204",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 205",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 206",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 207",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 209",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 21",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 211",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 212",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 213",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 215",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 219",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 220",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 221",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 222",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 223",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 224",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 226",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 227",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 228",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 229",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 23",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 230",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 232",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 233",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 235",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 236",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 237",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 238",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 239",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 24",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 241",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 242",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 243",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 244",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 245",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 246",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 247",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 248",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 249",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 25",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 258",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 259",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 260",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 262",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 263",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 264",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 266",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 267",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 269",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH 268",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGR 225A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIGR 238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 209A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCG 255A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANTH 270",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 271",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 272",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 273",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 274",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 276",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 277",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 278",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 279",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 280F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 281A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 281B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 281C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 283A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 284",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 285",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 287",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 288",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 289S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 291",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 292",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 293",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 295",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 297",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 3",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 30",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 4",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 42",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 43",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 45",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 46",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 5",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 500",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANTH 87",
+    "type": "ROOT",
+    "children": []
+  }
+]

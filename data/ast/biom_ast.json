@@ -1,0 +1,291 @@
+[
+  {
+    "code": "BIOM 200A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 200B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 200C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BIOM 200A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM 201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BIOM 200B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM 201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "BIOM 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 202",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 203B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 209",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 218",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 219",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 222",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 225",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 229",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 242",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 246",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 252",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM200A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM201",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BIOM 253",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM 200A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 201",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BIOM 254",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM200A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM201",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BIOM 255",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM 200A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 201",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BIOM 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 262",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM 252",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BIOM200A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM200B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "BIOM 272",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BIOM 272",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 274",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 285",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 287",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 288",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 294",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 295",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 297",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BIOM 299",
+    "type": "ROOT",
+    "children": []
+  }
+]

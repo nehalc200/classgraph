@@ -1,16 +1,29 @@
 import json
+import os
+from collections import defaultdict
 from astclass import RootNode, ChildNode, ASTNode
 
 
-def build(filestream):
-    # Create a lookup dict
-    course_dict = {course.get("code"): course for course in filestream}
-    
+def build_global_course_dict(webreg_data):
+    course_dict = {}
+    for course_entry in webreg_data:
+        course = course_entry.get("course", {})
+        code = course.get("code", "")
+        if code:
+            course_dict[code] = {
+                "code": code,
+                "title": course.get("title", ""),
+                "prereq_ast": course.get("prereq").get("items") if course.get("prereq") else [],
+            }
+    return course_dict
+
+
+def build(filestream, global_course_dict):
     return_list = []
     for course in filestream:
         course_id = course.get("code")
         prereqs = course.get("prereq_ast", [])
-        root = RootNode(course_id, find_children(prereqs, course_dict))
+        root = RootNode(course_id, find_children(prereqs, global_course_dict))
         return_list.append(root)
     return return_list
 
@@ -88,25 +101,67 @@ def filter_courses_by_department(webreg_data, dept_code):
     return courses
 
 
+def get_department_code(course_code):
+    if not course_code:
+        return ""
+    
+    first_part = course_code.split()[0]
+    
+    if '/' in first_part:
+        first_part = first_part.split('/')[0]
+    
+    return first_part
+
+
+def process_all_departments(webreg_data, output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Build global course dictionary for cross-department lookups
+    global_course_dict = build_global_course_dict(webreg_data)
+    
+    # Group courses by department
+    dept_courses = defaultdict(list)
+    for course_entry in webreg_data:
+        course = course_entry.get("course", {})
+        code = course.get("code", "")
+        dept_code = get_department_code(code)
+        
+        if dept_code:
+            dept_courses[dept_code].append({
+                "code": code,
+                "title": course.get("title", ""),
+                "prereq_ast": course.get("prereq").get("items") if course.get("prereq") else [],
+            })
+    
+
+    total_courses = 0
+    for dept_code, courses in sorted(dept_courses.items()):
+        dept_ast = build(courses, global_course_dict)
+        dept_ast_dict = [root.to_dict() for root in dept_ast]
+        
+
+        output_file = os.path.join(output_dir, f"{dept_code.lower()}_ast.json")
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(dept_ast_dict, f, indent=2, ensure_ascii=False)
+        
+        print(f"Processed {len(dept_ast)} {dept_code} courses -> {output_file}")
+        total_courses += len(dept_ast)
+    
+    return len(dept_courses), total_courses
+
+
 if __name__ == "__main__":
-    # load data
+    # Load data
     with open("data/combined.json", "r", encoding="utf-8") as f:
         webreg_data = json.load(f)
 
-    print("Enter department code:")
-    dept_code = input().strip().upper()
+    print("Processing all departments from combined.json...")
+    print("-" * 50)
     
-    # filter by department
-    courses = filter_courses_by_department(webreg_data, dept_code)
+    # Process all departments
+    output_dir = "data/ast"
+    num_depts, total_courses = process_all_departments(webreg_data, output_dir)
     
-    # built asts
-    dept_courses = build(courses)
-    dept_courses_dict = [root.to_dict() for root in dept_courses]
-
-    # Save to file
-    output_file = f"data/{dept_code}_ast.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(dept_courses_dict, f, indent=2, ensure_ascii=False)
-
-    print(f"Processed {len(dept_courses)} {dept_code} courses")
-    print(f"AST data saved to: {output_file}")
+    print("-" * 50)
+    print(f"Summary: Processed {num_depts} departments with {total_courses} total courses")
+    print(f"AST files saved to: {output_dir}/")

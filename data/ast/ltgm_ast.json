@@ -1,0 +1,13 @@
+[
+  {
+    "code": "LTGM 2B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTGM 2A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

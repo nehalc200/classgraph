@@ -1,0 +1,23 @@
+[
+  {
+    "code": "WES 237A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "WES 268B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "WES 268A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "WES 269",
+    "type": "ROOT",
+    "children": []
+  }
+]

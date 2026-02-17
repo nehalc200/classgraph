@@ -1,0 +1,41 @@
+[
+  {
+    "code": "LTFR 116",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTFR 104",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTFR 2B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTFR 2A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTFR 2C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTFR 2B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTFR 2A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

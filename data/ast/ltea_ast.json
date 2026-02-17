@@ -1,0 +1,28 @@
+[
+  {
+    "code": "LTEA 138",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTEA 141",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTEA 142",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTEA 151",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIHL 132",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

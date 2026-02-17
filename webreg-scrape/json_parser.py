@@ -2,194 +2,266 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 import json
 import re
+from dataclasses import dataclass
+from typing import List, Union
 
 import pandas as pd
 
-# Updated regex: Accepts 2-6 uppercase letters, optional space/hyphen, 1-3 digits, and up to 2 trailing uppercase letters
-COURSE_RE = re.compile(r"^[A-Z]{2,6}\s*-?\s*\d{1,3}[A-Z]{0,2}$")
+# Course pattern
+COURSE_RE = re.compile(r"^([A-Z]{2,6})\s*-?\s*(\d{1,3}[A-Z]{0,2})$")
 
 
-def looks_like_course(text):
-    return bool(COURSE_RE.match(text.replace(" ", "")) or COURSE_RE.match(text))
+@dataclass
+class Course:
+    code: str
+
+@dataclass 
+class OrExpr:
+    items: List[Union['Course', 'OrExpr', 'AndExpr']]
+
+@dataclass
+class AndExpr:
+    items: List[Union['Course', 'OrExpr', 'AndExpr']]
 
 
-def _normalize_spacing(text):
-    text = text.replace(";;", ";")
-    # Remove commas that appear before ' and ' or ' or '
-    text = re.sub(r',\s+(and|or)\s+', r' \1 ', text)
-    # Remove trailing commas from course codes
-    text = re.sub(r'([A-Z]{2,6}\s*-?\s*\d{1,3}[A-Z]{0,2}),', r'\1', text)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip(" ;,").strip()
+def looks_like_course(text: str) -> bool:
+    return bool(COURSE_RE.match(text.replace(" ", "")))
 
 
-def _fill_missing_dept(or_text, prev_dept):
-    """
-    If a course in an OR group is just a number or number+letters, prepend the previous department.
-    """
-    # Remove spaces/hyphens for matching
-    compact = or_text.replace(" ", "").replace("-", "")
-    # If it starts with digits, it's missing a department
-    if re.match(r"^\d{1,3}[A-Z]{0,2}$", compact) and prev_dept:
-        return prev_dept + compact
-    return or_text
-
-
-def _expand_course_range(text):
-    """
-    Expand course ranges like 'ECE 271A-B' into ['ECE 271A', 'ECE 271B']
-    or 'MATH 20A-E' into ['MATH 20A', 'MATH 20B', ..., 'MATH 20E']
-    """
-    # Pattern: DEPT NUM LETTER-LETTER (e.g., "ECE 271A-B")
-    range_pattern = r'^([A-Z]{2,6})\s*-?\s*(\d{1,3})([A-Z])-([A-Z])$'
-    match = re.match(range_pattern, text.replace(" ", ""))
-    
+def extract_dept(text: str) -> str | None:
+    """Extract department from a course code."""
+    match = COURSE_RE.match(text.replace(" ", ""))
     if match:
-        dept = match.group(1)
-        num = match.group(2)
-        start_letter = match.group(3)
-        end_letter = match.group(4)
-        
-        # Generate range A-B, A-C, etc.
-        courses = []
-        for letter_code in range(ord(start_letter), ord(end_letter) + 1):
-            letter = chr(letter_code)
-            courses.append(f"{dept}{num}{letter}")
-        return courses
+        return match.group(1)
+    return None
+
+
+def find_prereq_boundary(raw_str: str) -> str:
+    # Split by semicolon - everything after is notes/restrictions
+    if ';' in raw_str:
+        raw_str = raw_str.split(';')[0]
     
-    return [text]
+    return raw_str.strip()
 
 
-def parse_prereqs(raw_str):
-    and_list = []
-    or_list = []
-    notes = []
-    success = False
-
-    special_cases = [
-        "graduate standing",
-        "consent of instructor",
-        "upper-division standing",
-        "department approval",
-        "lower-division standing",
-        "department stamp",
-        "instructor approval",
-        "junior standing",
-        "senior standing"
-    ]
-
-    if raw_str.strip() == "" or raw_str.strip().lower() == "none":
-        return {
-            "AND": [], "OR": [], "notes": [], "parseable": success
-        }
-
-    lowered = raw_str.lower()
-    original = raw_str
-
-    # remove special cases and append them into notes
-    for case in special_cases:
-        while case in lowered:
-            start = lowered.find(case)
-            end = start + len(case)
-            notes.append(original[start:end])
-            # Remove the special case and surrounding ' or ' / ' and '
-            removed_text = original[start:end]
-            lowered = lowered[:start] + lowered[end:]
-            original = original[:start] + original[end:]
-            
-            # Clean up leftover ' or ' or ' and ' patterns
-            original = re.sub(r'\s+(or|and)\s*$', '', original)
-            original = re.sub(r'^\s*(or|and)\s+', '', original)
-            lowered = original.lower()
-
-    lowered = _normalize_spacing(lowered)
-    original = _normalize_spacing(original)
-
-    # Remove grade requirements and other trailing text from course codes
-    # Pattern: "COURSE with a grade of X or above/better"
-    grade_pattern = r'\s+with\s+a\s+grade\s+of\s+[^\s;]+(\s+or\s+(above|better))?'
-    original = re.sub(grade_pattern, '', original, flags=re.IGNORECASE)
-    lowered = original.lower()
-
-    # Split by semicolon first to separate major sections
-    sections = [s.strip() for s in original.split(';') if s.strip()]
+def tokenize(text: str) -> List[str]:
+    # Normalize the text
+    text = re.sub(r'\s+', ' ', text).strip()
     
-    # Process only the first section as prerequisites, rest go to notes
-    if sections:
-        prereq_section = sections[0]
-        if len(sections) > 1:
-            # Check if remaining sections are courses or just notes
-            for section in sections[1:]:
-                section_upper = section.upper()
-                # Check if it's a course range or single course
-                expanded = _expand_course_range(section_upper)
-                if len(expanded) > 1 or looks_like_course(expanded[0]):
-                    prereq_section += " and " + section
-                else:
-                    notes.append(section)
-        
-        temp = prereq_section.split(' and ')
-    else:
-        temp = []
-
-    success = True
-
+    # Remove grade requirements 
+    text = re.sub(r'\s+with\s+a\s+grade\s+of\s+[A-Za-z0-9+-]+(\s+or\s+(above|better))?', '', text, flags=re.IGNORECASE)
+    
+    tokens = []
     prev_dept = None
-    for item in temp:
-        item = item.strip()
-        if not item:
+    
+    raw_tokens = text.split()
+    
+    i = 0
+    while i < len(raw_tokens):
+        token = raw_tokens[i].strip(' ,')
+        
+        if not token:
+            i += 1
+            continue
+            
+        token_lower = token.lower()
+        
+        # Check for AND/OR keywords
+        if token_lower == 'and':
+            tokens.append('AND')
+            i += 1
+            continue
+        elif token_lower == 'or':
+            tokens.append('OR')
+            i += 1
             continue
         
-        # Check if this is a course range (e.g., "ECE 271A-B")
-        item_upper = item.upper()
-        expanded_courses = _expand_course_range(item_upper)
+        # Try to combine with next token to form course code (e.g., "CSE" + "12")
+        token_upper = token.upper()
         
-        # If it's a range, add all courses as AND requirements
-        if len(expanded_courses) > 1:
-            and_list.extend(expanded_courses)
-            # Extract department for future use
-            match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", expanded_courses[0].replace(" ", ""))
-            if match:
-                prev_dept = match.group(1)
-            continue
-        
-        if ' or ' in item:
-            subset = [s.strip() for s in item.split(' or ') if s.strip()]
-            valid_subset = []
-            invalid_subset = []
-            for idx, s in enumerate(subset):
-                s_up = s.upper()
-                match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", s_up.replace(" ", ""))
-                if idx == 0 and match:
-                    prev_dept = match.group(1)
-                if idx > 0 and prev_dept:
-                    s_up = _fill_missing_dept(s_up, prev_dept)
-                if looks_like_course(s_up):
-                    valid_subset.append(s_up)
+        # Check if this is a department code followed by a number
+        if re.match(r'^[A-Z]{2,6}$', token_upper) and i + 1 < len(raw_tokens):
+            next_token = raw_tokens[i + 1].strip(' ,').upper()
+            # Check if next token is a course number or number with range
+            if re.match(r'^\d{1,3}[A-Z]{0,2}(-[A-Z0-9]+)*$', next_token):
+                # Combine them
+                combined = token_upper + next_token
+                # Handle ranges like "20A-B-C"
+                if '-' in next_token:
+                    parts = next_token.split('-')
+                    base_num = re.match(r'^(\d{1,3})([A-Z]{0,2})', parts[0])
+                    if base_num:
+                        # First part is complete
+                        first_course = token_upper + parts[0]
+                        tokens.append(first_course)
+                        prev_dept = token_upper
+                        # Rest are letter suffixes
+                        for part in parts[1:]:
+                            part = part.strip()
+                            if re.match(r'^[A-Z]{1,2}$', part):
+                                tokens.append(token_upper + base_num.group(1) + part)
+                            elif re.match(r'^\d{1,3}[A-Z]{0,2}$', part):
+                                tokens.append(token_upper + part)
                 else:
-                    invalid_subset.append(s)
-            
-            # Only create OR group if we have more than 1 valid course
-            if len(valid_subset) > 1:
-                or_list.append(valid_subset)
-            elif len(valid_subset) == 1:
-                # Single course in OR group should just be an AND requirement
-                and_list.append(valid_subset[0])
-            
-            if invalid_subset:
-                notes.extend(invalid_subset)
-        else:
-            s_up = item.upper()
-            match = re.match(r"^([A-Z]{2,6})\s*-?\s*\d{1,3}[A-Z]{0,2}$", s_up.replace(" ", ""))
-            if match:
-                prev_dept = match.group(1)
-            if looks_like_course(s_up):
-                and_list.append(s_up)
-            else:
-                notes.append(item)
+                    tokens.append(token_upper + next_token)
+                    prev_dept = token_upper
+                i += 2
+                continue
+        
+        # Check if it's already a complete course code
+        if looks_like_course(token_upper):
+            tokens.append(token_upper)
+            prev_dept = extract_dept(token_upper)
+            i += 1
+            continue
+        
+        # Check if it's a number/range that needs department filled in
+        if prev_dept:
+            # Handle ranges like "31BH" or "4A-B-C-D"
+            if '-' in token_upper:
+                parts = token_upper.split('-')
+                for part in parts:
+                    part = part.strip()
+                    if not part:
+                        continue
+                    if re.match(r'^\d{1,3}[A-Z]{0,2}$', part):
+                        tokens.append(prev_dept + part)
+                    elif re.match(r'^[A-Z]{1,2}$', part) and tokens:
+                        # Letter continuation - get base from last token
+                        last = tokens[-1]
+                        base = re.match(r'^([A-Z]{2,6})(\d{1,3})', last)
+                        if base:
+                            tokens.append(base.group(1) + base.group(2) + part)
+                i += 1
+                continue
+            elif re.match(r'^\d{1,3}[A-Z]{0,2}$', token_upper):
+                tokens.append(prev_dept + token_upper)
+                i += 1
+                continue
+        
+        # Unknown token - skip it
+        i += 1
+    
+    return tokens
 
+
+def parse_to_groups(tokens: List[str]) -> Union[Course, OrExpr, AndExpr, None]:
+    """
+    Example: A and B or C and D 
+    Parses as: A and (B or C) and D -> AndExpr([A, OrExpr([B, C]), D])
+    """
+    if not tokens:
+        return None
+    
+    # Filter to only course tokens and operators
+    filtered = []
+    for t in tokens:
+        if t in ('AND', 'OR') or looks_like_course(t):
+            filtered.append(t)
+    
+    if not filtered:
+        return None
+    
+    # Remove leading/trailing operators
+    while filtered and filtered[0] in ('AND', 'OR'):
+        filtered.pop(0)
+    while filtered and filtered[-1] in ('AND', 'OR'):
+        filtered.pop()
+    
+    if not filtered:
+        return None
+    
+    # First pass: group by OR (higher precedence)
+    and_groups = []
+    current_or_group = []
+    
+    i = 0
+    while i < len(filtered):
+        token = filtered[i]
+        
+        if token == 'AND':
+            # Finish current OR group, start new one
+            if current_or_group:
+                and_groups.append(current_or_group)
+                current_or_group = []
+        elif token == 'OR':
+            # Continue building current OR group
+            pass
+        else:
+            # It's a course
+            current_or_group.append(Course(code=token))
+        
+        i += 1
+    
+    if current_or_group:
+        and_groups.append(current_or_group)
+    
+    if not and_groups:
+        return None
+    
+    # Each and_group is a list of courses connected by OR
+    and_items = []
+    for or_group in and_groups:
+        if len(or_group) == 1:
+            and_items.append(or_group[0])
+        elif len(or_group) > 1:
+            and_items.append(OrExpr(items=or_group))
+    
+    if len(and_items) == 1:
+        return and_items[0]
+    else:
+        return AndExpr(items=and_items)
+
+
+def ast_to_dict(node: Union[Course, OrExpr, AndExpr, None]) -> dict | None:
+    if node is None:
+        return None
+    
+    if isinstance(node, Course):
+        return {
+            "type": "COURSE",
+            "course_id": node.code
+        }
+    elif isinstance(node, OrExpr):
+        return {
+            "type": "OR",
+            "items": [ast_to_dict(item) for item in node.items]
+        }
+    elif isinstance(node, AndExpr):
+        return {
+            "type": "AND", 
+            "items": [ast_to_dict(item) for item in node.items]
+        }
+    return None
+
+
+def parse_prereqs(raw_str: str) -> dict:
+    if not raw_str or raw_str.strip().lower() == "none" or raw_str.strip() == "":
+        return {
+            "ast": None,
+            "parseable": False,
+            "notes": []
+        }
+    
+    # Extract notes 
+    notes = []
+    if ';' in raw_str:
+        parts = raw_str.split(';')
+        notes = [p.strip() for p in parts[1:] if p.strip()]
+    
+    # Get just the prerequisite part
+    prereq_part = find_prereq_boundary(raw_str)
+    
+    # Tokenize
+    tokens = tokenize(prereq_part)
+    
+    # Parse 
+    groups = parse_to_groups(tokens)
+    
     return {
-         "AND": and_list, "OR": or_list, "notes": notes, "parseable": success
+        "groups": groups,
+        "parseable": groups is not None,
+        "notes": notes
     }
 
 
@@ -210,49 +282,20 @@ def generate_webreg_json(df, output_path):
         raw_prereq = str(raw_prereq)
 
         parsed = parse_prereqs(raw_prereq)
-        AND_List = parsed.get("AND", [])
-        OR_list = parsed.get("OR", [])
+        ast = parsed.get("ast")
         notes = parsed.get("notes", [])
-        parsable = parsed.get("parseable", False)
-
-        prereq_items = []
-
-
-         # add add groups
-        for course_id in AND_List:
-            prereq_items.append({
-                "type": "COURSE",
-                "course_id": course_id
-            })
-
-        
-        # add or groups
-        for or_group in OR_list:
-            prereq_items.append({
-                "type": "OR",
-                "items": [
-                    {
-                        "type": "COURSE",
-                        "course_id": course_id
-                    } for course_id in or_group if course_id
-                ]
-            })
-
-
-
-        prereq_obj = {
-            "type": "AND",
-            "items": prereq_items
-        }
+        parseable = parsed.get("parseable", False)
 
         course_obj = {
             "code": row["Code"],
             "title": row["Title"],
             "raw_prereq": raw_prereq,
-            "parseable": parsable,
+            "parseable": parseable,
             "notes": notes,
-            "prereq": prereq_obj,
         }
+        
+        if ast is not None:
+            course_obj["prereq"] = ast_to_dict(ast)
 
         output.append({
             "meta": {
@@ -274,6 +317,7 @@ def main():
     output_path = Path("data/webreg_data.json")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     generate_webreg_json(df, output_path)
+
 
 if __name__ == "__main__":
     main()

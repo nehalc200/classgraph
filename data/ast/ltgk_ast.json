@@ -1,0 +1,13 @@
+[
+  {
+    "code": "LTGK 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTGK 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

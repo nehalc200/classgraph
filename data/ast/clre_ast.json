@@ -1,0 +1,227 @@
+[
+  {
+    "code": "CLRE 230",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 232",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 233",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 234",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 235",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 236",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 237",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 238",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 239",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 242",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLRE 236",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CLRE 236R",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CLRE 250",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CLRE 250R",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLRE 243",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 252",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 258",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 259",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 260",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 263",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLRE253",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CLRE254",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLRE 264",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 267",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLRE 253",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLRE 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 270",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 295A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 295B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLRE 295A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLRE 297",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLRE 295A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLRE 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLRE 299",
+    "type": "ROOT",
+    "children": []
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "code": "JAPN 10A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 10B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "JAPN 10A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "JAPN 10AR",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "JAPN 10C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 130A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 130B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 130A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 130C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 135A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 135B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 135A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 135C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 137A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 137B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 20C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 137C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 140A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 140B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 140A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 140C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 150A-B-C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 180",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 190",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 196B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 196A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 20A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JAPN 20B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "JAPN 20A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "JAPN 20C",
+    "type": "ROOT",
+    "children": []
+  }
+]

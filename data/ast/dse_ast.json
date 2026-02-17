@@ -1,0 +1,89 @@
+[
+  {
+    "code": "DSE 201",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "DSE 200",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "DSE 210",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "DSE 200",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "DSE 250",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "DSE 201",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DSE 200",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DSE 260A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "DSE 200",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DSE 201",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DSE 200",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "DSE 203",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DSE 210",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DSE 200",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "DSE 220",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DSE 230",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

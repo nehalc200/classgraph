@@ -1,0 +1,367 @@
+[
+  {
+    "code": "SIOG 200A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 200B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 200C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 221",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 222",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 223A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 223B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SIOG 223A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SIOG 224",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 225",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 227A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 227B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SIOG227A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO227A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SIOG 227C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOG227A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO227A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOG227B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO227B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SIOG 228",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 229",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 230",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 232",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 233",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 234",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 235",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MAE 294A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIOC 203A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIOG 223A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIOG 230",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SIOG 236",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 237",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 238",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 239",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 241",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 242",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 243",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 244",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 246",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 247",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 249",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 252A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 252B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SIOG252A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO252A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SIOG 252C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOG252A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO252A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOG252B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO252B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SIOG 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 255A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 260",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 261",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 263",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 264",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 267",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 269",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 270",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SIOG 288",
+    "type": "ROOT",
+    "children": []
+  }
+]

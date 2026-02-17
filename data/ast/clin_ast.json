@@ -1,0 +1,43 @@
+[
+  {
+    "code": "CLIN 227A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLIN 227B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CLIN 227A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLIN 228",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLIN 294",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLIN 294B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLIN 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLIN 297",
+    "type": "ROOT",
+    "children": []
+  }
+]

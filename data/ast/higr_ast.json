@@ -1,0 +1,73 @@
+[
+  {
+    "code": "HIGR 215A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 224",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 241",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH 268",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGR 225A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIGR 238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 209A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCG 255A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "HIGR 265B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 281",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HIGR 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "code": "HUM 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 100",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 119",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 200",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 3",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "HUM1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "HUM 3GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 4",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 4GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 5",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 501",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 5GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HUM 88",
+    "type": "ROOT",
+    "children": []
+  }
+]

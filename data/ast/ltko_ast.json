@@ -1,0 +1,35 @@
+[
+  {
+    "code": "LTKO 130W",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTKO 2C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTKO 1B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTKO 1A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTKO 2B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTKO 2A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

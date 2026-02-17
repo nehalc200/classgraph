@@ -1,0 +1,71 @@
+[
+  {
+    "code": "BISP 182",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BILD 82",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BISP 193",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BISP 194",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BICD 100",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "BILD 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "BILD 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "BICD 100R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "BISP 195P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BISP 196",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BISP 197",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BISP 199",
+    "type": "ROOT",
+    "children": []
+  }
+]

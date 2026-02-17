@@ -1,0 +1,125 @@
+[
+  {
+    "code": "MGTP 401",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 414",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 416",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 421",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 422",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 424",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 425",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 429",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTP 432",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTP 431",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 432",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 433",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 434",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 435",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 441",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 443",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTP 434",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTP 444",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTP434",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTP424",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTP 451",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 452",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 459",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTP 495",
+    "type": "ROOT",
+    "children": []
+  }
+]

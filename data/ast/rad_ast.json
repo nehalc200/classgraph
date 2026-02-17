@@ -1,0 +1,95 @@
+[
+  {
+    "code": "RAD 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 401",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MED 401",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PEDS 401",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SURG 401",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "RAD 411",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 412",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 427",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 428",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "RAD 401",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MED 401",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PEDS 401",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SURG 401",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "RAD 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 434",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 434T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "RAD 496",
+    "type": "ROOT",
+    "children": []
+  }
+]
