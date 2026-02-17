@@ -1,20 +1,71 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
+import { getDepartments, loadDepartment } from '../utils/loadAstData';
+import { getAllCourses } from '../utils/astGraphUtils';
 
 /**
- * Searchable course selector — a text input that shows filtered suggestions
- * as you type. Selecting a suggestion calls `onSelect(courseCode)`.
+ * Searchable course selector — type to search departments and courses.
+ * As you type a department prefix, the courses for that department are
+ * loaded lazily and shown in the dropdown.
  */
-export const CourseSearch = ({ courses, onSelect }) => {
+export const CourseSearch = ({ onSelect }) => {
     const [query, setQuery] = useState('');
     const [isOpen, setIsOpen] = useState(false);
     const [highlightIdx, setHighlightIdx] = useState(0);
+    const [courseList, setCourseList] = useState([]); // currently loaded courses
+    const [loading, setLoading] = useState(false);
     const wrapperRef = useRef(null);
+    const debounceRef = useRef(null);
+
+    const departments = useMemo(() => getDepartments(), []);
+
+    // When the query changes, figure out which department(s) to load
+    const loadCoursesForQuery = useCallback(async (q) => {
+        const trimmed = q.trim().toUpperCase();
+        if (!trimmed) {
+            setCourseList([]);
+            return;
+        }
+
+        // Find matching departments by prefix
+        const matchingDepts = departments.filter((d) => d.startsWith(trimmed.split(/\s+/)[0]));
+
+        if (matchingDepts.length === 0) {
+            setCourseList([]);
+            return;
+        }
+
+        // Load at most the first 5 matching departments to avoid loading too much
+        const deptsToLoad = matchingDepts.slice(0, 5);
+        setLoading(true);
+
+        try {
+            const allCourses = [];
+            for (const dept of deptsToLoad) {
+                const data = await loadDepartment(dept);
+                allCourses.push(...getAllCourses(data));
+            }
+            setCourseList(allCourses);
+        } catch (e) {
+            console.error('Failed to load courses:', e);
+        } finally {
+            setLoading(false);
+        }
+    }, [departments]);
+
+    // Debounced search
+    useEffect(() => {
+        if (debounceRef.current) clearTimeout(debounceRef.current);
+        debounceRef.current = setTimeout(() => {
+            loadCoursesForQuery(query);
+        }, 200);
+        return () => clearTimeout(debounceRef.current);
+    }, [query, loadCoursesForQuery]);
 
     const filtered = useMemo(() => {
-        if (!query.trim()) return courses.slice(0, 30); // show first 30 when empty
+        if (!query.trim()) return [];
         const q = query.trim().toUpperCase();
-        return courses.filter((c) => c.toUpperCase().includes(q)).slice(0, 30);
-    }, [query, courses]);
+        return courseList.filter((c) => c.toUpperCase().includes(q)).slice(0, 30);
+    }, [query, courseList]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -27,7 +78,6 @@ export const CourseSearch = ({ courses, onSelect }) => {
         return () => document.removeEventListener('mousedown', handleClick);
     }, []);
 
-    // Reset highlight when filtered results change
     useEffect(() => { setHighlightIdx(0); }, [filtered]);
 
     function handleKeyDown(e) {
@@ -59,7 +109,7 @@ export const CourseSearch = ({ courses, onSelect }) => {
             <input
                 type="text"
                 value={query}
-                placeholder="Search for a course…"
+                placeholder="Search for a course (e.g. CSE 100)…"
                 onChange={(e) => { setQuery(e.target.value); setIsOpen(true); }}
                 onFocus={() => setIsOpen(true)}
                 onKeyDown={handleKeyDown}
@@ -77,7 +127,7 @@ export const CourseSearch = ({ courses, onSelect }) => {
                     boxSizing: 'border-box',
                 }}
             />
-            {isOpen && filtered.length > 0 && (
+            {isOpen && (filtered.length > 0 || loading) && (
                 <ul
                     style={{
                         position: 'absolute',
@@ -97,6 +147,11 @@ export const CourseSearch = ({ courses, onSelect }) => {
                         fontFamily: 'Inter, sans-serif',
                     }}
                 >
+                    {loading && (
+                        <li style={{ padding: '10px 16px', fontSize: 14, color: '#888' }}>
+                            Loading…
+                        </li>
+                    )}
                     {filtered.map((code, i) => (
                         <li
                             key={code}

@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback } from "react";
 import { InputGroup } from "../../components/InputGroup";
 import { SelectGroup } from "../../components/SelectGroup";
 import { Button } from "../../components/Button";
@@ -6,15 +6,12 @@ import { CheckboxGroup } from "../../components/CheckboxGroup";
 import { D3Graph } from "../../components/D3Graph";
 import { GraphTabs } from "../../components/GraphTabs";
 import { CourseSearch } from "../../components/CourseSearch";
-import { getAllCourses, findRootNode } from "../../utils/astGraphUtils";
+import { findRootNode } from "../../utils/astGraphUtils";
+import { loadDepartmentForCourse } from "../../utils/loadAstData";
 import majorsData from "../../../data/majors.json";
-import astData from "../../../data/MATH_ast.json";
 import graphBg from "./graphbackground.webp";
 
 export const Desktop = () => {
-  // Derive course list from the AST data
-  const courseOptions = useMemo(() => getAllCourses(astData), []);
-
   // Original form data
   const currentYear = new Date().getFullYear();
   const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
@@ -27,47 +24,60 @@ export const Desktop = () => {
   const [selectedCourse, setSelectedCourse] = useState("");
   const [tabs, setTabs] = useState([]);           // [{ courseCode, astNode }]
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const [generating, setGenerating] = useState(false);
 
   // When the user selects a course from search
   const handleCourseSelect = useCallback((courseCode) => {
     setSelectedCourse(courseCode);
   }, []);
 
-  // When the user clicks "Go" — open in a new tab (or switch if already open)
-  const handleGenerate = useCallback(() => {
-    if (!selectedCourse) return;
-    const rootNode = findRootNode(selectedCourse, astData);
-    if (!rootNode) return;
-
-    // Avoid duplicate tabs
-    const existingIndex = tabs.findIndex((t) => t.courseCode === rootNode.code);
-    if (existingIndex >= 0) {
-      setActiveTabIndex(existingIndex);
-      return;
-    }
-
-    setTabs((prev) => [...prev, { courseCode: rootNode.code, astNode: rootNode }]);
-    setActiveTabIndex(tabs.length);
-  }, [selectedCourse, tabs]);
-
-  // When the user clicks an expandable node inside the graph
-  const handleNodeExpand = useCallback(
-    (courseCode) => {
-      const rootNode = findRootNode(courseCode, astData);
-      if (!rootNode) return;
-
-      const existingIndex = tabs.findIndex(
-        (t) => t.courseCode === rootNode.code,
-      );
-      if (existingIndex >= 0) {
-        setActiveTabIndex(existingIndex);
+  // When the user clicks "Go" — lazy-load the department and open in a new tab
+  const handleGenerate = useCallback(async () => {
+    if (!selectedCourse || generating) return;
+    setGenerating(true);
+    try {
+      const deptData = await loadDepartmentForCourse(selectedCourse);
+      const rootNode = findRootNode(selectedCourse, deptData);
+      if (!rootNode) {
+        setGenerating(false);
         return;
       }
 
-      setTabs((prev) => [...prev, { courseCode: rootNode.code, astNode: rootNode }]);
-      setActiveTabIndex(tabs.length);
+      // Avoid duplicate tabs
+      setTabs((prev) => {
+        const existingIndex = prev.findIndex((t) => t.courseCode === rootNode.code);
+        if (existingIndex >= 0) {
+          setActiveTabIndex(existingIndex);
+          return prev;
+        }
+        setActiveTabIndex(prev.length);
+        return [...prev, { courseCode: rootNode.code, astNode: rootNode }];
+      });
+    } catch (e) {
+      console.error('Failed to load course data:', e);
+    } finally {
+      setGenerating(false);
+    }
+  }, [selectedCourse, generating]);
+
+  // When the user clicks an expandable node inside the graph
+  const handleNodeExpand = useCallback(
+    async (courseCode) => {
+      const deptData = await loadDepartmentForCourse(courseCode);
+      const rootNode = findRootNode(courseCode, deptData);
+      if (!rootNode) return;
+
+      setTabs((prev) => {
+        const existingIndex = prev.findIndex((t) => t.courseCode === rootNode.code);
+        if (existingIndex >= 0) {
+          setActiveTabIndex(existingIndex);
+          return prev;
+        }
+        setActiveTabIndex(prev.length);
+        return [...prev, { courseCode: rootNode.code, astNode: rootNode }];
+      });
     },
-    [tabs],
+    [],
   );
 
   // Tab interactions
@@ -134,8 +144,10 @@ export const Desktop = () => {
             <div className="w-full lg:flex-1 flex flex-col flex-shrink-0" style={{ minHeight: 550 }}>
               {/* Course search bar — above the graph */}
               <div className="mb-4 flex items-center gap-3">
-                <CourseSearch courses={courseOptions} onSelect={handleCourseSelect} />
-                <Button onClick={handleGenerate}>Go</Button>
+                <CourseSearch onSelect={handleCourseSelect} />
+                <Button onClick={handleGenerate} disabled={generating}>
+                  {generating ? '…' : 'Go'}
+                </Button>
               </div>
 
               {tabs.length > 0 ? (
