@@ -1,0 +1,165 @@
+[
+  {
+    "code": "DSGN 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 100",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 118",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COGS120",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGS187A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGS187B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CSE170",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DSGN100",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "DSGN 119",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COGS 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 124A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COGS1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "DSGN1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ESYS10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI10D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "USP1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "DSGN 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "DSGN 160",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 161",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 219",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 260",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 261",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 90",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "DSGN 99",
+    "type": "ROOT",
+    "children": []
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "code": "SYN 1",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SYN 100",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "SYN 1R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "SYN 1",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "AWP 3",
+                            "type": "CHILD",
+                            "children": []
+                          },
+                          {
+                            "code": "AWP 4B",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "SYN 1R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "SYN 2R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SYN 100GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SYN 150",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SYN 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SYN 198",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SYN100",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SYN2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SYN 199",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SYN 100",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "SYN 1",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 3",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "AWP 4B",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "SYN 1R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "SYN 2",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "SYN 1",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "OR",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "AWP 3",
+                                "type": "CHILD",
+                                "children": []
+                              },
+                              {
+                                "code": "AWP 4B",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "code": "SYN 1R",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "SYN 2R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SYN 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "SYN 1R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SYN 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

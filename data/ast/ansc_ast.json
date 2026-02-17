@@ -1,0 +1,555 @@
+[
+  {
+    "code": "ANSC 100",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 101A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 104",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 105",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 105GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 105S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 106",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 106GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 106S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 107",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 108",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 109",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 113",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 114",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 117",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 118",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 119GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 121",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 122",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 123",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 124",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 125GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 126",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 127",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 129",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 130",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 131",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 132",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 133",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 134",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 135",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 135GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 136",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 137",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 138",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 139",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 141",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 142",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 143",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 144",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 145",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 146",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 147",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 148",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 149",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 150",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 151",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 152",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 153",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 154",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 155",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC123",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC148",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANSC 156",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 159",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 160",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 161",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 162",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 164",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 165",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 166",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 169",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 171",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 173",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 175",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 177",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 178",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 180",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 181",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 183",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 184",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 185",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 186",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 187",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 188",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 189",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 190",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 190GS",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANSC101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC121",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC155",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC173",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH103",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC146",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC147",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC148",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC164",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANSC 191",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 191GS",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANSC121",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC148",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC155",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC164",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH21",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH23",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH103",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ANSC 192",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 192A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 192GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 193",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 193GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 194",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ANSC 196",
+    "type": "ROOT",
+    "children": []
+  }
+]

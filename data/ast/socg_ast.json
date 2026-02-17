@@ -1,0 +1,94 @@
+[
+  {
+    "code": "SOCG 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 204",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 205",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 208B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOCG 208A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOCG 209",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 230",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 255C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 255D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH 268",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGR 225A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIGR 238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 209A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCG 255A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOCG 278",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCG 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

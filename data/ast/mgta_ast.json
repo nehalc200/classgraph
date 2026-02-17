@@ -1,0 +1,298 @@
+[
+  {
+    "code": "MGTA 402",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 403",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 414",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 415",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 444",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 451",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 452",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 453",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 454",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 454A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 454B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 455",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 456",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 457",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 458",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 459",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 460",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 461",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 462",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 463",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 464",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 466",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTA 479",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTA 495",
+    "type": "ROOT",
+    "children": []
+  }
+]

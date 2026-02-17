@@ -1,0 +1,64 @@
+[
+  {
+    "code": "BNFO 262",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM 252",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BIOM200A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM200B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "BIOM 272",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BNFO 281",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BNFO 283",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BNFO 294",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BNFO 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BNFO 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BNFO 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

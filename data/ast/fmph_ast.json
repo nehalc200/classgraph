@@ -1,0 +1,481 @@
+[
+  {
+    "code": "FMPH 101",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FMPH40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PSYC60",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MATH11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGS14B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 102",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FMPH40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PSYC60",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MATH11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGS14B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 130",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FMPH50",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "FMPH101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 155",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 161",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 171",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FMPH40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "FMPH101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 191",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 193",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "FMPH40",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH50",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH102",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "FMPH110",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 194",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "FMPH40",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH50",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH102",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH110",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH120",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "FMPH193",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 196A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "FMPH40",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH50",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "FMPH102",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "FMPH110",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 196B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 196C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 277",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 291",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 40",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 400",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 401",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 402",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 403",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 404",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 405",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 406",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 410",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 411",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FMPH402",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "FMPH403",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 412",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 413",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 415",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 417",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 418",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 419",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 425",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 426",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "PB87",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "FMPH402",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PH402",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "FMPH 427",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 428",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 431",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 440",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 441",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 460",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 461",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 462",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "FM76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "FM77",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PU75",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "FMPH 491",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 496A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 496B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 498",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 499",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "FMPH 50",
+    "type": "ROOT",
+    "children": []
+  }
+]

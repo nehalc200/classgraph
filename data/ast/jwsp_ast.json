@@ -1,0 +1,99 @@
+[
+  {
+    "code": "JWSP 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 102",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 104",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 111",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 130",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 131",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 196A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 196B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "JUDA 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "JWSP 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "JWSP 3",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "JWSP 87",
+    "type": "ROOT",
+    "children": []
+  }
+]

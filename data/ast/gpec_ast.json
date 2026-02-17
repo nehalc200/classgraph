@@ -1,0 +1,75 @@
+[
+  {
+    "code": "GPEC 416",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPEC 431",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPEC 435",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 403",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 454",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPEC 444",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPEC 451",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 401",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 403",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPEC 462",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 401",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 403",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPEC 485",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPEC 486",
+    "type": "ROOT",
+    "children": []
+  }
+]

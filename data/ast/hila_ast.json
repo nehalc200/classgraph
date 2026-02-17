@@ -1,0 +1,862 @@
+[
+  {
+    "code": "HILA 102",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CAT 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CAT 2",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CAT 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2C",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7C",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 12",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 14",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "HUM1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "HUM 4",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MCWP 40",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AWP 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "AWP 4B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MCWP 41",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MCWP 50",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MCWP 40",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 3",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "AWP 4B",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "MCWP 40R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MCWP 125",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 12",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AWP 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "MMW 13",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MMW12",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW12R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "MMW 14",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 13",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MMW 15",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW12",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW13",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MMW 21",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 22",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "WCWP 10A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "WCWP 10B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "WCWP 10A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HILA 121A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CAT 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CAT 2",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CAT 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 2C",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 7C",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 12",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 14",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "HUM1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "HUM 4",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MCWP 40",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AWP 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "AWP 4B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MCWP 41",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MCWP 50",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MCWP 40",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 3",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "AWP 4B",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "MCWP 40R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MCWP 125",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 11",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 12",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AWP 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "MMW 13",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MMW12",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW12R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "MMW 14",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 2A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 2B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 13",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MMW 15",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW12",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW13",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MMW 21",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 22",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "WCWP 10A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "WCWP 10B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "WCWP 10A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HILA 168",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "HILA 268",
+    "type": "ROOT",
+    "children": []
+  }
+]

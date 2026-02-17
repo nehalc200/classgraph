@@ -1,0 +1,73 @@
+[
+  {
+    "code": "TDDR 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDDR 102",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDR 101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDDR 111",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDDR 108",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "TDHT 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "TDDR 190",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDR 108",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDDR 111",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "TDDR 108",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "TDHT 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "code": "GPIM 411",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPIM 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPIM 447",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 401",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 403",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPIM 470",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPIM 473",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPIM 472",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

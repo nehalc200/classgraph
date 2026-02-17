@@ -1,0 +1,28 @@
+[
+  {
+    "code": "LIPO 16",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIPO 1D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LIPO 1DX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LIPO 1B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LIPO 1BX",
+    "type": "ROOT",
+    "children": []
+  }
+]

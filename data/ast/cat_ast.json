@@ -1,0 +1,124 @@
+[
+  {
+    "code": "CAT 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 124",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 124GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 124RS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 125GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 125RS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 192",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 197",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CAT 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CAT 24",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 2CE",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CAT 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CAT 3",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 3CE",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 500",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 75",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 87",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 90",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CAT 98",
+    "type": "ROOT",
+    "children": []
+  }
+]

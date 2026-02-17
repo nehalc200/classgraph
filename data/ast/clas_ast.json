@@ -1,0 +1,84 @@
+[
+  {
+    "code": "CLAS 109",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTGK1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTGK2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTGK3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLAS 110",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTLA1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTLA2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTLA3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CLAS 119",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 196A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 196A-B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CLAS 87",
+    "type": "ROOT",
+    "children": []
+  }
+]

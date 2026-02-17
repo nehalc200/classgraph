@@ -1,0 +1,323 @@
+[
+  {
+    "code": "COGR 200A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 200B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 200C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201J",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201L",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201M",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 201N",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 210",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 211",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 215",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 219",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 220",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 223",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 225A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 225B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 225C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 225D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ANTH 268",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGR 225A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIGR 238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 209A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCG 255A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COGR 237",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 238",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 239",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 241",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 242",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 243",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 244",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 245",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 246",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 247",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 248",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 252",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 258",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 259",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 261",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 262",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 263",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 264",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 278",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 280",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 281",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 282",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 283",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 284",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 285",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 294",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COGR 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

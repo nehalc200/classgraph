@@ -1,0 +1,28 @@
+[
+  {
+    "code": "COSE 210",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COSE 230A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COSE 260A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COSE 260B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COSE 260A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

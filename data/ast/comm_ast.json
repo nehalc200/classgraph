@@ -1,0 +1,3118 @@
+[
+  {
+    "code": "COMM 10",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 100A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 100B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 100C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 101",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 101D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "VIS70N",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101E",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101K",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101M",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 101N",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "VIS70N",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 101T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 101",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "VIS 70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 102B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM101",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 102C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 102D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 102M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "VIS70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 102P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "VIS70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 102T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "VIS70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 103D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 103E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 104D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 104E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 104F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 104G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 104GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 105G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 105M",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 105P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106F",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 106I",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106N",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 106V",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 107",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 108A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 108D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 108G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 109I",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 109P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 110G",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 110T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 110X",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 111A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 111B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 111C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 111F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 111G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 111P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 111T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 112C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HDP1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 112G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 113T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114F",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 114G",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114I",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114J",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 114K",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114N",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114P",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 114T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 114W",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GLBH20",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 115",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 115D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 115J",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 118A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 118C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 118T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 119",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 80",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 120I",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 120M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 120N",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 120P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 120W",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 124A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COGS1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DSGN1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ESYS10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI10D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 124B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 126",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 127",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 129",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 130",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 131",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 132",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 133",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 134",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 135",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 136",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 137",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 138",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 139",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 140",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 142",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 143",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 144",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 145",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 146",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 147",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 148",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM50",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 149",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM100C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 151",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 152",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM20",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM30GS",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 153",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 155",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 156",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 158",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 159",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 160",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 162",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 163",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 164",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 166",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 168",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 170",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 171",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 172",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 173",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 174",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 175",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 176",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 177",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 178",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 180",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 181",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 182",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 183",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 184",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 185",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM100A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM100C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 190",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM 100C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 194",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 196A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 196B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 196A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 199H",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM196A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COMM196B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 20",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 30",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 30GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 40",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 50",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 75",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 80",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "COMM 87",
+    "type": "ROOT",
+    "children": []
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "TDDM 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDDM 100",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDM 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

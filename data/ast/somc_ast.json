@@ -1,0 +1,170 @@
+[
+  {
+    "code": "SOMC 225",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOMC 227",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOMC 237",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 227",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 238",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 222",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 239",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 225",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 243",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOMC 245B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 245A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 246B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 246A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 247B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 247A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 248B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 248A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 251B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 251A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 252B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 252A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 253B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 253A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 254B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 254A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 255B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 255A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 256B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SOMC 256A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "SOMC 400C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOMC 410",
+    "type": "ROOT",
+    "children": []
+  }
+]

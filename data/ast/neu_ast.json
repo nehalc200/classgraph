@@ -1,0 +1,135 @@
+[
+  {
+    "code": "NEU 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 200A-B-C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 210",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 234",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 241",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 243",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "NEU238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PSYC231",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "NEU 266",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 270A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 270B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 276",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 277",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 285",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 401",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 426",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "NEU 401",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "NEU 426T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 427",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "NEU 401",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "NEU 427T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEU 496",
+    "type": "ROOT",
+    "children": []
+  }
+]

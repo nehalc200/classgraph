@@ -1,0 +1,138 @@
+[
+  {
+    "code": "MATS 200",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 201A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 201B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 201C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 202",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 203",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MATS 202",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MATS 205A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 213A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 227",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 236",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 251A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 251B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 252",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 256",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 261A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 261B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 269",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 290",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 295",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MATS 299",
+    "type": "ROOT",
+    "children": []
+  }
+]

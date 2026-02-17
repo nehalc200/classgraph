@@ -1,0 +1,30 @@
+[
+  {
+    "code": "TDTR 115",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDHD 20",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "TDTR 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "TDTR 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

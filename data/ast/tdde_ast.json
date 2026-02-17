@@ -1,0 +1,160 @@
+[
+  {
+    "code": "TDDE 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDDE 111",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDDE 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "THDE 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "TDDE 121",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDE 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDPR 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "THDE 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "THPR 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDDE 130",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDE 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDPR 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDPR 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDPR 3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDPR 5",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDDE 132",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDDE 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDDE 101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDDE 111",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "TDDE 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "THDE 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "TDDE 121",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDDE 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "TDPR 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "THDE 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "THPR 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "TDDE 131",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDDE 169A",
+    "type": "ROOT",
+    "children": []
+  }
+]

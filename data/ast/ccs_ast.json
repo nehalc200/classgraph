@@ -1,0 +1,49 @@
+[
+  {
+    "code": "CCS 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CCS 102",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CCS 123",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "CCS 197",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CCS101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CCS102",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "CCS 199",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "CCS101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CCS102",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

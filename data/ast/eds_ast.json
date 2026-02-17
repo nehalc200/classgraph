@@ -1,0 +1,1802 @@
+[
+  {
+    "code": "EDS 102",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 103",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 105/PHYS 180",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHYS1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS2A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS4A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHYS1B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS2B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS4C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHYS1C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS2C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS2D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHYS4B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EDS 107",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 108GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 111",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 111GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 112",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 113",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 114",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 115",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 115GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 116",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 117",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 117GS",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 118",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 119",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 120",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "HIUS180",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HIUS136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HITO156",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HITO136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS126",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "USP129",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCI139",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCI127",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCI126",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI108",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI100Q",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI100O",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI100H",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTCS130",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD7C",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD7B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HILD7A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN3",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH131",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH21",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH23",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC100D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS112",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS113",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS117",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SOCI117",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS125",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 122",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CHEM 96",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "EDS 31",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CHEM 6C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CHEM 6B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "CHEM 6A",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "CHEM 4",
+                                "type": "CHILD",
+                                "children": []
+                              },
+                              {
+                                "code": "MATH 3C",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3B",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "code": "MATH 4C",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3C",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 3B",
+                                        "type": "CHILD",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "code": "MATH 10A",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "OR",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 3C",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 3B",
+                                            "type": "CHILD",
+                                            "children": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "code": "MATH 4C",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 3C",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3B",
+                                                "type": "CHILD",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "code": "MATH 20A",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "OR",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 4C",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 3C",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3B",
+                                                "type": "CHILD",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "code": "MATH 10A",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "OR",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3C",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3B",
+                                                    "type": "CHILD",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "code": "MATH 4C",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3C",
+                                                    "type": "CHILD",
+                                                    "children": [
+                                                      {
+                                                        "code": "MATH 3B",
+                                                        "type": "CHILD",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "code": "CHEM 6AH",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "OF4",
+                                "type": "CHILD",
+                                "children": []
+                              },
+                              {
+                                "code": "OF3",
+                                "type": "CHILD",
+                                "children": []
+                              },
+                              {
+                                "code": "MATH4C",
+                                "type": "CHILD",
+                                "children": []
+                              },
+                              {
+                                "code": "MATH10A",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "CHEM 6BH",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "CHEM6AH",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "MATH20A",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "CHEM 6CH",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CHEM6BH",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MATH20B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EDS 122/CHEM 187",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 123/CHEM 188",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 124BR",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 125",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 126",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 127",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 128 A-B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 128A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 130",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 131",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 133",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 135",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 137",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 145",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 146",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 129 A-B-C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 129B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 129A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 135",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 136",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 130",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 131",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 133",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 135",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 136",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 137",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 139",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 140",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 130",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 131",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 133",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 135",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 136",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 137",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 145",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 146",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 141",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 145",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 146",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 149",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 150",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 155",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 162",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 165",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 180",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 190",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 195",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 201",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 203",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 204",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 205A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 205B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "EDS 205A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "TEP 205A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EDS 206",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 20S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 21S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 22",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 229",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 22S",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 23",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 230A-B-C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 232",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 233A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 233B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 24",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 240A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 240B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS240A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 240C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 246",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 247",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 249",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 25",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 252",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 253",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 256",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS254",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS264",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 257",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED82",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED79",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 259",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 259A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 259B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 260A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 260B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 260C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 261A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 261B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 261C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 262A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 262B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 262C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 263",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 264",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 266",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 267",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 268",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS251",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS252",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS253",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 269",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 270",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 272",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 278/COGR 278",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 279",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 280",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 281",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 282",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 283",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 284",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 285",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 286",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 287A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 287B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 287C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 287B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS 287A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 288A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 288B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 288C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 289A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 289B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 289C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 289D",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 290",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 291A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 291B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 292",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 293A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 293B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 294A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 294B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 295",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 297",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 31/CHEM 96",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 324BR",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 324DR",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 342A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 342B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS342A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS361A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 342C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS342A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS342B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS361A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 349",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 351",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 352A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 352B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 352A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 352C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 355A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 355B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "EDS355A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "EDS2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "EDS361B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 355C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS355B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS355C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 359",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 361A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 361B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 361A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ED76",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ED78",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EDS 361C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "EDS361B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ED76",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 368",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 369A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 369B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 369A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ED76",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ED78",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "EDS 369C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS369B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 370A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 370B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 370C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED76",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 371",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 372",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 373",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 374",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 375",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 376",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 378",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 379A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 379B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 379A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 379C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 38",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 380A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 380B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS 380A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 380C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "EDS380A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "EDS380B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 381",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 382",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ED78",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ED81",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "EDS 384",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 385",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 39",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 40",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 50",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 500",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 87",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS 88",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "EDS/LIGN 119",
+    "type": "ROOT",
+    "children": []
+  }
+]

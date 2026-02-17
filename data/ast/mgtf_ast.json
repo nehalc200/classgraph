@@ -1,0 +1,153 @@
+[
+  {
+    "code": "MGTF 401",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 402",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 403",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 404",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 405",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 406",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 407",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MGTF 402",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "MGTF 408",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 409",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 410",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 411",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 412",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 413",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 414",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 415",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 416",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 417",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 418",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 419",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 420",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 421",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 422",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 423",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 424",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 432",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 458",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 490",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MGTF 495",
+    "type": "ROOT",
+    "children": []
+  }
+]

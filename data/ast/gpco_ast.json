@@ -1,0 +1,48 @@
+[
+  {
+    "code": "GPCO 400",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 404",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 415",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 454",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 462",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 463",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPCO 468",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPEC 446",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPCO 470",
+    "type": "ROOT",
+    "children": []
+  }
+]

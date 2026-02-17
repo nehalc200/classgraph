@@ -1,0 +1,40 @@
+[
+  {
+    "code": "LTRU 104C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTRU 104A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTRU 110B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTRU 1B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTRU 1A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTRU 2B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTRU 2A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

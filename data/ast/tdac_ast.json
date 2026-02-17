@@ -1,0 +1,83 @@
+[
+  {
+    "code": "TDAC 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDAC 101",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDAC 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "THAC 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "TDAC 108",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDAC 102",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDAC 111",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDAC 101",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "TDAC 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "THAC 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "TDAC 120",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDAC 122",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDAC 123",
+    "type": "ROOT",
+    "children": []
+  }
+]

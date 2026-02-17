@@ -1,0 +1,35 @@
+[
+  {
+    "code": "TDPW 101",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDPW 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDPW 104",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "TDPW 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "THPW 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

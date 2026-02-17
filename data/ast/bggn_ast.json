@@ -1,0 +1,130 @@
+[
+  {
+    "code": "BGGN 206B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BGGN 206A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BGGN 209",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 215",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 216",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 225",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 228",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 237",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BIOM 252",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BIOM200A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM200B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "BIOM201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "BIOM 272",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BGGN 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 246A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 249B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 271",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 276",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 290",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 293",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 294",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 298",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

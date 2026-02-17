@@ -1,0 +1,74 @@
+[
+  {
+    "code": "GPPS 401",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 407",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 409",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 426",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 428",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 441",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 454",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 403",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "GPPS 443",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 454",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 469",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "GPPS 479",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "GPCO 400",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "GPCO 454",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

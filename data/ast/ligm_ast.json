@@ -1,0 +1,50 @@
+[
+  {
+    "code": "LIGM 11",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LIGM 1B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIGM 1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIGM 5A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LIGM 1AX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LIGM 1BX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIGM 1A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LIGM 1AX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

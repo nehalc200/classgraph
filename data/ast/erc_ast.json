@@ -1,0 +1,84 @@
+[
+  {
+    "code": "ERC 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 188",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 192A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 196",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 20",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 88",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 89",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MATH10A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MATH20A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ERC 90",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ERC 92",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MMW 4",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 6",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

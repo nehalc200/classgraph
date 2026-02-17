@@ -1,0 +1,73 @@
+[
+  {
+    "code": "ORTH 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 425",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 426",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 428",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SURG 401",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "ORTH 429",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 431",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 435",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 436",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 450",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "ORTH 496",
+    "type": "ROOT",
+    "children": []
+  }
+]

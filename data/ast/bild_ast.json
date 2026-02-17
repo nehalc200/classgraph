@@ -1,0 +1,101 @@
+[
+  {
+    "code": "BILD 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 12",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BILD 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "BILD 28",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 3",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 4",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 5",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 60",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BILD 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BILD 2",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "BILD 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "BILD 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "BILD 62",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 87",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 88",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 99",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BILD 99H",
+    "type": "ROOT",
+    "children": []
+  }
+]

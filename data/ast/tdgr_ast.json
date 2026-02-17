@@ -1,0 +1,202 @@
+[
+  {
+    "code": "TDGR 210B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDGR 210A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDGR 211B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDGR 211A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDGR 212",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 213B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 214B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDGR 214A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDGR 219",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 229",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 231A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 233",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 235",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 239",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 244",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 245",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 251",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 254",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 268",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 274",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 275",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 276",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 278",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 279",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 282",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 289C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDGR 289",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDGR 289B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDGR 289D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "TDGR 289",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "TDGR 289B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "TDGR 291",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 292",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 293",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 295",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "TDGR 500",
+    "type": "ROOT",
+    "children": []
+  }
+]

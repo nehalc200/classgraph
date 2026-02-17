@@ -1,0 +1,40 @@
+[
+  {
+    "code": "LTLA 104",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTLA 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTLA 2",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTLA 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LTLA 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTLA 2",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTLA 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

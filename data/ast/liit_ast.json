@@ -1,0 +1,45 @@
+[
+  {
+    "code": "LIIT 1B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIIT 1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIIT 5A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LIIT 1AX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LIIT 1BX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIIT 1A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LIIT 1AX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

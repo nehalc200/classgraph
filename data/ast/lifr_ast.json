@@ -1,0 +1,192 @@
+[
+  {
+    "code": "LIFR 11",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LIFR 1B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIFR 5A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1AX",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIFR 5A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LIFR 1BX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIFR 1A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LIFR 1AX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LIFR 1C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LIFR 1A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LIFR 5A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LIFR 1AX",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LIFR 5A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "LIFR 5B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LIFR 1BX",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIFR 1AX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LIFR 1CX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIFR 1B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LIFR 1A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LIFR 5A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LIFR 1AX",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LIFR 5A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "LIFR 1BX",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIFR 1AX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

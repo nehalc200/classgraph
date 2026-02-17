@@ -1,0 +1,38 @@
+[
+  {
+    "code": "OPTH 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "OPTH 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "OPTH 410",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "OPTH 425",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "SURG 401",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "OPTH 426",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "OPTH 496",
+    "type": "ROOT",
+    "children": []
+  }
+]

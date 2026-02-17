@@ -1,0 +1,63 @@
+[
+  {
+    "code": "NEUG 200B",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 221",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "NEUG 200A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "NEUG 222",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 231",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 240",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 257",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 280",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 296",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 299",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 500",
+    "type": "ROOT",
+    "children": []
+  }
+]
