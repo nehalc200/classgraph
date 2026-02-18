@@ -279,17 +279,17 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ANTH101",
+        "code": "ANTH 101",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC123",
+        "code": "ANSC 123",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC148",
+        "code": "ANSC 148",
         "type": "CHILD",
         "children": []
       }
@@ -420,47 +420,63 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ANSC101",
+        "code": "ANSC 101",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC121",
+        "code": "ANSC 121",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC155",
+        "code": "ANSC 155",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANTH 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 123",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 148",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ANSC 173",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC173",
+        "code": "ANTH 103",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANTH103",
+        "code": "ANSC 146",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC146",
+        "code": "ANSC 147",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC147",
+        "code": "ANSC 148",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC148",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANSC164",
+        "code": "ANSC 164",
         "type": "CHILD",
         "children": []
       }
@@ -476,42 +492,58 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ANSC121",
+        "code": "ANSC 121",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC148",
+        "code": "ANSC 148",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC155",
+        "code": "ANSC 155",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANTH 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 123",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 148",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ANSC 164",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANSC164",
+        "code": "ANTH 1",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANTH1",
+        "code": "ANTH 21",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANTH21",
+        "code": "ANTH 23",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANTH23",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANTH103",
+        "code": "ANTH 103",
         "type": "CHILD",
         "children": []
       }

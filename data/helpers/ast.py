@@ -1,14 +1,30 @@
 import json
 import os
+import re
 from collections import defaultdict
 from astclass import RootNode, ChildNode, ASTNode
 
+def normalize_code(code):
+    """Ensure course code is formatted as 'DEPT NUMBER' with a single space."""
+    if not code:
+        return code
+    code = code.strip()
+    # Don't normalize special codes like "OR"
+    if code == "OR":
+        return code
+    # Match letters (dept) followed by optional space then the rest (number + suffix)
+    match = re.match(r'^([A-Za-z/]+)\s*(.+)$', code)
+    if match:
+        dept = match.group(1).strip()
+        number = match.group(2).strip()
+        return f"{dept} {number}"
+    return code
 
 def build_global_course_dict(webreg_data):
     course_dict = {}
     for course_entry in webreg_data:
         course = course_entry.get("course", {})
-        code = course.get("code", "")
+        code = normalize_code(course.get("code", ""))
         if code:
             course_dict[code] = {
                 "code": code,
@@ -21,7 +37,7 @@ def build_global_course_dict(webreg_data):
 def build(filestream, global_course_dict):
     return_list = []
     for course in filestream:
-        course_id = course.get("code")
+        course_id = normalize_code(course.get("code"))
         prereqs = course.get("prereq_ast", [])
         root = RootNode(course_id, find_children(prereqs, global_course_dict))
         return_list.append(root)
@@ -39,7 +55,7 @@ def find_children(prereq_nodes, course_dict, visited=None):
         ctype = child.get("type")
         
         if ctype == "COURSE":
-            course_id = child.get("course_id")
+            course_id = normalize_code(child.get("course_id"))
             
             # prevent cycles
             if course_id in visited:
@@ -60,7 +76,7 @@ def find_children(prereq_nodes, course_dict, visited=None):
         elif ctype == "OR":
             sublist = []
             for subchild in child.get("items", []):
-                course_id = subchild.get("course_id")
+                course_id = normalize_code(subchild.get("course_id"))
                 
                 if course_id in visited:
                     sublist.append(ChildNode(course_id, []))
@@ -87,11 +103,9 @@ def filter_courses_by_department(webreg_data, dept_code):
     courses = []
     for course_entry in webreg_data:
         course = course_entry.get("course", {})
-        code = course.get("code", "")
+        code = normalize_code(course.get("code", ""))
         
         if code.startswith(dept_code):
-            prereq_json = course_entry.get("prereq")
-            
             courses.append({
                 "code": code,
                 "title": course.get("title", ""),
@@ -105,7 +119,8 @@ def get_department_code(course_code):
     if not course_code:
         return ""
     
-    first_part = course_code.split()[0]
+    code = normalize_code(course_code)
+    first_part = code.split()[0]
     
     if '/' in first_part:
         first_part = first_part.split('/')[0]
@@ -123,7 +138,7 @@ def process_all_departments(webreg_data, output_dir):
     dept_courses = defaultdict(list)
     for course_entry in webreg_data:
         course = course_entry.get("course", {})
-        code = course.get("code", "")
+        code = normalize_code(course.get("code", ""))
         dept_code = get_department_code(code)
         
         if dept_code:

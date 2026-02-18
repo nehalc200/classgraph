@@ -19,12 +19,12 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "CCS101",
+        "code": "CCS 101",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "CCS102",
+        "code": "CCS 102",
         "type": "CHILD",
         "children": []
       }
@@ -35,12 +35,12 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "CCS101",
+        "code": "CCS 101",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "CCS102",
+        "code": "CCS 102",
         "type": "CHILD",
         "children": []
       }

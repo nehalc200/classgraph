@@ -89,12 +89,12 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ANTH128A",
+        "code": "ANTH 128A",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "USP128A",
+        "code": "USP 128A",
         "type": "CHILD",
         "children": []
       }
@@ -146,14 +146,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ANTH196A",
+        "code": "ANTH 196A",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "ANTH196B",
+        "code": "ANTH 196B",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "ANTH 196A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
