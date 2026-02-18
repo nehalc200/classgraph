@@ -15,7 +15,7 @@ export const Desktop = () => {
   // Original form data
   const currentYear = new Date().getFullYear();
   const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
-  const collegeOptions = ["Revelle", "Muir", "Marshall", "Roosevelt", "Warren", "Sixth", "Seventh", "Eighth"];
+  const collegeOptions = ["Revelle", "Muir", "Marshall", "Warren", "Roosevelt", "Sixth", "Seventh", "Eighth"];
   const majorOptions = majorsData
     .map((major) => ({ label: major.name, value: major.code }))
     .sort((a, b) => a.label.localeCompare(b.label));
