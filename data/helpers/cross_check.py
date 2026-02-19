@@ -39,7 +39,7 @@ def combine_courses(data1_dict, data2_dict, diff1, diff2, common):
     
     # Add common courses 
     for code in common:
-        combined.append(data1_dict[code])
+        combined.append(data2_dict[code])
     
     combined.sort(key=lambda x: x["course"]["code"])
     
