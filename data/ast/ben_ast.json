@@ -1,0 +1,34 @@
+[
+  {
+    "code": "BEN G",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "MAE 201",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MAE 227",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MAE 201",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "MAE 221",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  }
+]

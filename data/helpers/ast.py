@@ -148,9 +148,15 @@ def process_all_departments(webreg_data, output_dir):
                 "prereq_ast": course.get("prereq").get("items") if course.get("prereq") else [],
             })
     
+    # Departments to skip temporarily
+    skip_departments = {"CHIN"}
 
     total_courses = 0
     for dept_code, courses in sorted(dept_courses.items()):
+        if dept_code in skip_departments:
+            print(f"Skipping {dept_code} department (temporarily disabled)")
+            continue
+        
         dept_ast = build(courses, global_course_dict)
         dept_ast_dict = [root.to_dict() for root in dept_ast]
         
@@ -162,7 +168,7 @@ def process_all_departments(webreg_data, output_dir):
         print(f"Processed {len(dept_ast)} {dept_code} courses -> {output_file}")
         total_courses += len(dept_ast)
     
-    return len(dept_courses), total_courses
+    return len(dept_courses) - len(skip_departments), total_courses
 
 
 if __name__ == "__main__":
