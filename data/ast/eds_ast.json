@@ -10,78 +10,9 @@
     "children": []
   },
   {
-    "code": "EDS 105/PHYS 180",
+    "code": "EDS 105",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "PHYS1A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS2A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS4A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "PHYS1B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS2B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS4C",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "PHYS1C",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS2C",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS2D",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHYS4B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 107",
@@ -156,424 +87,15 @@
   {
     "code": "EDS 120",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "HIUS180",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HIUS136",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HITO156",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HITO136",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS126",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS136",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "USP129",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCI139",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCI127",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCI126",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI108",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI100Q",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI100O",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI100H",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTCS130",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HILD7C",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HILD7B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HILD7A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ETHN3",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ETHN2",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANTH131",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANTH21",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANTH23",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "DOC1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "DOC100D",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS112",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS113",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS117",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCI117",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS125",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 122",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "CHEM 96",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "EDS 31",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "CHEM 6C",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "CHEM 6B",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "OR",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "CHEM 6A",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "CHEM 4",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "MATH 3C",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "MATH 3B",
-                                    "type": "CHILD",
-                                    "children": []
-                                  }
-                                ]
-                              },
-                              {
-                                "code": "MATH 4C",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "MATH 3C",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "MATH 3B",
-                                        "type": "CHILD",
-                                        "children": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "code": "MATH 10A",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "OR",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "MATH 3C",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "MATH 3B",
-                                            "type": "CHILD",
-                                            "children": []
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "code": "MATH 4C",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "MATH 3C",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "MATH 3B",
-                                                "type": "CHILD",
-                                                "children": []
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "code": "MATH 20A",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "OR",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "MATH 4C",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "MATH 3C",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "MATH 3B",
-                                                "type": "CHILD",
-                                                "children": []
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "code": "MATH 10A",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "OR",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "MATH 3C",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3B",
-                                                    "type": "CHILD",
-                                                    "children": []
-                                                  }
-                                                ]
-                                              },
-                                              {
-                                                "code": "MATH 4C",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3B",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  }
-                                                ]
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "code": "CHEM 6AH",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "OF4",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "OF3",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "MATH4C",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "MATH10A",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "code": "CHEM 6BH",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "CHEM6AH",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "MATH20A",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": "CHEM 6CH",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "CHEM6BH",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MATH20B",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "code": "EDS 122/CHEM 187",
-    "type": "ROOT",
     "children": []
   },
   {
-    "code": "EDS 123/CHEM 188",
+    "code": "EDS 123",
     "type": "ROOT",
     "children": []
   },
@@ -712,48 +234,7 @@
   {
     "code": "EDS 140",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 130",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 131",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 133",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 135",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 136",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 137",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 145",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 146",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 141",
@@ -843,24 +324,7 @@
   {
     "code": "EDS 205B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "EDS 205A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "TEP 205A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 206",
@@ -935,18 +399,7 @@
   {
     "code": "EDS 240B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS240A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 240C",
@@ -1006,34 +459,12 @@
   {
     "code": "EDS 256",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS254",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS264",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 257",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED82",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED79",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 259",
@@ -1123,23 +554,7 @@
   {
     "code": "EDS 268",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS251",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS252",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS253",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 269",
@@ -1157,7 +572,7 @@
     "children": []
   },
   {
-    "code": "EDS 278/COGR 278",
+    "code": "EDS 278",
     "type": "ROOT",
     "children": []
   },
@@ -1214,18 +629,7 @@
   {
     "code": "EDS 287C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 287B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS 287A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 288A",
@@ -1328,7 +732,7 @@
     "children": []
   },
   {
-    "code": "EDS 31/CHEM 96",
+    "code": "EDS 31",
     "type": "ROOT",
     "children": []
   },
@@ -1350,39 +754,12 @@
   {
     "code": "EDS 342B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS342A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS361A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 342C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS342A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS342B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS361A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 349",
@@ -1392,18 +769,7 @@
   {
     "code": "EDS 351",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 352A",
@@ -1413,13 +779,7 @@
   {
     "code": "EDS 352B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 352A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 352C",
@@ -1434,45 +794,12 @@
   {
     "code": "EDS 355B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "EDS355A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "EDS2",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "EDS361B",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 355C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS355B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS355C",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 359",
@@ -1482,67 +809,17 @@
   {
     "code": "EDS 361A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 361B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 361A",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "ED76",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ED78",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 361C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "EDS361B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ED76",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 368",
@@ -1552,72 +829,22 @@
   {
     "code": "EDS 369A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 369B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 369A",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "ED76",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ED78",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 369C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS369B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 370A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 370B",
@@ -1627,18 +854,7 @@
   {
     "code": "EDS 370C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED76",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 371",
@@ -1683,13 +899,7 @@
   {
     "code": "EDS 379B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 379A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 379C",
@@ -1709,29 +919,12 @@
   {
     "code": "EDS 380B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS 380A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 380C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "EDS380A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "EDS380B",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 381",
@@ -1741,18 +934,7 @@
   {
     "code": "EDS 382",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ED78",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ED81",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "EDS 384",
@@ -1791,11 +973,6 @@
   },
   {
     "code": "EDS 88",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "EDS/LIGN 119",
     "type": "ROOT",
     "children": []
   }

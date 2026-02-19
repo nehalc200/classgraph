@@ -2,24 +2,7 @@
   {
     "code": "CCE 1",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "AWP 3",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "AWP 4B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "CCE 120",
@@ -32,36 +15,7 @@
           {
             "code": "CCE 3",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "CCE 2",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "CCE 1",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "OR",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "AWP 3",
-                            "type": "CHILD",
-                            "children": []
-                          },
-                          {
-                            "code": "AWP 4B",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "children": []
           },
           {
             "code": "CCE 110",
@@ -75,63 +29,11 @@
   {
     "code": "CCE 2",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CCE 1",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "AWP 3",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "AWP 4B",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "CCE 3",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CCE 2",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "CCE 1",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "AWP 3",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "AWP 4B",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "children": []
   }
 ]

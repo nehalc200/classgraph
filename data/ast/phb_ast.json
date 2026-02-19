@@ -7,622 +7,57 @@
   {
     "code": "PHB 222",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "FMPH 244A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MATH 281A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHB 244A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 223",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "MATH281A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MATH282A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "FMPH244B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB244B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 224",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH223",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB223",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 225",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH223",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB223",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 226",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 222",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "FMPH 221",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB 221",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "FMPH 244A",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MATH 281A",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "PHB 244A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 223",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 223",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "FMPH222",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB222",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "MATH281A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "MATH282A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "FMPH244B",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB244B",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 227",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 228",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH244B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MATH281A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB244B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 241",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 222",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "FMPH 221",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB 221",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "FMPH 244A",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MATH 281A",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "PHB 244A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 242",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB221",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH222",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 243A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH221",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB222",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH223",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB223",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 243B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 243A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 243A",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "FMPH221",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB222",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "FMPH223",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "PHB223",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 244A",
@@ -632,40 +67,12 @@
   {
     "code": "PHB 244B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 244A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 244A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 248",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "FMPH244B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHB244B",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 280",
@@ -675,24 +82,7 @@
   {
     "code": "PHB 281",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FMPH 290",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PHB 280",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "PHB 291",

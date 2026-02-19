@@ -57,28 +57,7 @@
   {
     "code": "CLRE 242",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CLRE 236",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CLRE 236R",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CLRE 250",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CLRE 250R",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CLRE 243",
@@ -143,18 +122,7 @@
   {
     "code": "CLRE 263",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CLRE253",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CLRE254",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CLRE 264",
@@ -169,13 +137,7 @@
   {
     "code": "CLRE 267",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CLRE 253",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CLRE 268",
@@ -195,24 +157,12 @@
   {
     "code": "CLRE 295B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CLRE 295A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CLRE 297",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CLRE 295A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CLRE 298",

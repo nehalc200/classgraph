@@ -7,13 +7,7 @@
   {
     "code": "NEUG 221",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "NEUG 200A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "NEUG 222",

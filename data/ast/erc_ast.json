@@ -42,18 +42,7 @@
   {
     "code": "ERC 89",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MATH10A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MATH20A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "ERC 90",
@@ -63,22 +52,6 @@
   {
     "code": "ERC 92",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MMW 4",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MMW 5",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MMW 6",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   }
 ]

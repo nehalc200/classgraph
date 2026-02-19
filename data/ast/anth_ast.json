@@ -87,18 +87,7 @@
   {
     "code": "ANTH 128B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ANTH 128A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "USP 128A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "ANTH 130",
@@ -133,35 +122,12 @@
   {
     "code": "ANTH 196B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ANTH 196A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "ANTH 196C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ANTH 196A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ANTH 196B",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "ANTH 196A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "ANTH 197",
@@ -496,33 +462,7 @@
   {
     "code": "ANTH 269",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "ANTH 268",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COGR 225A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HIGR 238",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 209A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCG 255A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "ANTH 270",

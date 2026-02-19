@@ -32,13 +32,7 @@
   {
     "code": "SIOG 223B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "SIOG 223A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 224",
@@ -58,56 +52,12 @@
   {
     "code": "SIOG 227B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "SIOG227A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIO227A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 227C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "SIOG227A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "SIO227A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "SIOG227B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "SIO227B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 228",
@@ -147,28 +97,7 @@
   {
     "code": "SIOG 235",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MAE 294A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOC 203A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOG 223A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOG 230",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 236",
@@ -243,56 +172,12 @@
   {
     "code": "SIOG 252B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "SIOG252A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIO252A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 252C",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "SIOG252A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "SIO252A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "SIOG252B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "SIO252B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "SIOG 253",

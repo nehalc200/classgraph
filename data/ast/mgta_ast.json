@@ -2,23 +2,7 @@
   {
     "code": "MGTA 402",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 403",
@@ -38,23 +22,7 @@
   {
     "code": "MGTA 444",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 451",
@@ -74,44 +42,12 @@
   {
     "code": "MGTA 454",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 454A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 454B",
@@ -121,128 +57,32 @@
   {
     "code": "MGTA 455",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 456",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 457",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 458",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 459",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 460",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 461",
@@ -267,23 +107,7 @@
   {
     "code": "MGTA 466",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTA 451",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 452",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MGTA 453",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTA 479",

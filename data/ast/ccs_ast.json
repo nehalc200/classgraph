@@ -17,33 +17,11 @@
   {
     "code": "CCS 197",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CCS 101",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CCS 102",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CCS 199",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CCS 101",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CCS 102",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   }
 ]

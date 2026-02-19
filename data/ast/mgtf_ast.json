@@ -32,13 +32,7 @@
   {
     "code": "MGTF 407",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MGTF 402",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MGTF 408",

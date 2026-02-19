@@ -27,13 +27,7 @@
   {
     "code": "MATS 203",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "MATS 202",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "MATS 205A",

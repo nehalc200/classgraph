@@ -27,18 +27,7 @@
   {
     "code": "NEU 243",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "NEU238",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PSYC231",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "NEU 266",
@@ -98,13 +87,7 @@
   {
     "code": "NEU 426",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "NEU 401",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "NEU 426T",
@@ -114,13 +97,7 @@
   {
     "code": "NEU 427",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "NEU 401",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "NEU 427T",

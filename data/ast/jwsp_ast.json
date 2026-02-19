@@ -67,24 +67,7 @@
   {
     "code": "JWSP 2",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "JUDA 1",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "JWSP 1",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "JWSP 3",

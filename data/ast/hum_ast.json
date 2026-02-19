@@ -37,18 +37,7 @@
   {
     "code": "HUM 3",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "HUM1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HUM2",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "HUM 3GS",

@@ -7,24 +7,7 @@
   {
     "code": "MCWP 40",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "AWP 3",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "AWP 4B",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "MCWP 40C",
@@ -51,41 +34,7 @@
   {
     "code": "MCWP 50",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "MCWP 40",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "AWP 3",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "AWP 4B",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": "MCWP 40R",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "MCWP 500",

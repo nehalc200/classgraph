@@ -62,13 +62,7 @@
   {
     "code": "CAT 2",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CAT 1",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CAT 24",
@@ -78,13 +72,7 @@
   {
     "code": "CAT 2CE",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "CAT 1",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "CAT 3",
