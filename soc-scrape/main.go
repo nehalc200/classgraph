@@ -19,10 +19,10 @@ func main() {
 	}
 
 	final_classes := make([]courses.CourseWritable, 0)
-	departments, _ := cl.GetAllDepartments("WI26")
+	departments, _ := cl.GetAllDepartments("SP26")
 	for i, d := range departments {
 		log.Printf("Making Search Request for Department %s (%d/%d)", d.Code, i+1, len(departments))
-		sr := lib.NewSearchRequest("WI26", lib.TabDept)
+		sr := lib.NewSearchRequest("SP26", lib.TabDept)
 		sr.AddDepartment(d.Code)
 		res, err := cl.GetCourseList(sr)
 		if err != nil {
@@ -30,7 +30,7 @@ func main() {
 		}
 		for _, v := range res {
 			fixed_code := strings.ReplaceAll(v.Code, " ", "")
-			res, err := cl.GetPrerequisites("WI26", fixed_code)
+			res, err := cl.GetPrerequisites("SP26", fixed_code)
 			if err != nil {
 				v.Parseable = false
 			} else {

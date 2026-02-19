@@ -78,7 +78,6 @@ func parseClassRequirements(htmlcontent io.Reader) (*courses.PrereqNode, error) 
 			requirementCell := s.Find("td").Eq(1)
 			var rowItems []*courses.PrereqNode
 
-			// Extract all bolded course codes within this row
 			requirementCell.Find("span.bold_text").Each(func(j int, courseSpan *goquery.Selection) {
 				courseCode := strings.TrimSpace(courseSpan.Text())
 				if courseCode != "" {
@@ -89,14 +88,12 @@ func parseClassRequirements(htmlcontent io.Reader) (*courses.PrereqNode, error) 
 				}
 			})
 
-			// Logic check: If there's an "or" span, wrap these in an OR node
-			if requirementCell.Find("span.ertext").Text() == "or" {
+			if requirementCell.Find("span.ertext").Length() > 0 {
 				root.Items = append(root.Items, &courses.PrereqNode{
 					Type:  "OR",
 					Items: rowItems,
 				})
 			} else {
-				// Otherwise, add them directly to the AND list
 				root.Items = append(root.Items, rowItems...)
 			}
 		}
