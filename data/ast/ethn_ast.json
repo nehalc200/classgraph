@@ -7,7 +7,23 @@
   {
     "code": "ETHN 100A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 100B",
@@ -17,17 +33,98 @@
   {
     "code": "ETHN 100C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 100H",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 100M",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 101",
@@ -262,12 +359,44 @@
   {
     "code": "ETHN 135A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTSP 50A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 50B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 50C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 135B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTSP 50A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 50B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 50C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 136",
@@ -577,7 +706,66 @@
   {
     "code": "ETHN 196H",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ETHN 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 100H",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "ETHN 100B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "ETHN 197",

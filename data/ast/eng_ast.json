@@ -12,7 +12,43 @@
   {
     "code": "ENG 100D",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CAT 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "DOC 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "HUM 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MCWP 40",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MMW 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "WCWP 10B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SYN 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ENG 100L",
@@ -47,7 +83,23 @@
   {
     "code": "ENG 207",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ENG 201",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ENG 202",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ENG 203",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ENG 208",

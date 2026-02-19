@@ -7,12 +7,34 @@
   {
     "code": "SYN 100",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SYN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SYN 2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SYN 100GS",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SYN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SYN 2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SYN 150",
@@ -27,12 +49,56 @@
   {
     "code": "SYN 198",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SYN 100",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "SYN 2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SYN 199",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SYN 100",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "SYN 2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SYN 2",

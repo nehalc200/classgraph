@@ -27,7 +27,18 @@
   {
     "code": "NEUG 257",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "NE 75",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "NE 78",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "NEUG 265",

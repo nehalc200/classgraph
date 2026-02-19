@@ -37,7 +37,38 @@
   {
     "code": "PHIL 106",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 32",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 33",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 104",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 105",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 111",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PHIL 112",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 107",
@@ -592,7 +623,194 @@
   {
     "code": "PHIL 27",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CAT 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CAT 2CE",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 3CE",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CCE 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CCE 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "DOC 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DOC 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "HUM 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MCWP 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MCWP 50",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MCWP 40R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MCWP 50R",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW 12",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MMW 13",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW 12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "WCWP 10A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "SYN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "WARR 11A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "WARR 11B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 1R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "SYN 2R",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 271",
@@ -617,7 +835,205 @@
   {
     "code": "PHIL 28",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 27",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CAT 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CAT 2CE",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CAT 3CE",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "CCE 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "CCE 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "DOC 2",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "DOC 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "HUM 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "HUM 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MCWP 40",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MCWP 50",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MCWP 40R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MCWP 50R",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 13",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "WCWP 10A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "SYN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "WARR 11A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "WARR 11B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "SYN 1R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "SYN 2R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "POLI 27",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 280",

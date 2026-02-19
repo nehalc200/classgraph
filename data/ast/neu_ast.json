@@ -27,7 +27,18 @@
   {
     "code": "NEU 243",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "NEU 238",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PSYC 231",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "NEU 266",

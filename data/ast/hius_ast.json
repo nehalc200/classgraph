@@ -101,7 +101,18 @@
       {
         "code": "HUM 3",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "HUM 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       },
       {
         "code": "HUM 4",
@@ -146,17 +157,116 @@
       {
         "code": "MMW 13",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MMW 12",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW 12R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       },
       {
         "code": "MMW 14",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW 12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 13",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "code": "MMW 15",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 12",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MMW 12R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MMW 13",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "MMW 13R",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "code": "MMW 21",

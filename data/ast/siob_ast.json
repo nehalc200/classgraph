@@ -12,12 +12,67 @@
   {
     "code": "SIOB 242B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SIOB 242A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO 242A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SIOB 242C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOB 242A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 242A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOB 242B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "SIOB 242A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "SIO 242A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "SIO 242B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "SIOB 243",
@@ -47,12 +102,56 @@
   {
     "code": "SIOB 270",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOC 210",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 210",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SIOB 280",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 280",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "SIOB 270A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SIOB 280",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIOC 210",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SIOB 271",
@@ -87,7 +186,18 @@
   {
     "code": "SIOB 276L",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SIOB 276",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO 276",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SIOB 277",
@@ -132,7 +242,18 @@
   {
     "code": "SIOB 285",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SIOC 210",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "SIO 210",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SIOB 286",

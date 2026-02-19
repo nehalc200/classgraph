@@ -77,7 +77,18 @@
   {
     "code": "MGTP 444",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MGTP 434",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTP 424",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "MGTP 451",

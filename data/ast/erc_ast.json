@@ -42,7 +42,154 @@
   {
     "code": "ERC 89",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MATH 10A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OF 4",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 5",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MATH 3C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MATH 4C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MATH 3C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 5",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 2",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MATH 20A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OF 5",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MATH 4C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "MATH 3C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 5",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 2",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "MATH 10A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 5",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MATH 3C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "MATH 4C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MATH 3C",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 4",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 5",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 2",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "ERC 90",

@@ -102,12 +102,39 @@
   {
     "code": "POLI 100W",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 30D",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 100X",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 5D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 30D",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 100Y",
@@ -212,7 +239,18 @@
   {
     "code": "POLI 104F",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 104A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 104B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 104G",
@@ -227,7 +265,18 @@
   {
     "code": "POLI 104J",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 104A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 104B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 104K",
@@ -397,7 +446,18 @@
   {
     "code": "POLI 112D",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 112B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 118",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 113A",
@@ -452,7 +512,18 @@
   {
     "code": "POLI 118B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 13",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 13D",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 119A",
@@ -932,7 +1003,18 @@
   {
     "code": "POLI 160AA",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 10",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 11",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 160AB",
@@ -972,22 +1054,125 @@
   {
     "code": "POLI 170",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 5D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ECON 5",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 170A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 30",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 30D",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 171",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "POLI 5",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 5D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ECON 5",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "POLI 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 30D",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "POLI 172",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "POLI 5",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 5D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ECON 5",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "POLI 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 30D",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "POLI 173",
@@ -997,17 +1182,157 @@
   {
     "code": "POLI 174",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 112A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 118",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 175",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CCS 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ECON 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 30",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 176",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 5D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 30D",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 170A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "POLI 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 30D",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "POLI 171",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "POLI 5",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 5D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ECON 5",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "POLI 30",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 30D",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "POLI 172",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "POLI 5",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 5D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ECON 5",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "POLI 30",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 30D",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "POLI 179",
@@ -1398,7 +1723,23 @@
   {
     "code": "POLI 260",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "POLI 204B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 270",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "POLI 271",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 261",
@@ -1413,7 +1754,98 @@
   {
     "code": "POLI 27 or 27R",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CAT 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "DOC 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DOC 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MCWP 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MCWP 50",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "HUM 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CCE 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "CCE 2",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "POLI 270",
