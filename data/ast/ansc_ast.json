@@ -277,7 +277,23 @@
   {
     "code": "ANSC 155",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ANTH 101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 123",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 148",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ANSC 156",
@@ -402,7 +418,69 @@
   {
     "code": "ANSC 190GS",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ANSC 101",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 121",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 155",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANTH 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 123",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 148",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ANSC 173",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH 103",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 146",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 147",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 148",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 164",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ANSC 191",
@@ -412,7 +490,64 @@
   {
     "code": "ANSC 191GS",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ANSC 121",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 148",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANSC 155",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANTH 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 123",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ANSC 148",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ANSC 164",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH 21",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH 23",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ANTH 103",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ANSC 192",

@@ -2,7 +2,18 @@
   {
     "code": "CGS 100A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 100B",
@@ -87,47 +98,146 @@
   {
     "code": "CGS 121",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 122",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 123",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 124",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 125",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 126",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 127",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 128",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 130",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 134",
@@ -137,7 +247,18 @@
   {
     "code": "CGS 135",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 136",
@@ -147,22 +268,126 @@
   {
     "code": "CGS 137",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 147",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 150",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 165",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 167A",
@@ -172,7 +397,33 @@
   {
     "code": "CGS 187",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CGS 2A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "CGS 2B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 2",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "ETHN 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CGS 190",

@@ -48,12 +48,7 @@ def tokenize(text: str) -> List[str]:
     # Normalize the text
     text = re.sub(r'\s+', ' ', text).strip()
     
-    # Remove everything from "Math Placement Exam" onwards
-    text = re.sub(r'Math\s+Placement\s+Exam.*', '', text, flags=re.IGNORECASE)
-    
-    # Remove everything from "AP" onwards (AP exam scores)
-    text = re.sub(r'\bAP\s+.*', '', text, flags=re.IGNORECASE)
-    
+
     # Remove grade requirements 
     text = re.sub(r'\s+with\s+a\s+grade\s+of\s+[A-Za-z0-9+-]+(\s+or\s+(above|better))?', '', text, flags=re.IGNORECASE)
     
@@ -244,7 +239,7 @@ def ast_to_dict(node: Union[Course, OrExpr, AndExpr, None]) -> dict | None:
 def parse_prereqs(raw_str: str) -> dict:
     if not raw_str or raw_str.strip().lower() == "none" or raw_str.strip() == "":
         return {
-            "ast": None,
+            "groups": None,
             "parseable": False,
             "notes": []
         }
@@ -288,7 +283,7 @@ def generate_webreg_json(df, output_path):
         raw_prereq = str(raw_prereq)
 
         parsed = parse_prereqs(raw_prereq)
-        ast = parsed.get("ast")
+        groups = parsed.get("groups") 
         notes = parsed.get("notes", [])
         parseable = parsed.get("parseable", False)
 
@@ -300,8 +295,8 @@ def generate_webreg_json(df, output_path):
             "notes": notes,
         }
         
-        if ast is not None:
-            course_obj["prereq"] = ast_to_dict(ast)
+        if groups is not None:
+            course_obj["prereq"] = ast_to_dict(groups)  
 
         output.append({
             "meta": {
