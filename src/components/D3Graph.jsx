@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { extractLayers } from '../utils/astGraphUtils';
+import { loadCourseInfo, getCourseInfo } from '../utils/courseInfo';
 
 // Colour palette (matching the Sigma version)
 const ROOT_COLOR = '#1e1e1e';
@@ -10,16 +11,24 @@ const EXPANDABLE_COLOR = '#6366f1';
 export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
+    const [courseInfoReady, setCourseInfoReady] = useState(false);
 
     // Stable callback ref
     const onNodeExpandRef = useRef(onNodeExpand);
     onNodeExpandRef.current = onNodeExpand;
+
+    // Load course info metadata once
+    useEffect(() => {
+        loadCourseInfo().then(() => setCourseInfoReady(true));
+    }, []);
 
     useEffect(() => {
         if (!rootAstNode || !containerRef.current) return;
 
         // Clear previous render
         d3.select(containerRef.current).select('svg').remove();
+        // Remove any stale tooltip
+        d3.select(containerRef.current).select('.node-tooltip').remove();
 
         // Extract 3-layer tree data
         const layerData = extractLayers(rootAstNode, 3);
@@ -36,6 +45,24 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .style('font-family', 'Inter, sans-serif');
 
         svgRef.current = svg.node();
+
+        // ── Tooltip div (HTML, positioned absolutely inside container) ─────────
+        const tooltip = d3.select(container)
+            .append('div')
+            .attr('class', 'node-tooltip')
+            .style('position', 'absolute')
+            .style('pointer-events', 'none')
+            .style('opacity', 0)
+            .style('background', '#fff')
+            .style('border', '1.5px solid #1e1e1e')
+            .style('border-radius', '8px')
+            .style('padding', '10px 14px')
+            .style('font-family', 'Inter, sans-serif')
+            .style('font-size', '13px')
+            .style('max-width', '260px')
+            .style('box-shadow', '0 4px 16px rgba(0,0,0,0.10)')
+            .style('z-index', 200)
+            .style('line-height', '1.5');
 
         // Zoom container
         const g = svg.append('g');
@@ -155,10 +182,6 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
         // ── Nodes ───────────────────────────────────────────────────────────
         const nodeLayer = g.append('g').attr('class', 'nodes');
 
-        // Build a lookup for fast access
-        const nodeLookup = {};
-        layerData.nodes.forEach((n) => { nodeLookup[n.id] = n; });
-
         const nodeGroups = nodeLayer.selectAll('g.node')
             .data(layerData.nodes)
             .enter()
@@ -226,7 +249,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             })
             .text((d) => d.label);
 
-        // Expandable "+" badge
+        // Expandable "+" badge (top-right corner)
         nodeGroups.filter((d) => d.isExpandable)
             .append('circle')
             .attr('cx', (d) => textWidths[d.id] / 2 + paddingX)
@@ -245,17 +268,85 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('fill', '#ffffff')
             .text('+');
 
-        // Hover effect
+        // Special-requirement "!" badge (top-left corner, yellow)
+        const specialNodes = nodeGroups.filter((d) => {
+            const info = getCourseInfo(d.label);
+            return info?.specialReq?.length > 0;
+        });
+
+        specialNodes
+            .append('circle')
+            .attr('cx', (d) => -(textWidths[d.id] / 2 + paddingX))
+            .attr('cy', -(13 / 2 + paddingY))
+            .attr('r', 7)
+            .attr('fill', '#f59e0b');   // amber-400
+
+        specialNodes
+            .append('text')
+            .attr('x', (d) => -(textWidths[d.id] / 2 + paddingX))
+            .attr('y', -(13 / 2 + paddingY))
+            .attr('text-anchor', 'middle')
+            .attr('dominant-baseline', 'central')
+            .attr('font-size', 10)
+            .attr('font-weight', 'bold')
+            .attr('fill', '#ffffff')
+            .text('!');
+
+        // ── Hover: stroke effect + tooltip ─────────────────────────────────
         nodeGroups
             .on('mouseenter', function (event, d) {
+                // Stroke highlight
                 if (d.isExpandable) {
                     d3.select(this).select('rect')
                         .transition().duration(150)
                         .attr('stroke-width', 3)
                         .attr('stroke', EXPANDABLE_COLOR);
                 }
+
+                // Build tooltip content
+                const info = getCourseInfo(d.label);
+                const title = info?.title || '';
+                const specialReq = info?.specialReq || '';
+
+                // Always show course code + title; skip tooltip if nothing useful
+                if (!title && !specialReq) return;
+
+                let html = `<strong style="font-size:14px;color:#1e1e1e">${d.label}</strong>`;
+                if (title) {
+                    html += `<div style="color:#555;margin-top:3px">${title}</div>`;
+                }
+                if (specialReq) {
+                    html += `<div style="margin-top:7px;padding:6px 8px;background:#fef3c7;border-radius:5px;border:1px solid #f59e0b;color:#92400e;font-size:12px">
+                        ⚠️ <strong>Special requirement:</strong><br/>${specialReq}
+                    </div>`;
+                }
+
+                // Position: offset from the node's screen position
+                const containerRect = container.getBoundingClientRect();
+                const mouseX = event.clientX - containerRect.left;
+                const mouseY = event.clientY - containerRect.top;
+
+                // Nudge right/left depending on available space
+                const tipX = mouseX + 14;
+                const tipY = mouseY - 10;
+
+                tooltip
+                    .html(html)
+                    .style('left', `${tipX}px`)
+                    .style('top', `${tipY}px`)
+                    .transition().duration(120)
+                    .style('opacity', 1);
+            })
+            .on('mousemove', function (event) {
+                const containerRect = container.getBoundingClientRect();
+                const mouseX = event.clientX - containerRect.left;
+                const mouseY = event.clientY - containerRect.top;
+                tooltip
+                    .style('left', `${mouseX + 14}px`)
+                    .style('top', `${mouseY - 10}px`);
             })
             .on('mouseleave', function (event, d) {
+                // Restore stroke
                 d3.select(this).select('rect')
                     .transition().duration(150)
                     .attr('stroke-width', 2)
@@ -263,13 +354,17 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                         if (d.depth === 0) return ROOT_COLOR;
                         return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
                     });
+
+                // Hide tooltip
+                tooltip.transition().duration(100).style('opacity', 0);
             });
 
         // Cleanup
         return () => {
             d3.select(container).select('svg').remove();
+            d3.select(container).select('.node-tooltip').remove();
         };
-    }, [rootAstNode]);
+    }, [rootAstNode, courseInfoReady]);
 
     return (
         <div
