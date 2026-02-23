@@ -48,7 +48,13 @@ export function getCourseInfo(courseCode) {
         specialReq += "Upper Division Standing. ";
     }
     if (lower.includes('consent')) {
-        specialReq += "Consent of Instructor. ";
+        // "or consent of instructor" → consent is an alternative to real prereqs
+        // "by consent" / just "consent of instructor" → hard requirement
+        if (/\bor\s+consent\b/.test(lower)) {
+            specialReq += "Consent of Instructor (alternative). ";
+        } else {
+            specialReq += "Consent of Instructor required. ";
+        }
     }
     // Only match explicit AP score requirements (e.g. "AP score of 4")
     const apMatch = lower.match(/\bap\s+(?:score\s+(?:of\s+)?)(\d+)/i) ||
