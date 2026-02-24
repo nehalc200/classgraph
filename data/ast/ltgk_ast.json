@@ -1,10 +1,192 @@
 [
   {
+    "code": "LTGK 1",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTGK 101",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTGK 102",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LTGK 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTGK 103",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LTGK 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTGK 104",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LTGK 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTGK 105",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LTGK 3",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTGK 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTGK 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "LTGK 2",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTGK 3",
     "type": "ROOT",
     "children": [
       {
         "code": "LTGK 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTGK 2",
         "type": "CHILD",
         "children": []
       }

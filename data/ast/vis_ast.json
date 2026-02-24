@@ -593,50 +593,9 @@
       {
         "code": "DSC 20",
         "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "VIS 143",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "VIS 142",
-        "type": "CHILD",
         "children": [
           {
-            "code": "VIS 42",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BILD 62",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "COGS 18",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "CSE 6R",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "CSE 8A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "CSE 11",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "DSC 20",
+            "code": "DSC 10",
             "type": "CHILD",
             "children": []
           }

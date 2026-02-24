@@ -351,7 +351,19 @@
               {
                 "code": "DSC 30",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "DSC 20",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "DSC 10",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -805,7 +817,19 @@
               {
                 "code": "DSC 30",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "DSC 20",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "DSC 10",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },

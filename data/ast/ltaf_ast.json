@@ -8,5 +8,10 @@
     "code": "LTAF 120",
     "type": "ROOT",
     "children": []
+  },
+  {
+    "code": "LTAF 120GS",
+    "type": "ROOT",
+    "children": []
   }
 ]

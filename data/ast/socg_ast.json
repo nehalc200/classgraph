@@ -1,37 +1,21 @@
 [
   {
-    "code": "SOCG 201",
+    "code": "SOCG 202",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SOCG 204",
+    "code": "SOCG 206",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SOCG 205",
+    "code": "SOCG 214",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SOCG 208B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "SOCG 208A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "SOCG 209",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "SOCG 230",
+    "code": "SOCG 255B",
     "type": "ROOT",
     "children": []
   },
@@ -41,53 +25,17 @@
     "children": []
   },
   {
-    "code": "SOCG 255D",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "ANTH 268",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COGR 225A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HIGR 238",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 209A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCG 255A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "SOCG 278",
+    "code": "SOCG 264",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SOCG 298",
+    "code": "SOCG 267",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SOCG 299",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "SOCG 500",
+    "code": "SOCG 282",
     "type": "ROOT",
     "children": []
   }

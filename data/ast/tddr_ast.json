@@ -5,17 +5,6 @@
     "children": []
   },
   {
-    "code": "TDDR 102",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "TDDR 101",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
     "code": "TDDR 111",
     "type": "ROOT",
     "children": [

@@ -11,18 +11,23 @@
       {
         "code": "LTGK 2",
         "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTGK 3",
+        "type": "CHILD",
         "children": [
           {
             "code": "LTGK 1",
             "type": "CHILD",
             "children": []
+          },
+          {
+            "code": "LTGK 2",
+            "type": "CHILD",
+            "children": []
           }
         ]
-      },
-      {
-        "code": "LTGK 3",
-        "type": "CHILD",
-        "children": []
       }
     ]
   },
@@ -38,13 +43,7 @@
       {
         "code": "LTLA 2",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LTLA 1",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "code": "LTLA 3",
@@ -69,12 +68,12 @@
     "children": []
   },
   {
-    "code": "CLAS 196A",
+    "code": "CLAS 196A-B",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "CLAS 196A-B",
+    "code": "CLAS 196B",
     "type": "ROOT",
     "children": []
   },

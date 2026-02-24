@@ -1,34 +1,17 @@
 [
   {
-    "code": "TDPW 101",
+    "code": "TDPW 1",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "TDPW 1",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
-    "code": "TDPW 104",
+    "code": "TDPW 102",
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "TDPW 101",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "TDPW 1",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "THPW 1",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   }

@@ -1,6 +1,6 @@
 [
   {
-    "code": "LISP 16",
+    "code": "LISP 17",
     "type": "ROOT",
     "children": []
   },
@@ -11,57 +11,123 @@
       {
         "code": "LISP 1D",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LISP 1DX",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "LISP 1B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
         "children": [
           {
-            "code": "LISP 1A",
+            "code": "OR",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LISP 1C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LISP 1B",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "LISP 5B",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "code": "LISP 1BX",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "LISP 5C",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
-            "code": "LISP 5A",
+            "code": "LISP 1CX",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LISP 1B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LISP 1BX",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
-        "code": "LISP 1AX",
+        "code": "LISP 1DX",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LISP 1C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LISP 1B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LISP 5B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "LISP 1BX",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "LISP 1CX",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LISP 1B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LISP 1BX",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   {
-    "code": "LISP 1BX",
+    "code": "LISP 1A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "LISP 1A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LISP 1AX",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
+  },
+  {
+    "code": "LISP 1AX",
+    "type": "ROOT",
+    "children": []
   },
   {
     "code": "LISP 1C",
@@ -74,29 +140,7 @@
           {
             "code": "LISP 1B",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LISP 5A",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "LISP 1AX",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "code": "LISP 5B",
@@ -108,18 +152,7 @@
       {
         "code": "LISP 1BX",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LISP 1A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "LISP 1AX",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },
@@ -130,41 +163,117 @@
       {
         "code": "LISP 1B",
         "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LISP 1BX",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LISP 1D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
         "children": [
           {
-            "code": "OR",
+            "code": "LISP 1C",
             "type": "CHILD",
             "children": [
               {
-                "code": "LISP 1A",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "LISP 1B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LISP 5B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               },
               {
-                "code": "LISP 5A",
+                "code": "LISP 1BX",
                 "type": "CHILD",
                 "children": []
               }
             ]
           },
           {
-            "code": "LISP 1AX",
+            "code": "LISP 5C",
             "type": "CHILD",
             "children": []
           }
         ]
       },
       {
-        "code": "LISP 1BX",
+        "code": "LISP 1CX",
         "type": "CHILD",
         "children": [
           {
-            "code": "LISP 1A",
+            "code": "LISP 1B",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "LISP 1AX",
+            "code": "LISP 1BX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LISP 1DX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LISP 1C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LISP 1B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LISP 5B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "LISP 1BX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LISP 1CX",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LISP 1B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LISP 1BX",
             "type": "CHILD",
             "children": []
           }

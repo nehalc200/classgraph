@@ -1,17 +1,66 @@
 [
   {
+    "code": "LTTH 110",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 115",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 150",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 210A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "LTTH 210B",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "LTTH 210A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
+  },
+  {
+    "code": "LTTH 210C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 250",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 255",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 260",
+    "type": "ROOT",
+    "children": []
   },
   {
     "code": "LTTH 261",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTTH 298",
     "type": "ROOT",
     "children": []
   }

@@ -5,58 +5,14 @@
     "children": []
   },
   {
-    "code": "LIFR 1B",
+    "code": "LIFR 1A",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "LIFR 1A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "LIFR 5A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "LIFR 1AX",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "LIFR 5A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
-    "code": "LIFR 1BX",
+    "code": "LIFR 1AX",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "LIFR 1A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LIFR 1AX",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "LIFR 1C",
@@ -69,40 +25,7 @@
           {
             "code": "LIFR 1B",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LIFR 1A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LIFR 5A",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LIFR 1AX",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LIFR 5A",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
+            "children": []
           },
           {
             "code": "LIFR 5B",
@@ -114,18 +37,7 @@
       {
         "code": "LIFR 1BX",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LIFR 1A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "LIFR 1AX",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },
@@ -136,52 +48,117 @@
       {
         "code": "LIFR 1B",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "LIFR 1A",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "LIFR 5A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "LIFR 1AX",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "LIFR 5A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
+        "children": []
       },
       {
         "code": "LIFR 1BX",
         "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LIFR 1D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
         "children": [
           {
-            "code": "LIFR 1A",
+            "code": "LIFR 1C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LIFR 1B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "LIFR 5B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "LIFR 1BX",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "LIFR 5C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LIFR 1CX",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1B",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "LIFR 1AX",
+            "code": "LIFR 1BX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LIFR 1DX",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LIFR 1C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LIFR 1B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LIFR 5B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "LIFR 1BX",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "LIFR 1CX",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LIFR 1B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LIFR 1BX",
             "type": "CHILD",
             "children": []
           }

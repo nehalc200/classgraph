@@ -1,11 +1,22 @@
 [
   {
-    "code": "HIGR 215A",
+    "code": "HIGR 205",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "HIGR 224",
+    "code": "HIGR 215B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "HIGR 215A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "HIGR 239",
     "type": "ROOT",
     "children": []
   },
@@ -15,58 +26,23 @@
     "children": []
   },
   {
-    "code": "HIGR 241",
+    "code": "HIGR 267B",
     "type": "ROOT",
     "children": [
       {
-        "code": "ANTH 268",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COGR 225A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HIGR 238",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 209A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCG 255A",
+        "code": "HIGR 267A",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
-    "code": "HIGR 265B",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "HIGR 281",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "HIGR 298",
+    "code": "HIGR 280",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "HIGR 299",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "HIGR 500",
     "type": "ROOT",
     "children": []
   }

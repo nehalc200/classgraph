@@ -1,20 +1,5 @@
 [
   {
-    "code": "PSY 199",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "PSY 200",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "PSY 227",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "PSY 296",
     "type": "ROOT",
     "children": []
@@ -30,7 +15,17 @@
     "children": []
   },
   {
+    "code": "PSY 403",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "PSY 405",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 426T",
     "type": "ROOT",
     "children": []
   },
@@ -46,6 +41,31 @@
   },
   {
     "code": "PSY 429",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 429T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 430",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 430T",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 431",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "PSY 431T",
     "type": "ROOT",
     "children": []
   },

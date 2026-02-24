@@ -1,41 +1,6 @@
 [
   {
-    "code": "MED 199",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 232",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 238",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 239",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 243",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "MED 246",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 249",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 253",
     "type": "ROOT",
     "children": []
   },
@@ -45,17 +10,17 @@
     "children": []
   },
   {
-    "code": "MED 276",
+    "code": "MED 267",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MED 275",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "MED 278",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 285",
     "type": "ROOT",
     "children": []
   },
@@ -91,11 +56,6 @@
   },
   {
     "code": "MED 429",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "MED 429T",
     "type": "ROOT",
     "children": []
   },

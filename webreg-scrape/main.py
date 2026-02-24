@@ -32,7 +32,7 @@ def main():
     args = parser.parse_args()
 
     run(
-        codes_path=Path('script/valid_codes.txt'),
+        codes_path=Path('webreg-scrape/valid_codes.txt'),
         courses_csv_path=Path('data/all_courses.csv'),
         webreg_json_path=Path('data/webreg_data.json'),
         skip_scrape=args.skip_scrape,

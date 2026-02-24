@@ -1,6 +1,6 @@
 [
   {
-    "code": "COSE 210",
+    "code": "COSE 225",
     "type": "ROOT",
     "children": []
   },
@@ -10,18 +10,94 @@
     "children": []
   },
   {
-    "code": "COSE 260A",
+    "code": "COSE 260C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AESE 278A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COSE 260A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AESE 278C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COSE 260B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
-    "code": "COSE 260B",
+    "code": "COSE 260D",
     "type": "ROOT",
     "children": [
       {
         "code": "COSE 260A",
         "type": "CHILD",
         "children": []
+      },
+      {
+        "code": "COSE 260B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "COSE 260C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AESE 278A",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "COSE 260A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AESE 278C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "COSE 260B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -1,89 +1,46 @@
 [
   {
-    "code": "BGGN 206B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "BGGN 206A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "BGGN 209",
+    "code": "BGGN 205",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 215",
+    "code": "BGGN 223",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 216",
+    "code": "BGGN 230",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 225",
+    "code": "BGGN 248",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 228",
+    "code": "BGGN 249C",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 237",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "BIOM 252",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "BIOM 200A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 200B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 201",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "BIOM 272",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "BGGN 240",
+    "code": "BGGN 255",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BGGN 246A",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BGGN 249B",
+    "code": "BGGN 267",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "BGGN 271",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "BGGN 273",
     "type": "ROOT",
     "children": []
   },
@@ -98,32 +55,12 @@
     "children": []
   },
   {
-    "code": "BGGN 290",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BGGN 293",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BGGN 294",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "BGGN 298",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "BGGN 299",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BGGN 500",
     "type": "ROOT",
     "children": []
   }

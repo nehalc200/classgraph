@@ -38,42 +38,9 @@
     ]
   },
   {
-    "code": "FILM 182",
+    "code": "FILM 71",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FILM 71",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "VIS 60",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "FILM 72",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "VIS 70N",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "FILM 72",

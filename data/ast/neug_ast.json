@@ -1,16 +1,11 @@
 [
   {
-    "code": "NEUG 200B",
+    "code": "NEUG 200C",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "NEUG 221",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "NEUG 222",
     "type": "ROOT",
     "children": []
   },
@@ -42,6 +37,16 @@
   },
   {
     "code": "NEUG 265",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 276",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "NEUG 277",
     "type": "ROOT",
     "children": []
   },

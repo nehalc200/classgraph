@@ -1,10 +1,52 @@
 [
   {
+    "code": "LTSP 100A",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "LTSP 100F",
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "LTSP 2E",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 3F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 2F",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 101",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
         "type": "CHILD",
         "children": [
           {
@@ -17,26 +59,304 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "OR",
+                "code": "LTSP 2D",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LTSP 2D",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LTSP 2F",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LTSP 1F",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 110",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 115",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 116",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 123",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTSP 123GS",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTSP 124",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 126",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 128",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
               }
             ]
           }
@@ -63,41 +383,23 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "OR",
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
             "type": "CHILD",
             "children": [
               {
-                "code": "LTSP 2E",
+                "code": "LTSP 2D",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "LTSP 3F",
+                "code": "LTSP 2F",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "OR",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LTSP 2D",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "LTSP 2F",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LTSP 1F",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "children": []
               }
             ]
           }
@@ -124,47 +426,875 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "OR",
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
             "type": "CHILD",
             "children": [
               {
-                "code": "LTSP 2E",
+                "code": "LTSP 2D",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "LTSP 3F",
+                "code": "LTSP 2F",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "OR",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LTSP 2D",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "LTSP 2F",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LTSP 1F",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "children": []
               }
             ]
           }
         ]
       }
     ]
+  },
+  {
+    "code": "LTSP 135B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 136",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 137",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 138",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 145",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 150",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 150A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 150B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 151",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 155",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 166",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 169",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 170",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 172",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 174",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTSP 174GS",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTSP 175",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 176",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 177",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 180",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTSP 100A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "LTSP 100F",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTSP 2E",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 3F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTSP 2D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "LTSP 2F",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "LTSP 192",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 196",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 1F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 258",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 272",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTSP 297",
+    "type": "ROOT",
+    "children": []
   },
   {
     "code": "LTSP 298",
@@ -181,135 +1311,19 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "OF 3",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LISP 1C",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "OR",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1B",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "OR",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LISP 1A",
-                            "type": "CHILD",
-                            "children": []
-                          },
-                          {
-                            "code": "LISP 5A",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "code": "LISP 1AX",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 5B",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "LISP 1BX",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LISP 1AX",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": "LISP 1D",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
-        "code": "OR",
+        "code": "OF 3",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LISP 1CX",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "LISP 1B",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "OR",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LISP 1A",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "LISP 5A",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 1AX",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "code": "LISP 1BX",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "LISP 1AX",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": "LISP 1DX",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "OF 4",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
@@ -322,137 +1336,31 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "OR",
+            "code": "OF 3",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "LISP 1C",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "OR",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LISP 1B",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "OR",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "LISP 1A",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "LISP 5A",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "code": "LISP 1AX",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "code": "LISP 5B",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 1BX",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LISP 1A",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "LISP 1AX",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "code": "LISP 1D",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
-            "code": "OR",
+            "code": "OF 3",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "LISP 1CX",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1B",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "OR",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LISP 1A",
-                            "type": "CHILD",
-                            "children": []
-                          },
-                          {
-                            "code": "LISP 5A",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "code": "LISP 1AX",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 1BX",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LISP 1A",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "LISP 1AX",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "code": "LISP 1DX",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
+          },
+          {
+            "code": "OF 4",
+            "type": "CHILD",
+            "children": []
           }
         ]
+      },
+      {
+        "code": "OF 4",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OF 3",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
@@ -469,179 +1377,70 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "OR",
+                "code": "OF 3",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1C",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "OR",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LISP 1B",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "OR",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "LISP 1A",
-                                    "type": "CHILD",
-                                    "children": []
-                                  },
-                                  {
-                                    "code": "LISP 5A",
-                                    "type": "CHILD",
-                                    "children": []
-                                  }
-                                ]
-                              },
-                              {
-                                "code": "LISP 1AX",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "code": "LISP 5B",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "code": "LISP 1BX",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LISP 1A",
-                            "type": "CHILD",
-                            "children": []
-                          },
-                          {
-                            "code": "LISP 1AX",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 1D",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
-                "code": "OR",
+                "code": "OF 3",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "LISP 1CX",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "LISP 1B",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "OR",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "LISP 1A",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "LISP 5A",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "code": "LISP 1AX",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "code": "LISP 1BX",
-                        "type": "CHILD",
-                        "children": [
-                          {
-                            "code": "LISP 1A",
-                            "type": "CHILD",
-                            "children": []
-                          },
-                          {
-                            "code": "LISP 1AX",
-                            "type": "CHILD",
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "code": "LISP 1DX",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
+                "children": []
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
               }
             ]
+          },
+          {
+            "code": "OF 4",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 3",
+            "type": "CHILD",
+            "children": []
           }
         ]
-      }
-    ]
-  },
-  {
-    "code": "LTSP 2F",
-    "type": "ROOT",
-    "children": [
+      },
       {
-        "code": "LTSP 1F",
+        "code": "OF 5",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "OF 4",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
+    "code": "LTSP 2F",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "LTSP 3F",
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "LTSP 2D",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "LTSP 2D",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "LTSP 2F",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "LTSP 1F",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "LTSP 2F",
+        "type": "CHILD",
+        "children": []
       }
     ]
+  },
+  {
+    "code": "LTSP 87",
+    "type": "ROOT",
+    "children": []
   }
 ]

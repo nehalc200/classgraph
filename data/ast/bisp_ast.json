@@ -1,5 +1,27 @@
 [
   {
+    "code": "BISP 170",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "BILD 1",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BILD 2",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "BILD 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "BISP 182",
     "type": "ROOT",
     "children": [
@@ -9,11 +31,6 @@
         "children": []
       }
     ]
-  },
-  {
-    "code": "BISP 193",
-    "type": "ROOT",
-    "children": []
   },
   {
     "code": "BISP 194",
@@ -50,16 +67,6 @@
   },
   {
     "code": "BISP 195P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BISP 196",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BISP 197",
     "type": "ROOT",
     "children": []
   },

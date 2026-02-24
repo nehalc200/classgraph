@@ -5,11 +5,6 @@
     "children": []
   },
   {
-    "code": "BILD 12",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "BILD 2",
     "type": "ROOT",
     "children": [
@@ -21,12 +16,12 @@
     ]
   },
   {
-    "code": "BILD 28",
+    "code": "BILD 3",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "BILD 3",
+    "code": "BILD 30",
     "type": "ROOT",
     "children": []
   },
@@ -41,37 +36,9 @@
     "children": []
   },
   {
-    "code": "BILD 60",
+    "code": "BILD 61",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "BILD 1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "OR",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "BILD 2",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "BILD 1",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "BILD 3",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      }
-    ]
+    "children": []
   },
   {
     "code": "BILD 62",
@@ -90,11 +57,6 @@
   },
   {
     "code": "BILD 99",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "BILD 99H",
     "type": "ROOT",
     "children": []
   }

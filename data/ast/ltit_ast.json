@@ -1,12 +1,320 @@
 [
   {
+    "code": "LTIT 100",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTIT 50",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTIT 2A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTIT 1C",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OF 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 4",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "LTIT 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTIT 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTIT 1C",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "OF 3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OF 3",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "OF 4",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OF 5",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTIT 122",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 12BR",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 137",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 161",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 192",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 198",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 199",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "LTIT 2A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTIT 1C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OF 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "OF 4",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "LTIT 2B",
     "type": "ROOT",
     "children": [
       {
         "code": "LTIT 2A",
         "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTIT 1C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OF 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "OF 4",
+        "type": "CHILD",
         "children": []
+      }
+    ]
+  },
+  {
+    "code": "LTIT 50",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "LTIT 2A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTIT 1C",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OF 3",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "OF 4",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "LTIT 2B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTIT 2A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTIT 1C",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OF 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "OF 4",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "OF 4",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   }

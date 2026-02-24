@@ -5,11 +5,6 @@
     "children": []
   },
   {
-    "code": "TDGE 100",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "TDGE 11",
     "type": "ROOT",
     "children": []
@@ -25,14 +20,15 @@
     "children": []
   },
   {
-    "code": "TDGE 127",
+    "code": "TDGE 196B",
     "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "TDGE 196A",
-    "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "TDGE 196A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "TDGE 199",
@@ -41,11 +37,6 @@
   },
   {
     "code": "TDGE 25",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "TDGE 87",
     "type": "ROOT",
     "children": []
   }

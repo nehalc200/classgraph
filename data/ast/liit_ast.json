@@ -1,6 +1,6 @@
 [
   {
-    "code": "LIIT 1B",
+    "code": "LIIT 1C",
     "type": "ROOT",
     "children": [
       {
@@ -8,35 +8,35 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "LIIT 1A",
+            "code": "LIIT 1B",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "LIIT 5A",
+            "code": "LIIT 5B",
             "type": "CHILD",
             "children": []
           }
         ]
       },
       {
-        "code": "LIIT 1AX",
+        "code": "LIIT 1BX",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
-    "code": "LIIT 1BX",
+    "code": "LIIT 1CX",
     "type": "ROOT",
     "children": [
       {
-        "code": "LIIT 1A",
+        "code": "LIIT 1B",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "LIIT 1AX",
+        "code": "LIIT 1BX",
         "type": "CHILD",
         "children": []
       }

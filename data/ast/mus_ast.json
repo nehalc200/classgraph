@@ -6,12 +6,24 @@
       {
         "code": "MUS 2C",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MUS 2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       },
       {
         "code": "MUS 2CK",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MUS 2BK",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -67,11 +79,6 @@
     ]
   },
   {
-    "code": "MUS 103E",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "MUS 105",
     "type": "ROOT",
     "children": [
@@ -82,12 +89,24 @@
           {
             "code": "MUS 2C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MUS 2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "MUS 2CK",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MUS 2BK",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -165,7 +184,13 @@
       {
         "code": "MUS 2C",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MUS 2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -205,18 +230,18 @@
           {
             "code": "MUS 2B",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "MUS 2A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "code": "MUS 2C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MUS 2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -231,12 +256,24 @@
               {
                 "code": "MUS 2C",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "MUS 2B",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               },
               {
                 "code": "MUS 2CK",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "MUS 2BK",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -306,18 +343,18 @@
       {
         "code": "MUS 2B",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "MUS 2A",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "code": "MUS 2C",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MUS 2B",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -347,18 +384,18 @@
           {
             "code": "MUS 2B",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "MUS 2A",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "code": "MUS 2C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MUS 2B",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -805,11 +842,6 @@
     "children": []
   },
   {
-    "code": "MUS 201A",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "MUS 201A-B-C-D-E-F",
     "type": "ROOT",
     "children": []
@@ -821,6 +853,11 @@
   },
   {
     "code": "MUS 201C",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "MUS 201D",
     "type": "ROOT",
     "children": []
   },
@@ -898,17 +935,6 @@
     "code": "MUS 214",
     "type": "ROOT",
     "children": []
-  },
-  {
-    "code": "MUS 215B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "MUS 215A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
   },
   {
     "code": "MUS 228",
@@ -1052,27 +1078,22 @@
     "children": []
   },
   {
-    "code": "MUS 2B",
+    "code": "MUS 2C",
     "type": "ROOT",
     "children": [
       {
-        "code": "MUS 2A",
+        "code": "MUS 2B",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
-    "code": "MUS 2BK",
+    "code": "MUS 2CK",
     "type": "ROOT",
     "children": [
       {
-        "code": "MUS 2A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "MUS 2AK",
+        "code": "MUS 2BK",
         "type": "CHILD",
         "children": []
       }
@@ -1090,18 +1111,7 @@
       {
         "code": "MUS 2BK",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "MUS 2A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MUS 2AK",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },

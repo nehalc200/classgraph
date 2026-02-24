@@ -1,37 +1,5 @@
 [
   {
-    "code": "BNFO 262",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "BIOM 252",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "BIOM 200A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 200B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 201",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "BIOM 272",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
     "code": "BNFO 281",
     "type": "ROOT",
     "children": []

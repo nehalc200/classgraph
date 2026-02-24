@@ -5,7 +5,7 @@
     "children": []
   },
   {
-    "code": "LIGM 1B",
+    "code": "LIGM 1C",
     "type": "ROOT",
     "children": [
       {
@@ -13,35 +13,35 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "LIGM 1A",
+            "code": "LIGM 1B",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "LIGM 5A",
+            "code": "LIGM 5B",
             "type": "CHILD",
             "children": []
           }
         ]
       },
       {
-        "code": "LIGM 1AX",
+        "code": "LIGM 1BX",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
-    "code": "LIGM 1BX",
+    "code": "LIGM 1CX",
     "type": "ROOT",
     "children": [
       {
-        "code": "LIGM 1A",
+        "code": "LIGM 1B",
         "type": "CHILD",
         "children": []
       },
       {
-        "code": "LIGM 1AX",
+        "code": "LIGM 1BX",
         "type": "CHILD",
         "children": []
       }

@@ -1331,6 +1331,11 @@
     "children": []
   },
   {
+    "code": "PSYC 135",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "PSYC 136",
     "type": "ROOT",
     "children": []
@@ -2473,25 +2478,9 @@
     "children": []
   },
   {
-    "code": "PSYC 195P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
     "code": "PSYC 196A-B-C",
     "type": "ROOT",
     "children": []
-  },
-  {
-    "code": "PSYC 196B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "PSYC 196A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
   },
   {
     "code": "PSYC 198",
@@ -2538,11 +2527,6 @@
         "children": []
       }
     ]
-  },
-  {
-    "code": "PSYC 203",
-    "type": "ROOT",
-    "children": []
   },
   {
     "code": "PSYC 205",

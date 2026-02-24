@@ -80,28 +80,39 @@
     "children": []
   },
   {
+    "code": "JAPN 150B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "JAPN 140C",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "JAPN 150A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "JAPN 150C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "JAPN 180",
     "type": "ROOT",
     "children": []
   },
   {
     "code": "JAPN 190",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "JAPN 196B",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "JAPN 196A",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "JAPN 199",
     "type": "ROOT",
     "children": []
   },

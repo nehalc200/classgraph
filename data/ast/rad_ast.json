@@ -14,19 +14,25 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "MED 401",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PEDS 401",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SURG 401",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MED 401",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PEDS 401",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SURG 401",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -54,28 +60,29 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "MED 401",
+            "code": "OR",
             "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "PEDS 401",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "SURG 401",
-            "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MED 401",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "PEDS 401",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "SURG 401",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
     ]
-  },
-  {
-    "code": "RAD 430",
-    "type": "ROOT",
-    "children": []
   },
   {
     "code": "RAD 434",

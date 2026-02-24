@@ -53,14 +53,20 @@
     "children": []
   },
   {
-    "code": "SIOC 202A",
+    "code": "SIOC 202A–B",
     "type": "ROOT",
     "children": []
   },
   {
-    "code": "SIOC 202A–B",
+    "code": "SIOC 202B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SIOC 202A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SIOC 203A",
