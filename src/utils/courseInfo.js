@@ -56,6 +56,26 @@ export function getCourseInfo(courseCode) {
             specialReq += "Consent of Instructor required. ";
         }
     }
+    if (lower.includes('restricted')) {
+        specialReq += "Restricted Enrollment. ";
+    }
+    if (lower.includes('transfer')) {
+        specialReq += "Transfer Credit Only. ";
+    }
+    if (lower.includes('standing')) {
+        if (lower.includes('senior')) {
+            specialReq += "Senior Standing required. ";
+        }
+        if (lower.includes('junior')) {
+            specialReq += "Junior Standing required. ";
+        }
+        if (lower.includes('sophomore')) {
+            specialReq += "Sophomore Standing required. ";
+        }
+        if (lower.includes('freshman')) {
+            specialReq += "Freshman Standing required. ";
+        }
+    }
     // Only match explicit AP score requirements (e.g. "AP score of 4")
     const apMatch = lower.match(/\bap\s+(?:score\s+(?:of\s+)?)(\d+)/i) ||
         lower.match(/\bap\s*exam.*?(\d+)/i);
