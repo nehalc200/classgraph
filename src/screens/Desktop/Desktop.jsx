@@ -1,25 +1,13 @@
 import React, { useState, useCallback } from "react";
-import { InputGroup } from "../../components/InputGroup";
-import { SelectGroup } from "../../components/SelectGroup";
 import { Button } from "../../components/Button";
-import { CheckboxGroup } from "../../components/CheckboxGroup";
 import { D3Graph } from "../../components/D3Graph";
 import { GraphTabs } from "../../components/GraphTabs";
 import { CourseSearch } from "../../components/CourseSearch";
 import { findRootNode } from "../../utils/astGraphUtils";
 import { loadDepartmentForCourse } from "../../utils/loadAstData";
-import majorsData from "../../../data/majors.json";
 import graphBg from "./graphbackground.webp";
 
 export const Desktop = () => {
-  // Original form data
-  const currentYear = new Date().getFullYear();
-  const yearOptions = Array.from({ length: 6 }, (_, i) => currentYear + i);
-  const collegeOptions = ["Revelle", "Muir", "Marshall", "Warren", "Roosevelt", "Sixth", "Seventh", "Eighth"];
-  const majorOptions = majorsData
-    .map((major) => ({ label: major.name, value: major.code }))
-    .sort((a, b) => a.label.localeCompare(b.label));
-
   // State
   const [selectedCourse, setSelectedCourse] = useState("");
   const [tabs, setTabs] = useState([]);           // [{ courseCode, astNode }]
@@ -126,24 +114,9 @@ export const Desktop = () => {
             and graduation.
           </p>
 
-          <div id="graph-section" className="flex flex-col lg:flex-row gap-12 items-center lg:items-start justify-center">
-            {/* ── Left Column: Controls ──────────────────────────────────── */}
-            <div className="w-full lg:w-[400px] flex flex-col gap-8 flex-shrink-0">
-              <SelectGroup label="Major" id="major" options={majorOptions} />
-              <SelectGroup label="Graduating year" id="year" options={yearOptions} />
-              <SelectGroup label="College" id="college" options={collegeOptions} />
-              <CheckboxGroup label="Transfer" id="transfer" />
-              <InputGroup label="Additional majors/minors" id="additional" />
-
-              <div className="mt-4 flex justify-center">
-                <Button onClick={handleGenerate}>Generate graph</Button>
-              </div>
-            </div>
-
-            {/* ── Right Column: Course Search + Graph Visualization ─────── */}
-            <div className="w-full lg:flex-1 flex flex-col flex-shrink-0" style={{ minHeight: 550 }}>
-              {/* Course search bar — above the graph */}
-              <div className="mb-4 flex items-center gap-3">
+          <div id="graph-section" className="w-full flex justify-center">
+            <div className="w-full max-w-6xl flex flex-col" style={{ minHeight: 700 }}>
+              <div className="mb-4 w-full max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
                 <CourseSearch onSelect={handleCourseSelect} />
                 <Button onClick={handleGenerate} disabled={generating}>
                   {generating ? '…' : 'Go'}
@@ -158,7 +131,7 @@ export const Desktop = () => {
                     onSelect={handleTabSelect}
                     onClose={handleTabClose}
                   />
-                  <div className="flex-1" style={{ minHeight: 480 }}>
+                  <div className="flex-1" style={{ minHeight: 600 }}>
                     <D3Graph
                       rootAstNode={activeAstNode}
                       onNodeExpand={handleNodeExpand}
@@ -168,9 +141,9 @@ export const Desktop = () => {
               ) : (
                 <div
                   className="w-full flex-1 bg-[#FAF6F4] rounded-xl relative flex items-center justify-center"
-                  style={{ minHeight: 480, border: '2px solid #1e1e1e' }}
+                  style={{ minHeight: 600, border: '2px solid #1e1e1e' }}
                 >
-                  <span className="text-gray-500 font-medium text-lg">
+                  <span className="text-gray-500 font-medium text-base sm:text-lg text-center px-4">
                     Search for a course and click "Go" to see its prerequisites
                   </span>
                 </div>
