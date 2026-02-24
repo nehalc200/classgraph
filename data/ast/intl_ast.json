@@ -7,12 +7,24 @@
   {
     "code": "INTL 101",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "INTL 100",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "INTL 102",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "INTL 100",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "INTL 190",
@@ -22,12 +34,24 @@
   {
     "code": "INTL 190H",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "WITH 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "INTL 196H",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "WITH 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "INTL 197",

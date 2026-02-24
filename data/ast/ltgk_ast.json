@@ -25,7 +25,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -41,7 +47,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -63,7 +75,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -79,7 +97,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -101,7 +125,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -117,7 +147,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -139,7 +175,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -155,7 +197,13 @@
           {
             "code": "LTGK 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "LTGK 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -174,7 +222,13 @@
   {
     "code": "LTGK 2",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTGK 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "LTGK 3",
@@ -188,7 +242,13 @@
       {
         "code": "LTGK 2",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LTGK 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   }

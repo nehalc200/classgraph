@@ -24,14 +24,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "NEU 238",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PSYC 231",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "NEU 238",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PSYC 231",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -2,7 +2,13 @@
   {
     "code": "DOC 1",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "AWP 3",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "DOC 100D",
@@ -12,12 +18,42 @@
   {
     "code": "DOC 2",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "DOC 1",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "DOC 3",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "DOC 2",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "DOC 1",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AWP 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "DOC 500",

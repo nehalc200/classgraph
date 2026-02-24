@@ -62,11 +62,6 @@
         "code": "LTGM 2A",
         "type": "CHILD",
         "children": []
-      },
-      {
-        "code": "OF 4",
-        "type": "CHILD",
-        "children": []
       }
     ]
   },
@@ -82,18 +77,8 @@
             "code": "LTGM 2A",
             "type": "CHILD",
             "children": []
-          },
-          {
-            "code": "OF 4",
-            "type": "CHILD",
-            "children": []
           }
         ]
-      },
-      {
-        "code": "OF 5",
-        "type": "CHILD",
-        "children": []
       }
     ]
   }

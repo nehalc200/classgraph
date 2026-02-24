@@ -12,7 +12,13 @@
   {
     "code": "CONT 150B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CONT 150A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CONT 196",

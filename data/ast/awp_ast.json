@@ -42,6 +42,12 @@
   {
     "code": "AWP 4B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "AWP 4A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   }
 ]

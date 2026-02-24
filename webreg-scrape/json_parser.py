@@ -51,13 +51,16 @@ def tokenize(text: str) -> List[str]:
     # Remove Math Placement Exam references (but not what comes after)
     text = re.sub(r'Math\s+Placement\s+Exam(\s+score)?(\s+of\s+\d+)?', '', text, flags=re.IGNORECASE)
     
-    # Remove AP exam score clauses (e.g., "AP Calculus BC score of 4 or 5")
+    # Remove AP exam score clauses (e.g., "AP Calculus BC score of 4 or 5", "AB score of 2")
     text = re.sub(r'AP\s+[A-Za-z\s]+score\s+of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
-    
+    text = re.sub(r'\b[A-Z]{2}\s+score\s+of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
 
     # Remove grade requirements 
     text = re.sub(r'\s+with\s+a\s+grade\s+of\s+[A-Za-z0-9+-–]+(\s+or\s+(above|better))?', '', text, flags=re.IGNORECASE)
-    
+
+    # Remove GPA requirements (e.g., "GPA of 2", "GPA of 2.5 or higher")
+    text = re.sub(r'\bGPA\s+of\s+\d+(\.\d+)?(\s+or\s+(higher|above|better))?', '', text, flags=re.IGNORECASE)
+
     tokens = []
     prev_dept = None
     
@@ -214,10 +217,8 @@ def parse_to_groups(tokens: List[str]) -> Union[Course, OrExpr, AndExpr, None]:
         elif len(or_group) > 1:
             and_items.append(OrExpr(items=or_group))
     
-    if len(and_items) == 1:
-        return and_items[0]
-    else:
-        return AndExpr(items=and_items)
+    # Always wrap in AndExpr, even if there's only one item
+    return AndExpr(items=and_items)
 
 
 def ast_to_dict(node: Union[Course, OrExpr, AndExpr, None]) -> dict | None:

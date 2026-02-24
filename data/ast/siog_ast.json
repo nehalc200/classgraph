@@ -34,14 +34,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "SIOG 223A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIO 223A",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "SIOG 223A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 223A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -65,14 +71,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "SIOG 227A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIO 227A",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "SIOG 227A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 227A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -105,14 +117,20 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "SIOG 227A",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "SIO 227A",
-                "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "SIOG 227A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "SIO 227A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -165,24 +183,30 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "MAE 294A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOC 203A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOG 223A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIOG 230",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MAE 294A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIOC 203A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIOG 223A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIOG 230",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -261,14 +285,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "SIOG 252A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SIO 252A",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "SIOG 252A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIO 252A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -301,14 +331,20 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "SIOG 252A",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "SIO 252A",
-                "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "SIOG 252A",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "SIO 252A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },

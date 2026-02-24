@@ -12,7 +12,13 @@
   {
     "code": "WCWP 10B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "WCWP 10A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "WCWP 160",

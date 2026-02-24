@@ -99,24 +99,30 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COGR 225A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HIGR 238",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 209A",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SOCG 255A",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COGR 225A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HIGR 238",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHIL 209A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SOCG 255A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

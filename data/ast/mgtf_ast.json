@@ -27,17 +27,35 @@
   {
     "code": "MGTF 406",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MMGTF 402",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "MGTF 407",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MGTF 402",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "MGTF 408",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MGTF 402",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "MGTF 409",

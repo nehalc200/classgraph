@@ -72,6 +72,12 @@
   {
     "code": "LHCO 298",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LHCO 218",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   }
 ]

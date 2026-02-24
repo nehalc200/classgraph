@@ -44,74 +44,146 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "MATH 10A",
+        "code": "OR",
         "type": "CHILD",
         "children": [
-          {
-            "code": "MATH 3C",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MATH 4C",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MATH 3C",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "OF 2",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "MATH 20A",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "MATH 4C",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MATH 3C",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "OF 2",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
           {
             "code": "MATH 10A",
             "type": "CHILD",
             "children": [
               {
-                "code": "MATH 3C",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MATH 4C",
+                "code": "OR",
                 "type": "CHILD",
                 "children": [
                   {
                     "code": "MATH 3C",
                     "type": "CHILD",
-                    "children": []
+                    "children": [
+                      {
+                        "code": "MATH 3B",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
                   },
                   {
-                    "code": "OF 2",
+                    "code": "MATH 4C",
                     "type": "CHILD",
-                    "children": []
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 3C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3B",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "code": "OF 2",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "MATH 20A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MATH 4C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 3C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3B",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "code": "OF 2",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MATH 10A",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 3C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3B",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "code": "MATH 4C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "OR",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3C",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 3B",
+                                        "type": "CHILD",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "code": "OF 2",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }

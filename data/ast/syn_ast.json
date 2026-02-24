@@ -17,26 +17,44 @@
   {
     "code": "SYN 150",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "SYN 100",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "SYN 195",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "SYN 198",
     "type": "ROOT",
     "children": [
       {
         "code": "SYN 100",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "SYN 198",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "SYN 2",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "SYN 100",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -45,14 +63,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "SYN 100",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "SYN 2",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "SYN 100",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SYN 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

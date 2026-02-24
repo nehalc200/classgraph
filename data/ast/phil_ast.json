@@ -39,34 +39,58 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "PHIL 32",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 33",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 104",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 105",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 111",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "PHIL 112",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "PHIL 32",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHIL 33",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHIL 104",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHIL 105",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "PHIL 111",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "PHIL 110",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "PHIL 112",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "PHIL 111",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "PHIL 110",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -93,12 +117,30 @@
   {
     "code": "PHIL 111",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 110",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 112",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 111",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHIL 110",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "PHIL 115",
@@ -113,22 +155,64 @@
   {
     "code": "PHIL 120",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 122",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 120",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHIL 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "PHIL 123",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 120",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHIL 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "PHIL 124",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 120",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHIL 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "PHIL 125",
@@ -138,7 +222,19 @@
   {
     "code": "PHIL 126",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 120",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "PHIL 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "PHIL 13",
@@ -273,7 +369,13 @@
   {
     "code": "PHIL 157",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 35",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 158",
@@ -388,7 +490,13 @@
   {
     "code": "PHIL 179",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "PHIL 178",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "PHIL 180",
@@ -673,7 +781,19 @@
           {
             "code": "DOC 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "DOC 1",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -684,7 +804,25 @@
           {
             "code": "DOC 3",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "DOC 2",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "DOC 1",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "code": "HUM 1",
@@ -716,7 +854,13 @@
           {
             "code": "MCWP 50",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MCWP 40",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "MCWP 40R",
@@ -750,14 +894,20 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "MMW 12",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MMW 12R",
-                "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -837,201 +987,249 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "PHIL 27",
+        "code": "OR",
         "type": "CHILD",
         "children": [
           {
-            "code": "CAT 2",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "OR",
+            "code": "PHIL 27",
             "type": "CHILD",
             "children": [
               {
-                "code": "CAT 3",
+                "code": "CAT 2",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "CAT 2CE",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "CAT 3CE",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "CCE 1",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "CCE 2",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "DOC 2",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "DOC 3",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "HUM 1",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "HUM 2",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MCWP 40",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MCWP 50",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MCWP 40R",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MCWP 50R",
-                "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MMW 12",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MMW 13",
+                "code": "OR",
                 "type": "CHILD",
                 "children": [
                   {
-                    "code": "MMW 12",
+                    "code": "CAT 3",
                     "type": "CHILD",
                     "children": []
                   },
                   {
-                    "code": "MMW 12R",
+                    "code": "CAT 2CE",
                     "type": "CHILD",
                     "children": []
                   }
                 ]
               },
               {
-                "code": "WCWP 10A",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "SYN 1",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
+                "children": [
+                  {
+                    "code": "CAT 3CE",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CCE 1",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
               {
-                "code": "SYN 2",
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CCE 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "DOC 2",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "DOC 1",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "AWP 3",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "DOC 3",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "DOC 2",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "DOC 1",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "AWP 3",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "HUM 1",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "HUM 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MCWP 40",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MCWP 50",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "MCWP 40",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MCWP 40R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MCWP 50R",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "MMW 13",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MMW 12",
+                            "type": "CHILD",
+                            "children": []
+                          },
+                          {
+                            "code": "MMW 12R",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "WCWP 10A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "SYN 1",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "WARR 11A",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "OR",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "WARR 11B",
-                "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "SYN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "WARR 11A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               },
               {
-                "code": "SYN 1R",
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "WARR 11B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "SYN 1R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "code": "SYN 2R",
                 "type": "CHILD",
                 "children": []
               }
             ]
           },
           {
-            "code": "SYN 2R",
+            "code": "POLI 27",
             "type": "CHILD",
             "children": []
           }
         ]
-      },
-      {
-        "code": "POLI 27",
-        "type": "CHILD",
-        "children": []
       }
     ]
   },
