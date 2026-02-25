@@ -2,17 +2,119 @@
   {
     "code": "LTRU 104A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 2B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 2A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTRU 1C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTRU 1B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTRU 1A",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTRU 104B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 104A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTRU 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTRU 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTRU 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTRU 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTRU 104C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 104A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTRU 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTRU 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTRU 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTRU 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTRU 110A",
@@ -57,21 +159,81 @@
   {
     "code": "LTRU 1B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 1A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "LTRU 1C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 1B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 1A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTRU 2A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 1C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 1B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTRU 1A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTRU 2B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTRU 2A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTRU 1C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTRU 1B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTRU 1A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

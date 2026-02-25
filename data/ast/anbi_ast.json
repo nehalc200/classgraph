@@ -72,12 +72,24 @@
   {
     "code": "ANBI 134",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "BILD 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ANBI 135",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "BILD 1",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ANBI 136",

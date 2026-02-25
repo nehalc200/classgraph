@@ -405,7 +405,19 @@
           {
             "code": "DOC 2",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "DOC 1",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -416,7 +428,25 @@
           {
             "code": "DOC 3",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "DOC 2",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "DOC 1",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "code": "HUM 1",
@@ -448,7 +478,13 @@
           {
             "code": "MCWP 50",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "MCWP 40",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "MMW 12",
@@ -466,14 +502,20 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "MMW 12",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
-              },
-              {
-                "code": "MMW 12R",
-                "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "MMW 12",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "MMW 12R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -495,7 +537,13 @@
           {
             "code": "WCWP 10B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "WCWP 10A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }

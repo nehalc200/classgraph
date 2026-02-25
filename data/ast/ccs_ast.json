@@ -19,14 +19,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "CCS 101",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CCS 102",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "CCS 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CCS 102",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -35,14 +41,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "CCS 101",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "CCS 102",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "CCS 101",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CCS 102",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   }

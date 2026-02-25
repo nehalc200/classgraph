@@ -7,7 +7,13 @@
   {
     "code": "CLIN 227B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "CLIN 227A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "CLIN 228",

@@ -234,14 +234,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "LTWL 194",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTWR 194",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LTWL 194",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTWR 194",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

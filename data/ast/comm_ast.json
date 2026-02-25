@@ -7,22 +7,46 @@
   {
     "code": "COMM 100A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 100B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 100C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 101",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 101A",
@@ -62,7 +86,13 @@
       {
         "code": "COMM 101",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -71,14 +101,26 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 101",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "VIS 70N",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 101",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "VIS 70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -94,7 +136,13 @@
       {
         "code": "COMM 101",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -110,28 +158,52 @@
       {
         "code": "COMM 101",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
     "code": "COMM 101M",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 101N",
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 101",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "VIS 70N",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 101",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "VIS 70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -140,19 +212,31 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 101",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COGN 22",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "VIS 70N",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 101",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "COGN 22",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "VIS 70N",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -168,7 +252,13 @@
       {
         "code": "COMM 101",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -198,7 +288,13 @@
           {
             "code": "COMM 101",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "VIS 70N",
@@ -225,7 +321,13 @@
           {
             "code": "COMM 101",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "VIS 70N",
@@ -252,7 +354,13 @@
           {
             "code": "COMM 101",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "VIS 70N",
@@ -266,32 +374,68 @@
   {
     "code": "COMM 103D",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 103E",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 104D",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 104E",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 104F",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 104G",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 104GS",
@@ -301,46 +445,70 @@
   {
     "code": "COMM 105G",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 105M",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 105P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 106",
     "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 105P",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 20",
+        "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 106",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 30",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -349,29 +517,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -380,75 +554,105 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
     "code": "COMM 106F",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 106G",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 106I",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 106M",
     "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 106I",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 20",
+        "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 106M",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 30",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -457,122 +661,206 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
     "code": "COMM 106V",
     "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 107",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 108A",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 108D",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 108G",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 109I",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 109P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 110G",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 110M",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 110P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 110T",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 110X",
-    "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
+    "code": "COMM 107",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 108A",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 108D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 108G",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 109I",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 109P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110G",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110M",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 110X",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "COMM 111A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 111B",
@@ -582,53 +870,101 @@
   {
     "code": "COMM 111C",
     "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 111F",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 111G",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 111P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 111T",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 112C",
-    "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HDP 1",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
+    "code": "COMM 111F",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 111G",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 111P",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 111T",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 112C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HDP 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "COMM 112G",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 113T",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 114A",
@@ -643,53 +979,107 @@
   {
     "code": "COMM 114C",
     "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114D",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114E",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114F",
-    "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "DOC 2",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI 40",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
+    "code": "COMM 114D",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 114E",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
+    "code": "COMM 114F",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "DOC 2",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "DOC 1",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "POLI 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "code": "COMM 114G",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 114I",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 114J",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 114K",
@@ -699,67 +1089,103 @@
   {
     "code": "COMM 114N",
     "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114P",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114T",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 114W",
-    "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "GLBH 20",
         "type": "CHILD",
         "children": []
       }
     ]
   },
   {
-    "code": "COMM 115",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "COMM 115D",
+    "code": "COMM 114P",
     "type": "ROOT",
     "children": [
       {
         "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 114T",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 20",
+        "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 114W",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 30",
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "GLBH 20",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COMM 115",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "COMM 10",
         "type": "CHILD",
         "children": []
-      },
+      }
+    ]
+  },
+  {
+    "code": "COMM 115D",
+    "type": "ROOT",
+    "children": [
       {
-        "code": "COMM 30GS",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -768,29 +1194,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -799,29 +1231,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -830,29 +1268,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -861,36 +1305,48 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
     "code": "COMM 119",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 80",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 120I",
@@ -908,17 +1364,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -940,17 +1414,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -972,17 +1464,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1004,17 +1514,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1036,17 +1564,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1057,46 +1603,100 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COGS 1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "DSGN 1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ESYS 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "POLI 10D",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "USP 1",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COGS 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "DSGN 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "ESYS 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "POLI 10D",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "USP 1",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
     "code": "COMM 124B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 124A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "COGS 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "DSGN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ESYS 10",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 10",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "POLI 10D",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "USP 1",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "COMM 125",
@@ -1119,17 +1719,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1151,17 +1769,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1183,17 +1819,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1204,29 +1858,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1246,17 +1906,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1278,17 +1956,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1310,17 +2006,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1342,17 +2056,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1374,17 +2106,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1406,17 +2156,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1438,17 +2206,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1470,17 +2256,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1502,17 +2306,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1534,17 +2356,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1566,17 +2406,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1598,17 +2456,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1630,17 +2506,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1662,17 +2556,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1694,17 +2606,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1715,29 +2645,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1746,34 +2682,40 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 50",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 50",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1782,19 +2724,43 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 100A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 100B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 100C",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1814,17 +2780,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1835,29 +2819,35 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 20",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 30GS",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 40",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 20",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 30GS",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 40",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1877,17 +2867,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1914,17 +2922,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1946,17 +2972,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1978,17 +3022,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2010,17 +3072,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2042,17 +3122,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2074,17 +3172,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2106,17 +3222,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2138,17 +3272,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2170,17 +3322,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2202,17 +3372,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2239,17 +3427,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2271,17 +3477,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2303,17 +3527,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2335,17 +3577,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2367,17 +3627,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2399,17 +3677,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2431,17 +3727,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2463,17 +3777,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2495,17 +3827,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2527,19 +3877,37 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "code": "COMM 100C",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 10",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -2559,17 +3927,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2591,17 +3977,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2623,17 +4027,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2655,17 +4077,35 @@
           {
             "code": "COMM 100A",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2689,7 +4129,13 @@
   {
     "code": "COMM 196B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "COMM 196A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "COMM 198",
@@ -2706,14 +4152,26 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 196A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "COMM 196B",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "COMM 196A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "COMM 196B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 196A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },

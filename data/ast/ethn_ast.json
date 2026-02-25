@@ -9,33 +9,7 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "ETHN 1",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ETHN 2",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ETHN 3",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
-  },
-  {
-    "code": "ETHN 100B",
-    "type": "ROOT",
-    "children": []
-  },
-  {
-    "code": "ETHN 100C",
-    "type": "ROOT",
-    "children": [
-      {
-        "code": "ETHN 100A",
+        "code": "OR",
         "type": "CHILD",
         "children": [
           {
@@ -54,11 +28,105 @@
             "children": []
           }
         ]
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100B",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ETHN 100C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "ETHN 100A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "OR",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "code": "ETHN 100B",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -71,26 +139,60 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "ETHN 1",
+            "code": "OR",
             "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 2",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 3",
-            "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "code": "ETHN 100B",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -103,26 +205,60 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "ETHN 1",
+            "code": "OR",
             "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 2",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 3",
-            "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "ETHN 1",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 2",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "ETHN 3",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "code": "ETHN 100B",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -234,7 +370,13 @@
   {
     "code": "ETHN 114B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 114A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 115",
@@ -361,19 +503,25 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "LTSP 50A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTSP 50B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTSP 50C",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LTSP 50A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 50B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 50C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -382,19 +530,25 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "LTSP 50A",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTSP 50B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTSP 50C",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LTSP 50A",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 50B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "LTSP 50C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -712,33 +866,7 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "ETHN 1",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 2",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "ETHN 3",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
-      },
-      {
-        "code": "ETHN 100B",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "ETHN 100H",
-        "type": "CHILD",
-        "children": [
-          {
-            "code": "ETHN 100A",
+            "code": "OR",
             "type": "CHILD",
             "children": [
               {
@@ -757,11 +885,105 @@
                 "children": []
               }
             ]
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "ETHN 100H",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ETHN 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "ETHN 1",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "ETHN 3",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "code": "ETHN 100B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "ETHN 100A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "ETHN 1",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN 2",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "ETHN 3",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -830,7 +1052,13 @@
   {
     "code": "ETHN 214B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 214A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 230",
@@ -920,7 +1148,13 @@
   {
     "code": "ETHN 291B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 291A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 298",

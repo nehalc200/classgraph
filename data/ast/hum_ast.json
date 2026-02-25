@@ -39,14 +39,20 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "HUM 1",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "HUM 2",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "HUM 1",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "HUM 2",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

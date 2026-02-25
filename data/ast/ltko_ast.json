@@ -2,41 +2,299 @@
   {
     "code": "LTKO 130F",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 130P",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 130W",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 135",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 2B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2A",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 1B",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1A",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 140",
     "type": "ROOT",
     "children": [
       {
-        "code": "LTKO 130F",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTKO 130W",
-        "type": "CHILD",
-        "children": []
-      },
-      {
-        "code": "LTKO 130F",
-        "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "LTKO 130F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 2B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 2A",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "LTKO 1B",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "LTKO 1A",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "LTKO 130W",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 2B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 2A",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "LTKO 1B",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "LTKO 1A",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "LTKO 130F",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 2C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 2B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 2A",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "LTKO 1C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "LTKO 1B",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "LTKO 1A",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -48,26 +306,116 @@
   {
     "code": "LTKO 1B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 1A",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "LTKO 1C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 1B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 1A",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 2A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 1C",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 1B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 1A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 2B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 1C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 1B",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1A",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "LTKO 2C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTKO 2B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "LTKO 2A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "LTKO 1C",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "LTKO 1B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "LTKO 1A",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

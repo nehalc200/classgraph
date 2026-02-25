@@ -32,32 +32,86 @@
   {
     "code": "JAPN 135A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 20C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "JAPN 135B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 135A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "JAPN 20C",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "JAPN 135C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 135B",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "JAPN 135A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "JAPN 20C",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "JAPN 137A",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 20C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "JAPN 137B",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 20C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "JAPN 137C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "JAPN 20C",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "JAPN 140A",

@@ -25,7 +25,13 @@
           {
             "code": "AWP 4B",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "AWP 4A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -34,7 +40,13 @@
   {
     "code": "MCWP 50",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "MCWP 40",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "MCWP 500",
