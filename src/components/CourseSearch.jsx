@@ -15,6 +15,11 @@ export const CourseSearch = ({ onSelect, onQueryChange, onSubmit }) => {
     const [loading, setLoading] = useState(false);
     const wrapperRef = useRef(null);
     const debounceRef = useRef(null);
+    const normalize = (s) => (s || '').toUpperCase().replace(/\s+/g, ''); // remove spaces
+    const deptPrefixFromQuery = (q) => {
+        const m = (q || '').trim().toUpperCase().match(/^[A-Z]+/); // leading letters
+        return m ? m[0] : '';
+    };
 
     const departments = useMemo(() => getDepartments(), []);
 
@@ -27,7 +32,8 @@ export const CourseSearch = ({ onSelect, onQueryChange, onSubmit }) => {
         }
 
         // Find matching departments by prefix
-        const matchingDepts = departments.filter((d) => d.startsWith(trimmed.split(/\s+/)[0]));
+        const deptPrefix = deptPrefixFromQuery(q);
+        const matchingDepts = departments.filter((d) => d.startsWith(deptPrefix));
 
         if (matchingDepts.length === 0) {
             setCourseList([]);
@@ -65,7 +71,7 @@ export const CourseSearch = ({ onSelect, onQueryChange, onSubmit }) => {
         if (!query.trim()) return [];
         const q = query.trim().toUpperCase();
         return courseList
-            .filter((c) => c.toUpperCase().includes(q))
+            .filter((c) => normalize(c).includes(normalize(query)))
             .sort((a, b) => {
                 // Split "CSE 100A" into dept="CSE", num=100, suffix="A"
                 const parse = (code) => {
