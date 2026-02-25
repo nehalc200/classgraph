@@ -117,7 +117,7 @@ export const Desktop = () => {
           <div id="graph-section" className="w-full flex justify-center">
             <div className="w-full max-w-6xl flex flex-col" style={{ minHeight: 700 }}>
               <div className="mb-4 w-full max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
-                <CourseSearch onSelect={handleCourseSelect} />
+                <CourseSearch onSelect={handleCourseSelect} onQueryChange={setSelectedCourse} onSubmit={handleGenerate} />
                 <Button onClick={handleGenerate} disabled={generating}>
                   {generating ? '…' : 'Go'}
                 </Button>

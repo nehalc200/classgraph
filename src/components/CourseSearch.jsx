@@ -7,7 +7,7 @@ import { getAllCourses } from '../utils/astGraphUtils';
  * As you type a department prefix, the courses for that department are
  * loaded lazily and shown in the dropdown.
  */
-export const CourseSearch = ({ onSelect }) => {
+export const CourseSearch = ({ onSelect, onQueryChange, onSubmit }) => {
     const [query, setQuery] = useState('');
     const [isOpen, setIsOpen] = useState(false);
     const [highlightIdx, setHighlightIdx] = useState(0);
@@ -64,7 +64,21 @@ export const CourseSearch = ({ onSelect }) => {
     const filtered = useMemo(() => {
         if (!query.trim()) return [];
         const q = query.trim().toUpperCase();
-        return courseList.filter((c) => c.toUpperCase().includes(q)).slice(0, 30);
+        return courseList
+            .filter((c) => c.toUpperCase().includes(q))
+            .sort((a, b) => {
+                // Split "CSE 100A" into dept="CSE", num=100, suffix="A"
+                const parse = (code) => {
+                    const m = code.match(/^([A-Z]+)\s+(\d+)(.*)$/i);
+                    return m ? [m[1].toUpperCase(), parseInt(m[2], 10), m[3].toUpperCase()] : [code.toUpperCase(), 0, ''];
+                };
+                const [dA, nA, sA] = parse(a);
+                const [dB, nB, sB] = parse(b);
+                if (dA !== dB) return dA < dB ? -1 : 1;
+                if (nA !== nB) return nA - nB;
+                return sA < sB ? -1 : sA > sB ? 1 : 0;
+            })
+            .slice(0, 30);
     }, [query, courseList]);
 
     // Close dropdown when clicking outside
@@ -81,17 +95,20 @@ export const CourseSearch = ({ onSelect }) => {
     useEffect(() => { setHighlightIdx(0); }, [filtered]);
 
     function handleKeyDown(e) {
-        if (!isOpen) return;
-        if (e.key === 'ArrowDown') {
+        if (e.key === 'ArrowDown' && isOpen) {
             e.preventDefault();
             setHighlightIdx((i) => Math.min(i + 1, filtered.length - 1));
-        } else if (e.key === 'ArrowUp') {
+        } else if (e.key === 'ArrowUp' && isOpen) {
             e.preventDefault();
             setHighlightIdx((i) => Math.max(i - 1, 0));
         } else if (e.key === 'Enter') {
             e.preventDefault();
-            if (filtered[highlightIdx]) {
+            if (isOpen && filtered[highlightIdx]) {
                 pick(filtered[highlightIdx]);
+            } else {
+                // Dropdown closed or no highlight — submit whatever is typed
+                setIsOpen(false);
+                onSubmit?.();
             }
         } else if (e.key === 'Escape') {
             setIsOpen(false);
@@ -102,6 +119,7 @@ export const CourseSearch = ({ onSelect }) => {
         setQuery(code);
         setIsOpen(false);
         onSelect(code);
+        onSubmit?.();
     }
 
     return (
@@ -110,7 +128,7 @@ export const CourseSearch = ({ onSelect }) => {
                 type="text"
                 value={query}
                 placeholder="Search for a course (e.g. MATH 180A)…"
-                onChange={(e) => { setQuery(e.target.value); setIsOpen(true); }}
+                onChange={(e) => { setQuery(e.target.value); setIsOpen(true); onQueryChange?.(e.target.value); }}
                 onFocus={() => setIsOpen(true)}
                 onKeyDown={handleKeyDown}
                 style={{

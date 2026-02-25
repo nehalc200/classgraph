@@ -43,7 +43,7 @@ export const GraphTabs = ({ tabs, activeIndex, onSelect, onClose }) => {
                         }}
                     >
                         <span>{tab.courseCode}</span>
-                        {i > 0 && (
+                        {(
                             <span
                                 onClick={(e) => {
                                     e.stopPropagation();

@@ -122,10 +122,10 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 if (p.y > maxGY) maxGY = p.y;
             });
 
-            const padX = 60, padY = 35;
+            const padX = 74, padY = 35;
             const rx = minGX - padX;
             const ry = minGY - padY;
-            const rw = Math.max(maxGX - minGX + padX * 2, 90);
+            const rw = Math.max(maxGX - minGX + padX * 2, 100);
             const rh = Math.max(maxGY - minGY + padY * 2, 60);
 
             const orG = orGroupLayer.append('g');
@@ -144,8 +144,8 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
 
             // "OR" badge
             orG.append('text')
-                .attr('x', rx + 10)
-                .attr('y', ry + 16)
+                .attr('x', rx + 8)
+                .attr('y', ry + 14)
                 .attr('fill', group.border)
                 .attr('font-size', 11)
                 .attr('font-weight', 'bold')
