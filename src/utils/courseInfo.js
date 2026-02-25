@@ -43,48 +43,53 @@ export function getCourseInfo(courseCode) {
     if (!info) return null;
     const { title, rawPrereq } = info;
     const lower = rawPrereq.toLowerCase();
-    let specialReq = "";
+    const reqs = []
     if (lower.includes('upper')) {
-        specialReq += "Upper Division Standing. ";
+        reqs.push("Upper Division Standing. ");
     }
     if (lower.includes('consent')) {
         // "or consent of instructor" → consent is an alternative to real prereqs
         // "by consent" / just "consent of instructor" → hard requirement
         if (/\bor\s+consent\b/.test(lower)) {
-            specialReq += "Consent of Instructor (alternative). ";
+            reqs.push("Consent of Instructor (alternative)");
         } else {
-            specialReq += "Consent of Instructor required. ";
+            reqs.push("Consent of Instructor required");
         }
     }
     if (lower.includes('restricted')) {
-        specialReq += "Restricted Enrollment. ";
+        reqs.push("Restricted Enrollment");
     }
     if (lower.includes('transfer')) {
-        specialReq += "Transfer Credit Only. ";
+        reqs.push("Transfer Credit Only");
     }
     if (lower.includes('standing')) {
         if (lower.includes('senior')) {
-            specialReq += "Senior Standing required. ";
+            reqs.push("Senior Standing required");
         }
         if (lower.includes('junior')) {
-            specialReq += "Junior Standing required. ";
+            reqs.push("Junior Standing required");
         }
         if (lower.includes('sophomore')) {
-            specialReq += "Sophomore Standing required. ";
+            reqs.push("Sophomore Standing required");
         }
         if (lower.includes('freshman')) {
-            specialReq += "Freshman Standing required. ";
+            reqs.push("Freshman Standing required");
         }
     }
-    // Only match explicit AP score requirements (e.g. "AP score of 4")
-    const apMatch = lower.match(/\bap\s+(?:score\s+(?:of\s+)?)(\d+)/i) ||
-        lower.match(/\bap\s*exam.*?(\d+)/i);
-    if (apMatch) {
-        specialReq += `AP Score ${apMatch[1]}. `;
-    }
+
+    const apRegex = /\bap\s+(?<subject>.*?)\s+(?:score|subscore|exam)\s+(?:of\s+)?(?<value>\d+(?:\s+or\s+\d+)?)/gi;
+    // what
+    const matches = [...lower.matchAll(apRegex)];
+
+    matches.forEach(match => {
+        const { subject, value } = match.groups;
+
+        reqs.push(`AP ${subject.toUpperCase()}: ${value}` + ` (alternative) \n`);
+    });
+
     return {
         title,
-        specialReq: specialReq.trim(),
+        specialReq: reqs.join("<br>"), // what
     };
 }
 

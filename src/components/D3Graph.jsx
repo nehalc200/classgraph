@@ -317,7 +317,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 }
                 if (specialReq) {
                     html += `<div style="margin-top:7px;padding:6px 8px;background:#fef3c7;border-radius:5px;border:1px solid #f59e0b;color:#92400e;font-size:12px">
-                        ⚠️ <strong>Special requirement:</strong><br/>${specialReq}
+                        ⚠️ <strong>Additional requirement(s):</strong><br/>${specialReq}
                     </div>`;
                 }
 
