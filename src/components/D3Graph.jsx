@@ -88,8 +88,10 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
 
         svg.call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
 
-        // ── Arrow marker definition ─────────────────────────────────────────
-        svg.append('defs').append('marker')
+        // ── Arrow marker definitions ────────────────────────────────────────
+        const defs = svg.append('defs');
+
+        defs.append('marker')
             .attr('id', 'arrowhead')
             .attr('viewBox', '0 -5 10 10')
             .attr('refX', 8)
@@ -100,6 +102,18 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .append('path')
             .attr('d', 'M0,-4L8,0L0,4')
             .attr('fill', '#c4c4c4');
+
+        defs.append('marker')
+            .attr('id', 'arrowhead-glow')
+            .attr('viewBox', '0 -5 10 10')
+            .attr('refX', 8)
+            .attr('refY', 0)
+            .attr('markerWidth', 8)
+            .attr('markerHeight', 8)
+            .attr('orient', 'auto')
+            .append('path')
+            .attr('d', 'M0,-4L8,0L0,4')
+            .attr('fill', '#14b8a6'); // Teal-500
 
         // ── OR-group boxes (behind everything else) ─────────────────────────
         const orGroupLayer = g.append('g').attr('class', 'or-groups');
@@ -179,7 +193,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('opacity', 0.78)
             .attr('stroke-width', 2)
             .attr('marker-end', 'url(#arrowhead)');
-        
+
         const edgeSel = edgeLayer.selectAll('line')
         edgeSel
             .attr('pointer-events', 'stroke')
@@ -187,15 +201,21 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .style('cursor', 'default')
             .on('mouseenter', function (event, d) {
                 d3.select(this)
-                .transition().duration(120)
-                .attr('opacity', 0.9)
-                .attr('stroke-width', 3);
+                    .transition().duration(120)
+                    .attr('opacity', 0.9)
+                    .attr('stroke-width', 3)
+                    .attr('stroke', '#14b8a6')
+                    .attr('marker-end', 'url(#arrowhead-glow)')
+                    .style('filter', 'drop-shadow(0 0 4px rgba(20, 184, 166, 0.8))');
             })
             .on('mouseleave', function () {
                 d3.select(this)
-                .transition().duration(120)
-                .attr('opacity', 0.78)
-                .attr('stroke-width', 2);
+                    .transition().duration(120)
+                    .attr('opacity', 0.78)
+                    .attr('stroke-width', 2)
+                    .attr('stroke', '#c4c4c4')
+                    .attr('marker-end', 'url(#arrowhead)')
+                    .style('filter', 'none');
             });
 
         // ── Nodes ───────────────────────────────────────────────────────────
@@ -329,6 +349,15 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                     )
                     .attr('stroke-width', (e) =>
                         e.source === d.id || e.target === d.id ? 3 : 2
+                    )
+                    .attr('stroke', (e) =>
+                        e.source === d.id || e.target === d.id ? '#14b8a6' : '#c4c4c4'
+                    )
+                    .attr('marker-end', (e) =>
+                        e.source === d.id || e.target === d.id ? 'url(#arrowhead-glow)' : 'url(#arrowhead)'
+                    )
+                    .style('filter', (e) =>
+                        e.source === d.id || e.target === d.id ? 'drop-shadow(0 0 4px rgba(20, 184, 166, 0.8))' : 'none'
                     );
 
                 // Build tooltip content
@@ -357,7 +386,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 // Nudge right/left depending on available space
                 const tipX = mouseX + 14;
                 const tipY = mouseY - 10;
-                
+
 
                 tooltip
                     .html(html)
@@ -386,7 +415,10 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 edgeSel
                     .transition().duration(150)
                     .attr('opacity', 0.78)
-                    .attr('stroke-width', 2);
+                    .attr('stroke-width', 2)
+                    .attr('stroke', '#c4c4c4')
+                    .attr('marker-end', 'url(#arrowhead)')
+                    .style('filter', 'none');
 
                 // Hide tooltip
                 tooltip.transition().duration(100).style('opacity', 0);
