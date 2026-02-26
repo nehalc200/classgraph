@@ -133,8 +133,9 @@ export function extractLayers(rootNode, maxDepth = 3) {
     }
 
     function nodeId(astNode, parentId, depth) {
-        return `${astNode.code}::${parentId || 'root'}::${depth}`;
-    }
+        // one node per course per depth layer
+        return `${astNode.code}::${depth}`;
+      }
 
     walk(rootNode, null, 0);
 
