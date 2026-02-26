@@ -176,8 +176,27 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 return n ? n.y - 14 : 0;  // offset above the target node box
             })
             .attr('stroke', '#c4c4c4')
+            .attr('opacity', 0.78)
             .attr('stroke-width', 2)
             .attr('marker-end', 'url(#arrowhead)');
+        
+        const edgeSel = edgeLayer.selectAll('line')
+        edgeSel
+            .attr('pointer-events', 'stroke')
+            .attr('stroke-linecap', 'round')
+            .style('cursor', 'default')
+            .on('mouseenter', function (event, d) {
+                d3.select(this)
+                .transition().duration(120)
+                .attr('opacity', 0.9)
+                .attr('stroke-width', 3);
+            })
+            .on('mouseleave', function () {
+                d3.select(this)
+                .transition().duration(120)
+                .attr('opacity', 0.78)
+                .attr('stroke-width', 2);
+            });
 
         // ── Nodes ───────────────────────────────────────────────────────────
         const nodeLayer = g.append('g').attr('class', 'nodes');
@@ -303,6 +322,15 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                         .attr('stroke', EXPANDABLE_COLOR);
                 }
 
+                edgeSel
+                    .transition().duration(150)
+                    .attr('opacity', (e) =>
+                        e.source === d.id || e.target === d.id ? 0.9 : 0.35
+                    )
+                    .attr('stroke-width', (e) =>
+                        e.source === d.id || e.target === d.id ? 3 : 2
+                    );
+
                 // Build tooltip content
                 const info = getCourseInfo(d.label);
                 const title = info?.title || '';
@@ -329,6 +357,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 // Nudge right/left depending on available space
                 const tipX = mouseX + 14;
                 const tipY = mouseY - 10;
+                
 
                 tooltip
                     .html(html)
@@ -354,6 +383,10 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                         if (d.depth === 0) return ROOT_COLOR;
                         return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
                     });
+                edgeSel
+                    .transition().duration(150)
+                    .attr('opacity', 0.78)
+                    .attr('stroke-width', 2);
 
                 // Hide tooltip
                 tooltip.transition().duration(100).style('opacity', 0);
