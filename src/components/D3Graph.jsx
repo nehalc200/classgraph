@@ -12,6 +12,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
     const [courseInfoReady, setCourseInfoReady] = useState(false);
+    const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
     // Stable callback ref
     const onNodeExpandRef = useRef(onNodeExpand);
@@ -20,6 +21,18 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
     // Load course info metadata once
     useEffect(() => {
         loadCourseInfo().then(() => setCourseInfoReady(true));
+    }, []);
+
+    // Watch the container for resize events and update containerSize
+    useEffect(() => {
+        const el = containerRef.current;
+        if (!el) return;
+        const ro = new ResizeObserver((entries) => {
+            const { width, height } = entries[0].contentRect;
+            setContainerSize({ width: Math.round(width), height: Math.round(height) });
+        });
+        ro.observe(el);
+        return () => ro.disconnect();
     }, []);
 
     useEffect(() => {
@@ -34,14 +47,16 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
         const layerData = extractLayers(rootAstNode, 3);
 
         const container = containerRef.current;
-        const width = container.offsetWidth;
-        const height = container.offsetHeight || 500;
+        const width = container.offsetWidth || containerSize.width || 800;
+        const height = container.offsetHeight || containerSize.height || 500;
 
-        // Create SVG
+        // Create SVG — use 100%/100% so it fills the container on resize
         const svg = d3.select(container)
             .append('svg')
-            .attr('width', width)
-            .attr('height', height)
+            .attr('width', '100%')
+            .attr('height', '100%')
+            .attr('viewBox', `0 0 ${width} ${height}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet')
             .style('font-family', 'Inter, sans-serif');
 
         svgRef.current = svg.node();
@@ -429,7 +444,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             d3.select(container).select('svg').remove();
             d3.select(container).select('.node-tooltip').remove();
         };
-    }, [rootAstNode, courseInfoReady]);
+    }, [rootAstNode, courseInfoReady, containerSize]);
 
     return (
         <div
