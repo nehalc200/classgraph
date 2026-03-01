@@ -2,6 +2,7 @@ import course
 import client as c
 import majorclass as mj
 from pydantic import TypeAdapter
+import regex as re
 def main():
     """
     cl=c.Client(2024)
@@ -39,6 +40,7 @@ def main():
     # phase 1 filtering
     print("Processing plans")
     processed=list(map(process_plans, plans))
+    processed=list(map(filter_plans, processed))
 
     print("Dumping processed file to disk")
     plan_adapter = TypeAdapter(list[course.Plan])
@@ -48,26 +50,37 @@ def main():
 
     # phase 2 filtering
 
+def sanitize_course_name(s: str)->str:
+    r=(s
+       .replace("*"," ")
+       .replace("/"," ").replace("^"," "))
+    r=re.sub(r"\(.*?\)"," ",r) # replace notes
+    r=re.sub(" +"," ",r)
+    r=r.strip()
+    return r
 # phase 1 filter
 def process_plans(plan: mj.Plan):
-    rchildren=[]
+    root_children=[]
 
     for i in plan.courses:
         for j in i:
             for k in j:
+                if k.course_type!="DEPARTMENT" or "subject domain" in k.course_name.lower(): # filter out college requirements; subject domain works here for some reason?
+                    continue
                 if " or " in k.course_name:
                     children=[]
                     courses=k.course_name.split(" or ")
                     for c in courses:
-                        tmp=course.CourseNode(type="COURSE",code=c.strip(),children=[])
+                        tmp=course.CourseNode(type="COURSE",code=sanitize_course_name(c),children=[])
+                        # FIX: MATH 18 or 31AH splits into "MATH 18" and "31AH"
                         children.append(tmp)
                     crs=course.CourseNode(type="OR",code="",children=children)
                 else:
                     type="COURSE"
-                    code=k.course_name.strip()
+                    code=sanitize_course_name(k.course_name.strip())
                     crs=course.CourseNode(type=type,code=code,children=[])
-                rchildren.append(crs)
-    root=course.CourseNode(type="AND",code="",children=rchildren)
+                root_children.append(crs)
+    root=course.CourseNode(type="AND",code="",children=root_children)
 
     return course.Plan(
             code=plan.major_code,
@@ -79,26 +92,32 @@ def process_plans(plan: mj.Plan):
 
 # phase 2 filter
 def filter_plans(plan: course.Plan):
-    # TODO: replace course code *, ^, / (see note) with empty spaces and collapse WS
     # this isn't what it looks like!
+    # rf"{word}"
     filter_phrases=[
             "ahi",
-            " ge",
+            "ge",
             "ccer",
             "elective",
             "language",
             "dei",
-            "concentration"
+            "concentration",
+            "major"
+            "programming"
+            "te"
+            "subject domain"
             ]
-    filter_writing=[
-            "cce " ,
-            "wcwp ",
-            "hum " ,
-            "mcwp ",
-            "mmw " ,
-            "syn " ,
-            "doc " ,
-            "cat "
-            ]
+    new_children:list[course.CourseNode]=[]
+    for c in plan.requirements[0].children:
+        name=c.code.lower()
+        add=True
+        for p in filter_phrases:
+            if p in name or p==name:
+                add=False
+        if add:
+            new_children.append(c)
+    plan.requirements[0].children=new_children
+    return plan
+
 if __name__ == "__main__":
     main()
