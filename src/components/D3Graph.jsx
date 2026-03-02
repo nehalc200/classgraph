@@ -11,6 +11,7 @@ const EXPANDABLE_COLOR = '#6366f1';
 export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
+    const [expandedOrGroups, setExpandedOrGroups] = useState(() => new Set());
     const [courseInfoReady, setCourseInfoReady] = useState(false);
     const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
@@ -44,7 +45,10 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
         d3.select(containerRef.current).select('.node-tooltip').remove();
 
         // Extract 3-layer tree data
-        const layerData = extractLayers(rootAstNode, 3);
+        const layerData = extractLayers(rootAstNode, 3, {
+            expandedOrGroups,
+            orPreviewLimit: 3,
+        });
 
         const container = containerRef.current;
         const width = container.offsetWidth || containerSize.width || 800;
@@ -244,10 +248,22 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('transform', (d) => `translate(${d.x}, ${d.y})`)
             .style('cursor', (d) => d.isExpandable ? 'pointer' : 'default')
             .on('click', (event, d) => {
-                if (d.isExpandable && onNodeExpandRef.current) {
-                    onNodeExpandRef.current(d.label);
+                // OR "+N" expander: toggle locally
+                if (d.isOrMore && d.orGroupId) {
+                  setExpandedOrGroups((prev) => {
+                    const next = new Set(prev);
+                    if (next.has(d.orGroupId)) next.delete(d.orGroupId);
+                    else next.add(d.orGroupId);
+                    return next;
+                  });
+                  return;
                 }
-            });
+              
+                // existing behavior for course expand
+                if (d.isExpandable && onNodeExpandRef.current) {
+                  onNodeExpandRef.current(d.label);
+                }
+              });
 
         // Measure text widths for sizing
         const tempSvg = d3.select('body').append('svg').style('visibility', 'hidden');
@@ -304,14 +320,14 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .text((d) => d.label);
 
         // Expandable "+" badge (top-right corner)
-        nodeGroups.filter((d) => d.isExpandable)
+        nodeGroups.filter((d) => d.isExpandable && !d.isOrMore)
             .append('circle')
             .attr('cx', (d) => textWidths[d.id] / 2 + paddingX)
             .attr('cy', -(13 / 2 + paddingY))
             .attr('r', 7)
             .attr('fill', EXPANDABLE_COLOR);
 
-        nodeGroups.filter((d) => d.isExpandable)
+            nodeGroups.filter((d) => d.isExpandable && !d.isOrMore)
             .append('text')
             .attr('x', (d) => textWidths[d.id] / 2 + paddingX)
             .attr('y', -(13 / 2 + paddingY))
@@ -479,8 +495,8 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             d3.select(container).select('svg').remove();
             d3.select(container).select('.node-tooltip').remove();
         };
-    }, [rootAstNode, courseInfoReady, containerSize]);
-
+    }, [rootAstNode, courseInfoReady, containerSize, expandedOrGroups]);
+    
     return (
         <div
             ref={containerRef}
