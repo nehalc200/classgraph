@@ -43,53 +43,54 @@ export function getCourseInfo(courseCode) {
     if (!info) return null;
     const { title, rawPrereq } = info;
     const lower = rawPrereq.toLowerCase();
-    const reqs = []
+
+    // notes: array of { text, severity }
+    // severity: 'high' | 'medium' | 'low' | 'info'
+    const notes = [];
+
     if (lower.includes('upper')) {
-        reqs.push("Upper Division Standing. ");
+        notes.push({ text: 'Upper Division Standing', severity: 'medium' });
     }
     if (lower.includes('consent')) {
-        // "or consent of instructor" → consent is an alternative to real prereqs
-        // "by consent" / just "consent of instructor" → hard requirement
         if (/\bor\s+consent\b/.test(lower)) {
-            reqs.push("Consent of Instructor (alternative)");
+            notes.push({ text: 'Consent of Instructor (alternative)', severity: 'info' });
         } else {
-            reqs.push("Consent of Instructor required");
+            notes.push({ text: 'Consent of Instructor required', severity: 'high' });
         }
     }
     if (lower.includes('restricted')) {
-        reqs.push("Restricted Enrollment");
+        notes.push({ text: 'Restricted Enrollment', severity: 'high' });
     }
     if (lower.includes('transfer')) {
-        reqs.push("Transfer Credit Only");
+        notes.push({ text: 'Transfer Credit Only', severity: 'info' });
     }
     if (lower.includes('standing')) {
         if (lower.includes('senior')) {
-            reqs.push("Senior Standing required");
+            notes.push({ text: 'Senior Standing required', severity: 'medium' });
         }
         if (lower.includes('junior')) {
-            reqs.push("Junior Standing required");
+            notes.push({ text: 'Junior Standing required', severity: 'medium' });
         }
         if (lower.includes('sophomore')) {
-            reqs.push("Sophomore Standing required");
+            notes.push({ text: 'Sophomore Standing required', severity: 'low' });
         }
         if (lower.includes('freshman')) {
-            reqs.push("Freshman Standing required");
+            notes.push({ text: 'Freshman Standing required', severity: 'low' });
         }
     }
 
     const apRegex = /\bap\s+(?<subject>.*?)\s+(?:score|subscore|exam)\s+(?:of\s+)?(?<value>\d+(?:\s+or\s+\d+)?)/gi;
-    // what
     const matches = [...lower.matchAll(apRegex)];
-
     matches.forEach(match => {
         const { subject, value } = match.groups;
-
-        reqs.push(`AP ${subject.toUpperCase()}: ${value}` + ` (alternative) \n`);
+        notes.push({ text: `AP ${subject.toUpperCase()}: score ${value} (alternative)`, severity: 'info' });
     });
 
     return {
         title,
-        specialReq: reqs.join("<br>"), // what
+        notes,
+        // kept for any callers that still check truthiness
+        specialReq: notes.map(n => n.text).join('<br>'),
     };
 }
 

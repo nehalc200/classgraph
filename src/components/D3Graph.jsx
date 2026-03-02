@@ -381,42 +381,77 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                 const specialReq = info?.specialReq || '';
 
                 // Always show course code + title; skip tooltip if nothing useful
-                if (!title && !specialReq) return;
+                const notes = info?.notes || [];
+                if (!title && notes.length === 0) return;
+
+                // Severity → visual style
+                const SEVERITY_STYLE = {
+                    high: { bg: '#fee2e2', border: '#ef4444', text: '#991b1b', icon: '🚫' },
+                    medium: { bg: '#ffedd5', border: '#f97316', text: '#9a3412', icon: '⚠️' },
+                    low: { bg: '#fef9c3', border: '#eab308', text: '#854d0e', icon: '📋' },
+                    info: { bg: '#e0f2fe', border: '#38bdf8', text: '#075985', icon: 'ℹ️' },
+                };
 
                 let html = `<strong style="font-size:14px;color:#1e1e1e">${d.label}</strong>`;
                 if (title) {
                     html += `<div style="color:#555;margin-top:3px">${title}</div>`;
                 }
-                if (specialReq) {
-                    html += `<div style="margin-top:7px;padding:6px 8px;background:#fef3c7;border-radius:5px;border:1px solid #f59e0b;color:#92400e;font-size:12px">
-                        ⚠️ <strong>Additional requirement(s):</strong><br/>${specialReq}
-                    </div>`;
+                if (notes.length > 0) {
+                    html += `<div style="margin-top:7px;display:flex;flex-direction:column;gap:5px">`;
+                    notes.forEach(({ text, severity }) => {
+                        const s = SEVERITY_STYLE[severity] || SEVERITY_STYLE.info;
+                        html += `<div style="padding:5px 8px;background:${s.bg};border-radius:5px;border:1px solid ${s.border};color:${s.text};font-size:12px">${s.icon} ${text}</div>`;
+                    });
+                    html += `</div>`;
                 }
 
-                // Position: offset from the node's screen position
+                // Set HTML first so we can measure the rendered size
+                tooltip.html(html).style('opacity', 0).style('left', '0px').style('top', '0px');
+
+                const containerW = container.offsetWidth;
+                const containerH = container.offsetHeight;
                 const containerRect = container.getBoundingClientRect();
                 const mouseX = event.clientX - containerRect.left;
                 const mouseY = event.clientY - containerRect.top;
 
-                // Nudge right/left depending on available space
-                const tipX = mouseX + 14;
-                const tipY = mouseY - 10;
+                const tipNode = tooltip.node();
+                const tipW = tipNode.offsetWidth;
+                const tipH = tipNode.offsetHeight;
 
+                const margin = 8;
+                // Prefer right of cursor; flip left if it would overflow
+                let tipX = mouseX + 14;
+                if (tipX + tipW + margin > containerW) tipX = mouseX - tipW - 14;
+                tipX = Math.max(margin, tipX);
+
+                // Prefer above cursor; flip down if it would overflow top
+                let tipY = mouseY - 10;
+                if (tipY + tipH + margin > containerH) tipY = containerH - tipH - margin;
+                if (tipY < margin) tipY = margin;
 
                 tooltip
-                    .html(html)
                     .style('left', `${tipX}px`)
                     .style('top', `${tipY}px`)
                     .transition().duration(120)
                     .style('opacity', 1);
             })
             .on('mousemove', function (event) {
+                const containerW = container.offsetWidth;
+                const containerH = container.offsetHeight;
                 const containerRect = container.getBoundingClientRect();
                 const mouseX = event.clientX - containerRect.left;
                 const mouseY = event.clientY - containerRect.top;
-                tooltip
-                    .style('left', `${mouseX + 14}px`)
-                    .style('top', `${mouseY - 10}px`);
+                const tipNode = tooltip.node();
+                const tipW = tipNode.offsetWidth;
+                const tipH = tipNode.offsetHeight;
+                const margin = 8;
+                let tipX = mouseX + 14;
+                if (tipX + tipW + margin > containerW) tipX = mouseX - tipW - 14;
+                tipX = Math.max(margin, tipX);
+                let tipY = mouseY - 10;
+                if (tipY + tipH + margin > containerH) tipY = containerH - tipH - margin;
+                if (tipY < margin) tipY = margin;
+                tooltip.style('left', `${tipX}px`).style('top', `${tipY}px`);
             })
             .on('mouseleave', function (event, d) {
                 // Restore stroke
