@@ -69,119 +69,142 @@ export function findRootNode(courseCode, astData) {
  *   edges  : [{ source, target, id }]
  *   orGroups : [{ id, memberNodeIds, fill, border }]
  */
-export function extractLayers(rootNode, maxDepth = 3) {
+export function extractLayers(rootNode, maxDepth = 3, options = {}) {
     _colorIndex = 0; // reset per extraction
-
+  
+    const { expandedOrGroups = new Set(), orPreviewLimit = 3 } = options;
+  
     const nodes = [];
     const edges = [];
     const orGroups = [];
     const seenNodes = new Set();
     const seenEdges = new Set();
-
+  
     function walk(astNode, parentId, depth) {
-        if (!astNode) return;
-
-        if (astNode.code === 'OR') {
-            const { fill, border } = nextOrColor();
-            const groupId = `or_${parentId}_${orGroups.length}`;
-            const memberIds = [];
-
-            (astNode.children || []).forEach((child) => {
-                walk(child, parentId, depth);
-                if (child.code !== 'OR') {
-                    const childId = nodeId(child, parentId, depth);
-                    if (seenNodes.has(childId)) {
-                        memberIds.push(childId);
-                    }
-                }
-            });
-
-            if (memberIds.length > 0) {
-                orGroups.push({ id: groupId, memberNodeIds: memberIds, fill, border });
-            }
-            return;
-        }
-
-        // Tree-style ID: each occurrence of a course is a separate node
-        const nid = nodeId(astNode, parentId, depth);
-
-        if (!seenNodes.has(nid)) {
-            const hasChildren = (astNode.children || []).length > 0;
-            const isExpandable = hasChildren && depth >= maxDepth - 1;
-            seenNodes.add(nid);
+      if (!astNode) return;
+  
+      // ---- OR handling (preview first N + "+N" expander) ----
+      if (astNode.code === 'OR') {
+        const { fill, border } = nextOrColor();
+        const groupId = `or_${parentId}_${orGroups.length}`;
+  
+        const children = astNode.children || [];
+        const isExpanded = expandedOrGroups.has(groupId);
+  
+        const visibleChildren = isExpanded ? children : children.slice(0, orPreviewLimit);
+        const hiddenCount = Math.max(0, children.length - visibleChildren.length);
+  
+        const memberIds = [];
+  
+        // walk visible OR members
+        visibleChildren.forEach((child) => {
+          walk(child, parentId, depth);
+  
+          if (child.code !== 'OR') {
+            const childId = nodeId(child, parentId, depth);
+            if (seenNodes.has(childId)) memberIds.push(childId);
+          }
+        });
+  
+        // add "+N" node inside this OR group if some are hidden
+        if (hiddenCount > 0) {
+          const moreId = `OR_MORE::${groupId}::${depth}`;
+  
+          if (!seenNodes.has(moreId)) {
+            seenNodes.add(moreId);
             nodes.push({
-                id: nid,
-                label: astNode.code,
-                depth,
-                isExpandable,
+              id: moreId,
+              label: `+${hiddenCount}`,
+              depth,
+              isExpandable: true,
+              isOrMore: true,
+              orGroupId: groupId,
             });
-        }
-
-        if (parentId) {
-            const eid = `${parentId}→${nid}`;
+          }
+  
+          if (parentId) {
+            const eid = `${parentId}→${moreId}`;
             if (!seenEdges.has(eid)) {
-                seenEdges.add(eid);
-                edges.push({ source: parentId, target: nid, id: eid });
+              seenEdges.add(eid);
+              edges.push({ source: parentId, target: moreId, id: eid });
             }
+          }
+  
+          memberIds.push(moreId);
         }
-
-        if (depth < maxDepth - 1) {
-            (astNode.children || []).forEach((child) => {
-                walk(child, nid, depth + 1);
-            });
+  
+        if (memberIds.length > 0) {
+          orGroups.push({ id: groupId, memberNodeIds: memberIds, fill, border });
         }
-    }
-
-    function nodeId(astNode, parentId, depth) {
-        // one node per course per depth layer
-        return `${astNode.code}::${depth}`;
+        return;
       }
-
+  
+      // ---- normal node handling (your existing logic) ----
+      const nid = nodeId(astNode, parentId, depth);
+      if (!seenNodes.has(nid)) {
+        const hasChildren = (astNode.children || []).length > 0;
+        const isExpandable = hasChildren && depth >= maxDepth - 1;
+        seenNodes.add(nid);
+        nodes.push({ id: nid, label: astNode.code, depth, isExpandable });
+      }
+  
+      if (parentId) {
+        const eid = `${parentId}→${nid}`;
+        if (!seenEdges.has(eid)) {
+          seenEdges.add(eid);
+          edges.push({ source: parentId, target: nid, id: eid });
+        }
+      }
+  
+      if (depth < maxDepth - 1) {
+        (astNode.children || []).forEach((child) => {
+          walk(child, nid, depth + 1);
+        });
+      }
+    }
+  
+    function nodeId(astNode, parentId, depth) {
+      return `${astNode.code}::${depth}`;
+    }
+  
     walk(rootNode, null, 0);
-
-    // ── Layout: group by depth, sort OR-group members adjacent ──────────────
+  
+    // ---- your existing layout code unchanged ----
     const byDepth = {};
     nodes.forEach((n) => {
-        if (!byDepth[n.depth]) byDepth[n.depth] = [];
-        byDepth[n.depth].push(n);
+      if (!byDepth[n.depth]) byDepth[n.depth] = [];
+      byDepth[n.depth].push(n);
     });
-
+  
     const nodeOrGroup = {};
     orGroups.forEach((g, gi) => {
-        g.memberNodeIds.forEach((nid) => {
-            if (nodeOrGroup[nid] === undefined) nodeOrGroup[nid] = gi;
-        });
+      g.memberNodeIds.forEach((nid) => {
+        if (nodeOrGroup[nid] === undefined) nodeOrGroup[nid] = gi;
+      });
     });
-
+  
     Object.keys(byDepth).forEach((d) => {
-        const layer = byDepth[d];
-        let ungroupedCounter = orGroups.length;
-        const sortKey = {};
-        layer.forEach((n) => {
-            if (nodeOrGroup[n.id] !== undefined) {
-                sortKey[n.id] = nodeOrGroup[n.id];
-            } else {
-                sortKey[n.id] = ungroupedCounter++;
-            }
-        });
-        layer.sort((a, b) => sortKey[a.id] - sortKey[b.id]);
+      const layer = byDepth[d];
+      let ungroupedCounter = orGroups.length;
+      const sortKey = {};
+      layer.forEach((n) => {
+        if (nodeOrGroup[n.id] !== undefined) sortKey[n.id] = nodeOrGroup[n.id];
+        else sortKey[n.id] = ungroupedCounter++;
+      });
+      layer.sort((a, b) => sortKey[a.id] - sortKey[b.id]);
     });
-
+  
     const LAYER_GAP_Y = 180;
     const NODE_GAP_X = 160;
-
     Object.keys(byDepth).forEach((d) => {
-        const layer = byDepth[d];
-        const totalWidth = (layer.length - 1) * NODE_GAP_X;
-        layer.forEach((n, i) => {
-            n.x = -totalWidth / 2 + i * NODE_GAP_X;
-            n.y = Number(d) * LAYER_GAP_Y;
-        });
+      const layer = byDepth[d];
+      const totalWidth = (layer.length - 1) * NODE_GAP_X;
+      layer.forEach((n, i) => {
+        n.x = -totalWidth / 2 + i * NODE_GAP_X;
+        n.y = Number(d) * LAYER_GAP_Y;
+      });
     });
-
-    nodes.forEach((n) => {
-        n.size = 18;
-    });
-
+  
+    nodes.forEach((n) => (n.size = 18));
     return { nodes, edges, orGroups };
-}
+  }
