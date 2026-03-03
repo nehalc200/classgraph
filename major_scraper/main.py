@@ -40,15 +40,15 @@ def main():
     # phase 1 filtering
     print("Processing plans")
     processed=list(map(process_plans, plans))
+    # phase 2 filtering
     processed=list(map(filter_plans, processed))
 
     print("Dumping processed file to disk")
     plan_adapter = TypeAdapter(list[course.Plan])
     dump=plan_adapter.dump_json(processed, indent=4)
-    with open("processed.json","w") as f:
+    with open("../data/majors_data.json","w") as f:
         f.write(dump.decode('utf-8'))
 
-    # phase 2 filtering
 
 def sanitize_course_name(s: str)->str:
     r=(s
