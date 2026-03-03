@@ -3,8 +3,8 @@ import { Button } from "../../components/Button";
 import { D3Graph } from "../../components/D3Graph";
 import { GraphTabs } from "../../components/GraphTabs";
 import { CourseSearch } from "../../components/CourseSearch";
-import { findRootNode } from "../../utils/astGraphUtils";
-import { loadDepartmentForCourse } from "../../utils/loadAstData";
+import { loadAstNodeForCourse } from "../../utils/loadAstData";
+
 import graphBg from "./graphbackground.webp";
 
 export const Desktop = () => {
@@ -24,8 +24,7 @@ export const Desktop = () => {
     if (!selectedCourse || generating) return;
     setGenerating(true);
     try {
-      const deptData = await loadDepartmentForCourse(selectedCourse);
-      const rootNode = findRootNode(selectedCourse, deptData);
+      const rootNode = await loadAstNodeForCourse(selectedCourse);
       if (!rootNode) {
         setGenerating(false);
         return;
@@ -51,8 +50,7 @@ export const Desktop = () => {
   // When the user clicks an expandable node inside the graph
   const handleNodeExpand = useCallback(
     async (courseCode) => {
-      const deptData = await loadDepartmentForCourse(courseCode);
-      const rootNode = findRootNode(courseCode, deptData);
+      const rootNode = await loadAstNodeForCourse(courseCode);
       if (!rootNode) return;
 
       setTabs((prev) => {
