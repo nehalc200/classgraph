@@ -48,12 +48,12 @@ def tokenize(text: str) -> List[str]:
     # Normalize the text
     text = re.sub(r'\s+', ' ', text).strip()
     
-    # Remove Math Placement Exam references (but not what comes after)
-    text = re.sub(r'Math\s+Placement\s+Exam(\s+score)?(\s+of\s+\d+)?', '', text, flags=re.IGNORECASE)
+    # Remove Math Placement Exam references (including "qualifying score")
+    text = re.sub(r'Math\s+Placement\s+Exam(\s+qualifying)?(\s+score)?(\s+of\s+\d+)?', '', text, flags=re.IGNORECASE)
     
-    # Remove AP exam score clauses (e.g., "AP Calculus BC score of 4 or 5", "AB score of 2")
-    text = re.sub(r'AP\s+[A-Za-z\s]+score\s+of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'\b[A-Z]{2}\s+score\s+of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
+    # Remove AP exam score clauses (e.g., "AP Calculus BC score of 4 or 5", "AP Calculus AB score (or subscore) of 2")
+    text = re.sub(r'AP\s+[A-Za-z\s]+score\s*(\(or\s+subscore\))?\s*of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'\b[A-Z]{2}\s+score\s*(\(or\s+subscore\))?\s*of\s+\d+(\s+or\s+\d+)?', '', text, flags=re.IGNORECASE)
 
     # Remove grade requirements 
     text = re.sub(r'\s+with\s+a\s+grade\s+of\s+[A-Za-z0-9+-–]+(\s+or\s+(above|better))?', '', text, flags=re.IGNORECASE)
@@ -321,8 +321,8 @@ def generate_webreg_json(df, output_path):
 
 
 def main():
-    df = load_courses_csv("data/all_courses.csv")
-    output_path = Path("data/webreg_data.json")
+    df = load_courses_csv("catalog_scraper/all_courses.csv")
+    output_path = Path("data/catalog_data.json")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     generate_webreg_json(df, output_path)
 

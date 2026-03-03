@@ -24,7 +24,7 @@ def scrape_courses(subject_codes, blank_url=BLANK_URL, headers=DEFAULT_HEADERS):
     for code in subject_codes:
         response_html = fetch_html(code, blank_url=blank_url, headers=headers)
         soup = BeautifulSoup(response_html, "html.parser")
-
+        print(f"Scraping {code}...")
         course_names = soup.find_all(class_="course-name")
         course_desc = extract_descriptions(course_names)
 
@@ -92,6 +92,6 @@ def parse_prereqs(descriptions):
     return course_prereqs
 
 if __name__ == '__main__':
-    subject_codes = read_subject_codes("valid_codes.txt")
+    subject_codes = read_subject_codes("catalog_scraper/valid_codes.txt")
     df = build_courses_dataframe(subject_codes)
-    save_courses_csv(df, "data/all_courses.csv")
+    save_courses_csv(df, "catalog_scraper/all_courses.csv")

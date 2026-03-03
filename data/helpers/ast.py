@@ -4,6 +4,25 @@ import re
 from collections import defaultdict
 from astclass import RootNode, ChildNode, ASTNode
 
+# Configuration for recursion control
+RECURSION_CONFIG = {
+    # Large course codes that cause too much recursion 
+    "no_recurse_courses": {
+        "COGS 118A",
+        "COGS 118B",
+        "PHYS 4A",
+        "PHYS 4B",
+        "PHYS 4C",
+        "PHYS 4D",
+    },
+    # Departments with limited recursion depth
+    "dept_max_depth": {
+        "CHIN": 1,
+    },
+    # Default max depth for all other courses 
+    "default_max_depth": None,
+}
+
 def normalize_code(code):
     """Ensure course code is formatted as 'DEPT NUMBER' with a single space."""
     if not code:
@@ -39,11 +58,35 @@ def build(filestream, global_course_dict):
     for course in filestream:
         course_id = normalize_code(course.get("code"))
         prereqs = course.get("prereq_ast", [])
-        root = RootNode(course_id, find_children(prereqs, global_course_dict))
+        root = RootNode(course_id, find_children(prereqs, global_course_dict, depth=0))
         return_list.append(root)
     return return_list
 
-def find_children(prereq_nodes, course_dict, visited=None):
+
+def get_max_depth_for_course(course_id):
+    """Determine the max recursion depth for a given course."""
+    if course_id in RECURSION_CONFIG["no_recurse_courses"]:
+        return 0  # Never recurse into this course
+    
+    dept = get_department_code(course_id)
+    if dept in RECURSION_CONFIG["dept_max_depth"]:
+        return RECURSION_CONFIG["dept_max_depth"][dept]
+    
+    return RECURSION_CONFIG["default_max_depth"]
+
+
+def should_recurse(course_id, current_depth):
+    """Check if we should recurse into a course's prerequisites."""
+    max_depth = get_max_depth_for_course(course_id)
+    
+    # None means unlimited depth
+    if max_depth is None:
+        return True
+    
+    return current_depth < max_depth
+
+
+def find_children(prereq_nodes, course_dict, visited=None, depth=0):
     if visited is None:
         visited = set()
     
@@ -64,11 +107,16 @@ def find_children(prereq_nodes, course_dict, visited=None):
             
             new_visited = visited | {course_id}
             
+            # Check recursion limits
+            if not should_recurse(course_id, depth):
+                clist.append(ChildNode(course_id, []))
+                continue
+            
             # look up prereqs and recursion
             course_data = course_dict.get(course_id)
             if course_data and course_data.get("prereq_ast"):
                 sub_prereqs = course_data.get("prereq_ast", [])
-                children = find_children(sub_prereqs, course_dict, new_visited)
+                children = find_children(sub_prereqs, course_dict, new_visited, depth + 1)
                 clist.append(ChildNode(course_id, children))
             else:
                 clist.append(ChildNode(course_id, []))
@@ -84,11 +132,16 @@ def find_children(prereq_nodes, course_dict, visited=None):
                 
                 new_visited = visited | {course_id}
                 
+                # Check recursion limits
+                if not should_recurse(course_id, depth):
+                    sublist.append(ChildNode(course_id, []))
+                    continue
+                
                 # look ups and recursion
                 course_data = course_dict.get(course_id)
                 if course_data and course_data.get("prereq_ast"):
                     sub_prereqs = course_data.get("prereq_ast", [])
-                    children = find_children(sub_prereqs, course_dict, new_visited)
+                    children = find_children(sub_prereqs, course_dict, new_visited, depth + 1)
                     sublist.append(ChildNode(course_id, children))
                 else:
                     sublist.append(ChildNode(course_id, []))
@@ -148,15 +201,8 @@ def process_all_departments(webreg_data, output_dir):
                 "prereq_ast": course.get("prereq").get("items") if course.get("prereq") else [],
             })
     
-    # Departments to skip temporarily
-    skip_departments = {"CHIN"}
-
     total_courses = 0
     for dept_code, courses in sorted(dept_courses.items()):
-        if dept_code in skip_departments:
-            print(f"Skipping {dept_code} department (temporarily disabled)")
-            continue
-        
         dept_ast = build(courses, global_course_dict)
         dept_ast_dict = [root.to_dict() for root in dept_ast]
         
@@ -168,7 +214,34 @@ def process_all_departments(webreg_data, output_dir):
         print(f"Processed {len(dept_ast)} {dept_code} courses -> {output_file}")
         total_courses += len(dept_ast)
     
-    return len(dept_courses) - len(skip_departments), total_courses
+    return len(dept_courses), total_courses
+
+
+def create_seperate_ast(global_course_dict, output_dir):
+    courses = ["COGS 118A", "COGS 118B", "PHYS 4A", "PHYS 4B", "PHYS 4C", "PHYS 4D"]
+
+    for code in courses:
+        course_data = global_course_dict.get(code, {})
+        prereq_ast = course_data.get("prereq_ast", [])
+        
+        children = find_children(
+            prereq_ast,
+            global_course_dict,
+            visited={code},
+            depth=0
+        )
+        
+        root = RootNode(code, children)
+        ast_dict = root.to_dict()
+        
+        # Create filename like "cogs_118a_ast.json"
+        filename = code.lower().replace(" ", "_") + "_ast.json"
+        output_file = os.path.join(output_dir, filename)
+        
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(ast_dict, f, indent=2, ensure_ascii=False)
+        
+        print(f"Created separate AST for {code} -> {output_file}")
 
 
 if __name__ == "__main__":
@@ -182,7 +255,8 @@ if __name__ == "__main__":
     # Process all departments
     output_dir = "data/ast"
     num_depts, total_courses = process_all_departments(webreg_data, output_dir)
-    
+    create_seperate_ast(build_global_course_dict(webreg_data), output_dir)
+
     print("-" * 50)
     print(f"Summary: Processed {num_depts} departments with {total_courses} total courses")
     print(f"AST files saved to: {output_dir}/")

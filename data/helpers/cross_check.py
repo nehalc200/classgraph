@@ -39,7 +39,7 @@ def combine_courses(data1_dict, data2_dict, diff1, diff2, common):
     
     # Add common courses 
     for code in common:
-        combined.append(data2_dict[code])
+        combined.append(data1_dict[code])
     
     combined.sort(key=lambda x: x["course"]["code"])
     
@@ -69,7 +69,7 @@ def find_remote_courses(combined):
 
 if __name__ == '__main__':
     path1 = 'data/SOC_list.json'
-    path2 = 'data/webreg_data.json'
+    path2 = 'data/catalog_data.json'
 
     data1_dict = {item["course"]["code"]: item for item in load_json(path1)}
     data2_dict = {item["course"]["code"]: item for item in load_json(path2)}
