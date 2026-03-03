@@ -154,13 +154,7 @@
   {
     "code": "FPM 286",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "FPM 272",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "FPM 288",

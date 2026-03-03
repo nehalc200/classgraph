@@ -86,22 +86,11 @@
                                             "type": "CHILD",
                                             "children": [
                                               {
-                                                "code": "OR",
+                                                "code": "MATH 3C",
                                                 "type": "CHILD",
                                                 "children": [
                                                   {
-                                                    "code": "MATH 3C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3B",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "code": "OF 2",
+                                                    "code": "MATH 3B",
                                                     "type": "CHILD",
                                                     "children": []
                                                   }
@@ -126,22 +115,11 @@
                                             "type": "CHILD",
                                             "children": [
                                               {
-                                                "code": "OR",
+                                                "code": "MATH 3C",
                                                 "type": "CHILD",
                                                 "children": [
                                                   {
-                                                    "code": "MATH 3C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3B",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "code": "OF 2",
+                                                    "code": "MATH 3B",
                                                     "type": "CHILD",
                                                     "children": []
                                                   }
@@ -173,22 +151,11 @@
                                                     "type": "CHILD",
                                                     "children": [
                                                       {
-                                                        "code": "OR",
+                                                        "code": "MATH 3C",
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "MATH 3C",
-                                                            "type": "CHILD",
-                                                            "children": [
-                                                              {
-                                                                "code": "MATH 3B",
-                                                                "type": "CHILD",
-                                                                "children": []
-                                                              }
-                                                            ]
-                                                          },
-                                                          {
-                                                            "code": "OF 2",
+                                                            "code": "MATH 3B",
                                                             "type": "CHILD",
                                                             "children": []
                                                           }
@@ -216,97 +183,6 @@
                                 "code": "OR",
                                 "type": "CHILD",
                                 "children": [
-                                  {
-                                    "code": "MATH 20A",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "OR",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "MATH 4C",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "OR",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3B",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "code": "OF 2",
-                                                    "type": "CHILD",
-                                                    "children": []
-                                                  }
-                                                ]
-                                              }
-                                            ]
-                                          },
-                                          {
-                                            "code": "MATH 10A",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "OR",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3B",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "code": "MATH 4C",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "OR",
-                                                        "type": "CHILD",
-                                                        "children": [
-                                                          {
-                                                            "code": "MATH 3C",
-                                                            "type": "CHILD",
-                                                            "children": [
-                                                              {
-                                                                "code": "MATH 3B",
-                                                                "type": "CHILD",
-                                                                "children": []
-                                                              }
-                                                            ]
-                                                          },
-                                                          {
-                                                            "code": "OF 2",
-                                                            "type": "CHILD",
-                                                            "children": []
-                                                          }
-                                                        ]
-                                                      }
-                                                    ]
-                                                  }
-                                                ]
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  },
                                   {
                                     "code": "MATH 10B",
                                     "type": "CHILD",
@@ -339,22 +215,11 @@
                                                     "type": "CHILD",
                                                     "children": [
                                                       {
-                                                        "code": "OR",
+                                                        "code": "MATH 3C",
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "MATH 3C",
-                                                            "type": "CHILD",
-                                                            "children": [
-                                                              {
-                                                                "code": "MATH 3B",
-                                                                "type": "CHILD",
-                                                                "children": []
-                                                              }
-                                                            ]
-                                                          },
-                                                          {
-                                                            "code": "OF 2",
+                                                            "code": "MATH 3B",
                                                             "type": "CHILD",
                                                             "children": []
                                                           }
@@ -379,22 +244,11 @@
                                                     "type": "CHILD",
                                                     "children": [
                                                       {
-                                                        "code": "OR",
+                                                        "code": "MATH 3C",
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "MATH 3C",
-                                                            "type": "CHILD",
-                                                            "children": [
-                                                              {
-                                                                "code": "MATH 3B",
-                                                                "type": "CHILD",
-                                                                "children": []
-                                                              }
-                                                            ]
-                                                          },
-                                                          {
-                                                            "code": "OF 2",
+                                                            "code": "MATH 3B",
                                                             "type": "CHILD",
                                                             "children": []
                                                           }
@@ -426,22 +280,11 @@
                                                             "type": "CHILD",
                                                             "children": [
                                                               {
-                                                                "code": "OR",
+                                                                "code": "MATH 3C",
                                                                 "type": "CHILD",
                                                                 "children": [
                                                                   {
-                                                                    "code": "MATH 3C",
-                                                                    "type": "CHILD",
-                                                                    "children": [
-                                                                      {
-                                                                        "code": "MATH 3B",
-                                                                        "type": "CHILD",
-                                                                        "children": []
-                                                                      }
-                                                                    ]
-                                                                  },
-                                                                  {
-                                                                    "code": "OF 2",
+                                                                    "code": "MATH 3B",
                                                                     "type": "CHILD",
                                                                     "children": []
                                                                   }
@@ -465,6 +308,75 @@
                                     "code": "MATH 10C",
                                     "type": "CHILD",
                                     "children": []
+                                  },
+                                  {
+                                    "code": "MATH 20A",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "OR",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 4C",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3C",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3B",
+                                                    "type": "CHILD",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "code": "MATH 10A",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "OR",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3C",
+                                                    "type": "CHILD",
+                                                    "children": [
+                                                      {
+                                                        "code": "MATH 3B",
+                                                        "type": "CHILD",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "code": "MATH 4C",
+                                                    "type": "CHILD",
+                                                    "children": [
+                                                      {
+                                                        "code": "MATH 3C",
+                                                        "type": "CHILD",
+                                                        "children": [
+                                                          {
+                                                            "code": "MATH 3B",
+                                                            "type": "CHILD",
+                                                            "children": []
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -486,97 +398,6 @@
                             "code": "OR",
                             "type": "CHILD",
                             "children": [
-                              {
-                                "code": "MATH 20A",
-                                "type": "CHILD",
-                                "children": [
-                                  {
-                                    "code": "OR",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "MATH 4C",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "OR",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "MATH 3C",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3B",
-                                                    "type": "CHILD",
-                                                    "children": []
-                                                  }
-                                                ]
-                                              },
-                                              {
-                                                "code": "OF 2",
-                                                "type": "CHILD",
-                                                "children": []
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "code": "MATH 10A",
-                                        "type": "CHILD",
-                                        "children": [
-                                          {
-                                            "code": "OR",
-                                            "type": "CHILD",
-                                            "children": [
-                                              {
-                                                "code": "MATH 3C",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "MATH 3B",
-                                                    "type": "CHILD",
-                                                    "children": []
-                                                  }
-                                                ]
-                                              },
-                                              {
-                                                "code": "MATH 4C",
-                                                "type": "CHILD",
-                                                "children": [
-                                                  {
-                                                    "code": "OR",
-                                                    "type": "CHILD",
-                                                    "children": [
-                                                      {
-                                                        "code": "MATH 3C",
-                                                        "type": "CHILD",
-                                                        "children": [
-                                                          {
-                                                            "code": "MATH 3B",
-                                                            "type": "CHILD",
-                                                            "children": []
-                                                          }
-                                                        ]
-                                                      },
-                                                      {
-                                                        "code": "OF 2",
-                                                        "type": "CHILD",
-                                                        "children": []
-                                                      }
-                                                    ]
-                                                  }
-                                                ]
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
                               {
                                 "code": "MATH 10B",
                                 "type": "CHILD",
@@ -609,22 +430,11 @@
                                                 "type": "CHILD",
                                                 "children": [
                                                   {
-                                                    "code": "OR",
+                                                    "code": "MATH 3C",
                                                     "type": "CHILD",
                                                     "children": [
                                                       {
-                                                        "code": "MATH 3C",
-                                                        "type": "CHILD",
-                                                        "children": [
-                                                          {
-                                                            "code": "MATH 3B",
-                                                            "type": "CHILD",
-                                                            "children": []
-                                                          }
-                                                        ]
-                                                      },
-                                                      {
-                                                        "code": "OF 2",
+                                                        "code": "MATH 3B",
                                                         "type": "CHILD",
                                                         "children": []
                                                       }
@@ -649,22 +459,11 @@
                                                 "type": "CHILD",
                                                 "children": [
                                                   {
-                                                    "code": "OR",
+                                                    "code": "MATH 3C",
                                                     "type": "CHILD",
                                                     "children": [
                                                       {
-                                                        "code": "MATH 3C",
-                                                        "type": "CHILD",
-                                                        "children": [
-                                                          {
-                                                            "code": "MATH 3B",
-                                                            "type": "CHILD",
-                                                            "children": []
-                                                          }
-                                                        ]
-                                                      },
-                                                      {
-                                                        "code": "OF 2",
+                                                        "code": "MATH 3B",
                                                         "type": "CHILD",
                                                         "children": []
                                                       }
@@ -696,22 +495,11 @@
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "OR",
+                                                            "code": "MATH 3C",
                                                             "type": "CHILD",
                                                             "children": [
                                                               {
-                                                                "code": "MATH 3C",
-                                                                "type": "CHILD",
-                                                                "children": [
-                                                                  {
-                                                                    "code": "MATH 3B",
-                                                                    "type": "CHILD",
-                                                                    "children": []
-                                                                  }
-                                                                ]
-                                                              },
-                                                              {
-                                                                "code": "OF 2",
+                                                                "code": "MATH 3B",
                                                                 "type": "CHILD",
                                                                 "children": []
                                                               }
@@ -771,22 +559,11 @@
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "OR",
+                                                            "code": "MATH 3C",
                                                             "type": "CHILD",
                                                             "children": [
                                                               {
-                                                                "code": "MATH 3C",
-                                                                "type": "CHILD",
-                                                                "children": [
-                                                                  {
-                                                                    "code": "MATH 3B",
-                                                                    "type": "CHILD",
-                                                                    "children": []
-                                                                  }
-                                                                ]
-                                                              },
-                                                              {
-                                                                "code": "OF 2",
+                                                                "code": "MATH 3B",
                                                                 "type": "CHILD",
                                                                 "children": []
                                                               }
@@ -811,22 +588,11 @@
                                                         "type": "CHILD",
                                                         "children": [
                                                           {
-                                                            "code": "OR",
+                                                            "code": "MATH 3C",
                                                             "type": "CHILD",
                                                             "children": [
                                                               {
-                                                                "code": "MATH 3C",
-                                                                "type": "CHILD",
-                                                                "children": [
-                                                                  {
-                                                                    "code": "MATH 3B",
-                                                                    "type": "CHILD",
-                                                                    "children": []
-                                                                  }
-                                                                ]
-                                                              },
-                                                              {
-                                                                "code": "OF 2",
+                                                                "code": "MATH 3B",
                                                                 "type": "CHILD",
                                                                 "children": []
                                                               }
@@ -858,22 +624,11 @@
                                                                 "type": "CHILD",
                                                                 "children": [
                                                                   {
-                                                                    "code": "OR",
+                                                                    "code": "MATH 3C",
                                                                     "type": "CHILD",
                                                                     "children": [
                                                                       {
-                                                                        "code": "MATH 3C",
-                                                                        "type": "CHILD",
-                                                                        "children": [
-                                                                          {
-                                                                            "code": "MATH 3B",
-                                                                            "type": "CHILD",
-                                                                            "children": []
-                                                                          }
-                                                                        ]
-                                                                      },
-                                                                      {
-                                                                        "code": "OF 2",
+                                                                        "code": "MATH 3B",
                                                                         "type": "CHILD",
                                                                         "children": []
                                                                       }
@@ -897,6 +652,75 @@
                                         "code": "MATH 20B",
                                         "type": "CHILD",
                                         "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "code": "MATH 20A",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "OR",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 4C",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 3C",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3B",
+                                                "type": "CHILD",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "code": "MATH 10A",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "OR",
+                                            "type": "CHILD",
+                                            "children": [
+                                              {
+                                                "code": "MATH 3C",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3B",
+                                                    "type": "CHILD",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "code": "MATH 4C",
+                                                "type": "CHILD",
+                                                "children": [
+                                                  {
+                                                    "code": "MATH 3C",
+                                                    "type": "CHILD",
+                                                    "children": [
+                                                      {
+                                                        "code": "MATH 3B",
+                                                        "type": "CHILD",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
                                       }
                                     ]
                                   }
@@ -953,22 +777,11 @@
                     "type": "CHILD",
                     "children": [
                       {
-                        "code": "OR",
+                        "code": "MATH 3C",
                         "type": "CHILD",
                         "children": [
                           {
-                            "code": "MATH 3C",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "MATH 3B",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "code": "OF 2",
+                            "code": "MATH 3B",
                             "type": "CHILD",
                             "children": []
                           }
@@ -993,22 +806,11 @@
                     "type": "CHILD",
                     "children": [
                       {
-                        "code": "OR",
+                        "code": "MATH 3C",
                         "type": "CHILD",
                         "children": [
                           {
-                            "code": "MATH 3C",
-                            "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "MATH 3B",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "code": "OF 2",
+                            "code": "MATH 3B",
                             "type": "CHILD",
                             "children": []
                           }
@@ -1040,22 +842,11 @@
                             "type": "CHILD",
                             "children": [
                               {
-                                "code": "OR",
+                                "code": "MATH 3C",
                                 "type": "CHILD",
                                 "children": [
                                   {
-                                    "code": "MATH 3C",
-                                    "type": "CHILD",
-                                    "children": [
-                                      {
-                                        "code": "MATH 3B",
-                                        "type": "CHILD",
-                                        "children": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "code": "OF 2",
+                                    "code": "MATH 3B",
                                     "type": "CHILD",
                                     "children": []
                                   }
@@ -1311,20 +1102,14 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "USP 25",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "USP 15",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "USP 25",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "USP 15",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
@@ -1346,20 +1131,14 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "OR",
+                "code": "USP 25",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "USP 15",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "USP 25",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
+                "children": []
+              },
+              {
+                "code": "USP 15",
+                "type": "CHILD",
+                "children": []
               }
             ]
           }
@@ -1626,20 +1405,14 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "OR",
+                "code": "USP 25",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "USP 15",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "USP 25",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
+                "children": []
+              },
+              {
+                "code": "USP 15",
+                "type": "CHILD",
+                "children": []
               }
             ]
           }
@@ -1705,20 +1478,14 @@
                 "type": "CHILD",
                 "children": [
                   {
-                    "code": "OR",
+                    "code": "USP 25",
                     "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "USP 15",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "USP 25",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
+                    "children": []
+                  },
+                  {
+                    "code": "USP 15",
+                    "type": "CHILD",
+                    "children": []
                   }
                 ]
               }
@@ -1823,39 +1590,6 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "USP 187",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "USP 186",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "OR",
-                    "type": "CHILD",
-                    "children": [
-                      {
-                        "code": "USP 30",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "USP 60",
-                        "type": "CHILD",
-                        "children": []
-                      },
-                      {
-                        "code": "USP 124",
-                        "type": "CHILD",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "code": "USP 185B",
             "type": "CHILD",
             "children": [
@@ -1908,20 +1642,14 @@
                         "type": "CHILD",
                         "children": [
                           {
-                            "code": "OR",
+                            "code": "USP 25",
                             "type": "CHILD",
-                            "children": [
-                              {
-                                "code": "USP 15",
-                                "type": "CHILD",
-                                "children": []
-                              },
-                              {
-                                "code": "USP 25",
-                                "type": "CHILD",
-                                "children": []
-                              }
-                            ]
+                            "children": []
+                          },
+                          {
+                            "code": "USP 15",
+                            "type": "CHILD",
+                            "children": []
                           }
                         ]
                       }
@@ -1937,9 +1665,37 @@
             ]
           },
           {
-            "code": "GPA 3",
+            "code": "USP 187",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "USP 186",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "OR",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "USP 30",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "USP 60",
+                        "type": "CHILD",
+                        "children": []
+                      },
+                      {
+                        "code": "USP 124",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1961,13 +1717,24 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "USP 191A",
+        "code": "OR",
         "type": "CHILD",
         "children": [
           {
-            "code": "USP 4",
+            "code": "USP 191",
             "type": "CHILD",
             "children": []
+          },
+          {
+            "code": "USP 191A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "USP 4",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           }
         ]
       }

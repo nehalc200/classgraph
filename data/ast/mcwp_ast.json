@@ -7,7 +7,30 @@
   {
     "code": "MCWP 40",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "AWP 3",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "AWP 4B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "AWP 4A",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "MCWP 40C",
@@ -42,9 +65,43 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "MCWP 40",
+        "code": "OR",
         "type": "CHILD",
-        "children": []
+        "children": [
+          {
+            "code": "MCWP 40",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 4A",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "MCWP 40R",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
       }
     ]
   },

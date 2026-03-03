@@ -60,20 +60,9 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "MGT 432",
+        "code": "MGTP 432",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "MGT 403",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MGT 413",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },
@@ -114,20 +103,14 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "MGTP 434",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "MGTP 434",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "MGTP 424",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "MGTP 424",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },

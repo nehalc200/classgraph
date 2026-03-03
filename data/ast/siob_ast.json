@@ -120,12 +120,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOC 210",
+            "code": "SIO 210",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 210",
+            "code": "SIOC 210",
             "type": "CHILD",
             "children": []
           }
@@ -136,12 +136,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOB 280",
+            "code": "SIO 280",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 280",
+            "code": "SIOB 280",
             "type": "CHILD",
             "children": []
           }

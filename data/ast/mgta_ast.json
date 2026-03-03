@@ -102,35 +102,29 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
         "type": "CHILD",
         "children": [
           {
             "code": "MGTA 451",
             "type": "CHILD",
             "children": []
-          },
+          }
+        ]
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": [
           {
-            "code": "MGTA 452",
+            "code": "MGTA 451",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "MGTA 453",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       }
@@ -303,35 +297,29 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
         "type": "CHILD",
         "children": [
           {
             "code": "MGTA 451",
             "type": "CHILD",
             "children": []
-          },
+          }
+        ]
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": [
           {
-            "code": "MGTA 452",
+            "code": "MGTA 451",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "MGTA 453",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       }
@@ -420,35 +408,29 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "MGTA 451",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "MGTA 452",
         "type": "CHILD",
         "children": [
           {
             "code": "MGTA 451",
             "type": "CHILD",
             "children": []
-          },
+          }
+        ]
+      },
+      {
+        "code": "MGTA 453",
+        "type": "CHILD",
+        "children": [
           {
-            "code": "MGTA 452",
+            "code": "MGTA 451",
             "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
-          },
-          {
-            "code": "MGTA 453",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "MGTA 451",
-                "type": "CHILD",
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       }

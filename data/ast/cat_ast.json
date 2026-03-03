@@ -77,12 +77,46 @@
   {
     "code": "CAT 3",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CAT 2CE",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "CAT 3CE",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "CAT 2",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "CAT 2CE",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   {
     "code": "CAT 500",

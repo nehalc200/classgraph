@@ -400,7 +400,24 @@
           {
             "code": "CAT 3",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "CAT 2",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "CAT 2CE",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "code": "DOC 2",
@@ -467,7 +484,30 @@
           {
             "code": "MCWP 40",
             "type": "CHILD",
-            "children": []
+            "children": [
+              {
+                "code": "OR",
+                "type": "CHILD",
+                "children": [
+                  {
+                    "code": "AWP 3",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
+                    "code": "AWP 4B",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "AWP 4A",
+                        "type": "CHILD",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -480,9 +520,43 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "MCWP 40",
+                "code": "OR",
                 "type": "CHILD",
-                "children": []
+                "children": [
+                  {
+                    "code": "MCWP 40",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "AWP 3",
+                            "type": "CHILD",
+                            "children": []
+                          },
+                          {
+                            "code": "AWP 4B",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "AWP 4A",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MCWP 40R",
+                    "type": "CHILD",
+                    "children": []
+                  }
+                ]
               }
             ]
           },

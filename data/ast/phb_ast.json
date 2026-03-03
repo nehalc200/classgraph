@@ -110,17 +110,17 @@
         "type": "CHILD",
         "children": [
           {
+            "code": "FMPH 244B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
             "code": "MATH 281A",
             "type": "CHILD",
             "children": []
           },
           {
             "code": "MATH 282A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "FMPH 244B",
             "type": "CHILD",
             "children": []
           },
@@ -301,17 +301,17 @@
                 "type": "CHILD",
                 "children": [
                   {
+                    "code": "FMPH 244B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
                     "code": "MATH 281A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
                     "code": "MATH 282A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "FMPH 244B",
                     "type": "CHILD",
                     "children": []
                   },
@@ -496,17 +496,17 @@
                 "type": "CHILD",
                 "children": [
                   {
+                    "code": "FMPH 244B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
                     "code": "MATH 281A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
                     "code": "MATH 282A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "FMPH 244B",
                     "type": "CHILD",
                     "children": []
                   },
@@ -685,17 +685,17 @@
                 "type": "CHILD",
                 "children": [
                   {
+                    "code": "FMPH 244B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
                     "code": "MATH 281A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
                     "code": "MATH 282A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "FMPH 244B",
                     "type": "CHILD",
                     "children": []
                   },
@@ -1211,17 +1211,17 @@
                 "type": "CHILD",
                 "children": [
                   {
+                    "code": "FMPH 244B",
+                    "type": "CHILD",
+                    "children": []
+                  },
+                  {
                     "code": "MATH 281A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
                     "code": "MATH 282A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "FMPH 244B",
                     "type": "CHILD",
                     "children": []
                   },

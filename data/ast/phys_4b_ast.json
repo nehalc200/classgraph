@@ -1,0 +1,420 @@
+{
+  "code": "PHYS 4B",
+  "type": "ROOT",
+  "children": [
+    {
+      "code": "PHYS 4A",
+      "type": "CHILD",
+      "children": []
+    },
+    {
+      "code": "MATH 20A",
+      "type": "CHILD",
+      "children": [
+        {
+          "code": "OR",
+          "type": "CHILD",
+          "children": [
+            {
+              "code": "MATH 4C",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "MATH 3C",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 3B",
+                      "type": "CHILD",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "MATH 10A",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "OR",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 3C",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "MATH 3B",
+                          "type": "CHILD",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MATH 4C",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "MATH 3C",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 3B",
+                              "type": "CHILD",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MATH 20B",
+      "type": "CHILD",
+      "children": [
+        {
+          "code": "OR",
+          "type": "CHILD",
+          "children": [
+            {
+              "code": "MATH 10B",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "OR",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 10A",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "OR",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 3C",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "MATH 3B",
+                                  "type": "CHILD",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "code": "MATH 4C",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "MATH 3C",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 3B",
+                                      "type": "CHILD",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MATH 20A",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "OR",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 4C",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "MATH 3C",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 3B",
+                                      "type": "CHILD",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "code": "MATH 10A",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "OR",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 3C",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "MATH 3B",
+                                          "type": "CHILD",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "code": "MATH 4C",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "MATH 3C",
+                                          "type": "CHILD",
+                                          "children": [
+                                            {
+                                              "code": "MATH 3B",
+                                              "type": "CHILD",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "MATH 10C",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "OR",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 10B",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "OR",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 10A",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "OR",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 3C",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "MATH 3B",
+                                          "type": "CHILD",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "code": "MATH 4C",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "MATH 3C",
+                                          "type": "CHILD",
+                                          "children": [
+                                            {
+                                              "code": "MATH 3B",
+                                              "type": "CHILD",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "code": "MATH 20A",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "OR",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 4C",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "MATH 3C",
+                                          "type": "CHILD",
+                                          "children": [
+                                            {
+                                              "code": "MATH 3B",
+                                              "type": "CHILD",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "code": "MATH 10A",
+                                      "type": "CHILD",
+                                      "children": [
+                                        {
+                                          "code": "OR",
+                                          "type": "CHILD",
+                                          "children": [
+                                            {
+                                              "code": "MATH 3C",
+                                              "type": "CHILD",
+                                              "children": [
+                                                {
+                                                  "code": "MATH 3B",
+                                                  "type": "CHILD",
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "code": "MATH 4C",
+                                              "type": "CHILD",
+                                              "children": [
+                                                {
+                                                  "code": "MATH 3C",
+                                                  "type": "CHILD",
+                                                  "children": [
+                                                    {
+                                                      "code": "MATH 3B",
+                                                      "type": "CHILD",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MATH 20B",
+                      "type": "CHILD",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "MATH 20A",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "OR",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 4C",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "MATH 3C",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 3B",
+                              "type": "CHILD",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MATH 10A",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "OR",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 3C",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "MATH 3B",
+                                  "type": "CHILD",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "code": "MATH 4C",
+                              "type": "CHILD",
+                              "children": [
+                                {
+                                  "code": "MATH 3C",
+                                  "type": "CHILD",
+                                  "children": [
+                                    {
+                                      "code": "MATH 3B",
+                                      "type": "CHILD",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -69,25 +69,19 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "BIOM 200A",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "BIOM 200A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 200B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 201",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "BIOM 200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 201",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
@@ -123,25 +117,19 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "BIOM 200A",
         "type": "CHILD",
-        "children": [
-          {
-            "code": "BIOM 200A",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 200B",
-            "type": "CHILD",
-            "children": []
-          },
-          {
-            "code": "BIOM 201",
-            "type": "CHILD",
-            "children": []
-          }
-        ]
+        "children": []
+      },
+      {
+        "code": "BIOM 200B",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "BIOM 201",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
@@ -173,25 +161,19 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "OR",
+                "code": "BIOM 200A",
                 "type": "CHILD",
-                "children": [
-                  {
-                    "code": "BIOM 200A",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "BIOM 200B",
-                    "type": "CHILD",
-                    "children": []
-                  },
-                  {
-                    "code": "BIOM 201",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
+                "children": []
+              },
+              {
+                "code": "BIOM 200B",
+                "type": "CHILD",
+                "children": []
+              },
+              {
+                "code": "BIOM 201",
+                "type": "CHILD",
+                "children": []
               }
             ]
           }

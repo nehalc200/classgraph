@@ -159,7 +159,18 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "OR",
+        "code": "ANTH 196A",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "ANTH 192",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "code": "ANTH 196B",
         "type": "CHILD",
         "children": [
           {
@@ -170,23 +181,6 @@
                 "code": "ANTH 192",
                 "type": "CHILD",
                 "children": []
-              }
-            ]
-          },
-          {
-            "code": "ANTH 196B",
-            "type": "CHILD",
-            "children": [
-              {
-                "code": "ANTH 196A",
-                "type": "CHILD",
-                "children": [
-                  {
-                    "code": "ANTH 192",
-                    "type": "CHILD",
-                    "children": []
-                  }
-                ]
               }
             ]
           }

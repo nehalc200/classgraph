@@ -1,0 +1,75 @@
+{
+  "code": "PHYS 4A",
+  "type": "ROOT",
+  "children": [
+    {
+      "code": "MATH 20A",
+      "type": "CHILD",
+      "children": [
+        {
+          "code": "OR",
+          "type": "CHILD",
+          "children": [
+            {
+              "code": "MATH 4C",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "MATH 3C",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 3B",
+                      "type": "CHILD",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "MATH 10A",
+              "type": "CHILD",
+              "children": [
+                {
+                  "code": "OR",
+                  "type": "CHILD",
+                  "children": [
+                    {
+                      "code": "MATH 3C",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "MATH 3B",
+                          "type": "CHILD",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MATH 4C",
+                      "type": "CHILD",
+                      "children": [
+                        {
+                          "code": "MATH 3C",
+                          "type": "CHILD",
+                          "children": [
+                            {
+                              "code": "MATH 3B",
+                              "type": "CHILD",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

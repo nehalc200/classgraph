@@ -75,12 +75,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOG 227A",
+            "code": "SIO 227A",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 227A",
+            "code": "SIOG 227A",
             "type": "CHILD",
             "children": []
           }
@@ -121,12 +121,12 @@
                 "type": "CHILD",
                 "children": [
                   {
-                    "code": "SIOG 227A",
+                    "code": "SIO 227A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
-                    "code": "SIO 227A",
+                    "code": "SIOG 227A",
                     "type": "CHILD",
                     "children": []
                   }

@@ -1027,7 +1027,13 @@
   {
     "code": "ETHN 200C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "ETHN 200B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "ETHN 201",

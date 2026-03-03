@@ -37,7 +37,13 @@
   {
     "code": "LTTH 210C",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "LTTH 210B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
   },
   {
     "code": "LTTH 250",

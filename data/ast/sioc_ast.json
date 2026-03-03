@@ -35,6 +35,11 @@
         "type": "CHILD",
         "children": [
           {
+            "code": "SIO 200B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
             "code": "SIOC 200B",
             "type": "CHILD",
             "children": [
@@ -55,11 +60,6 @@
                 ]
               }
             ]
-          },
-          {
-            "code": "SIO 200B",
-            "type": "CHILD",
-            "children": []
           }
         ]
       }
@@ -94,6 +94,132 @@
                         "code": "MATH 3B",
                         "type": "CHILD",
                         "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MATH 4C",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "MATH 3C",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 3B",
+                            "type": "CHILD",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MATH 10A",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 3C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3B",
+                                "type": "CHILD",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "code": "MATH 4C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3C",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3B",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "code": "MATH 20A",
+                    "type": "CHILD",
+                    "children": [
+                      {
+                        "code": "OR",
+                        "type": "CHILD",
+                        "children": [
+                          {
+                            "code": "MATH 4C",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "MATH 3C",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3B",
+                                    "type": "CHILD",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "code": "MATH 10A",
+                            "type": "CHILD",
+                            "children": [
+                              {
+                                "code": "OR",
+                                "type": "CHILD",
+                                "children": [
+                                  {
+                                    "code": "MATH 3C",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 3B",
+                                        "type": "CHILD",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "code": "MATH 4C",
+                                    "type": "CHILD",
+                                    "children": [
+                                      {
+                                        "code": "MATH 3C",
+                                        "type": "CHILD",
+                                        "children": [
+                                          {
+                                            "code": "MATH 3B",
+                                            "type": "CHILD",
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -260,7 +386,12 @@
             "children": []
           },
           {
-            "code": "ECE 251AN",
+            "code": "SIO 207B",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "SIOC 207B",
             "type": "CHILD",
             "children": []
           }
@@ -312,12 +443,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOC 212A",
+            "code": "SIO 212A",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 212A",
+            "code": "SIOC 212A",
             "type": "CHILD",
             "children": []
           }
@@ -328,12 +459,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOC 214A",
+            "code": "SIO 214A",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 214A",
+            "code": "SIOC 214A",
             "type": "CHILD",
             "children": []
           }
@@ -354,12 +485,12 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "SIOC 212A",
+                "code": "SIO 212A",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "SIO 212A",
+                "code": "SIOC 212A",
                 "type": "CHILD",
                 "children": []
               }
@@ -370,12 +501,12 @@
             "type": "CHILD",
             "children": [
               {
-                "code": "SIOC 214A",
+                "code": "SIO 214A",
                 "type": "CHILD",
                 "children": []
               },
               {
-                "code": "SIO 214A",
+                "code": "SIOC 214A",
                 "type": "CHILD",
                 "children": []
               }
@@ -550,12 +681,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOC 217A",
+            "code": "SIO 217A",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 217A",
+            "code": "SIOC 217A",
             "type": "CHILD",
             "children": []
           }
@@ -565,6 +696,11 @@
         "code": "OR",
         "type": "CHILD",
         "children": [
+          {
+            "code": "SIO 217B",
+            "type": "CHILD",
+            "children": []
+          },
           {
             "code": "SIOC 217B",
             "type": "CHILD",
@@ -586,11 +722,6 @@
                 ]
               }
             ]
-          },
-          {
-            "code": "SIO 217B",
-            "type": "CHILD",
-            "children": []
           }
         ]
       }
@@ -867,12 +998,12 @@
                 "type": "CHILD",
                 "children": [
                   {
-                    "code": "SIOC 212A",
+                    "code": "SIO 212A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
-                    "code": "SIO 212A",
+                    "code": "SIOC 212A",
                     "type": "CHILD",
                     "children": []
                   }
@@ -883,12 +1014,12 @@
                 "type": "CHILD",
                 "children": [
                   {
-                    "code": "SIOC 214A",
+                    "code": "SIO 214A",
                     "type": "CHILD",
                     "children": []
                   },
                   {
-                    "code": "SIO 214A",
+                    "code": "SIOC 214A",
                     "type": "CHILD",
                     "children": []
                   }
