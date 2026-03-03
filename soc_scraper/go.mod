@@ -1,4 +1,4 @@
-module soc-scrape
+module soc_scraper
 
 go 1.25.6
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 	"regexp"
-	"soc-scrape/lib/courses"
+	"soc_scraper/lib/courses"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"

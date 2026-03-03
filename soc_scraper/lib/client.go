@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
-	"soc-scrape/lib/courses"
+	"soc_scraper/lib/courses"
 
 	"github.com/gorilla/schema"
 )

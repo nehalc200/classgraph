@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"os"
-	"soc-scrape/lib"
-	"soc-scrape/lib/courses"
+	"soc_scraper/lib"
+	"soc_scraper/lib/courses"
 	"strings"
 	"sync"
 	"time"
@@ -46,7 +46,7 @@ func main() {
 	}
 	wg.Wait()
 	data, _ := json.MarshalIndent(final_classes, "", "    ")
-	f, _ := os.Create("SOC_list.json")
+	f, _ := os.Create("../data/SOC_list.json")
 	f.Write(data)
 
 }
