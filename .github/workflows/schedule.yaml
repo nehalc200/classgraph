@@ -1,17 +1,15 @@
 name: Quarterly Catalog Scrapers
 on:
   schedule:
-  - name: friday_before_fourth_sunday_may
-    cron: "0 0 22 ? 5 6#3"
+    # 4th friday in may (fall schedule)
+    - cron: "0 0 19 5 5"
+    
+    # first friday in november (winter schedule)
+    - cron: "0 0 30 10 5"
 
-  - name: friday_before_first_sunday_november
-    cron: "0 0 22 ? 11 6#1"
-
-  - name: friday_before_first_sunday_february
-    cron: "0 0 22 ? 2 6#1"
-
-  - name: friday_before_third_sunday_march
-    cron: "0 0 22 ? 3 6#2"
+    # first friday in february (spring schedule)
+    - cron: "0 0 29 1 5"
+    
 
 jobs:
   run-course-scraper:
