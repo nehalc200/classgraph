@@ -1,18 +1,60 @@
 name: Quarterly Catalog Scrapers
 on:
   schedule:
-    # 4th friday in may (fall schedule)
-    - cron: "0 0 19 5 5"
+    # Runs every Friday in May at 00:00 UTC
+    - cron: "0 0 * 5 5"
     
-    # first friday in november (winter schedule)
-    - cron: "0 0 30 10 5"
+    # Runs every Friday in November at 00:00 UTC
+    - cron: "0 0 * 11 5"
 
-    # first friday in february (spring schedule)
-    - cron: "0 0 29 1 5"
+    # Runs every Friday in February at 00:00 UTC
+    - cron: "0 0 * 2 5"
     
+  # Adding manual trigger so you can test it without waiting for the cron
+  workflow_dispatch: 
 
 jobs:
+  check-date:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.date_check.outputs.should_run }}
+    steps:
+      - name: Verify Nth Friday
+        id: date_check
+        run: |
+          MONTH=$(date +%-m)
+          DAY=$(date +%-d)
+          SHOULD_RUN="false"
+          
+          # Force run if triggered manually via workflow_dispatch
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Manual trigger detected."
+            SHOULD_RUN="true"
+          
+          # 4th Friday of May (days 22-28)
+          elif [[ "$MONTH" -eq 5 && "$DAY" -ge 22 && "$DAY" -le 28 ]]; then
+            echo "Matched 4th Friday of May."
+            SHOULD_RUN="true"
+            
+          # 1st Friday of November (days 1-7)
+          elif [[ "$MONTH" -eq 11 && "$DAY" -le 7 ]]; then
+            echo "Matched 1st Friday of November."
+            SHOULD_RUN="true"
+            
+          # 1st Friday of February (days 1-7)
+          elif [[ "$MONTH" -eq 2 && "$DAY" -le 7 ]]; then
+            echo "Matched 1st Friday of February."
+            SHOULD_RUN="true"
+            
+          else
+            echo "Not a target Friday. Skipping scraper."
+          fi
+          
+          echo "should_run=$SHOULD_RUN" >> "$GITHUB_OUTPUT"
+
   run-course-scraper:
+    needs: check-date
+    if: needs.check-date.outputs.should_run == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -44,7 +86,6 @@ jobs:
           go build
           ./soc_scraper
           cd ..
-          
 
       - name: Run cross check and AST
         run: |
