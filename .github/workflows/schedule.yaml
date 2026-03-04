@@ -22,12 +22,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.13.5'
+          python-version: '3.12'
 
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: '1.25'
 
       - name: Install dependencies
         run: |
@@ -40,12 +40,16 @@ jobs:
 
       - name: Run Webreg scraper
         run: |
-          go run path/to/your/script.go
+          cd soc_scraper/
+          go build
+          ./soc_scraper
+          cd ..
+          
 
       - name: Run cross check and AST
         run: |
-          python data/cross_check.py
-          python data/ast.py
+          python data/helpers/cross_check.py
+          python data/helpers/ast.py
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6

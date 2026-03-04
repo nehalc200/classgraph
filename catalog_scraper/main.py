@@ -1,9 +1,9 @@
 from pathlib import Path
 import argparse
 
-from course_scraper import read_subject_codes, build_courses_dataframe, save_courses_csv
+from tools.course_scraper import read_subject_codes, build_courses_dataframe, save_courses_csv
 
-from json_parser import load_courses_csv, generate_webreg_json
+from tools.json_parser import load_courses_csv, generate_webreg_json
 
 
 def run(codes_path, courses_csv_path, webreg_json_path, skip_scrape=False):
