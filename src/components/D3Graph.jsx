@@ -8,7 +8,12 @@ const ROOT_COLOR = '#1e1e1e';
 const NORMAL_COLOR = '#555555';
 const EXPANDABLE_COLOR = '#6366f1';
 
-export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
+export const D3Graph = ({
+    rootAstNode,
+    onNodeExpand,
+    completedCourses = new Set(),
+    inProgressCourses = new Set(),
+  }) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
     const [expandedOrGroups, setExpandedOrGroups] = useState(() => new Set());
@@ -239,6 +244,20 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
 
         // ── Nodes ───────────────────────────────────────────────────────────
         const nodeLayer = g.append('g').attr('class', 'nodes');
+        function normalizeCourseCode(s) {
+            return (s || "")
+              .toUpperCase()
+              .replace(/\s+/g, " ")
+              .replace(/^([A-Z]{2,5})\s*(\d)/, "$1 $2") // "MATH154" -> "MATH 154"
+              .trim();
+          }
+          
+          function getCourseStatus(labelOrCode) {
+            const code = normalizeCourseCode(labelOrCode);
+            if (completedCourses.has(code)) return "completed";
+            if (inProgressCourses.has(code)) return "inProgress";
+            return "none";
+          }
 
         const nodeGroups = nodeLayer.selectAll('g.node')
             .data(layerData.nodes)
@@ -264,6 +283,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
                   onNodeExpandRef.current(d.label);
                 }
               });
+        
 
         // Measure text widths for sizing
         const tempSvg = d3.select('body').append('svg').style('visibility', 'hidden');
@@ -299,7 +319,14 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('height', 13 + paddingY * 2)
             .attr('rx', 7)
             .attr('ry', 7)
-            .attr('fill', '#ffffff')
+            .attr("fill", (d) => {
+                const code = d.label;   // <-- use label as fallback
+                const status = getCourseStatus(code);
+              
+                if (status === "completed") return "#86efac";   // green
+                if (status === "inProgress") return "#fde68a";  // yellow
+                return "#ffffff";
+              })
             .attr('stroke', (d) => {
                 if (d.depth === 0) return ROOT_COLOR;
                 return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
@@ -495,7 +522,14 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             d3.select(container).select('svg').remove();
             d3.select(container).select('.node-tooltip').remove();
         };
-    }, [rootAstNode, courseInfoReady, containerSize, expandedOrGroups]);
+    }, [
+        rootAstNode,
+        courseInfoReady,
+        containerSize,
+        expandedOrGroups,
+        completedCourses,
+        inProgressCourses,
+      ]);
     
     return (
         <div
