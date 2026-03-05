@@ -26,6 +26,9 @@ const SPECIAL_CASES = {
     'PHYS 4D': '../../data/ast/phys_4d_ast.json',
 };
 
+/** Set of course codes that have dedicated AST files (always expandable in graphs). */
+export const SPECIAL_CASE_CODES = new Set(Object.keys(SPECIAL_CASES));
+
 // Cache for special-case roots (keyed by course code)
 const specialCache = {};
 

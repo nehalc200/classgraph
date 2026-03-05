@@ -2,13 +2,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { extractLayers } from '../utils/astGraphUtils';
 import { loadCourseInfo, getCourseInfo } from '../utils/courseInfo';
+import { SPECIAL_CASE_CODES } from '../utils/loadAstData';
 
 // Colour palette (matching the Sigma version)
 const ROOT_COLOR = '#1e1e1e';
 const NORMAL_COLOR = '#555555';
 const EXPANDABLE_COLOR = '#6366f1';
 
-export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
+export const D3Graph = ({
+    rootAstNode,
+    onNodeExpand,
+    completedCourses = new Set(),
+    inProgressCourses = new Set(),
+}) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
     const [expandedOrGroups, setExpandedOrGroups] = useState(() => new Set());
@@ -48,6 +54,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
         const layerData = extractLayers(rootAstNode, 3, {
             expandedOrGroups,
             orPreviewLimit: 3,
+            specialCourses: SPECIAL_CASE_CODES,
         });
 
         const container = containerRef.current;
@@ -239,6 +246,20 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
 
         // ── Nodes ───────────────────────────────────────────────────────────
         const nodeLayer = g.append('g').attr('class', 'nodes');
+        function normalizeCourseCode(s) {
+            return (s || "")
+                .toUpperCase()
+                .replace(/\s+/g, " ")
+                .replace(/^([A-Z]{2,5})\s*(\d)/, "$1 $2") // "MATH154" -> "MATH 154"
+                .trim();
+        }
+
+        function getCourseStatus(labelOrCode) {
+            const code = normalizeCourseCode(labelOrCode);
+            if (completedCourses.has(code)) return "completed";
+            if (inProgressCourses.has(code)) return "inProgress";
+            return "none";
+        }
 
         const nodeGroups = nodeLayer.selectAll('g.node')
             .data(layerData.nodes)
@@ -250,20 +271,20 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .on('click', (event, d) => {
                 // OR "+N" expander: toggle locally
                 if (d.isOrMore && d.orGroupId) {
-                  setExpandedOrGroups((prev) => {
-                    const next = new Set(prev);
-                    if (next.has(d.orGroupId)) next.delete(d.orGroupId);
-                    else next.add(d.orGroupId);
-                    return next;
-                  });
-                  return;
+                    setExpandedOrGroups((prev) => {
+                        const next = new Set(prev);
+                        if (next.has(d.orGroupId)) next.delete(d.orGroupId);
+                        else next.add(d.orGroupId);
+                        return next;
+                    });
+                    return;
                 }
-              
+
                 // existing behavior for course expand
                 if (d.isExpandable && onNodeExpandRef.current) {
-                  onNodeExpandRef.current(d.label);
+                    onNodeExpandRef.current(d.label);
                 }
-              });
+            });
 
         // Measure text widths for sizing
         const tempSvg = d3.select('body').append('svg').style('visibility', 'hidden');
@@ -299,7 +320,14 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('height', 13 + paddingY * 2)
             .attr('rx', 7)
             .attr('ry', 7)
-            .attr('fill', '#ffffff')
+            .attr("fill", (d) => {
+                const code = d.label;   // <-- use label as fallback
+                const status = getCourseStatus(code);
+
+                if (status === "completed") return "#86efac";   // green
+                if (status === "inProgress") return "#fde68a";  // yellow
+                return "#ffffff";
+            })
             .attr('stroke', (d) => {
                 if (d.depth === 0) return ROOT_COLOR;
                 return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
@@ -327,7 +355,7 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             .attr('r', 7)
             .attr('fill', EXPANDABLE_COLOR);
 
-            nodeGroups.filter((d) => d.isExpandable && !d.isOrMore)
+        nodeGroups.filter((d) => d.isExpandable && !d.isOrMore)
             .append('text')
             .attr('x', (d) => textWidths[d.id] / 2 + paddingX)
             .attr('y', -(13 / 2 + paddingY))
@@ -495,8 +523,15 @@ export const D3Graph = ({ rootAstNode, onNodeExpand }) => {
             d3.select(container).select('svg').remove();
             d3.select(container).select('.node-tooltip').remove();
         };
-    }, [rootAstNode, courseInfoReady, containerSize, expandedOrGroups]);
-    
+    }, [
+        rootAstNode,
+        courseInfoReady,
+        containerSize,
+        expandedOrGroups,
+        completedCourses,
+        inProgressCourses,
+    ]);
+
     return (
         <div
             ref={containerRef}

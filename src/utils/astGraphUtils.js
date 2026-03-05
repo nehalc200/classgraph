@@ -72,7 +72,8 @@ export function findRootNode(courseCode, astData) {
 export function extractLayers(rootNode, maxDepth = 3, options = {}) {
   _colorIndex = 0; // reset per extraction
 
-  const { expandedOrGroups = new Set(), orPreviewLimit = 3 } = options;
+  const { expandedOrGroups = new Set(), orPreviewLimit = 3, specialCourses = new Set() } = options;
+
 
   const nodes = [];
   const edges = [];
@@ -143,7 +144,12 @@ export function extractLayers(rootNode, maxDepth = 3, options = {}) {
     const nid = nodeId(astNode, parentId, depth);
     if (!seenNodes.has(nid)) {
       const hasChildren = (astNode.children || []).length > 0;
-      const isExpandable = hasChildren && depth >= maxDepth - 1;
+      // A node is expandable if:
+      //   (a) it has children and we're at the last visible layer, OR
+      //   (b) it's a special-case course with its own dedicated AST
+      const isExpandable =
+        (hasChildren && depth >= maxDepth - 1) ||
+        (depth > 0 && specialCourses.has(astNode.code));
       seenNodes.add(nid);
       nodes.push({ id: nid, label: astNode.code, depth, isExpandable });
     }
