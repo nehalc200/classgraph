@@ -117,29 +117,87 @@ export const D3Graph = ({
         // ── Arrow marker definitions ────────────────────────────────────────
         const defs = svg.append('defs');
 
+        // Default (dim) arrowhead
         defs.append('marker')
             .attr('id', 'arrowhead')
             .attr('viewBox', '0 -5 10 10')
-            .attr('refX', 8)
-            .attr('refY', 0)
-            .attr('markerWidth', 8)
-            .attr('markerHeight', 8)
+            .attr('refX', 8).attr('refY', 0)
+            .attr('markerWidth', 8).attr('markerHeight', 8)
             .attr('orient', 'auto')
-            .append('path')
-            .attr('d', 'M0,-4L8,0L0,4')
-            .attr('fill', '#c4c4c4');
+            .append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', '#c4c4c4');
 
+        // Teal fallback glow arrowhead (non-OR ancestor edges)
         defs.append('marker')
             .attr('id', 'arrowhead-glow')
             .attr('viewBox', '0 -5 10 10')
-            .attr('refX', 8)
-            .attr('refY', 0)
-            .attr('markerWidth', 8)
-            .attr('markerHeight', 8)
+            .attr('refX', 8).attr('refY', 0)
+            .attr('markerWidth', 8).attr('markerHeight', 8)
             .attr('orient', 'auto')
-            .append('path')
-            .attr('d', 'M0,-4L8,0L0,4')
-            .attr('fill', '#14b8a6'); // Teal-500
+            .append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', '#14b8a6');
+
+        // Build a map: solid OR group border color → CSS-safe marker id
+        // Use the solid form of each border color for arrowhead fill.
+        // OR border colors are like 'rgba(99, 102, 241, 0.7)' – we need to extract the solid rgb.
+        function solidFromRgba(rgba) {
+            const m = rgba.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+            return m ? `rgb(${m[1]},${m[2]},${m[3]})` : rgba;
+        }
+        function colorToMarkerId(color) {
+            return 'arrowhead-' + solidFromRgba(color).replace(/[^a-z0-9]/gi, '_');
+        }
+
+        const orGroupColors = new Set(layerData.orGroups.map(g => g.border));
+        orGroupColors.forEach((borderColor) => {
+            const solid = solidFromRgba(borderColor);
+            const markerId = colorToMarkerId(borderColor);
+            defs.append('marker')
+                .attr('id', markerId)
+                .attr('viewBox', '0 -5 10 10')
+                .attr('refX', 8).attr('refY', 0)
+                .attr('markerWidth', 8).attr('markerHeight', 8)
+                .attr('orient', 'auto')
+                .append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', solid);
+        });
+
+        // ── Build lookup maps for hover path logic ───────────────────────────
+        // nodeId → solid border color of the OR group it belongs to (or null)
+        const nodeOrColor = {};
+        layerData.orGroups.forEach((group) => {
+            group.memberNodeIds.forEach((nid) => {
+                if (!nodeOrColor[nid]) nodeOrColor[nid] = group.border;
+            });
+        });
+
+        // edgeId → highlighted color (target node's OR color, or teal fallback)
+        function edgeHighlightColor(edge) {
+            return nodeOrColor[edge.target] || '#14b8a6';
+        }
+
+        // childId → set of parentIds (for ancestor traversal)
+        const parentsMap = {};
+        layerData.edges.forEach(({ source, target }) => {
+            if (!parentsMap[target]) parentsMap[target] = [];
+            parentsMap[target].push(source);
+        });
+
+        // Return set of edge IDs on ALL ancestor paths from nodeId up to root
+        function getAncestorEdgeIds(startId) {
+            const result = new Set();
+            const queue = [startId];
+            const visited = new Set([startId]);
+            while (queue.length) {
+                const cur = queue.shift();
+                const parents = parentsMap[cur] || [];
+                parents.forEach((pid) => {
+                    result.add(`${pid}\u2192${cur}`);
+                    if (!visited.has(pid)) {
+                        visited.add(pid);
+                        queue.push(pid);
+                    }
+                });
+            }
+            return result;
+        }
 
         // ── OR-group boxes (behind everything else) ─────────────────────────
         const orGroupLayer = g.append('g').attr('class', 'or-groups');
@@ -393,31 +451,56 @@ export const D3Graph = ({
         // ── Hover: stroke effect + tooltip ─────────────────────────────────
         nodeGroups
             .on('mouseenter', function (event, d) {
-                // Stroke highlight
-                if (d.isExpandable) {
-                    d3.select(this).select('rect')
-                        .transition().duration(150)
-                        .attr('stroke-width', 3)
-                        .attr('stroke', EXPANDABLE_COLOR);
-                }
+                // Stroke highlight on the node rect
+                d3.select(this).select('rect')
+                    .transition().duration(150)
+                    .attr('stroke-width', 3);
+
+                // Compute the full set of ancestor edge IDs for this node
+                const ancestorEdgeIds = getAncestorEdgeIds(d.id);
+                // Also include direct outgoing edges (children of the hovered node)
+                const directEdgeIds = new Set(
+                    layerData.edges
+                        .filter((e) => e.source === d.id)
+                        .map((e) => e.id)
+                );
 
                 edgeSel
                     .transition().duration(150)
-                    .attr('opacity', (e) =>
-                        e.source === d.id || e.target === d.id ? 0.9 : 0.35
-                    )
-                    .attr('stroke-width', (e) =>
-                        e.source === d.id || e.target === d.id ? 3 : 2
-                    )
-                    .attr('stroke', (e) =>
-                        e.source === d.id || e.target === d.id ? '#14b8a6' : '#c4c4c4'
-                    )
-                    .attr('marker-end', (e) =>
-                        e.source === d.id || e.target === d.id ? 'url(#arrowhead-glow)' : 'url(#arrowhead)'
-                    )
-                    .style('filter', (e) =>
-                        e.source === d.id || e.target === d.id ? 'drop-shadow(0 0 4px rgba(20, 184, 166, 0.8))' : 'none'
-                    );
+                    .attr('opacity', (e) => {
+                        if (ancestorEdgeIds.has(e.id) || directEdgeIds.has(e.id)) return 1.0;
+                        return 0.12; // dim non-path edges strongly
+                    })
+                    .attr('stroke-width', (e) => {
+                        if (ancestorEdgeIds.has(e.id) || directEdgeIds.has(e.id)) return 3.5;
+                        return 1.5;
+                    })
+                    .attr('stroke', (e) => {
+                        if (ancestorEdgeIds.has(e.id)) {
+                            const c = edgeHighlightColor(e);
+                            return solidFromRgba(c);
+                        }
+                        if (directEdgeIds.has(e.id)) return '#14b8a6'; // teal for direct children
+                        return '#c4c4c4';
+                    })
+                    .attr('marker-end', (e) => {
+                        if (ancestorEdgeIds.has(e.id)) {
+                            return `url(#${colorToMarkerId(edgeHighlightColor(e))})`;
+                        }
+                        if (directEdgeIds.has(e.id)) return 'url(#arrowhead-glow)';
+                        return 'url(#arrowhead)';
+                    })
+                    .style('filter', (e) => {
+                        if (ancestorEdgeIds.has(e.id)) {
+                            const solid = solidFromRgba(edgeHighlightColor(e));
+                            // extract r,g,b from solid
+                            const m = solid.match(/(\d+),(\d+),(\d+)/);
+                            const shadow = m ? `drop-shadow(0 0 5px rgba(${m[1]},${m[2]},${m[3]},0.85))` : 'none';
+                            return shadow;
+                        }
+                        if (directEdgeIds.has(e.id)) return 'drop-shadow(0 0 4px rgba(20,184,166,0.8))';
+                        return 'none';
+                    });
 
                 // Build tooltip content
                 const info = getCourseInfo(d.label);
