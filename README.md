@@ -80,3 +80,10 @@ classgraph/
 | **Package Management** | npm, pip | Dependency management for the JavaScript frontend and Python scrapers. |
 | **CI/CD** | GitHub Actions | Automated workflows for continuous integration and updating scraped data. |
 | **Deployment** | Vercel | Hosting platform for the live web application. |
+
+## Testing
+```bash
+# Run all tests
+cd soc_scraper
+go test ./... -v
+```
