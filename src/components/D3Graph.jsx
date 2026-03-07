@@ -313,11 +313,11 @@ export const D3Graph = ({
         }
 
         function getCourseStatus(labelOrCode) {
-            const code = normalizeCourseCode(labelOrCode);
+           const code = normalizeCourseCode(labelOrCode);
             if (completedCourses.has(code)) return "completed";
             if (inProgressCourses.has(code)) return "inProgress";
             return "none";
-        }
+          }
 
         const nodeGroups = nodeLayer.selectAll('g.node')
             .data(layerData.nodes)
@@ -342,7 +342,8 @@ export const D3Graph = ({
                 if (d.isExpandable && onNodeExpandRef.current) {
                     onNodeExpandRef.current(d.label);
                 }
-            });
+              });
+        
 
         // Measure text widths for sizing
         const tempSvg = d3.select('body').append('svg').style('visibility', 'hidden');
@@ -381,11 +382,11 @@ export const D3Graph = ({
             .attr("fill", (d) => {
                 const code = d.label;   // <-- use label as fallback
                 const status = getCourseStatus(code);
-
+              
                 if (status === "completed") return "#86efac";   // green
                 if (status === "inProgress") return "#fde68a";  // yellow
                 return "#ffffff";
-            })
+              })
             .attr('stroke', (d) => {
                 if (d.depth === 0) return ROOT_COLOR;
                 return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
@@ -615,6 +616,7 @@ export const D3Graph = ({
         inProgressCourses,
     ]);
 
+    
     return (
         <div
             ref={containerRef}

@@ -1,9 +1,12 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Button } from "../../components/Button";
 import { D3Graph } from "../../components/D3Graph";
 import { GraphTabs } from "../../components/GraphTabs";
 import { CourseSearch } from "../../components/CourseSearch";
 import { loadAstNodeForCourse } from "../../utils/loadAstData";
+import { TranscriptUpload } from "../../components/TranscriptUpload";
+import { extractTextFromPdf } from "../../utils/pdfExtract";
+import { parseAcademicHistoryText } from "../../utils/transcriptParse";
 
 import graphBg from "./graphbackground.webp";
 
@@ -13,6 +16,11 @@ export const Desktop = () => {
   const [tabs, setTabs] = useState([]);           // [{ courseCode, astNode }]
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [generating, setGenerating] = useState(false);
+  const [transcriptFile, setTranscriptFile] = useState(null);
+  const [transcriptText, setTranscriptText] = useState("");
+  const [transcriptLoading, setTranscriptLoading] = useState(false);
+  const [transcriptError, setTranscriptError] = useState("");
+  const [record, setRecord] = useState({ completed: new Set(), inProgress: new Set() });
 
   // When the user selects a course from search
   const handleCourseSelect = useCallback((courseCode) => {
@@ -75,6 +83,40 @@ export const Desktop = () => {
     },
     [],
   );
+  useEffect(() => {
+    let cancelled = false;
+  
+    const run = async () => {
+      setTranscriptError("");
+      setTranscriptText("");
+  
+      if (!transcriptFile) return;
+  
+      try {
+        setTranscriptLoading(true);
+        const text = await extractTextFromPdf(transcriptFile);
+        if (cancelled) return;
+  
+        setTranscriptText(text);
+        const parsed = parseAcademicHistoryText(text);
+        setRecord(parsed);
+
+        console.log("COMPLETED:", Array.from(parsed.completed).sort());
+        console.log("IN PROGRESS:", Array.from(parsed.inProgress).sort());
+        console.log("PDF TEXT (first 2000 chars):", text.slice(0, 2000));
+      } catch (e) {
+        console.error("PDF ERROR:", e);
+        if (!cancelled) setTranscriptError("Could not read that PDF. See console.");
+      } finally {
+        if (!cancelled) setTranscriptLoading(false);
+      }
+    };
+  
+    run();
+    return () => {
+      cancelled = true;
+    };
+  }, [transcriptFile]);
 
   // Currently active AST node
   const activeAstNode = tabs.length > 0 ? tabs[activeTabIndex]?.astNode : null;
@@ -114,6 +156,51 @@ export const Desktop = () => {
 
           <div id="graph-section" className="w-full flex justify-center">
             <div className="w-full max-w-6xl flex flex-col" style={{ minHeight: 700 }}>
+          
+              <div className="mb-8 w-full max-w-3xl mx-auto">
+                <div className="border-2 border-black rounded-2xl bg-white px-6 py-5 shadow-sm">
+                  
+                  <div className="text-sm font-semibold mb-2 text-gray-800">
+                    Upload Academic History
+                  </div>
+
+                  <div className="text-xs text-gray-500 mb-4">
+                    Upload your UCSD Academic History PDF to highlight prerequisites you have already completed.
+                  </div>
+
+                  <TranscriptUpload
+                    file={transcriptFile}
+                    onChange={setTranscriptFile}
+                  />
+
+                </div>
+              </div>
+              {transcriptLoading ? (
+                <div className="mt-3 text-sm text-gray-600">Extracting text…</div>
+              ) : transcriptError ? (
+                <div className="mt-3 text-sm text-red-600">{transcriptError}</div>
+              ) : transcriptText ? (
+                <div className="mt-3 text-sm text-gray-600">
+                  Extracted {transcriptText.length.toLocaleString()} characters.
+                </div>
+              ) : null}
+
+              {record.completed.size > 0 || record.inProgress.size > 0 ? (
+                <div className="mt-4 text-xs text-gray-700">
+                  <div className="font-semibold">Detected courses</div>
+                  <div className="mt-2">
+                    <span className="font-medium">Completed:</span>{" "}
+                    {Array.from(record.completed).slice(0, 12).join(", ")}
+                    {record.completed.size > 12 ? " …" : ""}
+                  </div>
+                  <div className="mt-1">
+                    <span className="font-medium">In progress:</span>{" "}
+                    {Array.from(record.inProgress).slice(0, 12).join(", ")}
+                    {record.inProgress.size > 12 ? " …" : ""}
+                  </div>
+                </div>
+              ) : null}
+
               <div className="mb-4 w-full max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
                 <CourseSearch onSelect={handleCourseSelect} onQueryChange={setSelectedCourse} onSubmit={handleGenerate} />
                 <Button onClick={handleGenerate} disabled={generating}>
@@ -130,10 +217,12 @@ export const Desktop = () => {
                     onClose={handleTabClose}
                   />
                   <div className="flex-1" style={{ minHeight: 600 }}>
-                    <D3Graph
-                      rootAstNode={activeAstNode}
-                      onNodeExpand={handleNodeExpand}
-                    />
+                  <D3Graph
+                    rootAstNode={activeAstNode}
+                    onNodeExpand={handleNodeExpand}
+                    completedCourses={record.completed}
+                    inProgressCourses={record.inProgress}
+                  />
                   </div>
                 </>
               ) : (
