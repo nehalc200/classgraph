@@ -11,9 +11,10 @@ function normalizeCourse(subject, number) {
   const gradeTokenRe = /\b(A\+|A|A-|B\+|B|B-|C\+|C|C-|D\+|D|D-|F|P|NP|S|U|W|IP)\b/;
   
   const UCSD_SUBJECTS = new Set([
-    "CSE","MATH","COGS","ECON","BILD","BICD","BIMM","CHEM","PHYS","ESYS",
-    "PSYC","POLI","HILD","MMW","LITR","WCWP","USP","TDGE","VIS","LTWL",
-    "ECE"
+    "AAPI","AIP","ANTH","ASTR","AWP","BENG","BIOM","CAT","CCE","CCS","CGS","CHEM","CHIN","CLAS","CLIN","CLRE","COGS","COMM","CONT","CSE","CSS",
+    "DOC","DSC","DSGN","ECE","ECON","EDS","ENG","ENVR","ERC","ESYS","ETHN","FMPH","GLBH","GSS","HDS","HILD","HMNR","HUM","INTL","JAPN","JWSP",
+    "LATI","LAWS","LHCO","LIT","MAE","MATH","MATS","MBC","MCWP","MGT","MMW","MSED","MUS","NANO","NEU","PH","PHIL","PHYS","POLI","PSYC","RELI",
+    "REV","SE","SEV","SIO","SXTH","SYN","TMC","USP","VIS","WARR"
   ]);
   
   // IMPORTANT: global regex because we use matchAll
@@ -72,12 +73,10 @@ function normalizeCourse(subject, number) {
   
       // ---- Transfer block handling ----
       if (inTransferBlock) {
-        // Prefer UCSD approx courses
-        const ucsdCandidates = candidates.filter((c) => UCSD_SUBJECTS.has(c.split(" ")[0]));
-        if (ucsdCandidates.length > 0) {
-          for (const c of ucsdCandidates) completed.add(c);
+        const equivalents = extractTransferEquivalents(line);
+        for (const course of equivalents) {
+          completed.add(course);
         }
-        pendingCourse = null;
         continue;
       }
   
@@ -106,4 +105,36 @@ function normalizeCourse(subject, number) {
     for (const c of completed) inProgress.delete(c);
   
     return { completed, inProgress };
+  }
+  
+  /**
+   * Extract UCSD equivalent courses from transfer text by scanning after "LD" markers.
+   * e.g. "... 4.50  A  S125  LD  MATH 18  MATH 20D  CISC ..." → ["MATH 18", "MATH 20D"]
+   */
+  function extractTransferEquivalents(text) {
+    const equivalents = new Set();
+  
+    // Split on "LD" markers to get chunks after each one
+    const chunks = text.split(/\bLD\b/);
+  
+    // Skip the first chunk (before the first LD)
+    for (let i = 1; i < chunks.length; i++) {
+      const chunk = chunks[i];
+  
+      // Find all course-like tokens in this chunk
+      const matches = [...chunk.matchAll(courseTokenRe)];
+  
+      for (const m of matches) {
+        const subj = m[1].toUpperCase().trim();
+        const num = m[2].toUpperCase().trim();
+  
+        // Stop when we hit a non-UCSD subject — that's the next transfer row's course
+        if (!UCSD_SUBJECTS.has(subj)) break;
+  
+        equivalents.add(normalizeCourse(subj, num));
+        console.log(`Found transfer equivalent: ${normalizeCourse(subj, num)}`);
+      }
+    }
+  
+    return equivalents;
   }
