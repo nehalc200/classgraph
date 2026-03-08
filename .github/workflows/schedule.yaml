@@ -13,6 +13,11 @@ on:
   # Adding manual trigger so you can test it without waiting for the cron
   workflow_dispatch: 
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
 jobs:
   check-date:
     runs-on: ubuntu-latest
