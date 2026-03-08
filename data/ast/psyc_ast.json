@@ -8530,6 +8530,22 @@
     "children": []
   },
   {
+    "code": "PSYC 196C",
+    "type": "ROOT",
+    "children": [
+      {
+        "code": "PSYC 196A",
+        "type": "CHILD",
+        "children": []
+      },
+      {
+        "code": "PSYC 196B",
+        "type": "CHILD",
+        "children": []
+      }
+    ]
+  },
+  {
     "code": "PSYC 198",
     "type": "ROOT",
     "children": []

@@ -194519,13 +194519,7 @@
   {
     "code": "BENG 99",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "LEAST 3",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "BENG 99H",

@@ -737,6 +737,11 @@
     "children": []
   },
   {
+    "code": "SOCI 188E",
+    "type": "ROOT",
+    "children": []
+  },
+  {
     "code": "SOCI 196B",
     "type": "ROOT",
     "children": [
@@ -757,6 +762,16 @@
         ]
       }
     ]
+  },
+  {
+    "code": "SOCI 198RA",
+    "type": "ROOT",
+    "children": []
+  },
+  {
+    "code": "SOCI 199",
+    "type": "ROOT",
+    "children": []
   },
   {
     "code": "SOCI 2",

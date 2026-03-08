@@ -22,13 +22,7 @@
   {
     "code": "TMC 199",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "WITH 2",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
   },
   {
     "code": "TMC 2",
