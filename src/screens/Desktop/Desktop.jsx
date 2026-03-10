@@ -159,24 +159,27 @@ export const Desktop = () => {
           <div id="graph-section" className="w-full flex justify-center">
             <div className="w-full max-w-6xl flex flex-col" style={{ minHeight: 700 }}>
 
-              <div className="mb-8 w-full max-w-3xl mx-auto">
-                <div className="border-2 border-black rounded-2xl bg-white px-6 py-5 shadow-sm">
+            <div className="mb-8 w-full max-w-3xl mx-auto">
+              <div className="border-2 border-black rounded-2xl bg-white px-6 py-5 shadow-sm">
 
-                  <div className="text-sm font-semibold mb-2 text-gray-800">
-                    Upload Academic History
-                  </div>
-
-                  <div className="text-xs text-gray-500 mb-4">
-                    (Optional) Upload Academic Transcript to highlight prerequisites you've completed.
-                  </div>
-
-                  <TranscriptUpload
-                    file={transcriptFile}
-                    onChange={setTranscriptFile}
-                  />
-
+                <div className="mb-4 rounded-lg bg-gray-50 border border-gray-200 px-4 py-3 text-sm text-gray-700 text-center">
+                  Search a course to visualize its prerequisites, expand nodes to explore different paths, and upload your transcript to highlight completed courses.
                 </div>
+
+                <div className="text-sm font-semibold mb-2 text-gray-800">
+                  Upload Academic History
+                </div>
+
+                <div className="text-xs text-gray-500 mb-4">
+                  (Optional) Upload Academic Transcript to highlight prerequisites you've completed.
+                </div>
+
+                <TranscriptUpload
+                  file={transcriptFile}
+                  onChange={setTranscriptFile}
+                />
               </div>
+            </div>
 
               {record.completed.size > 0 || record.inProgress.size > 0 || record.planned.size > 0 ? (
                 <div className="mt-4 text-xs text-gray-700 max-w-3xl mx-auto">
