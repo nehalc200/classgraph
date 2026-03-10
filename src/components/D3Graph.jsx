@@ -51,11 +51,22 @@ export const D3Graph = ({
         d3.select(containerRef.current).select('.node-tooltip').remove();
 
         // Extract 3-layer tree data
-        const layerData = extractLayers(rootAstNode, 3, {
+        let layerData = extractLayers(rootAstNode, 3, {
             expandedOrGroups,
             orPreviewLimit: 3,
             specialCourses: SPECIAL_CASE_CODES,
         });
+
+        // If the bottommost layer is too large, reduce the tree height to 2
+        // so it's less messy. The new bottommost nodes will be expandable.
+        const bottomLayerNodes = layerData.nodes.filter(n => n.depth === 2);
+        if (bottomLayerNodes.length > 8) {
+            layerData = extractLayers(rootAstNode, 2, {
+                expandedOrGroups,
+                orPreviewLimit: 3,
+                specialCourses: SPECIAL_CASE_CODES,
+            });
+        }
 
         const container = containerRef.current;
         const width = container.offsetWidth || containerSize.width || 800;
@@ -313,11 +324,11 @@ export const D3Graph = ({
         }
 
         function getCourseStatus(labelOrCode) {
-           const code = normalizeCourseCode(labelOrCode);
+            const code = normalizeCourseCode(labelOrCode);
             if (completedCourses.has(code)) return "completed";
             if (inProgressCourses.has(code)) return "inProgress";
             return "none";
-          }
+        }
 
         const nodeGroups = nodeLayer.selectAll('g.node')
             .data(layerData.nodes)
@@ -342,8 +353,8 @@ export const D3Graph = ({
                 if (d.isExpandable && onNodeExpandRef.current) {
                     onNodeExpandRef.current(d.label);
                 }
-              });
-        
+            });
+
 
         // Measure text widths for sizing
         const tempSvg = d3.select('body').append('svg').style('visibility', 'hidden');
@@ -382,11 +393,11 @@ export const D3Graph = ({
             .attr("fill", (d) => {
                 const code = d.label;   // <-- use label as fallback
                 const status = getCourseStatus(code);
-              
+
                 if (status === "completed") return "#86efac";   // green
                 if (status === "inProgress") return "#fde68a";  // yellow
                 return "#ffffff";
-              })
+            })
             .attr('stroke', (d) => {
                 if (d.depth === 0) return ROOT_COLOR;
                 return d.isExpandable ? EXPANDABLE_COLOR : NORMAL_COLOR;
@@ -616,7 +627,7 @@ export const D3Graph = ({
         inProgressCourses,
     ]);
 
-    
+
     return (
         <div
             ref={containerRef}

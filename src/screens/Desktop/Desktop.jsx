@@ -85,18 +85,18 @@ export const Desktop = () => {
   );
   useEffect(() => {
     let cancelled = false;
-  
+
     const run = async () => {
       setTranscriptError("");
       setTranscriptText("");
-  
+
       if (!transcriptFile) return;
-  
+
       try {
         setTranscriptLoading(true);
         const text = await extractTextFromPdf(transcriptFile);
         if (cancelled) return;
-  
+
         setTranscriptText(text);
         const parsed = parseAcademicHistoryText(text);
         setRecord(parsed);
@@ -111,7 +111,7 @@ export const Desktop = () => {
         if (!cancelled) setTranscriptLoading(false);
       }
     };
-  
+
     run();
     return () => {
       cancelled = true;
@@ -156,10 +156,10 @@ export const Desktop = () => {
 
           <div id="graph-section" className="w-full flex justify-center">
             <div className="w-full max-w-6xl flex flex-col" style={{ minHeight: 700 }}>
-          
+
               <div className="mb-8 w-full max-w-3xl mx-auto">
                 <div className="border-2 border-black rounded-2xl bg-white px-6 py-5 shadow-sm">
-                  
+
                   <div className="text-sm font-semibold mb-2 text-gray-800">
                     Upload Academic History
                   </div>
@@ -188,7 +188,7 @@ export const Desktop = () => {
               {record.completed.size > 0 || record.inProgress.size > 0 || record.planned.size > 0 ? (
                 <div className="mt-4 text-xs text-gray-700 max-w-3xl mx-auto">
                   <div className="font-semibold text-sm mb-2">Detected courses</div>
-                  
+
                   {record.planned.size > 0 && (
                     <div className="mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                       <span className="font-medium text-blue-800">Planned:</span>{" "}
@@ -222,8 +222,8 @@ export const Desktop = () => {
                       </span>
                     </div>
                   )}
-                  
-                                    
+
+
                   {record.completed.size > 0 && (
                     <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <span className="font-medium text-green-800">Completed:</span>{" "}
@@ -240,10 +240,16 @@ export const Desktop = () => {
                       </span>
                     </div>
                   )}
-                  
+
 
                 </div>
               ) : null}
+
+              <div className="flex items-center justify-center w-full max-w-3xl mx-auto mb-6 mt-2">
+                <div className="h-px bg-gray-300 flex-1"></div>
+                <div className="px-4 text-gray-400 font-semibold uppercase tracking-widest text-sm">Or</div>
+                <div className="h-px bg-gray-300 flex-1"></div>
+              </div>
 
               <div className="mb-4 w-full max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
                 <CourseSearch onSelect={handleCourseSelect} onQueryChange={setSelectedCourse} onSubmit={handleGenerate} />
@@ -261,12 +267,12 @@ export const Desktop = () => {
                     onClose={handleTabClose}
                   />
                   <div className="flex-1" style={{ minHeight: 600 }}>
-                  <D3Graph
-                    rootAstNode={activeAstNode}
-                    onNodeExpand={handleNodeExpand}
-                    completedCourses={record.completed}
-                    inProgressCourses={record.inProgress}
-                  />
+                    <D3Graph
+                      rootAstNode={activeAstNode}
+                      onNodeExpand={handleNodeExpand}
+                      completedCourses={record.completed}
+                      inProgressCourses={record.inProgress}
+                    />
                   </div>
                 </>
               ) : (

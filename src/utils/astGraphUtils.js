@@ -92,7 +92,10 @@ export function extractLayers(rootNode, maxDepth = 3, options = {}) {
       const children = astNode.children || [];
       const isExpanded = expandedOrGroups.has(groupId);
 
-      const visibleChildren = isExpanded ? children : children.slice(0, orPreviewLimit);
+      // If only 1 node would be hidden, it's better to just show it 
+      // instead of a "+1" expander node that takes up the same space.
+      const shouldShowAll = isExpanded || children.length <= orPreviewLimit + 1;
+      const visibleChildren = shouldShowAll ? children : children.slice(0, orPreviewLimit);
       const hiddenCount = Math.max(0, children.length - visibleChildren.length);
 
       const memberIds = [];
