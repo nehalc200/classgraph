@@ -19,47 +19,7 @@ permissions:
   issues: write
 
 jobs:
-  check-date:
-    runs-on: ubuntu-latest
-    outputs:
-      should_run: ${{ steps.date_check.outputs.should_run }}
-    steps:
-      - name: Verify Nth Friday
-        id: date_check
-        run: |
-          MONTH=$(date +%-m)
-          DAY=$(date +%-d)
-          SHOULD_RUN="false"
-          
-          # Force run if triggered manually via workflow_dispatch
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "Manual trigger detected."
-            SHOULD_RUN="true"
-          
-          # 4th Friday of May (days 22-28)
-          elif [[ "$MONTH" -eq 5 && "$DAY" -ge 22 && "$DAY" -le 28 ]]; then
-            echo "Matched 4th Friday of May."
-            SHOULD_RUN="true"
-            
-          # 1st Friday of November (days 1-7)
-          elif [[ "$MONTH" -eq 11 && "$DAY" -le 7 ]]; then
-            echo "Matched 1st Friday of November."
-            SHOULD_RUN="true"
-            
-          # 1st Friday of February (days 1-7)
-          elif [[ "$MONTH" -eq 2 && "$DAY" -le 7 ]]; then
-            echo "Matched 1st Friday of February."
-            SHOULD_RUN="true"
-            
-          else
-            echo "Not a target Friday. Skipping scraper."
-          fi
-          
-          echo "should_run=$SHOULD_RUN" >> "$GITHUB_OUTPUT"
-
   run-course-scraper:
-    needs: check-date
-    if: needs.check-date.outputs.should_run == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -74,7 +34,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.25'
+          go-version: '1.24'
 
       - name: Install dependencies
         run: |
@@ -104,7 +64,7 @@ jobs:
           commit-message: "Update course data from quarterly scraper"
           branch: scraper-update
           delete-branch: true
-          title: "📦 Quarterly Catalog Scraper Update"
+          title: "Quarterly Catalog Scraper Update"
           body: |
             Automated update from quarterly catalog scraper.
             
@@ -121,7 +81,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: '❌ Quarterly Catalog Scraper Failed',
+              title: 'Quarterly Catalog Scraper Failed',
               body: `Workflow run failed on ${new Date().toISOString()}\n\nSee: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\ncc @alchin2`,
               assignees: ['alchin2']
             })
