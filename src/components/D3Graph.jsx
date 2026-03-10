@@ -179,6 +179,15 @@ export const D3Graph = ({
             });
         });
 
+        // nodeId → list of OR group IDs it belongs to
+        const nodeToOrGroups = {};
+        layerData.orGroups.forEach((group) => {
+            group.memberNodeIds.forEach((nid) => {
+                if (!nodeToOrGroups[nid]) nodeToOrGroups[nid] = [];
+                nodeToOrGroups[nid].push(group.id);
+            });
+        });
+
         // edgeId → highlighted color (target node's OR color, or teal fallback)
         function edgeHighlightColor(edge) {
             return nodeOrColor[edge.target] || '#14b8a6';
@@ -239,7 +248,10 @@ export const D3Graph = ({
 
             const orG = orGroupLayer.append('g');
 
+            const safeGroupId = group.id.replace(/[^a-zA-Z0-9_-]/g, '_');
+
             orG.append('rect')
+                .attr('id', `or-rect-${safeGroupId}`)
                 .attr('x', rx)
                 .attr('y', ry)
                 .attr('width', rw)
@@ -302,8 +314,27 @@ export const D3Graph = ({
                     .attr('stroke', '#14b8a6')
                     .attr('marker-end', 'url(#arrowhead-glow)')
                     .style('filter', 'drop-shadow(0 0 4px rgba(20, 184, 166, 0.8))');
+
+                const groupsToHighlight = new Set([
+                    ...(nodeToOrGroups[d.source] || []),
+                    ...(nodeToOrGroups[d.target] || [])
+                ]);
+
+                groupsToHighlight.forEach(gid => {
+                    const groupData = layerData.orGroups.find(g => g.id === gid);
+                    if (groupData) {
+                        const safeGroupId = gid.replace(/[^a-zA-Z0-9_-]/g, '_');
+                        const solid = solidFromRgba(groupData.border);
+                        const m = solid.match(/(\d+),(\d+),(\d+)/);
+                        const shadow = m ? `drop-shadow(0 0 5px rgba(${m[1]},${m[2]},${m[3]},0.8))` : 'none';
+                        d3.select(`#or-rect-${safeGroupId}`)
+                            .transition().duration(120)
+                            .attr('stroke-width', 3)
+                            .style('filter', shadow);
+                    }
+                });
             })
-            .on('mouseleave', function () {
+            .on('mouseleave', function (event, d) {
                 d3.select(this)
                     .transition().duration(120)
                     .attr('opacity', 0.78)
@@ -311,6 +342,19 @@ export const D3Graph = ({
                     .attr('stroke', '#c4c4c4')
                     .attr('marker-end', 'url(#arrowhead)')
                     .style('filter', 'none');
+
+                const groupsToHighlight = new Set([
+                    ...(nodeToOrGroups[d.source] || []),
+                    ...(nodeToOrGroups[d.target] || [])
+                ]);
+
+                groupsToHighlight.forEach(gid => {
+                    const safeGroupId = gid.replace(/[^a-zA-Z0-9_-]/g, '_');
+                    d3.select(`#or-rect-${safeGroupId}`)
+                        .transition().duration(120)
+                        .attr('stroke-width', 2)
+                        .style('filter', 'none');
+                });
             });
 
         // ── Nodes ───────────────────────────────────────────────────────────
@@ -468,6 +512,22 @@ export const D3Graph = ({
                     .transition().duration(150)
                     .attr('stroke-width', 3);
 
+                // Highlight containing OR groups
+                const activeGroups = nodeToOrGroups[d.id] || [];
+                activeGroups.forEach(gid => {
+                    const groupData = layerData.orGroups.find(g => g.id === gid);
+                    if (groupData) {
+                        const safeGroupId = gid.replace(/[^a-zA-Z0-9_-]/g, '_');
+                        const solid = solidFromRgba(groupData.border);
+                        const m = solid.match(/(\d+),(\d+),(\d+)/);
+                        const shadow = m ? `drop-shadow(0 0 5px rgba(${m[1]},${m[2]},${m[3]},0.8))` : 'none';
+                        d3.select(`#or-rect-${safeGroupId}`)
+                            .transition().duration(150)
+                            .attr('stroke-width', 3.5)
+                            .style('filter', shadow);
+                    }
+                });
+
                 // Compute the full set of ancestor edge IDs for this node
                 const ancestorEdgeIds = getAncestorEdgeIds(d.id);
                 // Also include direct outgoing edges (children of the hovered node)
@@ -593,6 +653,16 @@ export const D3Graph = ({
                 tooltip.style('left', `${tipX}px`).style('top', `${tipY}px`);
             })
             .on('mouseleave', function (event, d) {
+                // Restore OR groups
+                const activeGroups = nodeToOrGroups[d.id] || [];
+                activeGroups.forEach(gid => {
+                    const safeGroupId = gid.replace(/[^a-zA-Z0-9_-]/g, '_');
+                    d3.select(`#or-rect-${safeGroupId}`)
+                        .transition().duration(150)
+                        .attr('stroke-width', 2)
+                        .style('filter', 'none');
+                });
+
                 // Restore stroke
                 d3.select(this).select('rect')
                     .transition().duration(150)
