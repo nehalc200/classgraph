@@ -131,13 +131,15 @@ export const Desktop = () => {
         <h1 className="text-5xl md:text-[65px] font-black text-black tracking-[-0.33px] text-center px-4">
           UCSD ClassGraph
         </h1>
-        <div className="mt-8">
-          <Button onClick={() => {
-            const section = document.getElementById('graph-section');
-            if (section) section.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            Let's go!
-          </Button>
+        <div className="mt-16">
+          <a
+            href="https://catalog.ucsd.edu/front/courses.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl border-2 border-black bg-white px-7 py-3 text-[16px] font-semibold text-black shadow-md transition hover:bg-gray-100"
+          >
+            View UCSD Course Offerings
+          </a>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-[2px] bg-black" />
       </header>
@@ -175,15 +177,6 @@ export const Desktop = () => {
 
                 </div>
               </div>
-              {transcriptLoading ? (
-                <div className="mt-3 text-sm text-gray-600">Extracting text…</div>
-              ) : transcriptError ? (
-                <div className="mt-3 text-sm text-red-600">{transcriptError}</div>
-              ) : transcriptText ? (
-                <div className="mt-3 text-sm text-gray-600">
-                  Extracted {transcriptText.length.toLocaleString()} characters.
-                </div>
-              ) : null}
 
               {record.completed.size > 0 || record.inProgress.size > 0 || record.planned.size > 0 ? (
                 <div className="mt-4 text-xs text-gray-700 max-w-3xl mx-auto">
