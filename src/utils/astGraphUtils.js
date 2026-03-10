@@ -72,7 +72,7 @@ export function findRootNode(courseCode, astData) {
 export function extractLayers(rootNode, maxDepth = 3, options = {}) {
   _colorIndex = 0; // reset per extraction
 
-  const { expandedOrGroups = new Set(), orPreviewLimit = 3, specialCourses = new Set() } = options;
+  const { orPreviewLimit = 3, specialCourses = new Set() } = options;
 
 
   const nodes = [];
@@ -90,13 +90,12 @@ export function extractLayers(rootNode, maxDepth = 3, options = {}) {
       const groupId = `or_${parentId}_${orGroups.length}`;
 
       const children = astNode.children || [];
-      const isExpanded = expandedOrGroups.has(groupId);
-
-      // If only 1 node would be hidden, it's better to just show it 
-      // instead of a "+1" expander node that takes up the same space.
-      const shouldShowAll = isExpanded || children.length <= orPreviewLimit + 1;
-      const visibleChildren = shouldShowAll ? children : children.slice(0, orPreviewLimit);
-      const hiddenCount = Math.max(0, children.length - visibleChildren.length);
+      // If the group is too wide, collapse entirely into a single (+) node.
+      // Otherwise, show all. (If it's exactly orPreviewLimit + 1 we still show all, 
+      // as it's not "too wide" to warrant collapsing yet.)
+      const shouldCollapse = depth > 0 && children.length > orPreviewLimit + 1;
+      const visibleChildren = shouldCollapse ? [] : children;
+      const isCollapsed = shouldCollapse;
 
       const memberIds = [];
 
@@ -110,19 +109,20 @@ export function extractLayers(rootNode, maxDepth = 3, options = {}) {
         }
       });
 
-      // add "+N" node inside this OR group if some are hidden
-      if (hiddenCount > 0) {
+      // add "(+)" node inside this OR group if it is collapsed
+      if (isCollapsed) {
         const moreId = `OR_MORE::${groupId}::${depth}`;
 
         if (!seenNodes.has(moreId)) {
           seenNodes.add(moreId);
           nodes.push({
             id: moreId,
-            label: `+${hiddenCount}`,
+            label: `+ ${children.length} Options`,
             depth,
             isExpandable: true,
             isOrMore: true,
             orGroupId: groupId,
+            orAstNode: astNode,
           });
         }
 

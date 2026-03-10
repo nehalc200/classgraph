@@ -12,18 +12,20 @@ const EXPANDABLE_COLOR = '#6366f1';
 export const D3Graph = ({
     rootAstNode,
     onNodeExpand,
+    onOrNodeExpand,
     completedCourses = new Set(),
     inProgressCourses = new Set(),
 }) => {
     const containerRef = useRef(null);
     const svgRef = useRef(null);
-    const [expandedOrGroups, setExpandedOrGroups] = useState(() => new Set());
     const [courseInfoReady, setCourseInfoReady] = useState(false);
     const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
-    // Stable callback ref
+    // Stable callback refs
     const onNodeExpandRef = useRef(onNodeExpand);
     onNodeExpandRef.current = onNodeExpand;
+    const onOrNodeExpandRef = useRef(onOrNodeExpand);
+    onOrNodeExpandRef.current = onOrNodeExpand;
 
     // Load course info metadata once
     useEffect(() => {
@@ -52,7 +54,6 @@ export const D3Graph = ({
 
         // Extract 3-layer tree data
         let layerData = extractLayers(rootAstNode, 3, {
-            expandedOrGroups,
             orPreviewLimit: 3,
             specialCourses: SPECIAL_CASE_CODES,
         });
@@ -62,7 +63,6 @@ export const D3Graph = ({
         const bottomLayerNodes = layerData.nodes.filter(n => n.depth === 2);
         if (bottomLayerNodes.length > 8) {
             layerData = extractLayers(rootAstNode, 2, {
-                expandedOrGroups,
                 orPreviewLimit: 3,
                 specialCourses: SPECIAL_CASE_CODES,
             });
@@ -382,14 +382,11 @@ export const D3Graph = ({
             .attr('transform', (d) => `translate(${d.x}, ${d.y})`)
             .style('cursor', (d) => d.isExpandable ? 'pointer' : 'default')
             .on('click', (event, d) => {
-                // OR "+N" expander: toggle locally
-                if (d.isOrMore && d.orGroupId) {
-                    setExpandedOrGroups((prev) => {
-                        const next = new Set(prev);
-                        if (next.has(d.orGroupId)) next.delete(d.orGroupId);
-                        else next.add(d.orGroupId);
-                        return next;
-                    });
+                // OR "(+)" expander: trigger callback with full OR astNode
+                if (d.isOrMore && d.orAstNode) {
+                    if (onOrNodeExpandRef.current) {
+                        onOrNodeExpandRef.current(d.orAstNode);
+                    }
                     return;
                 }
 
@@ -692,7 +689,6 @@ export const D3Graph = ({
         rootAstNode,
         courseInfoReady,
         containerSize,
-        expandedOrGroups,
         completedCourses,
         inProgressCourses,
     ]);

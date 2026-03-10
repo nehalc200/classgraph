@@ -55,6 +55,21 @@ export const Desktop = () => {
     }
   }, [selectedCourse, generating]);
 
+  // When the user clicks an OR "(+)" node
+  const handleOrNodeExpand = useCallback((orAstNode) => {
+    setTabs((prev) => {
+      // Create a unique courseCode string/label for the tab, e.g. "OR Group" 
+      const newLabel = `OR Group (${orAstNode.children?.length || 0} options)`;
+      const existingIndex = prev.findIndex((t) => t.courseCode === newLabel);
+      if (existingIndex >= 0) {
+        setActiveTabIndex(existingIndex);
+        return prev;
+      }
+      setActiveTabIndex(prev.length);
+      return [...prev, { courseCode: newLabel, astNode: orAstNode }];
+    });
+  }, []);
+
   // When the user clicks an expandable node inside the graph
   const handleNodeExpand = useCallback(
     async (courseCode) => {
@@ -263,6 +278,7 @@ export const Desktop = () => {
                     <D3Graph
                       rootAstNode={activeAstNode}
                       onNodeExpand={handleNodeExpand}
+                      onOrNodeExpand={handleOrNodeExpand}
                       completedCourses={record.completed}
                       inProgressCourses={record.inProgress}
                     />
