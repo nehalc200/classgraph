@@ -24,11 +24,53 @@ function normalizeCourse(subject, number) {
     "NP", "W", "F", "P", "S", "U", "IP",
     "GPA", "TERM", "TOTAL", "UNITS", "POINTS", "GRADE", "REPEAT"
   ]);
+
+  // regex to find term markers
+  const termMarkerRe = /\b(Fall|Winter|Spring)\s+Qtr\b|\bSum\s+Ses\s+(I|II)\b/gi;
+
+
+  // find planned courses between the first two term markers.
+
+  function extractPlannedCourses(text) {
+    const planned = new Set();
+    
+
+    const markers = [...text.matchAll(termMarkerRe)];
+    
+    if (markers.length < 2) {
+      // not enough term markers
+      return planned;
+    }
+
+
+    const firstMarkerEnd = markers[0].index + markers[0][0].length;
+    const secondMarkerStart = markers[1].index;
+    
+    const plannedSection = text.slice(firstMarkerEnd, secondMarkerStart);
+    
+    console.log("Planned section text:", plannedSection.slice(0, 500));
+    
+    // extract courses from this section
+    const matches = [...plannedSection.matchAll(courseTokenRe)];
+    
+    for (const m of matches) {
+      const subj = m[1].toUpperCase().trim();
+      const num = m[2].toUpperCase().trim();
+      
+      if (bannedSubjects.has(subj)) continue;
+      
+      const course = normalizeCourse(subj, num);
+      planned.add(course);
+      console.log(`Found planned course: ${course}`);
+    }
+    
+    return planned;
+  }
   
   export function parseAcademicHistoryText(text) {
     const completed = new Set();
     const inProgress = new Set();
-  
+    const planned = extractPlannedCourses(text);
     const lines = text
       .split(/\r?\n/)
       .map((l) => l.replace(/\s+/g, " ").trim())
@@ -93,7 +135,6 @@ function normalizeCourse(subject, number) {
         pendingCourse = null;
       } else {
         // No grade yet: could be in-progress OR could be wrapped line
-        // store as pending; if next line has grade, it’ll get completed
         pendingCourse = candidates[0];
   
         // also tentatively mark in progress (will be removed if completed later)
@@ -103,8 +144,11 @@ function normalizeCourse(subject, number) {
   
     // If completed, remove from in progress
     for (const c of completed) inProgress.delete(c);
+    
+    // remove dupliate
+    for (const c of planned) inProgress.delete(c);
   
-    return { completed, inProgress };
+    return { completed, inProgress, planned };
   }
   
   /**

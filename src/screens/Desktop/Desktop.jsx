@@ -20,7 +20,7 @@ export const Desktop = () => {
   const [transcriptText, setTranscriptText] = useState("");
   const [transcriptLoading, setTranscriptLoading] = useState(false);
   const [transcriptError, setTranscriptError] = useState("");
-  const [record, setRecord] = useState({ completed: new Set(), inProgress: new Set() });
+  const [record, setRecord] = useState({ completed: new Set(), inProgress: new Set(), planned: new Set() });
 
   // When the user selects a course from search
   const handleCourseSelect = useCallback((courseCode) => {
@@ -165,7 +165,7 @@ export const Desktop = () => {
                   </div>
 
                   <div className="text-xs text-gray-500 mb-4">
-                    Upload your UCSD Academic History PDF to highlight prerequisites you have already completed.
+                    (Optional) Upload Academic Transcript to highlight prerequisites you've completed.
                   </div>
 
                   <TranscriptUpload
@@ -185,19 +185,63 @@ export const Desktop = () => {
                 </div>
               ) : null}
 
-              {record.completed.size > 0 || record.inProgress.size > 0 ? (
-                <div className="mt-4 text-xs text-gray-700">
-                  <div className="font-semibold">Detected courses</div>
-                  <div className="mt-2">
-                    <span className="font-medium">Completed:</span>{" "}
-                    {Array.from(record.completed).slice(0, 12).join(", ")}
-                    {record.completed.size > 12 ? " …" : ""}
-                  </div>
-                  <div className="mt-1">
-                    <span className="font-medium">In progress:</span>{" "}
-                    {Array.from(record.inProgress).slice(0, 12).join(", ")}
-                    {record.inProgress.size > 12 ? " …" : ""}
-                  </div>
+              {record.completed.size > 0 || record.inProgress.size > 0 || record.planned.size > 0 ? (
+                <div className="mt-4 text-xs text-gray-700 max-w-3xl mx-auto">
+                  <div className="font-semibold text-sm mb-2">Detected courses</div>
+                  
+                  {record.planned.size > 0 && (
+                    <div className="mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                      <span className="font-medium text-blue-800">Planned:</span>{" "}
+                      <span className="text-blue-700">
+                        {Array.from(record.planned).sort((a, b) => {
+                          const deptA = a.replace(/[0-9].*/g, "").trim();
+                          const deptB = b.replace(/[0-9].*/g, "").trim();
+                          if (deptA !== deptB) return deptA.localeCompare(deptB);
+                          const numA = a.replace(/^[^0-9]+/, "").trim();
+                          const numB = b.replace(/^[^0-9]+/, "").trim();
+                          if (numA.length !== numB.length) return numA.length - numB.length;
+                          return numA.localeCompare(numB, undefined, { numeric: true });
+                        }).join(", ")}
+                      </span>
+                    </div>
+                  )}
+
+                  {record.inProgress.size > 0 && (
+                    <div className="mt-2 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                      <span className="font-medium text-yellow-800">In Progress:</span>{" "}
+                      <span className="text-yellow-700">
+                        {Array.from(record.inProgress).sort((a, b) => {
+                          const deptA = a.replace(/[0-9].*/g, "").trim();
+                          const deptB = b.replace(/[0-9].*/g, "").trim();
+                          if (deptA !== deptB) return deptA.localeCompare(deptB);
+                          const numA = a.replace(/^[^0-9]+/, "").trim();
+                          const numB = b.replace(/^[^0-9]+/, "").trim();
+                          if (numA.length !== numB.length) return numA.length - numB.length;
+                          return numA.localeCompare(numB, undefined, { numeric: true });
+                        }).join(", ")}
+                      </span>
+                    </div>
+                  )}
+                  
+                                    
+                  {record.completed.size > 0 && (
+                    <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded-lg">
+                      <span className="font-medium text-green-800">Completed:</span>{" "}
+                      <span className="text-green-700">
+                        {Array.from(record.completed).sort((a, b) => {
+                          const deptA = a.replace(/[0-9].*/g, "").trim();
+                          const deptB = b.replace(/[0-9].*/g, "").trim();
+                          if (deptA !== deptB) return deptA.localeCompare(deptB);
+                          const numA = a.replace(/^[^0-9]+/, "").trim();
+                          const numB = b.replace(/^[^0-9]+/, "").trim();
+                          if (numA.length !== numB.length) return numA.length - numB.length;
+                          return numA.localeCompare(numB, undefined, { numeric: true });
+                        }).join(", ")}
+                      </span>
+                    </div>
+                  )}
+                  
+
                 </div>
               ) : null}
 
