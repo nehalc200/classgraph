@@ -20,8 +20,10 @@ function normalizeCourse(subject, number) {
     "REV","SE","SEV","SIO","SXTH","SYN","TMC","USP","VIS","WARR"
   ]);
   
+  const UCSD_SUBJECTS_PATTERN = [...UCSD_SUBJECTS].join("|");
+  
   // IMPORTANT: global regex because we use matchAll
-  const courseTokenRe = /\b([A-Z]{2,5})\s*(\d{1,3}[A-Z]{0,2})\b/g;
+  const courseTokenRe = new RegExp(`\\b(${UCSD_SUBJECTS_PATTERN})\\s*(\\d{1,3}[A-Z]{0,2})\\b`, "g");
   
   const bannedSubjects = new Set([
     "NP", "W", "F", "P", "S", "U", "IP",
