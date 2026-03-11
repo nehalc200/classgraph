@@ -1,5 +1,8 @@
 // src/utils/transcriptParse.js
 
+
+export const NEWEST_QUARTER = "Spring Qtr";
+
 function normalizeCourse(subject, number) {
     const subj = (subject || "").toUpperCase().trim();
     const num = (number || "").toUpperCase().trim();
@@ -33,15 +36,20 @@ function normalizeCourse(subject, number) {
 
   function extractPlannedCourses(text) {
     const planned = new Set();
-    
 
     const markers = [...text.matchAll(termMarkerRe)];
     
     if (markers.length < 2) {
-      // not enough term markers
       return planned;
     }
 
+    // Only use the planned section if the first term marker is the newest quarter
+    const firstMarkerText = markers[0][0].trim();
+    console.log("First marker text:", firstMarkerText);
+    console.log("NEWEST_QUARTER:", NEWEST_QUARTER);
+    if (firstMarkerText.toLowerCase() !== NEWEST_QUARTER.toLowerCase()) {
+      return planned;
+    }
 
     const firstMarkerEnd = markers[0].index + markers[0][0].length;
     const secondMarkerStart = markers[1].index;
@@ -50,7 +58,6 @@ function normalizeCourse(subject, number) {
     
     console.log("Planned section text:", plannedSection.slice(0, 500));
     
-    // extract courses from this section
     const matches = [...plannedSection.matchAll(courseTokenRe)];
     
     for (const m of matches) {

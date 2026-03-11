@@ -41,6 +41,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Update NEWEST_QUARTER constant
+        run: |
+          MONTH=$(date +%-m)
+          YEAR=$(date +%Y)
+
+          if [ "$MONTH" -eq 2 ]; then
+            QUARTER="Spring Qtr"
+          elif [ "$MONTH" -eq 5 ]; then
+            QUARTER="Fall Qtr"
+          elif [ "$MONTH" -eq 11 ]; then
+            QUARTER="Winter Qtr"
+          else
+            echo "Unexpected month $MONTH — skipping NEWEST_QUARTER update"
+            exit 0
+          fi
+
+          echo "Setting NEWEST_QUARTER to: $QUARTER"
+          sed -i "s/export const NEWEST_QUARTER = \".*\";/export const NEWEST_QUARTER = \"$QUARTER\";/" src/utils/transcriptParse.js
+
       - name: Run Catalog scraper
         run: |
           python catalog_scraper/main.py
