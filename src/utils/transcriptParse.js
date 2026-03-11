@@ -86,15 +86,53 @@ function normalizeCourse(subject, number) {
       .filter(Boolean);
   
     let inTransferBlock = false;
-  
-    // 👇 NEW: handle rows that wrap across lines
-    // if we saw a course code but no grade yet, store it here
     let pendingCourse = null;
-  
+    let pendingTransferEquivalents = []; // accumulate LD equivalents across lines
+    let afterLD = false; // are we in the "after LD" portion of a transfer row?
+    let pendingSecondEquivalent = false; // for handling two-course equivalents on the same line
+
     for (const line of lines) {
       // Detect transfer block boundaries (heuristic)
       if (/Transfer Courses/i.test(line)) inTransferBlock = true;
-      if (/UCSD Undergraduate Courses by Term/i.test(line)) inTransferBlock = false;
+      if (/UCSD Undergraduate Courses by Term/i.test(line)) {
+
+        for (const course of pendingTransferEquivalents) completed.add(course);
+        pendingTransferEquivalents = [];
+        afterLD = false;
+        inTransferBlock = false;
+      }
+
+      if (inTransferBlock) {
+        console.log("Transfer block line:", line);
+
+        if (/\bLD\b/.test(line)) {
+          // Extract the UCSD equivalent on the same line (after LD)
+          const afterLD = line.split(/\bLD\b/)[1];
+          courseTokenRe.lastIndex = 0;
+          const m = courseTokenRe.exec(afterLD);
+          if (m) {
+            const course = normalizeCourse(m[1].toUpperCase().trim(), m[2].toUpperCase().trim());
+            completed.add(course);
+            console.log(`Found transfer equivalent: ${course}`);
+          }
+          pendingSecondEquivalent = true; // next line may have the second equivalent
+          continue;
+        }
+
+        if (pendingSecondEquivalent) {
+          pendingSecondEquivalent = false;
+          // The second equivalent is the LAST course match on this line
+          courseTokenRe.lastIndex = 0;
+          const matches = [...line.matchAll(courseTokenRe)];
+          if (matches.length > 0) {
+            const last = matches[matches.length - 1];
+            const course = normalizeCourse(last[1].toUpperCase().trim(), last[2].toUpperCase().trim());
+            completed.add(course);
+            console.log(`Found transfer equivalent: ${course}`);
+          }
+          continue;
+        }
+      }
   
       const matches = [...line.matchAll(courseTokenRe)];
       const candidates = matches
@@ -156,6 +194,9 @@ function normalizeCourse(subject, number) {
     
     // remove dupliate
     for (const c of planned) inProgress.delete(c);
+  
+    // flush any remaining transfer equivalents
+    for (const course of pendingTransferEquivalents) completed.add(course);
   
     return { completed, inProgress, planned };
   }
