@@ -3750,11 +3750,6 @@
     "type": "ROOT",
     "children": [
       {
-        "code": "COMM 10",
-        "type": "CHILD",
-        "children": []
-      },
-      {
         "code": "OR",
         "type": "CHILD",
         "children": [
@@ -3779,6 +3774,23 @@
                 "children": []
               }
             ]
+          }
+        ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100B",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
           },
           {
             "code": "COMM 100C",
@@ -3792,6 +3804,39 @@
             ]
           }
         ]
+      },
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "COMM 100A",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          },
+          {
+            "code": "COMM 100C",
+            "type": "CHILD",
+            "children": [
+              {
+                "code": "COMM 10",
+                "type": "CHILD",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "COMM 10",
+        "type": "CHILD",
+        "children": []
       }
     ]
   },
