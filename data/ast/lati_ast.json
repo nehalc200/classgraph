@@ -73,13 +73,12 @@
   {
     "code": "LATI 190",
     "type": "ROOT",
-    "children": [
-      {
-        "code": "LATI 50",
-        "type": "CHILD",
-        "children": []
-      }
-    ]
+    "children": []
+  },
+  {
+    "code": "LATI 191",
+    "type": "ROOT",
+    "children": []
   },
   {
     "code": "LATI 199",

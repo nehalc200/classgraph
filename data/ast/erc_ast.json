@@ -168,6 +168,28 @@
   {
     "code": "ERC 92",
     "type": "ROOT",
-    "children": []
+    "children": [
+      {
+        "code": "OR",
+        "type": "CHILD",
+        "children": [
+          {
+            "code": "MMW 4",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW 5",
+            "type": "CHILD",
+            "children": []
+          },
+          {
+            "code": "MMW 6",
+            "type": "CHILD",
+            "children": []
+          }
+        ]
+      }
+    ]
   }
 ]
