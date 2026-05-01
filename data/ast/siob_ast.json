@@ -40,12 +40,12 @@
         "type": "CHILD",
         "children": [
           {
-            "code": "SIOB 242A",
+            "code": "SIO 242A",
             "type": "CHILD",
             "children": []
           },
           {
-            "code": "SIO 242A",
+            "code": "SIOB 242A",
             "type": "CHILD",
             "children": []
           }
@@ -55,6 +55,11 @@
         "code": "OR",
         "type": "CHILD",
         "children": [
+          {
+            "code": "SIO 242B",
+            "type": "CHILD",
+            "children": []
+          },
           {
             "code": "SIOB 242B",
             "type": "CHILD",
@@ -76,11 +81,6 @@
                 ]
               }
             ]
-          },
-          {
-            "code": "SIO 242B",
-            "type": "CHILD",
-            "children": []
           }
         ]
       }

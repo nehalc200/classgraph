@@ -1,7 +1,7 @@
 // src/utils/transcriptParse.js
 
 
-export const NEWEST_QUARTER = "Spring Qtr";
+export const NEWEST_QUARTER = "Fall Qtr";
 
 function normalizeCourse(subject, number) {
     const subj = (subject || "").toUpperCase().trim();
