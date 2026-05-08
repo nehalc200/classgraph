@@ -1,15 +1,14 @@
 name: Quarterly Catalog Scrapers
 on:
   schedule:
-    # Runs every Friday in May at 00:00 UTC
-    - cron: "0 0 * 5 5"
+    # Runs the first Friday of May at 00:00 UTC
+    - cron: "0 0 1-7 5 5"
     
-    # Runs every Friday in November at 00:00 UTC
-    - cron: "0 0 * 11 5"
+    # Runs the first Friday of November at 00:00 UTC
+    - cron: "0 0 1-7 11 5"
 
-    # Runs every Friday in February at 00:00 UTC
-    - cron: "0 0 * 2 5"
-    
+    # Runs the first Friday of February at 00:00 UTC
+    - cron: "0 0 1-7 2 5"
   # Adding manual trigger so you can test it without waiting for the cron
   workflow_dispatch: 
 
